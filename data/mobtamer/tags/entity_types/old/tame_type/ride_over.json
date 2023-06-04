@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:evoker",
+    "minecraft:illusioner",
+    "minecraft:pillager",
+    "minecraft:skeleton",
+    "minecraft:snow_golem",
+    "minecraft:stray",
+    "minecraft:wither_skeleton"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "values": [
+        "cow",
+        "donkey",
+        "goat",
+        "hoglin",
+        "horse",
+        "llama",
+        "mooshroom",
+        "mule",
+        "panda",
+        "polar_bear",
+        "sheep",
+        "skeleton_horse",
+        "strider",
+        "trader_llama",
+        "zoglin",
+        "zombie_horse"
+    ]
+}

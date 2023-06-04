@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:piglin_brute_spawn_egg",
+            "functions": [
+              {
+                "function": "minecraft:copy_nbt",
+                "source": "this",
+                "ops": [
+                  {
+                    "source": "",
+                    "target": "EntityTag.",
+                    "op": "replace"
+                  }
+                ]
+              },{
+                "function": "minecraft:set_nbt",
+                "tag": "{MT_StoredPartner:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

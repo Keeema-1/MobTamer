@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "name": "minecraft:entities/slime"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gray_stained_glass_pane",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{MT_EXP:1b}"
+              },{
+                "function": "minecraft:copy_nbt",
+                "source": "killer",
+                "ops": [
+                  {
+                    "source": "Tags",
+                    "target": "EntityTag.Tags",
+                    "op": "replace"
+                  }
+                ]
+              },{
+                "function": "minecraft:set_nbt",
+                "tag": "{MT_KillerTag:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,28 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:axolotl",
+      "minecraft:rabbit",
+      "minecraft:bee",
+      "minecraft:dolphin",
+      "minecraft:llama",
+      "minecraft:trader_llama",
+      "minecraft:snow_golem",
+      "minecraft:panda",
+      "minecraft:zombie",
+      "minecraft:husk", 
+      "minecraft:skeleton",
+      "minecraft:spider",
+      "minecraft:zombie_villager",
+      "minecraft:silverfish",
+      "minecraft:endermite",
+      "minecraft:vex",
+      "minecraft:piglin",
+      "minecraft:pillager",
+      "minecraft:drowned",
+      "minecraft:stray",
+      "minecraft:cave_spider",
+      "minecraft:wolf",
+      "minecraft:fox"
+    ]
+  }

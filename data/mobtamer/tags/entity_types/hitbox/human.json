@@ -1,0 +1,24 @@
+{
+    "replace": false,
+    "values": [
+        "blaze",
+        "creeper",
+        "drowned",
+        "evoker",
+        "husk",
+        "illusioner",
+        "piglin",
+        "piglin_brute",
+        "pillager",
+        "skeleton",
+        "snow_golem",
+        "stray",
+        "villager",
+        "vindicator",
+        "wandering_trader",
+        "witch",
+        "zombie",
+        "zombie_villager",
+        "zombified_piglin"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cow",
+    "minecraft:donkey",
+    "minecraft:elder_guardian",
+    "minecraft:guardian",
+    "minecraft:hoglin",
+    "minecraft:horse",
+    "minecraft:llama",
+    "minecraft:mooshroom",
+    "minecraft:mule",
+    "minecraft:panda",
+    "minecraft:phantom",
+    "minecraft:polar_bear",
+    "minecraft:sheep",
+    "minecraft:skeleton_horse",
+    "minecraft:trader_llama",
+    "minecraft:zoglin",
+    "minecraft:zombie_horse"
+  ]
+}

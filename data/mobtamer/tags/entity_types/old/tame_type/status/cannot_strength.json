@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:creeper",
+    "minecraft:evoker",
+    "minecraft:ghast",
+    "minecraft:illusioner",
+    "minecraft:llama",
+    "minecraft:pillager",
+    "minecraft:shulker",
+    "minecraft:snow_golem",
+    "minecraft:trader_llama",
+    "minecraft:witch"
+  ]
+}

@@ -1,0 +1,2 @@
+tellraw @a[tag=mt.player_check] [{"storage":"mobtamer:text","nbt":"data.store.far_from_player[0]","interpret": true},{"selector":"@s"},{"storage":"mobtamer:text","nbt":"data.store.far_from_player[1]","interpret": true}]
+function mobtamer:sys/player/pet/each/store/0

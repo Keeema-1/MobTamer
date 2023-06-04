@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "rewards": {
+      "function": "mobtamer:sys/player/advancement/inventory_changed/any"
+    }
+  }
+  

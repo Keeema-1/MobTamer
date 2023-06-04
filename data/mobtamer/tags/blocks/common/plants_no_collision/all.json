@@ -1,0 +1,27 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:grass",
+      "minecraft:tall_grass",
+      "#minecraft:flowers",
+      "minecraft:fern",
+      "minecraft:large_fern",
+      "minecraft:vine",
+      "#minecraft:crops",
+      "minecraft:attached_melon_stem",
+      "minecraft:attached_pumpkin_stem",
+      "minecraft:sugar_cane",
+      "minecraft:brown_mushroom",
+      "minecraft:red_mushroom",
+      "minecraft:dead_bush",
+      "minecraft:small_dripleaf",
+      "minecraft:big_dripleaf_stem",
+      "minecraft:glow_lichen",
+      "minecraft:hanging_roots",
+      "#minecraft:saplings",
+      "minecraft:bamboo_sapling",
+      "#minecraft:cave_vines",
+      "#mobtamer:common/plants_no_collision/nether",
+      "#mobtamer:common/plants_no_collision/sea"
+    ]
+  }

@@ -1,0 +1,1 @@
+give @s fishing_rod{mt_conductor:1b,display:{Name:'{"text":"コンダクター","italic": false}'}}

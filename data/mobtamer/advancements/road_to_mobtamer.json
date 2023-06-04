@@ -1,0 +1,15 @@
+{
+  "display": {
+    "title": "モブテイマーへの道",
+    "description": "モブとともに戦ってみよう",
+    "icon": {
+      "item": "minecraft:lead"
+    },
+    "background": "minecraft:textures/block/quartz_block_top.png"
+  },
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:location"
+    }
+  }
+}

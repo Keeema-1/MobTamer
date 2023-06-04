@@ -1,0 +1,47 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:copy_nbt",
+                "source": "killer",
+                "ops": [
+                  {
+                    "source": "HandItems",
+                    "target": "EntityTag",
+                    "op": "append"
+                  },
+                  {
+                    "source": "ArmorItems",
+                    "target": "EntityTag",
+                    "op": "append"
+                  },
+                  {
+                    "source": "CustomName",
+                    "target": "tag.EntityTag",
+                    "op": "merge"
+                  },
+                  {
+                    "source": "ArmorDropChances",
+                    "target": "EntityTag",
+                    "op": "append"
+                  },
+                  {
+                    "source": "Tags",
+                    "target": "tag.EntityTag.Tags",
+                    "op": "merge"
+                  }
+                ]
+              }
+            ],
+            "name": "minecraft:zombie_spawn_egg"
+          }
+        ]
+      }
+    ]
+  }

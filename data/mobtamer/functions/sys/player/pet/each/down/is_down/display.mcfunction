@@ -1,0 +1,12 @@
+
+execute if score $mt.display mt.health matches ..-96 run data modify entity @s text set value '[{"text":"□□□□□□□□□□","color":"red"}]'
+execute if score $mt.display mt.health matches -95..-86 run data modify entity @s text set value '[{"text":"■□□□□□□□□□","color":"red"}]'
+execute if score $mt.display mt.health matches -85..-76 run data modify entity @s text set value '[{"text":"■■□□□□□□□□","color":"red"}]'
+execute if score $mt.display mt.health matches -75..-66 run data modify entity @s text set value '[{"text":"■■■□□□□□□□","color":"red"}]'
+execute if score $mt.display mt.health matches -65..-56 run data modify entity @s text set value '[{"text":"■■■■□□□□□□","color":"red"}]'
+execute if score $mt.display mt.health matches -55..-46 run data modify entity @s text set value '[{"text":"■■■■■□□□□□","color":"red"}]'
+execute if score $mt.display mt.health matches -45..-36 run data modify entity @s text set value '[{"text":"■■■■■■□□□□","color":"red"}]'
+execute if score $mt.display mt.health matches -35..-26 run data modify entity @s text set value '[{"text":"■■■■■■■□□□","color":"red"}]'
+execute if score $mt.display mt.health matches -25..-16 run data modify entity @s text set value '[{"text":"■■■■■■■■□□","color":"red"}]'
+execute if score $mt.display mt.health matches -15..-6 run data modify entity @s text set value '[{"text":"■■■■■■■■■□","color":"red"}]'
+execute if score $mt.display mt.health matches -5.. run data modify entity @s text set value '[{"text":"■■■■■■■■■■","color":"red"}]'

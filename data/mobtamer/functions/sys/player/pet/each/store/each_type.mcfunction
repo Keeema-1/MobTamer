@@ -1,0 +1,7 @@
+execute if entity @s[type=drowned] run data modify storage mobtamer:temp data.Item.id set value "drowned_spawn_egg"
+execute if entity @s[type=husk] run data modify storage mobtamer:temp data.Item.id set value "husk_spawn_egg"
+execute if entity @s[type=skeleton] run data modify storage mobtamer:temp data.Item.id set value "skeleton_spawn_egg"
+execute if entity @s[type=stray] run data modify storage mobtamer:temp data.Item.id set value "stray_spawn_egg"
+execute if entity @s[type=zombie] run data modify storage mobtamer:temp data.Item.id set value "zombie_spawn_egg"
+execute if entity @s[type=zombie_villager] run data modify storage mobtamer:temp data.Item.id set value "zombie_villager_spawn_egg"
+execute if entity @s[type=zombified_piglin] run data modify storage mobtamer:temp data.Item.id set value "zombified_piglin_spawn_egg"

@@ -1,0 +1,9 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "vehicle": {
+          "type": "#mobtamer:all_mobs_and_player"
+        }
+    }
+}

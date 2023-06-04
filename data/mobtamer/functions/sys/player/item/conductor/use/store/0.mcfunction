@@ -1,0 +1,1 @@
+function mobtamer:sys/player/item/conductor/use/store/all

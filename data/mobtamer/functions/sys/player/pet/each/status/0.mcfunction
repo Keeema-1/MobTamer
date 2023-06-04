@@ -1,0 +1,1 @@
+function mobtamer:sys/player/pet/each/status/health/0

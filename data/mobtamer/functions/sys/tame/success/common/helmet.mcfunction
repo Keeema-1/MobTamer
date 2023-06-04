@@ -1,0 +1,2 @@
+execute unless data entity @s ArmorItems[3].Count run item replace entity @s armor.head with leather_helmet{AttributeModifiers:[{AttributeName:"generic.armor",Name:"",Slot:"head"}]}
+data modify entity @s ArmorItems[3].tag.Unbreakable set value 1b

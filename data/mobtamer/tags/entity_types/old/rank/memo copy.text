@@ -1,0 +1,89 @@
+{
+  "replace": false,
+  "values": [
+    無害
+    "minecraft:bat",
+    "minecraft:cat",
+    "minecraft:zombie_horse",
+    "minecraft:chicken",
+    "minecraft:tropical_fish",
+    "minecraft:turtle",
+    "minecraft:cod",
+    "minecraft:cow",
+    "minecraft:wandering_trader",
+    "minecraft:donkey",
+    "minecraft:fox",
+    "minecraft:villager",
+    "minecraft:giant",
+    "minecraft:pig",
+    "minecraft:horse",
+    "minecraft:salmon",
+    "minecraft:sheep",
+    "minecraft:mooshroom",
+    "minecraft:mule",
+    "minecraft:ocelot",
+    "minecraft:parrot",
+    "minecraft:pufferfish",
+    "minecraft:skeleton_horse",
+    "minecraft:strider",
+    "minecraft:squid",
+
+    攻撃可能な非モンスター
+    "minecraft:dolphin",
+    "minecraft:wolf",
+    1
+    "minecraft:rabbit",
+    "minecraft:bee",
+    "minecraft:llama",
+    "minecraft:trader_llama",
+    "minecraft:snow_golem",
+    "minecraft:panda",
+    2
+    "minecraft:polar_bear",
+    3
+    "minecraft:iron_golem",
+
+    特殊なモンスター
+    "minecraft:slime",
+    "minecraft:phantom",
+    "minecraft:magma_cube",
+    "minecraft:guardian",
+    "minecraft:ghast",
+    "minecraft:elder_guardian",
+    "minecraft:ender_dragon",
+
+    "minecraft:enderman",
+    "minecraft:creeper",
+    "minecraft:zoglin",
+    "minecraft:wither",
+
+    モンスター
+    1
+    "minecraft:zombie",
+    "minecraft:husk", 
+    "minecraft:skeleton",
+    "minecraft:spider",
+    "minecraft:zombie_villager",
+    "minecraft:silverfish",
+    "minecraft:endermite",
+    "minecraft:vex",
+    "minecraft:piglin",
+    "minecraft:pillager",
+    "minecraft:drowned",
+    "minecraft:stray",
+    "minecraft:cave_spider",
+    2
+    "minecraft:zombified_piglin"
+    "minecraft:wither_skeleton",
+    "minecraft:blaze",
+    "minecraft:vindicator",
+    "minecraft:hoglin",
+    "minecraft:shulker",
+    "minecraft:witch",
+    "minecraft:illusioner"
+    3
+    "minecraft:evoker",
+    "minecraft:piglin_brute",
+    "minecraft:ravager",
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "#mobtamer:common/air",
+    "#mobtamer:common/plants_no_collision/all",
+    "#mobtamer:common/torches",
+    "minecraft:sea_pickle",
+    "minecraft:ladder",
+    "minecraft:snow",
+    "minecraft:lever",
+    "minecraft:tripwire_hook",
+	  "minecraft:tripwire",
+    "#minecraft:pressure_plates",
+    "minecraft:repeater",
+    "minecraft:comparator",
+    "#minecraft:buttons",
+    "#minecraft:carpets",
+    "#minecraft:rails",
+    "#minecraft:banners",
+	  "#minecraft:all_signs",
+    "minecraft:light"
+  ]
+}
