@@ -1,0 +1,7 @@
+
+execute unless predicate mobtamer:passenger_is_text_display if entity @s[type=!#mobtamer:hitbox/human_tall] summon text_display run function mobtamer:sys/player/pet/each/status/display/summon
+execute unless predicate mobtamer:passenger_is_text_display if entity @s[type=#mobtamer:hitbox/human_tall] summon text_display run function mobtamer:sys/player/pet/each/status/display/summon_tall
+
+execute if predicate mobtamer:targeting_not_common_team on passengers if entity @s[type=text_display] run data modify entity @s text set value '["",{"text":"⚔ ","color": "red"},{"text":"♥","color": "red"},{"score":{"name": "$mt.display","objective": "mt.health"},"color": "green"},{"text":"/"},{"score":{"name": "$mt.display","objective": "mt.max_health"}}]'
+execute if entity @s[tag=mt.stop] unless predicate mobtamer:targeting_not_common_team on passengers if entity @s[type=text_display] run data modify entity @s text set value '["",{"text":"⚓ ","color": "white"},{"text":"♥","color": "red"},{"score":{"name": "$mt.display","objective": "mt.health"},"color": "green"},{"text":"/"},{"score":{"name": "$mt.display","objective": "mt.max_health"}}]'
+execute if entity @s[tag=!mt.stop] unless predicate mobtamer:targeting_not_common_team on passengers if entity @s[type=text_display] run data modify entity @s text set value '["",{"text":"♥","color": "red"},{"score":{"name": "$mt.display","objective": "mt.health"},"color": "green"},{"text":"/"},{"score":{"name": "$mt.display","objective": "mt.max_health"}}]'

@@ -1,0 +1,1 @@
+execute as @e[team=mt.common,tag=mt.player_check,tag=mt.pet] run data remove entity @s Glowing

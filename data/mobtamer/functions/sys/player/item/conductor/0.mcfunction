@@ -5,16 +5,17 @@ execute store result score $mt.conductor.mode1 mt.score run data get storage mob
 execute store result score $mt.conductor.mode2 mt.score run data get storage mobtamer:temp data.item_tag.mt_state.mode2
 execute store result score $mt.conductor.slot mt.score run data get storage mobtamer:temp data.item_tag.mt_state.slot
 
-#execute if score $mt.conductor.mode mt.score matches 0 run title @a actionbar [{"text":"モード：停止"},{"score":{"name": "$mt.conductor.mode","objective": "mt.score"}}]
-execute if score $mt.conductor.mode1 mt.score matches 0 run title @a[tag=mt.player_check] actionbar [{"text":"モード：停止"}]
-execute if score $mt.conductor.mode1 mt.score matches 1 run title @a[tag=mt.player_check] actionbar [{"text":"モード：格納"}]
-execute if score $mt.conductor.mode1 mt.score matches 2 as @e[team=mt.common,tag=mt.player_check,tag=mt.pet,sort=nearest,limit=1] run function mobtamer:sys/player/item/conductor/title/2
-
+function mobtamer:sys/player/item/conductor/title/0
 execute anchored eyes positioned ^ ^ ^ as @e[type=fishing_bobber,distance=..1] run function mobtamer:sys/player/item/conductor/use_check
+
+execute if score @s mt.sneak_time matches 1..8 unless predicate mobtamer:is_sneaking run function mobtamer:sys/player/item/conductor/short_sneak/0
+
+function mobtamer:sys/player/item/conductor/always/0
 
 scoreboard players reset $mt.conductor.mode1 mt.score
 scoreboard players reset $mt.conductor.mode2 mt.score
 scoreboard players reset $mt.conductor.slot mt.score
 data remove storage mobtamer:temp data.item_tag
 
+# Qキーでのドロップ検知，セレクトペットのGlowing解除
 tag @s add mt.handitem_was_conductor

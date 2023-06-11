@@ -1,1 +1,2 @@
-function mobtamer:sys/player/item/conductor/use/store/all
+execute unless entity @e[team=mt.common,tag=mt.selected,tag=mt.player_check,tag=mt.pet] run function mobtamer:sys/player/item/conductor/use/store/all
+execute as @e[team=mt.common,tag=mt.selected,tag=mt.player_check,tag=mt.pet] run function mobtamer:sys/player/item/conductor/use/store/selected

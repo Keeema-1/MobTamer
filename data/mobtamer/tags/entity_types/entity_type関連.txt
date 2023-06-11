@@ -1,1 +1,0 @@
-sys/player/pet/each/store/src.mcfunction

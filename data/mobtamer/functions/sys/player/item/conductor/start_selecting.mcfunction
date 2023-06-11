@@ -1,0 +1,2 @@
+execute as @e[team=mt.common,tag=mt.player_check,tag=mt.pet] run data remove entity @s Glowing
+execute as @e[team=mt.common,tag=mt.selected,tag=mt.player_check,tag=mt.pet] run data modify entity @s Glowing set value 1b

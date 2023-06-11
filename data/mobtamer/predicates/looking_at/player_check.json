@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type_specific": {
+        "type": "player",
+        "looking_at": {
+          "nbt": "{Tags:[\"mt.player_check\"]}",
+          "team": "mt.common"
+        }
+      }
+    }
+  }
+  

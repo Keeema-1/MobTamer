@@ -4,4 +4,6 @@
 data modify storage mobtamer:settings data merge value {forceload_pet_chunk:1b}
 forceload remove all
 
+scoreboard players set $mt.sys mt.slot 6
+
 tellraw @a "設定が初期化されました。"

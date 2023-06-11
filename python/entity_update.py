@@ -56,6 +56,14 @@ if(1):
         f.writelines(output)
 
 if(1):
+    output = filter_name_list(get_column_as_np('Can Revenge') == 1)
+    write_entity_types_json(output, 'can_revenge')
+
+if(1):
+    output = filter_name_list(get_column_as_np('Can Fly') == 1)
+    write_entity_types_json(output, 'can_fly')
+
+if(1):
     tmp_list = filter_name_list(get_column_as_np('Mob') == 1)
     # tags/entity_types/all_mobs
     write_entity_types_json(tmp_list, 'all_mobs')
