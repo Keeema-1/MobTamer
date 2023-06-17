@@ -1,4 +1,5 @@
 execute if data storage mobtamer:settings data{forceload_pet_chunk:1b} run forceload remove all
+execute as @e[type=text_display,tag=mt.pet_display] at @s run function mobtamer:sys/display/0
 execute as @a at @s run function mobtamer:sys/player/tick
 scoreboard players reset * mt.login
 scoreboard players set @a mt.login 1

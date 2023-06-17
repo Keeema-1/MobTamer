@@ -1,7 +1,6 @@
 
-execute unless predicate mobtamer:passenger_is_text_display if entity @s[type=!#mobtamer:hitbox/human_tall] summon text_display run function mobtamer:sys/player/pet/each/status/display/summon
-execute unless predicate mobtamer:passenger_is_text_display if entity @s[type=#mobtamer:hitbox/human_tall] summon text_display run function mobtamer:sys/player/pet/each/status/display/summon_tall
-
-execute if predicate mobtamer:targeting_not_common_team on passengers if entity @s[type=text_display] run data modify entity @s text set value '["",{"text":"⚔ ","color": "red"},{"text":"♥","color": "red"},{"score":{"name": "$mt.display","objective": "mt.health"},"color": "green"},{"text":"/"},{"score":{"name": "$mt.display","objective": "mt.max_health"}}]'
-execute if entity @s[tag=mt.stop] unless predicate mobtamer:targeting_not_common_team on passengers if entity @s[type=text_display] run data modify entity @s text set value '["",{"text":"⚓ ","color": "white"},{"text":"♥","color": "red"},{"score":{"name": "$mt.display","objective": "mt.health"},"color": "green"},{"text":"/"},{"score":{"name": "$mt.display","objective": "mt.max_health"}}]'
-execute if entity @s[tag=!mt.stop] unless predicate mobtamer:targeting_not_common_team on passengers if entity @s[type=text_display] run data modify entity @s text set value '["",{"text":"♥","color": "red"},{"score":{"name": "$mt.display","objective": "mt.health"},"color": "green"},{"text":"/"},{"score":{"name": "$mt.display","objective": "mt.max_health"}}]'
+execute if score @s mt.health < @s mt.max_health anchored eyes rotated ~ 0 run function mobtamer:sys/player/pet/each/status/display/summon/0
+execute if entity @s[tag=mt.display_exist] run return 1
+execute if entity @s[tag=mt.stop] anchored eyes rotated ~ 0 run function mobtamer:sys/player/pet/each/status/display/summon/0
+execute if entity @s[tag=mt.display_exist] run return 1
+execute if predicate mobtamer:targeting_not_common_team anchored eyes rotated ~ 0 run function mobtamer:sys/player/pet/each/status/display/summon/0
