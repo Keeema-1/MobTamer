@@ -1,11 +1,9 @@
-tellraw @a [{"selector":"@s"},{"text":" のテイムに成功しました！"}]
+# tellraw @a [{"selector":"@s"},{"text":" のテイムに成功しました！"}]
 
-# scoreboard players operation @s mt.id = $mt.player mt.id
 data merge entity @s {Tags:["mt.pet"],AbsorptionAmount:0f,PersistenceRequired:1b,CustomNameVisible:1b,ArmorDropChances:[0f,0f,0f,0f],HandDropChances:[0f,0f],IsImmuneToZombification:1b}
 
-#particle minecraft:heart ~ ~0.5 ~ 0.5 0.5 0.5 0.002 10
-particle minecraft:totem_of_undying ~ ~2 ~ 0.2 0.2 0.2 0.5 30
-playsound entity.player.levelup master @a ~ ~ ~ 1 1
+# particle minecraft:totem_of_undying ~ ~2 ~ 0.2 0.2 0.2 0.5 30
+# playsound entity.player.levelup master @a ~ ~ ~ 1 1
 
 execute store result score @s mt.max_health run attribute @s generic.max_health base get 100
 scoreboard players operation @s mt.health = @s mt.max_health

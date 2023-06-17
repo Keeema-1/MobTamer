@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "allay"
+        "allay",
+        "camel"
     ]
 }
