@@ -6,7 +6,7 @@ execute store result score $mt.conductor.mode2 mt.score run data get storage mob
 execute store result score $mt.conductor.slot mt.score run data get storage mobtamer:temp data.item_tag.mt_state.slot
 
 function mobtamer:sys/player/item/conductor/title/0
-execute anchored eyes positioned ^ ^ ^ as @e[type=fishing_bobber,distance=..1] run function mobtamer:sys/player/item/conductor/use_check
+execute anchored eyes positioned ^ ^ ^ as @e[type=fishing_bobber,distance=..2] run function mobtamer:sys/player/item/conductor/use_check
 
 execute if score @s mt.sneak_time matches 1..8 unless predicate mobtamer:is_sneaking run function mobtamer:sys/player/item/conductor/short_sneak/0
 

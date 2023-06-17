@@ -9,7 +9,8 @@ execute store result score $mt.speed mt.score run attribute @s generic.movement_
 scoreboard players operation $mt.motion.x mt.score *= $mt.speed mt.score
 scoreboard players operation $mt.motion.z mt.score *= $mt.speed mt.score
 
-execute if entity @s[type=phantom] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/fly/speed/1
+function mobtamer:sys/player/item/conductor/always/ride/riding/move/fly/speed/1
+execute if entity @s[type=allay] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/fly/speed/2
 
 # title @a actionbar [{"storage":"mobtamer:temp","nbt":"data.Motion"}]
 

@@ -15,9 +15,14 @@ scoreboard players operation $mt.pos.to.z mt.score -= $mt.pos.from.z mt.score
 execute store result storage mobtamer:temp data.pet.Motion[0] double 0.0003 run scoreboard players get $mt.pos.to.x mt.score
 execute store result storage mobtamer:temp data.pet.Motion[2] double 0.0003 run scoreboard players get $mt.pos.to.z mt.score
 
+execute if entity @s[type=#mobtamer:can_fly] run function mobtamer:sys/player/pet/each/follow/100_fly
+
 data modify entity @s Motion set from storage mobtamer:temp data.pet.Motion
 
 scoreboard players reset $mt.pos.from.x mt.score
 scoreboard players reset $mt.pos.from.z mt.score
 scoreboard players reset $mt.pos.to.x mt.score
 scoreboard players reset $mt.pos.to.z mt.score
+
+scoreboard players reset $mt.pos.from.y mt.score
+scoreboard players reset $mt.pos.to.y mt.score
