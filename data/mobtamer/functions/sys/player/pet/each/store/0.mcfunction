@@ -5,6 +5,7 @@ data merge entity @s {Silent:1b,DeathLootTable:"empty"}
 execute on passengers if entity @s[type=text_display] run kill @s
 execute on passengers run ride @s dismount
 tp ~ -128 ~
+execute if entity @s[type=#mobtamer:slimes] run data modify entity @s Size set value 0
 kill @s
 tag @e[type=item,tag=mt.new,distance=..1] remove mt.new
 data remove storage mobtamer:temp data.Item

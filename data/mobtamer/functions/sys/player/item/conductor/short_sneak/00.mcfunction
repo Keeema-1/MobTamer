@@ -1,5 +1,5 @@
 
-execute as @e[team=mt.common,tag=mt.player_check,tag=mt.pet] run data remove entity @s Glowing
+execute as @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=!mt.down] run data remove entity @s Glowing
 tag @e[team=mt.common,tag=mt.player_check] remove mt.selected
 
 execute if predicate mobtamer:looking_at/player_check at @s anchored eyes run function mobtamer:sys/player/item/conductor/short_sneak/looking_check/0

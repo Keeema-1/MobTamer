@@ -11,11 +11,21 @@ data modify storage mobtamer:temp data.Item.Count set value 1b
 data modify storage mobtamer:temp data.Item.tag.EntityTag.CustomName set from entity @s CustomName
 data modify storage mobtamer:temp data.Item.tag.EntityTag.CustomNameVisible set from entity @s CustomNameVisible
 data modify storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems set from entity @s ArmorItems
+data modify storage mobtamer:temp data.Item.tag.EntityTag.HandItems set from entity @s HandItems
 data modify storage mobtamer:temp data.Item.tag.EntityTag.IsBaby set from entity @s IsBaby
 data modify storage mobtamer:temp data.Item.tag.EntityTag.ArmorDropChances set from entity @s ArmorDropChances
 data modify storage mobtamer:temp data.Item.tag.EntityTag.HandDropChances set from entity @s HandDropChances
 data modify storage mobtamer:temp data.Item.tag.EntityTag.IsImmuneToZombification set from entity @s IsImmuneToZombification
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Attributes set from entity @s Attributes
+data modify storage mobtamer:temp data.Item.tag.EntityTag.SaddleItem set from entity @s SaddleItem
+data modify storage mobtamer:temp data.Item.tag.EntityTag.Variant set from entity @s Variant
+data modify storage mobtamer:temp data.Item.tag.EntityTag.Strength set from entity @s Strength
+data modify storage mobtamer:temp data.Item.tag.EntityTag.Tame set from entity @s Tame
+data modify storage mobtamer:temp data.Item.tag.EntityTag.Items set from entity @s Items
+data modify storage mobtamer:temp data.Item.tag.EntityTag.DecorItem set from entity @s DecorItem
+data modify storage mobtamer:temp data.Item.tag.EntityTag.ChestedHorse set from entity @s ChestedHorse
+data modify storage mobtamer:temp data.Item.tag.EntityTag.MainGene set from entity @s MainGene
+data modify storage mobtamer:temp data.Item.tag.EntityTag.HiddenGene set from entity @s HiddenGene
 # data modify storage mobtamer:temp data.Item.tag.EntityTag.ActiveEffects set value [{Duration:3,Id:14,ShowParticles:0b,Amplifier:1}]
 data modify storage mobtamer:temp data.Item.tag.EntityTag.PersistenceRequired set value 1b
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Passengers set value []

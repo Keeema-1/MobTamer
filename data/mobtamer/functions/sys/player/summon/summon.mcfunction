@@ -20,6 +20,10 @@ execute unless score @s mt.slot <= $mt.sys mt.slot run function mobtamer:sys/pla
 scoreboard players reset $mt.new mt.slot
 
 execute if entity @s[type=phantom] run effect give @s fire_resistance infinite 1 true
+execute if entity @s[type=fox] run data modify entity @s Trusted append from entity @a[tag=mt.player_check,limit=1] UUID
+execute if entity @s[type=fox] run data modify entity @s Trusted append from entity @a[tag=mt.player_check,limit=1] UUID
+data modify entity @s Owner set from entity @a[tag=mt.player_check,limit=1] UUID
+
 
 execute if entity @s[tag=mt.down] run function mobtamer:sys/player/pet/each/down/down/0
 

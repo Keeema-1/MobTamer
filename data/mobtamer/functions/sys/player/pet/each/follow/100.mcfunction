@@ -16,6 +16,7 @@ execute store result storage mobtamer:temp data.pet.Motion[0] double 0.0003 run 
 execute store result storage mobtamer:temp data.pet.Motion[2] double 0.0003 run scoreboard players get $mt.pos.to.z mt.score
 
 execute if entity @s[type=#mobtamer:can_fly] run function mobtamer:sys/player/pet/each/follow/100_fly
+execute if entity @s[type=#mobtamer:can_swim] if predicate mobtamer:location_water run function mobtamer:sys/player/pet/each/follow/100_fly
 
 data modify entity @s Motion set from storage mobtamer:temp data.pet.Motion
 

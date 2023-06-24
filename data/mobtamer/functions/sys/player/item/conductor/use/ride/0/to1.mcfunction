@@ -7,5 +7,5 @@ execute unless entity @e[team=mt.common,tag=mt.selected,tag=mt.player_check,tag=
 execute if data storage mobtamer:temp data.player.SelectedItem{tag:{mt_conductor:1b}} run item modify entity @s weapon.mainhand mobtamer:conductor/state
 execute unless data storage mobtamer:temp data.player.SelectedItem{tag:{mt_conductor:1b}} if data storage mobtamer:temp data.player.Inventory[{Slot:-106b,tag:{mt_conductor:1b}}] run item modify entity @s weapon.offhand mobtamer:conductor/state
 
-execute as @e[team=mt.common,tag=mt.selected,tag=mt.player_check] run data remove entity @s Glowing 
+execute as @e[team=mt.common,tag=mt.selected,tag=mt.player_check,tag=!mt.down] run data remove entity @s Glowing 
 tag @e[team=mt.common,tag=mt.selected,tag=mt.player_check] remove mt.selected

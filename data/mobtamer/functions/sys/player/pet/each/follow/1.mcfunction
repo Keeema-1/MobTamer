@@ -1,3 +1,4 @@
 execute if entity @s[type=!#mobtamer:can_fly] if data storage mobtamer:temp data.pet{OnGround:1b} facing entity @a[tag=mt.player_check,limit=1] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 execute if entity @s[type=#mobtamer:can_fly] facing entity @a[tag=mt.player_check,limit=1] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
+execute if entity @s[type=#mobtamer:can_swim] if predicate mobtamer:location_water facing entity @a[tag=mt.player_check,limit=1] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 execute facing entity @a[tag=mt.player_check,limit=1] eyes rotated ~ 0 positioned ^ ^ ^0.8 positioned ~ ~0.1 ~ unless block ~ ~-1 ~ #mobtamer:common/dangerous unless block ~ ~ ~ #mobtamer:common/dangerous unless block ~ ~1 ~ #mobtamer:common/dangerous unless block ~ ~2 ~ #mobtamer:common/dangerous run function mobtamer:sys/player/pet/each/follow/10

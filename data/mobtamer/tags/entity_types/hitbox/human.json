@@ -13,12 +13,12 @@
         "skeleton",
         "snow_golem",
         "stray",
-        "villager",
         "vindicator",
-        "wandering_trader",
         "witch",
         "zombie",
         "zombie_villager",
-        "zombified_piglin"
+        "zombified_piglin",
+        "villager",
+        "wandering_trader"
     ]
 }

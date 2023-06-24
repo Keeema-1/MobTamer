@@ -6,3 +6,5 @@ execute if entity @s[type=skeleton] if block ~ ~0.5 ~ powder_snow if predicate m
 execute if entity @s[type=#mobtamer:breathe_underwater] unless predicate mobtamer:location_water if predicate mobtamer:random/100m run data modify entity @s Air set value 1000s
 
 execute if entity @s[type=bee] if entity @s[nbt={HasStung:1b}] run data merge entity @s {HasStung:0b,TicksSincePollination:0}
+
+execute if entity @s[type=fox,tag=mt.following] run function mobtamer:sys/player/pet/each/unique/fox
