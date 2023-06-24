@@ -1,0 +1,1 @@
+data modify storage mobtamer:database data.item.settings set value {title:"【モブテイマー】データパック設定",author:"",filtered_title:"title",pages:['["",{"text":"[子供ペットの成長]","color": "light_purple","clickEvent":{"action": "run_command","value": "/trigger mt.trigger set 1"}}]'],HideFlags:32}

@@ -1,0 +1,38 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:fishing_rod",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{mt_conductor:1b}"
+              },
+              {
+                "function": "minecraft:copy_nbt",
+                "source": {
+                  "type": "minecraft:storage",
+                  "source": "mobtamer:database"
+                },
+                "ops": [
+                  {
+                    "source": "data.item.conductor.display",
+                    "target": "display",
+                    "op": "replace"
+                  },{
+                    "source": "data.item.conductor.HideFlags",
+                    "target": "HideFlags",
+                    "op": "replace"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

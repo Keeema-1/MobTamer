@@ -1,0 +1,4 @@
+data modify storage mobtamer:database data.item.manual set value {title:"モブテイマーの指南書",author:"",filtered_title:"title",pages:[],HideFlags:32}
+data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"はじめに\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　本データパックを有効にすると、一部のモブをテイムできるようになります。\\n"}]'
+data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"テイム方法-1\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　テイム可能なモブに金のリンゴを投げると、テイムチャレンジが始まります。\\n"},{"text":"　テイムチャレンジを成功させると、そのモブはあなたのペットになります。\\n"}]'
+data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"テイム方法-2\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　テイムチャレンジの成功条件/失敗条件は以下の通りです。\\n"},{"text":"\\n"},{"text":"成功条件:\\n"},{"text":"・そのモブのHPを一定量減少させる\\n"},{"text":"\\n"},{"text":"失敗条件:\\n"},{"text":"・成功しないまま60秒が経過する\\n"}]'

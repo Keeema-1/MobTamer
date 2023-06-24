@@ -4,9 +4,9 @@ scoreboard players add $mt.sys mt.id 1
 give @s golden_apple
 function mobtamer:command/give/conductor
 
-tellraw @s ["",{"storage":"mobtamer:text","nbt":"data.welcome.0[0]","interpret": true,"color": "green","italic": true}]
-tellraw @s ["",{"storage":"mobtamer:text","nbt":"data.welcome.1[0]","interpret": true,"color": "green","italic": true},{"translate":"item.minecraft.golden_apple","color": "aqua","italic":true},{"storage":"mobtamer:text","nbt":"data.welcome.1[1]","interpret": true,"color": "green","italic": true}]
-tellraw @s ["",{"storage":"mobtamer:text","nbt":"data.welcome.2[0]","interpret": true,"color": "green","italic": true}]
-tellraw @s ["",{"storage":"mobtamer:text","nbt":"data.welcome.3[0]","interpret": true,"color": "green","italic": true}]
+tellraw @s ["",{"text":"モブテイマーの世界へようこそ！","color": "green","italic": true}]
+tellraw @s ["",{"text":"この世界では、","color": "green","italic": true},{"translate":"item.minecraft.golden_apple","color": "aqua","italic":true},{"text":"を使って一部のモブをテイムすることができます。","color": "green","italic": true}]
+tellraw @s ["",{"text":"テイムしたモブはあなたのペットとなり、連れて歩いたり、共に戦わせることができるようになります。","color": "green","italic": true}]
+tellraw @s ["",{"text":"わからないことがあれば、モブテイマーの指南書があなたを導いてくれるでしょう。","color": "green","italic": true}]
 
 function mobtamer:command/give/manual

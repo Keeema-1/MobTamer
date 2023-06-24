@@ -21,6 +21,8 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.SaddleItem set from en
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Variant set from entity @s Variant
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Strength set from entity @s Strength
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Tame set from entity @s Tame
+data modify storage mobtamer:temp data.Item.tag.EntityTag.Age set from entity @s Age
+execute if data storage mobtamer:settings data{baby_grow:0b} unless data storage mobtamer:temp data.Item.tag.EntityTag{Age:0} run data modify storage mobtamer:temp data.Item.tag.EntityTag.Age set value -1000000
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Items set from entity @s Items
 data modify storage mobtamer:temp data.Item.tag.EntityTag.DecorItem set from entity @s DecorItem
 data modify storage mobtamer:temp data.Item.tag.EntityTag.ChestedHorse set from entity @s ChestedHorse

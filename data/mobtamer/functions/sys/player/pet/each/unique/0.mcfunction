@@ -8,3 +8,5 @@ execute if entity @s[type=#mobtamer:breathe_underwater] unless predicate mobtame
 execute if entity @s[type=bee] if entity @s[nbt={HasStung:1b}] run data merge entity @s {HasStung:0b,TicksSincePollination:0}
 
 execute if entity @s[type=fox,tag=mt.following] run function mobtamer:sys/player/pet/each/unique/fox
+
+execute if predicate mobtamer:random/1m if data storage mobtamer:settings data{baby_grow:0b} if predicate mobtamer:is_baby run data modify entity @s Age set value -100000

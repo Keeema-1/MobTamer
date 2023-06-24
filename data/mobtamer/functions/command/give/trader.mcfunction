@@ -1,0 +1,1 @@
+loot spawn ~ ~ ~ loot mobtamer:item/trader

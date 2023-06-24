@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "allay",
+        "villager",
+        "wandering_trader",
+        "iron_golem",
+        "snow_golem",
+        "cat"
+    ]
+}

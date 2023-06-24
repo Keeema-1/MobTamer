@@ -1,0 +1,46 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "minecraft:copy_nbt",
+                "source": {
+                  "type": "minecraft:storage",
+                  "source": "mobtamer:database"
+                },
+                "ops": [
+                  {
+                    "source": "data.item.manual.title",
+                    "target": "title",
+                    "op": "replace"
+                  },{
+                    "source": "data.item.manual.author",
+                    "target": "author",
+                    "op": "replace"
+                  },{
+                    "source": "data.item.manual.filtered_title",
+                    "target": "filtered_title",
+                    "op": "replace"
+                  },{
+                    "source": "data.item.manual.pages",
+                    "target": "pages",
+                    "op": "replace"
+                  },{
+                    "source": "data.item.manual.HideFlags",
+                    "target": "HideFlags",
+                    "op": "replace"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
