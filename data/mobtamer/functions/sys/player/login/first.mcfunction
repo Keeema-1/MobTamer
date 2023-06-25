@@ -10,3 +10,4 @@ tellraw @s ["",{"text":"テイムしたモブはあなたのペットとなり�
 tellraw @s ["",{"text":"わからないことがあれば、モブテイマーの指南書があなたを導いてくれるでしょう。","color": "green","italic": true}]
 
 function mobtamer:command/give/manual
+function mobtamer:command/give/settings

@@ -1,0 +1,117 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": [
+        {
+          "selector": "@s"
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "  ❤",
+            "color": "red",
+            "italic": false
+          },{
+            "text": "HP ",
+            "color": "blue",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "@s",
+              "objective": "mt.health"
+            },
+            "color": "green",
+            "italic": false
+          },
+          {
+            "text": "/",
+            "color": "white",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "@s",
+              "objective": "mt.max_health"
+            },
+            "color": "aqua",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "  🗡",
+            "color": "white",
+            "italic": false
+          },
+          {
+            "text": "近接攻撃力 ",
+            "color": "blue",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "$mt.pet.attack",
+              "objective": "mt.score"
+            },
+            "color": "aqua",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "  💨",
+            "color": "white",
+            "italic": false
+          },
+          {
+            "text": "移動速度 ",
+            "color": "blue",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "$mt.pet.speed",
+              "objective": "mt.score"
+            },
+            "color": "aqua",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "  🛡",
+            "color": "white",
+            "italic": false
+          },
+          {
+            "text": "防御力 ",
+            "color": "blue",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "$mt.pet.attack",
+              "objective": "mt.score"
+            },
+            "color": "aqua",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "  ",
+            "color": "white",
+            "italic": false
+          }
+        ]
+      ]
+    }
+  ]
+  

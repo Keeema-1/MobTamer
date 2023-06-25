@@ -41,7 +41,27 @@ execute if entity @s[tag=mt.down] run data modify storage mobtamer:temp data.Ite
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags set from entity @s Tags
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags append value "mt.was_stored"
 
-#data modify storage mobtamer:temp data.Item.tag.EntityTag.PortalCooldown set from 
-#execute store result storage mobtamer:temp data.Item.tag.EntityTag.PortalCooldown int 1 run scoreboard players get @s mt.id
+# data modify storage mobtamer:temp data.Item.tag.display.Lore set value []
+# data modify storage mobtamer:temp data.Item.tag.display.Lore append value '[{"text":"テスト"}]'
+# data modify storage mobtamer:temp data.Item.tag.display.Lore append value '[{"score":{"objective":"","name":""}}]'
 
-# mt.player_checkなどもついたまま
+# Lore
+    scoreboard players set $mt.const mt.score 100
+    scoreboard players operation @s mt.health /= $mt.const mt.score
+    scoreboard players operation @s mt.max_health /= $mt.const mt.score
+
+    execute store result score $mt.pet.attack mt.score run attribute @s generic.attack_damage get 1
+    execute store result score $mt.pet.knockback mt.score run attribute @s generic.attack_knockback get 2
+    execute store result score $mt.pet.speed mt.score run attribute @s generic.movement_speed get 100
+    execute store result score $mt.pet.armor mt.score run attribute @s generic.armor get 1
+
+    item replace entity @s weapon.mainhand with stick
+    item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store
+    # data modify storage mobtamer:temp data.Item.tag.display.Lore set from entity @s HandItems[0].tag.display.Lore
+    data modify storage mobtamer:temp data.Item.tag.display set from entity @s HandItems[0].tag.display
+
+    scoreboard players reset $mt.pet.attack mt.score
+    scoreboard players reset $mt.pet.knockback mt.score
+    scoreboard players reset $mt.pet.speed mt.score
+    scoreboard players reset $mt.pet.armor mt.score
+    scoreboard players reset $mt.const mt.score
