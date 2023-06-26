@@ -21,6 +21,7 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.SaddleItem set from en
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Variant set from entity @s Variant
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Strength set from entity @s Strength
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Tame set from entity @s Tame
+data modify storage mobtamer:temp data.Item.tag.EntityTag.Size set from entity @s Size
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Age set from entity @s Age
 execute if data storage mobtamer:settings data{baby_grow:0b} unless data storage mobtamer:temp data.Item.tag.EntityTag{Age:0} run data modify storage mobtamer:temp data.Item.tag.EntityTag.Age set value -1000000
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Items set from entity @s Items
@@ -49,6 +50,7 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags append value "mt.
     scoreboard players set $mt.const mt.score 100
     scoreboard players operation @s mt.health /= $mt.const mt.score
     scoreboard players operation @s mt.max_health /= $mt.const mt.score
+    execute if score @s mt.health matches ..-1 run scoreboard players set @s mt.health 0
 
     execute store result score $mt.pet.attack mt.score run attribute @s generic.attack_damage get 1
     execute store result score $mt.pet.knockback mt.score run attribute @s generic.attack_knockback get 2

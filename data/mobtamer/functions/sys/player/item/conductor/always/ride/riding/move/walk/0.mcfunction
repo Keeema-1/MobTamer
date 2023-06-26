@@ -1,5 +1,6 @@
 
 execute if entity @s[nbt={OnGround:1b}] positioned as @s run tp @s ~ ~ ~ ~ 0
+data modify entity @s Rotation[0] set from storage mobtamer:temp data.player.Rotation[0]
 
 data modify storage mobtamer:temp data.Motion set from entity @s Motion
 execute store result score $mt.motion.x mt.score run data get storage mobtamer:temp data.player.Motion[0] 10000
