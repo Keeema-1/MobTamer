@@ -55,6 +55,21 @@ if(1):
     with open(path, 'w', encoding='utf-8') as f:
         f.writelines(output)
 
+    # command tame
+    for entity_name in can_tame_list:
+        output = []
+        output.append('summon ' + entity_name + '\n')
+        output.append('execute as @e[team=!mt.common,type=' + entity_name + ',tag=!mt.pet,sort=nearest,distance=..8,limit=1] run function mobtamer:sys/tame/success/common/0\n')
+        path = '../data/mobtamer/functions/command/tame/summon/' + entity_name + '.mcfunction'
+        with open(path, 'w', encoding='utf-8') as f:
+            f.writelines(output)
+    output = []
+    for entity_name in can_tame_list:
+        output.append('function mobtamer:command/tame/summon/' + entity_name + '\n')
+    path = '../data/mobtamer/functions/command/tame/summon/all.mcfunction'
+    with open(path, 'w', encoding='utf-8') as f:
+        f.writelines(output)
+
 if(1):
     output = filter_name_list(get_column_as_np('Can Revenge') == 1)
     write_entity_types_json(output, 'can_revenge')

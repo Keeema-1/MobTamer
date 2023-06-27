@@ -9,4 +9,6 @@ execute if entity @s[type=bee] if entity @s[nbt={HasStung:1b}] run data merge en
 
 execute if entity @s[type=fox,tag=mt.following] run function mobtamer:sys/player/pet/each/unique/fox
 
+execute if entity @s[type=wolf,tag=mt.following] if data entity @s {Sitting:1b} run data modify entity @s Sitting set value 0b
+
 execute if predicate mobtamer:random/1m if data storage mobtamer:settings data{baby_grow:0b} if predicate mobtamer:is_baby run data modify entity @s Age set value -100000
