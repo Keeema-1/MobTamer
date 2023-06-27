@@ -109,5 +109,42 @@
         }
       }
     ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【メインハンド】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.trident"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:trident"
+              ]
+            }
+          }
+        }
+      }
+    ]
   }
 ]
