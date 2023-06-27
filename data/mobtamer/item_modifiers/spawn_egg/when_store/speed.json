@@ -1,0 +1,29 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "移動速度 ",
+          "color": "yellow",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.speed",
+            "objective": "mt.score"
+          },
+          "color": "aqua",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false
+  }
+]

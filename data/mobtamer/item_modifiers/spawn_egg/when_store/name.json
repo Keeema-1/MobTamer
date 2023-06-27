@@ -1,0 +1,32 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+      {
+        "selector": "@s"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+      {
+        "selector": "@s",
+        "color": "red"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "mt.health"
+        },
+        "range": 0
+      }
+    ]
+  }
+]

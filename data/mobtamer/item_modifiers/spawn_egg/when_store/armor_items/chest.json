@@ -1,0 +1,261 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【胴装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.leather_chestplate"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "chest": {
+              "items": [
+                "minecraft:leather_chestplate"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【胴装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.iron_chestplate"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "chest": {
+              "items": [
+                "minecraft:iron_chestplate"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【胴装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.golden_chestplate"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "chest": {
+              "items": [
+                "minecraft:golden_chestplate"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【胴装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.diamond_chestplate"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "chest": {
+              "items": [
+                "minecraft:diamond_chestplate"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【胴装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.netherite_chestplate"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "chest": {
+              "items": [
+                "minecraft:netherite_chestplate"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【胴装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.chainmail_chestplate"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "chest": {
+              "items": [
+                "minecraft:chainmail_chestplate"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【胴装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.elytra"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "chest": {
+              "items": [
+                "minecraft:elytra"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+]

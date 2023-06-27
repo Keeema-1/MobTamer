@@ -1,0 +1,224 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【脚装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.leather_leggings"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "legs": {
+              "items": [
+                "minecraft:leather_leggings"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【脚装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.iron_leggings"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "legs": {
+              "items": [
+                "minecraft:iron_leggings"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【脚装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.golden_leggings"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "legs": {
+              "items": [
+                "minecraft:golden_leggings"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【脚装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.diamond_leggings"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "legs": {
+              "items": [
+                "minecraft:diamond_leggings"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【脚装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.netherite_leggings"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "legs": {
+              "items": [
+                "minecraft:netherite_leggings"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【脚装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.chainmail_leggings"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "legs": {
+              "items": [
+                "minecraft:chainmail_leggings"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+]

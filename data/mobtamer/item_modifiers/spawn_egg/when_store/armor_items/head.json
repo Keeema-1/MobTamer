@@ -1,0 +1,298 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【頭装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.leather_helmet"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "items": [
+                "minecraft:leather_helmet"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【頭装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.iron_helmet"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "items": [
+                "minecraft:iron_helmet"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【頭装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.golden_helmet"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "items": [
+                "minecraft:golden_helmet"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【頭装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.diamond_helmet"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "items": [
+                "minecraft:diamond_helmet"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【頭装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.netherite_helmet"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "items": [
+                "minecraft:netherite_helmet"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【頭装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.chainmail_helmet"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "items": [
+                "minecraft:chainmail_helmet"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【頭装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.turtle_helmet"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "items": [
+                "minecraft:turtle_helmet"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "【頭装備】 ",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "translate": "item.minecraft.carved_pumpkin"
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "items": [
+                "minecraft:carved_pumpkin"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+]

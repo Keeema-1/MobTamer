@@ -53,16 +53,38 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags append value "mt.
     execute if score @s mt.health matches ..-1 run scoreboard players set @s mt.health 0
 
     execute store result score $mt.pet.attack mt.score run attribute @s generic.attack_damage get 1
+    execute store result score $mt.pet.attack.base mt.score run attribute @s generic.attack_damage base get 1
+    scoreboard players operation $mt.pet.attack.add mt.score = $mt.pet.attack mt.score
+    scoreboard players operation $mt.pet.attack.add mt.score -= $mt.pet.attack.base mt.score
     execute store result score $mt.pet.knockback mt.score run attribute @s generic.attack_knockback get 2
     execute store result score $mt.pet.speed mt.score run attribute @s generic.movement_speed get 100
     execute store result score $mt.pet.armor mt.score run attribute @s generic.armor get 1
 
     item replace entity @s weapon.mainhand with stick
-    item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store
+    # item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store
+    item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/name
+    item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/health
+    execute unless score $mt.pet.attack.add mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/attack
+    execute if score $mt.pet.attack.add mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/attack_add
+    execute if score $mt.pet.knockback mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/knockback
+    item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/speed
+    item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor
+    execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[3].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/head
+    execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[2].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/chest
+    execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[1].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/legs
+    execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[0].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/feet
+
+    # 上でmainhandを塗り替えてしまったのでなんとかする
+    data modify entity @s ArmorItems[3] set from storage mobtamer:temp data.Item.tag.EntityTag.HandItems[0]
+    execute if data storage mobtamer:temp data.Item.tag.EntityTag.HandItems[0].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/mainhand
+    data modify entity @s ArmorItems[3] set from storage mobtamer:temp data.Item.tag.EntityTag.HandItems[0]
+    execute if data storage mobtamer:temp data.Item.tag.EntityTag.HandItems[1].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/offhand
     # data modify storage mobtamer:temp data.Item.tag.display.Lore set from entity @s HandItems[0].tag.display.Lore
     data modify storage mobtamer:temp data.Item.tag.display set from entity @s HandItems[0].tag.display
 
     scoreboard players reset $mt.pet.attack mt.score
+    scoreboard players reset $mt.pet.attack.base mt.score
+    scoreboard players reset $mt.pet.attack.add mt.score
     scoreboard players reset $mt.pet.knockback mt.score
     scoreboard players reset $mt.pet.speed mt.score
     scoreboard players reset $mt.pet.armor mt.score

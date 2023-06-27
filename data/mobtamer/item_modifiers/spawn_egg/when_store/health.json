@@ -1,0 +1,83 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ❤",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "@s",
+            "objective": "mt.health"
+          },
+          "color": "green",
+          "italic": false
+        },
+        {
+          "text": "/",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "@s",
+            "objective": "mt.max_health"
+          },
+          "color": "aqua",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": true
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ❤",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "@s",
+            "objective": "mt.health"
+          },
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "/",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "@s",
+            "objective": "mt.max_health"
+          },
+          "color": "aqua",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": true,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "mt.health"
+        },
+        "range": 0
+      }
+    ]
+  }
+]
