@@ -9,5 +9,16 @@
             ["0b","オフ","gray"],
             ["1b","オン","aqua"]
         ]
+    },
+    {
+        "name":"equipment_when_tame",
+        "display":{
+            "title":"テイム時のペットの装備",
+            "detail":"スポーン時の装備のみ有効とするか否か"
+        },
+        "states":[
+            ["\"only_initial_equipment\"","スポーン時の装備のみ有効","aqua"],
+            ["\"any\"","すべて有効","aqua"]
+        ]
     }
 ]

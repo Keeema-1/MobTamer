@@ -15,6 +15,8 @@ scoreboard players set @s mt.score 1200
 # execute summon text_display run function mobtamer:sys/schedule/apple/display
 # tag @s remove mt.here
 
+execute if data storage mobtamer:settings data{equipment_when_tame:"only_initial_equipment"} run function mobtamer:sys/schedule/apple/drop_equipment/0
+
 effect give @s fire_resistance 60 1 true
 playsound minecraft:entity.fox.eat master @a ~ ~ ~ 1 1
 
