@@ -23,4 +23,4 @@ tellraw @a "Loaded: MobTamer_For20"
 # function mobtamer:sys/set_text/0
 function mobtamer:sys/database/0
 
-execute unless data storage mobtamer:settings data run function mobtamer:init_settings
+execute unless data storage mobtamer:settings data run function mobtamer:init

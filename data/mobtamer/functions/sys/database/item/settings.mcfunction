@@ -1,1 +1,2 @@
-data modify storage mobtamer:database data.item.settings set value {title:"【モブテイマー】データパック設定",author:"",filtered_title:"title",pages:['["",{"text":"[子供ペットの成長]","color": "light_purple","clickEvent":{"action": "run_command","value": "/trigger mt.trigger set 1"}}]'],HideFlags:32}
+data modify storage mobtamer:database data.item.settings set value {title:"【モブテイマー】データパック設定",author:"",filtered_title:"title",pages:[],HideFlags:32}
+data modify storage mobtamer:database data.item.settings.pages append value '["",{"text":"\\n"},{"text":"[子供ペットの成長]","color": "light_purple","clickEvent":{"action": "run_command","value": "/trigger mt.trigger set 1"},"hoverEvent": {"action": "show_text","value": "子供のペットが大人に成長するか否か"}}]'
