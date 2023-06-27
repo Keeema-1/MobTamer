@@ -15,4 +15,11 @@ scoreboard players reset $mt.health mt.score
 
 execute if entity @s[type=#mobtamer:burn_in_the_sun] run function mobtamer:sys/tame/success/common/helmet
 
+data modify entity @s ArmorItems[0].tag.Unbreakable set value 1b
+data modify entity @s ArmorItems[1].tag.Unbreakable set value 1b
+data modify entity @s ArmorItems[2].tag.Unbreakable set value 1b
+data modify entity @s ArmorItems[3].tag.Unbreakable set value 1b
+data modify entity @s HandItems[0].tag.Unbreakable set value 1b
+data modify entity @s HandItems[1].tag.Unbreakable set value 1b
+
 function mobtamer:sys/player/pet/each/store/0
