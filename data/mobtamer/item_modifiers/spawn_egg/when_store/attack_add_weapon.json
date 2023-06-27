@@ -36,6 +36,19 @@
           "italic": false
         },
         {
+          "text": "+🗡",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.attack.add.weapon",
+            "objective": "mt.score"
+          },
+          "color": "dark_green",
+          "italic": false
+        },
+        {
           "text": ")",
           "color": "dark_green",
           "italic": false

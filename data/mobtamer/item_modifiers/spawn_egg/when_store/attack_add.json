@@ -6,12 +6,12 @@
       [
         {
           "text": "  ",
-          "color": "white",
+          "color": "dark_green",
           "italic": false
         },
         {
-          "text": "近接攻撃力 ",
-          "color": "yellow",
+          "text": "攻撃力 ",
+          "color": "dark_green",
           "italic": false
         },
         {
@@ -19,12 +19,12 @@
             "name": "$mt.pet.attack",
             "objective": "mt.score"
           },
-          "color": "aqua",
+          "color": "dark_green",
           "italic": false
         },
         {
-          "text": " (",
-          "color": "white",
+          "text": " (🧍",
+          "color": "dark_green",
           "italic": false
         },
         {
@@ -32,25 +32,38 @@
             "name": "$mt.pet.attack.base",
             "objective": "mt.score"
           },
-          "color": "aqua",
+          "color": "dark_green",
           "italic": false
         },
         {
-          "text": "+",
-          "color": "white",
+          "text": "+🗡",
+          "color": "dark_green",
           "italic": false
         },
         {
           "score": {
-            "name": "$mt.pet.attack.add",
+            "name": "$mt.pet.attack.add.weapon",
             "objective": "mt.score"
           },
-          "color": "aqua",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": "+↑",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.attack.add.effect",
+            "objective": "mt.score"
+          },
+          "color": "dark_green",
           "italic": false
         },
         {
           "text": ")",
-          "color": "white",
+          "color": "dark_green",
           "italic": false
         }
       ]

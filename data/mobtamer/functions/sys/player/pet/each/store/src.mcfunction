@@ -17,6 +17,7 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.ArmorDropChances set f
 data modify storage mobtamer:temp data.Item.tag.EntityTag.HandDropChances set from entity @s HandDropChances
 data modify storage mobtamer:temp data.Item.tag.EntityTag.IsImmuneToZombification set from entity @s IsImmuneToZombification
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Attributes set from entity @s Attributes
+data modify storage mobtamer:temp data.Item.tag.EntityTag.ActiveEffects set from entity @s ActiveEffects
 data modify storage mobtamer:temp data.Item.tag.EntityTag.SaddleItem set from entity @s SaddleItem
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Variant set from entity @s Variant
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Strength set from entity @s Strength
@@ -29,6 +30,7 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.DecorItem set from ent
 data modify storage mobtamer:temp data.Item.tag.EntityTag.ChestedHorse set from entity @s ChestedHorse
 data modify storage mobtamer:temp data.Item.tag.EntityTag.MainGene set from entity @s MainGene
 data modify storage mobtamer:temp data.Item.tag.EntityTag.HiddenGene set from entity @s HiddenGene
+data modify storage mobtamer:temp data.Item.tag.EntityTag.Owner set from entity @s Owner
 # data modify storage mobtamer:temp data.Item.tag.EntityTag.ActiveEffects set value [{Duration:3,Id:14,ShowParticles:0b,Amplifier:1}]
 data modify storage mobtamer:temp data.Item.tag.EntityTag.PersistenceRequired set value 1b
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Passengers set value []
@@ -53,22 +55,41 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags append value "mt.
     execute if score @s mt.health matches ..-1 run scoreboard players set @s mt.health 0
 
     execute store result score $mt.pet.attack mt.score run attribute @s generic.attack_damage get 1
-    execute store result score $mt.pet.attack.base mt.score run attribute @s generic.attack_damage base get 1
-    scoreboard players operation $mt.pet.attack.add mt.score = $mt.pet.attack mt.score
-    scoreboard players operation $mt.pet.attack.add mt.score -= $mt.pet.attack.base mt.score
     execute store result score $mt.pet.knockback mt.score run attribute @s generic.attack_knockback get 2
     execute store result score $mt.pet.speed mt.score run attribute @s generic.movement_speed get 100
     execute store result score $mt.pet.armor mt.score run attribute @s generic.armor get 1
+    effect clear @s
+    execute store result score $mt.pet.attack.no_effect mt.score run attribute @s generic.attack_damage get 1
+    execute store result score $mt.pet.attack.base mt.score run attribute @s generic.attack_damage base get 1
+    scoreboard players operation $mt.pet.attack.add mt.score = $mt.pet.attack mt.score
+    scoreboard players operation $mt.pet.attack.add mt.score -= $mt.pet.attack.base mt.score
+    scoreboard players operation $mt.pet.attack.add.weapon mt.score = $mt.pet.attack.no_effect mt.score
+    scoreboard players operation $mt.pet.attack.add.weapon mt.score -= $mt.pet.attack.base mt.score
+    scoreboard players operation $mt.pet.attack.add.effect mt.score = $mt.pet.attack mt.score
+    scoreboard players operation $mt.pet.attack.add.effect mt.score -= $mt.pet.attack.no_effect mt.score
+
+    # cost
+        scoreboard players operation $mt.cost mt.score = $mt.pet.attack.no_effect mt.score
+        execute if entity @s[type=cave_spider] run scoreboard players add $mt.cost mt.score 1
+        scoreboard players operation $mt.cost mt.score *= @s mt.max_health
+        scoreboard players operation $mt.cost.tmp mt.score = $mt.pet.armor mt.score
+        scoreboard players add $mt.cost.tmp mt.score 20
+        scoreboard players operation $mt.cost mt.score *= $mt.cost.tmp mt.score
+        scoreboard players set $mt.cost.tmp mt.score 100
+        scoreboard players operation $mt.cost mt.score /= $mt.cost.tmp mt.score
 
     item replace entity @s weapon.mainhand with stick
     # item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store
     item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/name
     item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/health
     execute unless score $mt.pet.attack.add mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/attack
-    execute if score $mt.pet.attack.add mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/attack_add
+    # execute if score $mt.pet.attack.add mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/attack_add
+    execute if score $mt.pet.attack.add.weapon mt.score matches 1.. if score $mt.pet.attack.add.effect mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/attack_add
+    execute if score $mt.pet.attack.add.weapon mt.score matches 1.. unless score $mt.pet.attack.add.effect mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/attack_add_weapon
+    execute unless score $mt.pet.attack.add.weapon mt.score matches 1.. if score $mt.pet.attack.add.effect mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/attack_add_effect
     execute if score $mt.pet.knockback mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/knockback
-    item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/speed
-    item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor
+    # item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/speed
+    execute if score $mt.pet.armor mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor
     execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[3].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/head
     execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[2].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/chest
     execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[1].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/legs
@@ -80,12 +101,22 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags append value "mt.
     data modify entity @s ArmorItems[3] set from storage mobtamer:temp data.Item.tag.EntityTag.HandItems[0]
     execute if data storage mobtamer:temp data.Item.tag.EntityTag.HandItems[1].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/offhand
     # data modify storage mobtamer:temp data.Item.tag.display.Lore set from entity @s HandItems[0].tag.display.Lore
+
+    item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/cost
+
     data modify storage mobtamer:temp data.Item.tag.display set from entity @s HandItems[0].tag.display
+
 
     scoreboard players reset $mt.pet.attack mt.score
     scoreboard players reset $mt.pet.attack.base mt.score
     scoreboard players reset $mt.pet.attack.add mt.score
+    scoreboard players reset $mt.pet.attack.add.weapon mt.score
+    scoreboard players reset $mt.pet.attack.add.effect mt.score
+    scoreboard players reset $mt.pet.attack.no_effect mt.score
     scoreboard players reset $mt.pet.knockback mt.score
     scoreboard players reset $mt.pet.speed mt.score
     scoreboard players reset $mt.pet.armor mt.score
     scoreboard players reset $mt.const mt.score
+
+    scoreboard players reset $mt.cost mt.score
+    scoreboard players reset $mt.cost.tmp mt.score

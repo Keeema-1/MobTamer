@@ -5,21 +5,16 @@
     "lore": [
       [
         {
-          "text": "  ",
-          "color": "dark_green",
-          "italic": false
-        },
-        {
-          "text": "防御力 ",
-          "color": "dark_green",
+          "text": "  コスト ",
+          "color": "yellow",
           "italic": false
         },
         {
           "score": {
-            "name": "$mt.pet.armor",
+            "name": "$mt.cost",
             "objective": "mt.score"
           },
-          "color": "dark_green",
+          "color": "yellow",
           "italic": false
         }
       ]
