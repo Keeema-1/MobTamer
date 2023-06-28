@@ -3,6 +3,7 @@ scoreboard objectives add mt.login dummy
 scoreboard objectives add mt.slot dummy
 scoreboard objectives add mt.health dummy
 scoreboard objectives add mt.max_health dummy
+scoreboard objectives add mt.xp dummy
 # 共通．(etc. チャンスタイム)
 scoreboard objectives add mt.score dummy
 # スポーンエッグでの召喚のチェックを，「スポーンエッグを手に持っている時から一定tick」にする

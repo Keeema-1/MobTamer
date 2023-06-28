@@ -69,14 +69,7 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags append value "mt.
     scoreboard players operation $mt.pet.attack.add.effect mt.score -= $mt.pet.attack.no_effect mt.score
 
     # cost
-        scoreboard players operation $mt.cost mt.score = $mt.pet.attack.no_effect mt.score
-        execute if entity @s[type=cave_spider] run scoreboard players add $mt.cost mt.score 1
-        scoreboard players operation $mt.cost mt.score *= @s mt.max_health
-        scoreboard players operation $mt.cost.tmp mt.score = $mt.pet.armor mt.score
-        scoreboard players add $mt.cost.tmp mt.score 20
-        scoreboard players operation $mt.cost mt.score *= $mt.cost.tmp mt.score
-        scoreboard players set $mt.cost.tmp mt.score 100
-        scoreboard players operation $mt.cost mt.score /= $mt.cost.tmp mt.score
+    function mobtamer:sys/common/pet/cost
 
     item replace entity @s weapon.mainhand with stick
     # item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store
@@ -119,4 +112,3 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags append value "mt.
     scoreboard players reset $mt.const mt.score
 
     scoreboard players reset $mt.cost mt.score
-    scoreboard players reset $mt.cost.tmp mt.score

@@ -1,0 +1,27 @@
+{
+    "replace": false,
+    "values": [
+        "warden",
+        "ravager",
+        "vindicator",
+        "blaze",
+        "enderman",
+        "hoglin",
+        "zombified_piglin",
+        "guardian",
+        "pillager",
+        "wither_skeleton",
+        "piglin",
+        "skeleton",
+        "stray",
+        "drowned",
+        "husk",
+        "zombie",
+        "zombie_villager",
+        "vex",
+        "cave_spider",
+        "spider",
+        "magma_cube",
+        "slime"
+    ]
+}
