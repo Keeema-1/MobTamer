@@ -1,9 +1,9 @@
 {
     "replace": false,
     "values": [
-        "drowned",
         "skeleton",
         "stray",
+        "drowned",
         "zombie",
         "zombie_villager",
         "phantom"

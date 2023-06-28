@@ -1,24 +1,24 @@
 {
     "replace": false,
     "values": [
-        "blaze",
-        "creeper",
-        "drowned",
-        "evoker",
-        "husk",
-        "illusioner",
-        "piglin",
         "piglin_brute",
-        "pillager",
-        "skeleton",
-        "snow_golem",
-        "stray",
+        "evoker",
+        "blaze",
         "vindicator",
+        "zombified_piglin",
         "witch",
+        "skeleton",
+        "stray",
+        "pillager",
+        "piglin",
+        "drowned",
+        "husk",
         "zombie",
         "zombie_villager",
-        "zombified_piglin",
+        "creeper",
+        "snow_golem",
         "villager",
-        "wandering_trader"
+        "wandering_trader",
+        "illusioner"
     ]
 }

@@ -2,20 +2,20 @@
     "replace": false,
     "values": [
         "hoglin",
-        "llama",
-        "panda",
-        "polar_bear",
-        "trader_llama",
         "zoglin",
-        "cow",
+        "polar_bear",
+        "panda",
+        "llama",
+        "trader_llama",
+        "goat",
         "donkey",
         "horse",
-        "mooshroom",
         "mule",
-        "sheep",
-        "skeleton_horse",
         "strider",
+        "skeleton_horse",
         "zombie_horse",
-        "goat"
+        "cow",
+        "mooshroom",
+        "sheep"
     ]
 }

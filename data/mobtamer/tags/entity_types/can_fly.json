@@ -1,13 +1,14 @@
 {
     "replace": false,
     "values": [
-        "bee",
+        "wither",
         "blaze",
+        "ghast",
         "vex",
         "allay",
-        "bat",
-        "parrot",
         "phantom",
-        "wither"
+        "bee",
+        "bat",
+        "parrot"
     ]
 }
