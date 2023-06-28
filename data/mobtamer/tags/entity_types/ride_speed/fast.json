@@ -2,6 +2,11 @@
     "replace": false,
     "values": [
         "allay",
-        "camel"
+        "camel",
+        "cat",
+        "ocelot",
+        "fox",
+        "goat",
+        "ravager"
     ]
 }

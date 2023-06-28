@@ -11,4 +11,6 @@ execute if entity @s[type=#mobtamer:slimes] run return 1
 
 function mobtamer:sys/player/item/conductor/always/ride/riding/move/walk/0
 
+execute if data entity @s {Sitting:1b} run data modify entity @s Sitting set value 0b
+
 # execute if predicate mobtamer:is_swiming run title @a actionbar "a"
