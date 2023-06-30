@@ -12,6 +12,10 @@ execute store result score @s mt.health run data get entity @s Health 100
 execute store result entity @s Health float 1 run data get entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base 1
 # tellraw @a [{"text":"score health: "},{"score":{"name": "@s","objective": "mt.health"}}]
 
+# xp
+execute store result score @s mt.xp run data get entity @s PortalCooldown
+tellraw @a [{"text": "xp: "},{"score":{"name": "@s","objective": "mt.xp"}}]
+
 function mobtamer:sys/player/summon/slot/0
 scoreboard players operation @s mt.slot = $mt.new mt.slot
 execute if score @s mt.slot <= $mt.sys mt.slot run tellraw @a [{"text": "Slot: "},{"score":{"name": "$mt.new","objective": "mt.slot"}}]

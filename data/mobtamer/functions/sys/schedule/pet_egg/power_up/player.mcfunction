@@ -1,0 +1,1 @@
+tag @s add mt.player_check

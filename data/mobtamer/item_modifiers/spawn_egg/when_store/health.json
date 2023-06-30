@@ -11,8 +11,8 @@
         },
         {
           "score": {
-            "name": "@s",
-            "objective": "mt.health"
+            "name": "$mt.pet.health",
+            "objective": "mt.score"
           },
           "color": "green",
           "italic": false
@@ -24,8 +24,8 @@
         },
         {
           "score": {
-            "name": "@s",
-            "objective": "mt.max_health"
+            "name": "$mt.pet.max_health",
+            "objective": "mt.score"
           },
           "color": "aqua",
           "italic": false
@@ -46,8 +46,8 @@
         },
         {
           "score": {
-            "name": "@s",
-            "objective": "mt.health"
+            "name": "$mt.pet.health",
+            "objective": "mt.score"
           },
           "color": "red",
           "italic": false
@@ -59,8 +59,8 @@
         },
         {
           "score": {
-            "name": "@s",
-            "objective": "mt.max_health"
+            "name": "$mt.pet.max_health",
+            "objective": "mt.score"
           },
           "color": "aqua",
           "italic": false
@@ -73,8 +73,11 @@
         "condition": "minecraft:value_check",
         "value": {
           "type": "minecraft:score",
-          "target": "this",
-          "score": "mt.health"
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$mt.pet.health"
+          },
+          "score": "mt.score"
         },
         "range": 0
       }

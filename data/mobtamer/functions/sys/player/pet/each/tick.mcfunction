@@ -14,6 +14,7 @@ execute if data storage mobtamer:settings data{forceload_pet_chunk:1b} at @s unl
 data remove storage mobtamer:temp data.pet
 
 # execute on target if predicate mobtamer:die on attacker if entity @s[tag=mt.pet_check] run tellraw @a [{"selector":"@s"},{"text":" killed entity"}]
+# execute on target if predicate mobtamer:die run tellraw @a "target die"
 execute on target if predicate mobtamer:die on attacker if entity @s[tag=mt.pet_check] run function mobtamer:sys/player/pet/each/xp/0
 
 #tag @s remove mt.player_check
