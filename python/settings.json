@@ -3,11 +3,11 @@
         "name":"baby_grow",
         "display":{
             "title":"子供ペットの成長",
-            "detail":"子供のペットが大人に成長するか否か"
+            "detail":"子供のペットの成長を有効とするか否か"
         },
         "states":[
-            ["0b","オフ","gray"],
-            ["1b","オン","aqua"]
+            ["0b","無効","gray"],
+            ["1b","有効","aqua"]
         ]
     },
     {
@@ -19,6 +19,17 @@
         "states":[
             ["\"only_initial_equipment\"","スポーン時の装備のみ有効","aqua"],
             ["\"any\"","すべて有効","aqua"]
+        ]
+    },
+    {
+        "name":"party_cost_max",
+        "display":{
+            "title":"パーティーのコスト上限",
+            "detail":"パーティーのコスト上限を有効とするか否か"
+        },
+        "states":[
+            ["1b","有効","aqua"],
+            ["0b","無効","gray"]
         ]
     }
 ]

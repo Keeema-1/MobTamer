@@ -4,6 +4,8 @@ scoreboard players add $mt.sys mt.id 1
 give @s golden_apple
 function mobtamer:command/give/conductor
 
+scoreboard players set @s mt.cost 100
+
 tellraw @s ["",{"text":"モブテイマーの世界へようこそ！","color": "green","italic": true}]
 tellraw @s ["",{"text":"この世界では、","color": "green","italic": true},{"translate":"item.minecraft.golden_apple","color": "aqua","italic":true},{"text":"を使って一部のモブをテイムすることができます。","color": "green","italic": true}]
 tellraw @s ["",{"text":"テイムしたモブはあなたのペットとなり、連れて歩いたり、共に戦わせることができるようになります。","color": "green","italic": true}]
