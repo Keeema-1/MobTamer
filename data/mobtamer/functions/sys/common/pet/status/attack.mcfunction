@@ -21,6 +21,9 @@ execute store result storage mobtamer:temp data.pet_status.attack.add.weapon int
 execute store result storage mobtamer:temp data.pet_status.attack.add.effect int 1 run scoreboard players get $mt.pet.attack.add.effect mt.score
 execute store result storage mobtamer:temp data.pet_status.attack.final int 1 run scoreboard players get $mt.pet.attack mt.score
 
+data modify storage mobtamer:temp data.pet_status.power_up_max.attack set value 0
+execute if entity @s[type=#mobtamer:power_up/attack] run data modify storage mobtamer:temp data.pet_status.can_power_up.attack set value 1b
+
 scoreboard players reset $mt.pet.attack mt.score
 scoreboard players reset $mt.pet.attack.base mt.score
 scoreboard players reset $mt.pet.attack.add mt.score

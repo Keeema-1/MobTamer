@@ -22,8 +22,11 @@
         "condition": "minecraft:value_check",
         "value": {
           "type": "minecraft:score",
-          "target": "this",
-          "score": "mt.health"
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$mt.pet.health"
+          },
+          "score": "mt.score"
         },
         "range": 0
       }

@@ -8,6 +8,8 @@ execute if score $mt.pet.health mt.score matches ..-1 run scoreboard players set
 execute store result storage mobtamer:temp data.pet_status.max_health int 1 run scoreboard players get $mt.pet.max_health mt.score
 execute store result storage mobtamer:temp data.pet_status.health int 1 run scoreboard players get $mt.pet.health mt.score
 
+data modify storage mobtamer:temp data.pet_status.can_power_up.max_health set value 1b
+
 scoreboard players reset $mt.const mt.score
 scoreboard players reset $mt.pet.max_health mt.score
 scoreboard players reset $mt.pet.health mt.score

@@ -7,10 +7,10 @@ data modify storage mobtamer:temp data.pet_status_before set from storage mobtam
 execute at @s on passengers if entity @s[tag=mt.text_display.power_up.explain] run function mobtamer:sys/common/pet_egg/update/text_display/explain
 
 data modify storage mobtamer:temp data.pet_status set from storage mobtamer:temp data.pet_status_before
-execute at @s on passengers if entity @s[tag=mt.text_display.power_up.hp] run function mobtamer:sys/common/pet_egg/update/text_display/hp
+execute at @s on passengers if entity @s[tag=mt.text_display.power_up.hp] run function mobtamer:sys/common/pet_egg/update/text_display/hp/0
 
 data modify storage mobtamer:temp data.pet_status set from storage mobtamer:temp data.pet_status_before
-execute at @s on passengers if entity @s[tag=mt.text_display.power_up.attack] run function mobtamer:sys/common/pet_egg/update/text_display/attack
+execute at @s on passengers if entity @s[tag=mt.text_display.power_up.attack] run function mobtamer:sys/common/pet_egg/update/text_display/attack/0
 
 data modify storage mobtamer:temp data.pet_status set from storage mobtamer:temp data.pet_status_before
 

@@ -1,6 +1,9 @@
 
 data merge entity @s {Silent:1b,DeathLootTable:"empty"}
 
+data modify entity @s ArmorItems set from storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems
+data modify entity @s HandItems set from storage mobtamer:temp data.Item.tag.EntityTag.HandItems
+
 item replace entity @s weapon.mainhand with stick
 item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/name
 item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/health

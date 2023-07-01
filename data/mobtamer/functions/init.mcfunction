@@ -5,6 +5,8 @@ data modify storage mobtamer:settings data merge value {forceload_pet_chunk:1b}
 
 function mobtamer:init_settings
 
+data modify storage mobtamer:settings data.values.power_up_max merge value {attack:6,max_health:40}
+
 data modify storage mobtamer:settings data merge value {datapack_ver:[0,0,0]}
 forceload remove all
 
