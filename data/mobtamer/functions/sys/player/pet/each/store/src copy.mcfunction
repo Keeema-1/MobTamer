@@ -143,7 +143,7 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags append value "mt.
     execute store result storage mobtamer:temp data.Item.tag.mt_pet_status.attack.final int 1 run scoreboard players get $mt.pet.attack mt.score
 
     execute store result storage mobtamer:temp data.Item.tag.mt_pet_status.knockback int 1 run scoreboard players get $mt.pet.knockback mt.score
-    execute store result storage mobtamer:temp data.Item.tag.mt_pet_status.max_health int 1 run scoreboard players get @s mt.max_health
+    execute store result storage mobtamer:temp data.Item.tag.mt_pet_status.max_health.final int 1 run scoreboard players get @s mt.max_health
     execute store result storage mobtamer:temp data.Item.tag.mt_pet_status.attack.armor int 1 run scoreboard players get $mt.pet.armor mt.score
 
     execute store result storage mobtamer:temp data.Item.tag.mt_pet_status.xp int 1 run scoreboard players get @s mt.xp

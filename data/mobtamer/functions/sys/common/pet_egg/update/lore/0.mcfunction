@@ -5,7 +5,10 @@ execute store result score $mt.pet.attack.no_effect mt.score run data get storag
 execute store result score $mt.pet.attack.base mt.score run data get storage mobtamer:temp data.pet_status.attack.base
 execute store result score $mt.pet.attack.add.weapon mt.score run data get storage mobtamer:temp data.pet_status.attack.add.weapon
 execute store result score $mt.pet.attack.add.effect mt.score run data get storage mobtamer:temp data.pet_status.attack.add.effect
-execute store result score $mt.pet.max_health mt.score run data get storage mobtamer:temp data.pet_status.max_health
+execute store result score $mt.pet.attack.add.variant mt.score run data get storage mobtamer:temp data.pet_status.attack.add.variant
+execute store result score $mt.pet.max_health mt.score run data get storage mobtamer:temp data.pet_status.max_health.final
+execute store result score $mt.pet.max_health.base mt.score run data get storage mobtamer:temp data.pet_status.max_health.base
+execute store result score $mt.pet.max_health.add.variant mt.score run data get storage mobtamer:temp data.pet_status.max_health.add.variant
 execute store result score $mt.pet.health mt.score run data get storage mobtamer:temp data.pet_status.health
 execute store result score $mt.pet.armor mt.score run data get storage mobtamer:temp data.pet_status.armor
 execute store result score $mt.pet.knockback mt.score run data get storage mobtamer:temp data.pet_status.knockback
@@ -19,6 +22,7 @@ data modify entity @s Item.tag.display.Lore set from storage mobtamer:temp data.
 
 scoreboard players reset $mt.pet.attack mt.score
 scoreboard players reset $mt.pet.attack.base mt.score
+scoreboard players reset $mt.pet.attack.variant mt.score
 scoreboard players reset $mt.pet.attack.add mt.score
 scoreboard players reset $mt.pet.attack.add.weapon mt.score
 scoreboard players reset $mt.pet.attack.add.effect mt.score
@@ -26,6 +30,8 @@ scoreboard players reset $mt.pet.attack.no_effect mt.score
 scoreboard players reset $mt.pet.knockback mt.score
 scoreboard players reset $mt.pet.armor mt.score
 scoreboard players reset $mt.pet.max_health mt.score
+scoreboard players reset $mt.pet.max_health.base mt.score
+scoreboard players reset $mt.pet.max_health.add.variant mt.score
 scoreboard players reset $mt.pet.health mt.score
 
 scoreboard players reset $mt.cost mt.score

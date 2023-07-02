@@ -1,0 +1,15 @@
+{
+    "replace": false,
+    "values": [
+        "enderman",
+        "hoglin",
+        "zoglin",
+        "blaze",
+        "guardian",
+        "vindicator",
+        "zombified_piglin",
+        "piglin",
+        "wither_skeleton",
+        "vex"
+    ]
+}

@@ -5,6 +5,8 @@ execute store result score $mt.pet.attack.no_effect.after mt.score run data get 
 execute store result storage mobtamer:temp data.pet_status.attack.base int 1 run scoreboard players add $mt.pet.attack.base.after mt.score 1
 execute store result storage mobtamer:temp data.pet_status.attack.final int 1 run scoreboard players add $mt.pet.attack.final.after mt.score 1
 execute store result storage mobtamer:temp data.pet_status.attack.no_effect int 1 run scoreboard players add $mt.pet.attack.no_effect.after mt.score 1
+execute store result score $mt.pet.attack.base_and_variant.after mt.score run data get storage mobtamer:temp data.pet_status.attack.add.variant
+scoreboard players operation $mt.pet.attack.base_and_variant.after mt.score += $mt.pet.attack.base.after mt.score
 
 function mobtamer:sys/common/pet/calc_cost
 execute store result score $mt.cost mt.score run data get storage mobtamer:temp data.pet_status.cost.value
@@ -23,6 +25,7 @@ execute unless score $mt.pet.xp mt.score >= $mt.required_xp mt.score run data mo
 execute unless score $mt.pet.xp mt.score >= $mt.required_xp mt.score run kill @e[type=interaction,tag=mt.interaction.power_up.attack,distance=..4,limit=1]
 
 scoreboard players reset $mt.pet.attack.base.after mt.score
+scoreboard players reset $mt.pet.attack.base_and_variant.after mt.score
 scoreboard players reset $mt.pet.attack.final.after mt.score
 scoreboard players reset $mt.pet.attack.no_effect.after mt.score
 scoreboard players reset $mt.cost mt.score

@@ -5,7 +5,7 @@ execute if data storage mobtamer:temp data.pet_status.cost.attack.force store re
 execute store result score $mt.cost.tmp mt.score run data get storage mobtamer:temp data.pet_status.cost.attack.add
 scoreboard players operation $mt.cost mt.score += $mt.cost.tmp mt.score
 
-execute store result score $mt.cost.tmp mt.score run data get storage mobtamer:temp data.pet_status.max_health
+execute store result score $mt.cost.tmp mt.score run data get storage mobtamer:temp data.pet_status.max_health.final
 scoreboard players operation $mt.cost mt.score *= $mt.cost.tmp mt.score
 
 execute store result score $mt.cost.tmp mt.score run data get storage mobtamer:temp data.pet_status.armor

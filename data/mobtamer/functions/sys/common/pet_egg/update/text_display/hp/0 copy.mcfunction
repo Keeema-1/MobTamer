@@ -2,7 +2,7 @@
 execute store result score $mt.pet.max_health.before mt.score run data get storage mobtamer:temp data.pet_status.max_health
 scoreboard players operation $mt.pet.max_health.after mt.score = $mt.pet.max_health.before mt.score
 scoreboard players add $mt.pet.max_health.after mt.score 2
-execute store result storage mobtamer:temp data.pet_status.max_health int 1 run scoreboard players get $mt.pet.max_health.after mt.score
+execute store result storage mobtamer:temp data.pet_status.max_health.final int 1 run scoreboard players get $mt.pet.max_health.after mt.score
 
 function mobtamer:sys/common/pet/calc_cost
 execute store result score $mt.cost mt.score run data get storage mobtamer:temp data.pet_status.cost.value

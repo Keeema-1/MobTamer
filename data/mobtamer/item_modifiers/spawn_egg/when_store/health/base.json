@@ -1,0 +1,122 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ❤",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.health",
+            "objective": "mt.score"
+          },
+          "color": "green",
+          "italic": false
+        },
+        {
+          "text": "/",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.max_health",
+            "objective": "mt.score"
+          },
+          "color": "aqua",
+          "italic": false
+        },
+        {
+          "text": " (",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.max_health",
+            "objective": "mt.score"
+          },
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": ")",
+          "color": "dark_green",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": true
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ❤",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.health",
+            "objective": "mt.score"
+          },
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "/",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.max_health",
+            "objective": "mt.score"
+          },
+          "color": "aqua",
+          "italic": false
+        },
+        {
+          "text": " (",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.max_health",
+            "objective": "mt.score"
+          },
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": ")",
+          "color": "dark_green",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": true,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$mt.pet.health"
+          },
+          "score": "mt.score"
+        },
+        "range": 0
+      }
+    ]
+  }
+]

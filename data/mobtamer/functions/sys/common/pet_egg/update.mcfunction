@@ -11,7 +11,7 @@ execute store result storage mobtamer:temp data.pet_status.attack.add.effect int
 execute store result storage mobtamer:temp data.pet_status.attack.final int 1 run scoreboard players get $mt.pet.attack mt.score
 
 execute store result storage mobtamer:temp data.pet_status.knockback int 1 run scoreboard players get $mt.pet.knockback mt.score
-execute store result storage mobtamer:temp data.pet_status.max_health int 1 run scoreboard players get $mt.pet.max_health mt.score
+execute store result storage mobtamer:temp data.pet_status.max_health.final int 1 run scoreboard players get $mt.pet.max_health mt.score
 execute store result storage mobtamer:temp data.pet_status.attack.armor int 1 run scoreboard players get $mt.pet.armor mt.score
 
 execute store result storage mobtamer:temp data.pet_status.xp int 1 run scoreboard players get @s mt.xp
