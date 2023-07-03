@@ -1,0 +1,24 @@
+{
+    "display": {
+      "title": [
+        {
+          "text": "陸上の動物"
+        }
+      ],
+      "description": [
+        {
+          "text": ""
+        }
+      ],
+      "icon": {
+        "item": "minecraft:grass_block"
+      },
+      "hidden": true
+    },
+    "parent": "mobtamer:mobtamer/tame/type/overworld/animal",
+    "criteria": {
+      "enter": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

@@ -1,0 +1,29 @@
+{
+    "replace": false,
+    "values": [
+        "polar_bear",
+        "wolf",
+        "panda",
+        "bee",
+        "llama",
+        "trader_llama",
+        "fox",
+        "goat",
+        "camel",
+        "donkey",
+        "horse",
+        "mule",
+        "cat",
+        "frog",
+        "ocelot",
+        "sniffer",
+        "cow",
+        "mooshroom",
+        "pig",
+        "sheep",
+        "bat",
+        "parrot",
+        "chicken",
+        "rabbit"
+    ]
+}

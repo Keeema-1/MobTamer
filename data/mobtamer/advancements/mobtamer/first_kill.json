@@ -1,0 +1,20 @@
+{
+  "display": {
+    "title": "頼れる仲間",
+    "description": [
+      {"text":"ペットにモブを倒させる"}
+    ],
+    "icon": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "parent": "mobtamer:mobtamer/first_tame",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/first_kill"
+  }
+}

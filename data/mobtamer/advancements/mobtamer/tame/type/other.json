@@ -1,0 +1,24 @@
+{
+    "display": {
+      "title": [
+        {
+          "text": "その他のモブ"
+        }
+      ],
+      "description": [
+        {
+          "text": ""
+        }
+      ],
+      "icon": {
+        "item": "minecraft:bedrock"
+      },
+      "hidden": true
+    },
+    "parent": "mobtamer:mobtamer/tame/tame_type",
+    "criteria": {
+      "enter": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "title": [
+      {
+        "translate": "entity.minecraft.elder_guardian"
+      },
+      {
+        "text": "\u306e\u30c6\u30a4\u30e0"
+      }
+    ],
+    "description": [
+      {
+        "text": ""
+      }
+    ],
+    "icon": {
+      "item": "minecraft:elder_guardian_spawn_egg"
+    }
+  },
+  "parent": "mobtamer:mobtamer/tame/type/overworld/monster/aquatic",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/tame/type/elder_guardian"
+  }
+}

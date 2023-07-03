@@ -1,0 +1,24 @@
+{
+    "display": {
+      "title": [
+        {
+          "text": "略奪者"
+        }
+      ],
+      "description": [
+        {
+          "text": ""
+        }
+      ],
+      "icon": {
+        "item": "minecraft:crossbow"
+      },
+      "hidden": true
+    },
+    "parent": "mobtamer:mobtamer/tame/type/overworld/monster/terrestrial",
+    "criteria": {
+      "enter": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

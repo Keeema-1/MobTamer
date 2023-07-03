@@ -1,0 +1,24 @@
+{
+    "display": {
+      "title": [
+        {
+          "text": "水中のモンスター"
+        }
+      ],
+      "description": [
+        {
+          "text": ""
+        }
+      ],
+      "icon": {
+        "item": "minecraft:prismarine"
+      },
+      "hidden": true
+    },
+    "parent": "mobtamer:mobtamer/tame/type/overworld/monster",
+    "criteria": {
+      "enter": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

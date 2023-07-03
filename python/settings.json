@@ -1,46 +1,97 @@
 [
     {
-        "name":"baby_grow",
-        "display":{
-            "title":"子供ペットの成長",
-            "detail":"子供のペットの成長を有効とするか否か"
-        },
-        "states":[
-            ["0b","無効","gray"],
-            ["1b","有効","aqua"]
+        "class":"general",
+        "title":"プレイヤー共通設定",
+        "contents":[
+            {
+                "name":"baby_grow",
+                "display":{
+                    "title":"子供ペットの成長",
+                    "detail":"子供のペットの成長を有効とするか否か"
+                },
+                "states":[
+                    ["0b","無効","gray",[]],
+                    ["1b","有効","aqua",[]]
+                ]
+            },
+            {
+                "name":"equipment_when_tame",
+                "display":{
+                    "title":"テイム時のペットの装備",
+                    "detail":"スポーン時の装備のみ有効とするか否か"
+                },
+                "states":[
+                    ["\"only_initial_equipment\"","スポーン時の装備のみ有効","aqua",[]],
+                    ["\"any\"","すべて有効","aqua",[]]
+                ]
+            },
+            {
+                "name":"party_cost_max",
+                "display":{
+                    "title":"パーティーのコスト上限",
+                    "detail":"パーティーのコスト上限を有効とするか否か"
+                },
+                "states":[
+                    ["1b","有効","aqua",[]],
+                    ["0b","無効","gray",[]]
+                ]
+            },
+            {
+                "name":"status_variant",
+                "display":{
+                    "title":"モブの個体差",
+                    "detail":"テイムしたモブのステータスの個体差を有効とするか否か"
+                },
+                "states":[
+                    ["1b","有効","aqua",[]],
+                    ["0b","無効","gray",[]]
+                ]
+            },
+            {
+                "name":"exp_display",
+                "display":{
+                    "title":"ペットの獲得経験値表示",
+                    "detail":"ペットがモブを倒して獲得した経験値を表示するか否か"
+                },
+                "states":[
+                    ["1b","有効","aqua",[]],
+                    ["0b","無効","gray",[]]
+                ]
+            }
         ]
     },
     {
-        "name":"equipment_when_tame",
-        "display":{
-            "title":"テイム時のペットの装備",
-            "detail":"スポーン時の装備のみ有効とするか否か"
-        },
-        "states":[
-            ["\"only_initial_equipment\"","スポーン時の装備のみ有効","aqua"],
-            ["\"any\"","すべて有効","aqua"]
-        ]
-    },
-    {
-        "name":"party_cost_max",
-        "display":{
-            "title":"パーティーのコスト上限",
-            "detail":"パーティーのコスト上限を有効とするか否か"
-        },
-        "states":[
-            ["1b","有効","aqua"],
-            ["0b","無効","gray"]
-        ]
-    },
-    {
-        "name":"status_variant",
-        "display":{
-            "title":"モブの個体差",
-            "detail":"テイムしたモブのステータスの個体差を有効とするか否か"
-        },
-        "states":[
-            ["1b","有効","aqua"],
-            ["0b","無効","gray"]
+        "class":"common_team",
+        "title":"共通チーム設定",
+        "contents":[
+            {
+                "name":"team_collition",
+                "display":{
+                    "title":"チームの衝突設定",
+                    "detail":"ペットを含む味方同士での衝突を有効とするか否か"
+                },
+                "states":[
+                    ["1b","有効","aqua",["team modify mt.common collisionRule always"]],
+                    ["0b","無効","gray",["team modify mt.common collisionRule pushOwnTeam"]]
+                ]
+            },
+            {
+                "name":"team_color",
+                "display":{
+                    "title":"チームカラー",
+                    "detail":"チームカラーの変更"
+                },
+                "states":[
+                    ["aqua","アクア","aqua",["team modify mt.common color aqua"]],
+                    ["blue","ブルー","blue",["team modify mt.common color blue"]],
+                    ["green","グリーン","green",["team modify mt.common color green"]],
+                    ["yellow","イエロー","yellow",["team modify mt.common color yellow"]],
+                    ["gold","オレンジ","gold",["team modify mt.common color gold"]],
+                    ["light_purple","パープル","light_purple",["team modify mt.common color light_purple"]],
+                    ["red","レッド","red",["team modify mt.common color red"]],
+                    ["white","ホワイト","white",["team modify mt.common color white"]]
+                ]
+            }
         ]
     }
 ]

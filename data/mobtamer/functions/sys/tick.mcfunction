@@ -9,6 +9,6 @@ scoreboard players set @a mt.login 1
 scoreboard players operation $mt.login.sum.before mt.score = $mt.login.sum mt.score
 scoreboard players reset $mt.login.sum mt.score
 execute as @a run scoreboard players add $mt.login.sum mt.score 1
-execute unless score $mt.login.sum mt.score = $mt.login.sum.before mt.score run tellraw @a "人数変動"
+execute unless score $mt.login.sum mt.score = $mt.login.sum.before mt.score run function mobtamer:sys/player_num_changed
 scoreboard players reset $mt.login.sum.before mt.score
 function mobtamer:sys/common/sendcommandfeedback/end

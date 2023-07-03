@@ -1,0 +1,24 @@
+{
+    "replace": false,
+    "values": [
+        "warden",
+        "ravager",
+        "enderman",
+        "evoker",
+        "vindicator",
+        "witch",
+        "skeleton",
+        "stray",
+        "pillager",
+        "husk",
+        "zombie",
+        "zombie_villager",
+        "spider",
+        "cave_spider",
+        "slime",
+        "vex",
+        "creeper",
+        "phantom",
+        "silverfish"
+    ]
+}

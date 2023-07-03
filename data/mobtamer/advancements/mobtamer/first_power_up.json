@@ -1,0 +1,20 @@
+{
+  "display": {
+    "title": "おれはまだまだ強くなれる",
+    "description": [
+      {"text":"ペットを強化する"}
+    ],
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    }
+  },
+  "parent": "mobtamer:mobtamer/first_kill",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/first_power_up"
+  }
+}

@@ -15,3 +15,5 @@ data remove storage mobtamer:temp data.pet_status
 particle minecraft:instant_effect ~ ~0.5 ~ 0.5 0.5 0.5 1 10
 
 playsound entity.player.levelup master @a ~ ~ ~ 1 1
+
+advancement grant @a[tag=mt.player_check,limit=1] only mobtamer:mobtamer/first_power_up

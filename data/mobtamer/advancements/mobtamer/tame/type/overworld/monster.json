@@ -1,0 +1,24 @@
+{
+    "display": {
+      "title": [
+        {
+          "text": "モンスター"
+        }
+      ],
+      "description": [
+        {
+          "text": ""
+        }
+      ],
+      "icon": {
+        "item": "minecraft:cobblestone"
+      },
+      "hidden": true
+    },
+    "parent": "mobtamer:mobtamer/tame/type/overworld",
+    "criteria": {
+      "enter": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

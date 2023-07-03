@@ -70,6 +70,32 @@ if(1):
     with open(path, 'w', encoding='utf-8') as f:
         f.writelines(output)
 
+    # # advancement
+    # for entity_name in can_tame_list:
+    #     output = {
+    #         "display": {
+    #             "title": [{"translate":"entity.minecraft." + entity_name},{"text":"のテイム"}],
+    #             "description": [
+    #             {"text":""}
+    #             ],
+    #             "icon": {
+    #             "item": "minecraft:" + entity_name + "_spawn_egg"
+    #             }
+    #         },
+    #         "parent": "mobtamer:mobtamer/tame/tame_type",
+    #         "criteria": {
+    #             "enter": {
+    #             "trigger": "minecraft:impossible"
+    #             }
+    #         },
+    #         "rewards": {
+    #             "function": "mobtamer:sys/player/advancement/mobtamer/tame/type/" + entity_name
+    #         }
+    #     }
+    #     path = '../data/mobtamer/advancements/mobtamer/tame/type/' + entity_name + '.json'
+    #     with open(path, 'w', encoding='utf-8') as f:
+    #         json.dump(output, f, indent = 2)
+
 if(1):
     output = filter_name_list(get_column_as_np('Can Revenge') == 1)
     write_entity_types_json(output, 'can_revenge')

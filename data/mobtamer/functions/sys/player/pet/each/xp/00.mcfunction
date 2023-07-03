@@ -20,7 +20,7 @@ execute if entity @s[type=evoker] run scoreboard players add $mt.xp.add mt.score
 # execute if entity @s[type=frog] run scoreboard players remove $mt.xp.add mt.score 6
 execute if entity @s[type=warden] run scoreboard players remove $mt.xp.add mt.score 20
 
-scoreboard players set $mt.xp.multiplier mt.score 0
+scoreboard players set $mt.xp.multiplier mt.score 1
 scoreboard players set $mt.xp.divider mt.score 1
 execute if entity @s[type=#mobtamer:xp/multiplier/0] run scoreboard players set $mt.xp.multiplier mt.score 0
 execute if entity @s[type=#mobtamer:xp/multiplier/1] run scoreboard players set $mt.xp.multiplier mt.score 1

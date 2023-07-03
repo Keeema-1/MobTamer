@@ -1,0 +1,29 @@
+{
+  "display": {
+    "title": [
+      {
+        "translate": "entity.minecraft.iron_golem"
+      },
+      {
+        "text": "\u306e\u30c6\u30a4\u30e0"
+      }
+    ],
+    "description": [
+      {
+        "text": ""
+      }
+    ],
+    "icon": {
+      "item": "minecraft:iron_golem_spawn_egg"
+    }
+  },
+  "parent": "mobtamer:mobtamer/tame/type/overworld/human",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/tame/type/iron_golem"
+  }
+}

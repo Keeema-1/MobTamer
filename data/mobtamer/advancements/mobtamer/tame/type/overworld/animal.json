@@ -1,0 +1,24 @@
+{
+    "display": {
+      "title": [
+        {
+          "text": "動物"
+        }
+      ],
+      "description": [
+        {
+          "text": ""
+        }
+      ],
+      "icon": {
+        "item": "minecraft:wheat"
+      },
+      "hidden": true
+    },
+    "parent": "mobtamer:mobtamer/tame/type/overworld",
+    "criteria": {
+      "enter": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

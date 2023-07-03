@@ -1,0 +1,24 @@
+{
+    "display": {
+      "title": [
+        {
+          "text": "ジ・エンドで出会うモブ"
+        }
+      ],
+      "description": [
+        {
+          "text": ""
+        }
+      ],
+      "icon": {
+        "item": "minecraft:end_stone"
+      },
+      "hidden": true
+    },
+    "parent": "mobtamer:mobtamer/tame/tame_type",
+    "criteria": {
+      "enter": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

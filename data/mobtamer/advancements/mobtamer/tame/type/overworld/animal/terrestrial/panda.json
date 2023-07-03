@@ -1,0 +1,29 @@
+{
+  "display": {
+    "title": [
+      {
+        "translate": "entity.minecraft.panda"
+      },
+      {
+        "text": "\u306e\u30c6\u30a4\u30e0"
+      }
+    ],
+    "description": [
+      {
+        "text": ""
+      }
+    ],
+    "icon": {
+      "item": "minecraft:panda_spawn_egg"
+    }
+  },
+  "parent": "mobtamer:mobtamer/tame/type/overworld/animal/terrestrial",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/tame/type/panda"
+  }
+}

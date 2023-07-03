@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "ravager",
+        "evoker",
+        "vindicator",
+        "witch",
+        "pillager",
+        "vex"
+    ]
+}

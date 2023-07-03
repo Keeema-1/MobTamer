@@ -1,13 +1,13 @@
 # tellraw @a [{"selector":"@s"},{"text":" のテイムに成功しました！"}]
 
-advancement grant @a[distance=..8] only mobtamer:mobtamer/first_tame
+function mobtamer:sys/tame/success/advancement/0
 
 data merge entity @s {Tags:["mt.pet"],AbsorptionAmount:0f,PersistenceRequired:1b,CustomNameVisible:1b,ArmorDropChances:[0f,0f,0f,0f],HandDropChances:[0f,0f],IsImmuneToZombification:1b}
 
 # particle minecraft:totem_of_undying ~ ~2 ~ 0.2 0.2 0.2 0.5 30
 # playsound entity.player.levelup master @a ~ ~ ~ 1 1
 
-function mobtamer:sys/common/pet/status_variant/give/0
+execute if data storage mobtamer:settings data{status_variant:1b} run function mobtamer:sys/common/pet/status_variant/give/0
 
 execute store result score @s mt.max_health run attribute @s generic.max_health base get 100
 scoreboard players set $mt.health mt.score 10000

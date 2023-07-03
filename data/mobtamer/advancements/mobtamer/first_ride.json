@@ -1,0 +1,20 @@
+{
+  "display": {
+    "title": "ライド・オン！",
+    "description": [
+      {"text":"ペットに騎乗する"}
+    ],
+    "icon": {
+      "item": "minecraft:saddle"
+    }
+  },
+  "parent": "mobtamer:mobtamer/first_tame",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/first_ride"
+  }
+}

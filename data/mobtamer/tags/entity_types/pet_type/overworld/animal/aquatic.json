@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "tropical_fish",
+        "dolphin",
+        "axolotl",
+        "turtle",
+        "glow_squid",
+        "squid",
+        "cod",
+        "pufferfish",
+        "salmon"
+    ]
+}

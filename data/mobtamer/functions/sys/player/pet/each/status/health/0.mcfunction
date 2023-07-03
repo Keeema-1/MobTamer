@@ -1,5 +1,5 @@
 
-execute store result score $mt.damage mt.max_health run attribute @s generic.max_health base get 100
+execute store result score $mt.damage mt.max_health run attribute @s generic.max_health get 100
 execute store result score $mt.damage mt.health run data get storage mobtamer:temp data.pet.Health 100
 scoreboard players operation $mt.damage mt.health -= $mt.damage mt.max_health
 

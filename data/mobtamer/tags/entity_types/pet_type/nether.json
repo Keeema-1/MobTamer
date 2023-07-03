@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "strider",
+        "hoglin",
+        "blaze",
+        "piglin_brute",
+        "zombified_piglin",
+        "wither_skeleton",
+        "ghast",
+        "piglin",
+        "magma_cube"
+   ]
+}

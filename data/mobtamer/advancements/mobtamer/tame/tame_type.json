@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:lead"
+    },
+    "title": "テイムしたモブ",
+    "description": "テイムしたモブの種類が記録されます。",
+    "background": "minecraft:textures/block/quartz_block_top.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

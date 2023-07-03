@@ -1,6 +1,4 @@
 
-data modify entity @s CanPickUpLoot set value 0b
-
 data modify storage mobtamer:temp data.target.ArmorDropChances set from entity @s ArmorDropChances
 data modify storage mobtamer:temp data.target.HandDropChances set from entity @s HandDropChances
 data modify storage mobtamer:temp data.target.ArmorItems set from entity @s ArmorItems

@@ -1,0 +1,24 @@
+{
+    "display": {
+      "title": [
+        {
+          "text": "オーバーワールドで出会うモブ"
+        }
+      ],
+      "description": [
+        {
+          "text": ""
+        }
+      ],
+      "icon": {
+        "item": "minecraft:grass_block"
+      },
+      "hidden": true
+    },
+    "parent": "mobtamer:mobtamer/tame/tame_type",
+    "criteria": {
+      "enter": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

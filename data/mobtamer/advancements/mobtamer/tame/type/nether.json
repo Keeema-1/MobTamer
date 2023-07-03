@@ -1,0 +1,24 @@
+{
+    "display": {
+      "title": [
+        {
+          "text": "ネザーで出会うモブ"
+        }
+      ],
+      "description": [
+        {
+          "text": ""
+        }
+      ],
+      "icon": {
+        "item": "minecraft:netherrack"
+      },
+      "hidden": true
+    },
+    "parent": "mobtamer:mobtamer/tame/tame_type",
+    "criteria": {
+      "enter": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
