@@ -1,0 +1,27 @@
+{
+  "display": {
+    "title": [
+      {
+        "text": "全身金ピカ！"
+      }
+    ],
+    "description": [
+      {
+        "text": "金装備を一式揃えたモブをテイムする"
+      }
+    ],
+    "icon": {
+      "item": "minecraft:golden_chestplate"
+    },
+    "hidden": true
+  },
+  "parent": "mobtamer:mobtamer/challenge",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/tame/unique/full_golden"
+  }
+}

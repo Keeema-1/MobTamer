@@ -3,6 +3,7 @@ import numpy as np
 import json
 
 database_path = 'entity_data.csv'
+database2_path = 'Cost.csv'
 
 def is_num(s):
     try:
@@ -17,6 +18,12 @@ with open(database_path, encoding='utf-8-sig', newline='') as f:
     database = [row for row in reader]
     headings = database[0]
     database = [row for row in database if row[database[0].index('Mob')]=='1']
+
+with open(database2_path, encoding='utf-8-sig', newline='') as f:
+    reader = csv.reader(f)
+    database2 = [row for row in reader]
+    headings2 = database2[0]
+    database2 = database2[1:]
 
 def get_column(heading):
     idx = headings.index(heading)
@@ -95,6 +102,20 @@ if(1):
     #     path = '../data/mobtamer/advancements/mobtamer/tame/type/' + entity_name + '.json'
     #     with open(path, 'w', encoding='utf-8') as f:
     #         json.dump(output, f, indent = 2)
+
+if(1):
+    for item in database2:
+        idx = headings2.index("Max Cost Add")
+        output = []
+        output.append('scoreboard players operation $mt.cost.before mt.score = @s mt.cost\n')
+        output.append('scoreboard players add @s mt.cost ' + item[idx] + '\n')
+        output.append('scoreboard players add @s mt.tame_type_count 1\n')
+        # output.append('tellraw @s {"text":"パーティーのコスト上限 +' + item[idx] + '","color": "aqua"}\n')
+        output.append('tellraw @s [{"text":"パーティーのコスト上限が増加しました。 （","color": "aqua"},{"score":{"name": "$mt.cost.before","objective": "mt.score"}},{"text":"→","color": "aqua"},{"score":{"name": "@s","objective": "mt.cost"}},{"text":"）","color": "aqua"}]\n')
+        output.append('scoreboard players reset $mt.cost.before mt.score\n')
+        path = '../data/mobtamer/functions/sys/player/advancement/mobtamer/tame/type/' + item[0] + '.mcfunction'
+        with open(path, 'w', encoding='utf-8') as f:
+            f.writelines(output)
 
 if(1):
     output = filter_name_list(get_column_as_np('Can Revenge') == 1)

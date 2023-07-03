@@ -1,0 +1,15 @@
+{
+  "display": {
+    "title": "チャレンジ",
+    "description": "",
+    "icon": {
+      "item": "minecraft:nether_star"
+    },
+    "background": "minecraft:textures/block/quartz_block_top.png"
+  },
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

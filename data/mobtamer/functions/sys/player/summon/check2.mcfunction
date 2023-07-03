@@ -20,12 +20,10 @@ execute store result score @s mt.xp run data get entity @s PortalCooldown
 
 function mobtamer:sys/common/pet/status/all
 execute store result score @s mt.cost run data get storage mobtamer:temp data.pet_status.cost.value
-scoreboard players operation $mt.cost.sum mt.score = @s mt.cost
 
 function mobtamer:sys/player/summon/check3
 
 scoreboard players reset $mt.new mt.slot
-scoreboard players reset $mt.cost.sum mt.slot
 
 data remove storage mobtamer:temp data.pet_status
 

@@ -4,7 +4,7 @@ scoreboard players add $mt.sys mt.id 1
 give @s golden_apple
 function mobtamer:command/give/conductor
 
-scoreboard players set @s mt.cost 100
+scoreboard players set @s mt.cost 20
 
 tellraw @s ["",{"text":"=====================================================","color": "green"}]
 tellraw @s ["",{"text":"モブテイマーの世界へようこそ！","color": "green","italic": true}]

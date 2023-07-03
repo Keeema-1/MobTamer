@@ -1,5 +1,6 @@
 effect give @s glowing 60 1 true
 tag @s add mt.chance
+team leave @s
 
 scoreboard players operation @s mt.id = $mt.player mt.id
 

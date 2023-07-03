@@ -1,0 +1,27 @@
+{
+  "display": {
+    "title": [
+      {
+        "text": "茶色のムーシュルームのテイム"
+      }
+    ],
+    "description": [
+      {
+        "text": ""
+      }
+    ],
+    "icon": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "hidden": true
+  },
+  "parent": "mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/mooshroom",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/tame/unique/brown_mooshroom"
+  }
+}

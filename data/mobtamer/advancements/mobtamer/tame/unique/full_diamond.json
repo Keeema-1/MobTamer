@@ -1,0 +1,27 @@
+{
+  "display": {
+    "title": [
+      {
+        "text": "奇跡の遭遇"
+      }
+    ],
+    "description": [
+      {
+        "text": "ダイヤモンド装備を一式揃えたモブをテイムする"
+      }
+    ],
+    "icon": {
+      "item": "minecraft:diamond_chestplate"
+    },
+    "hidden": true
+  },
+  "parent": "mobtamer:mobtamer/tame/unique/full_golden",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/tame/unique/full_diamond"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "display": {
+    "title": "50種類のモブのテイム",
+    "description": [
+      {"text":""}
+    ],
+    "icon": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "parent": "mobtamer:mobtamer/tame/count/40types",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/tame/count/50types"
+  }
+}

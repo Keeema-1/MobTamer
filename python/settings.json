@@ -2,18 +2,8 @@
     {
         "class":"general",
         "title":"プレイヤー共通設定",
+        "each_player":false,
         "contents":[
-            {
-                "name":"baby_grow",
-                "display":{
-                    "title":"子供ペットの成長",
-                    "detail":"子供のペットの成長を有効とするか否か"
-                },
-                "states":[
-                    ["0b","無効","gray",[]],
-                    ["1b","有効","aqua",[]]
-                ]
-            },
             {
                 "name":"equipment_when_tame",
                 "display":{
@@ -61,8 +51,27 @@
         ]
     },
     {
+        "class":"each_player",
+        "title":"プレイヤーごとの設定",
+        "each_player":true,
+        "contents":[
+            {
+                "name":"baby_grow",
+                "display":{
+                    "title":"子供ペットの成長",
+                    "detail":"子供のペットの成長を有効とするか否か"
+                },
+                "states":[
+                    ["0b","無効","gray",[]],
+                    ["1b","有効","aqua",[]]
+                ]
+            }
+        ]
+    },
+    {
         "class":"common_team",
         "title":"共通チーム設定",
+        "each_player":false,
         "contents":[
             {
                 "name":"team_collition",

@@ -1,0 +1,27 @@
+{
+  "display": {
+    "title": [
+      {
+        "text": "青色のウーパールーパーのテイム"
+      }
+    ],
+    "description": [
+      {
+        "text": ""
+      }
+    ],
+    "icon": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "hidden": true
+  },
+  "parent": "mobtamer:mobtamer/tame/type/overworld/animal/aquatic/axolotl",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/tame/unique/axolotl"
+  }
+}

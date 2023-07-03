@@ -7,7 +7,7 @@ execute on passengers run ride @s dismount
 tp ~ -128 ~
 execute if entity @s[type=#mobtamer:slimes] run data modify entity @s Size set value 0
 kill @s
-tag @e[type=item,tag=mt.new,distance=..1] remove mt.new
+tag @e[type=item,tag=mt.new] remove mt.new
 data remove storage mobtamer:temp data.Item
 data remove storage mobtamer:temp data.pet_status
 

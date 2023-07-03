@@ -14,6 +14,7 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems set from en
 data modify storage mobtamer:temp data.Item.tag.EntityTag.HandItems set from entity @s HandItems
 data modify storage mobtamer:temp data.Item.tag.EntityTag.IsBaby set value 0b
 data modify storage mobtamer:temp data.Item.tag.EntityTag.IsBaby set from entity @s IsBaby
+data modify storage mobtamer:temp data.Item.tag.EntityTag.CanPickUpLoot set value 0b
 data modify storage mobtamer:temp data.Item.tag.EntityTag.ArmorDropChances set from entity @s ArmorDropChances
 data modify storage mobtamer:temp data.Item.tag.EntityTag.HandDropChances set from entity @s HandDropChances
 data modify storage mobtamer:temp data.Item.tag.EntityTag.IsImmuneToZombification set from entity @s IsImmuneToZombification
@@ -26,6 +27,7 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.Strength set from enti
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Tame set from entity @s Tame
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Size set from entity @s Size
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Age set from entity @s Age
+data modify storage mobtamer:temp data.Item.tag.EntityTag.Type set from entity @s Type
 execute if data storage mobtamer:settings data{baby_grow:0b} unless data storage mobtamer:temp data.Item.tag.EntityTag{Age:0} run data modify storage mobtamer:temp data.Item.tag.EntityTag.Age set value -1000000
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Items set from entity @s Items
 data modify storage mobtamer:temp data.Item.tag.EntityTag.DecorItem set from entity @s DecorItem
@@ -38,7 +40,7 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.Passengers set value [
 data modify storage mobtamer:temp data.Item.tag.display.Name set from entity @s CustomName
 
 # xp
-execute store result storage mobtamer:temp data.Item.tag.EntityTag.PortalCooldown int 1 run scoreboard players get @s mt.xp
+execute store result storage mobtamer:temp data.Item.tag.EntityTag.PortalCooldown int 1 run scoreboard players add @s mt.xp 2
 
 # health
 execute store result storage mobtamer:temp data.Item.tag.EntityTag.Health float 0.01 run scoreboard players get @s mt.health

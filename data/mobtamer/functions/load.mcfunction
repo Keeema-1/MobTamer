@@ -4,6 +4,8 @@ scoreboard objectives add mt.slot dummy
 scoreboard objectives add mt.health dummy
 scoreboard objectives add mt.max_health dummy
 scoreboard objectives add mt.xp dummy
+scoreboard objectives add mt.settings dummy
+scoreboard objectives add mt.tame_type_count dummy
 # プレイヤー：パーティーの最大コスト，ペット：自身のコスト
 scoreboard objectives add mt.cost dummy
 # 共通．(etc. チャンスタイム)
@@ -19,7 +21,7 @@ scoreboard objectives add mt.dropped.golden_apple dropped:golden_apple
 scoreboard objectives add mt.sneak_time custom:sneak_time
 # scoreboard objectives add mt.jump custom:jump
 
-team add mt.common
+team add mt.common "共通チーム"
 
 tellraw @a "Loaded: MobTamer_For20"
 

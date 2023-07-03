@@ -3,6 +3,9 @@
 # forceload_pet_chunk:0b -> ペットのいるチャンクをforceloadしない。離れ過ぎた場合はアイテム化。
 data modify storage mobtamer:settings data merge value {forceload_pet_chunk:1b}
 
+advancement revoke @a from mobtamer:mobtamer/road_to_mobtamer
+advancement revoke @a from mobtamer:mobtamer/tame/tame_type
+
 function mobtamer:init_settings
 
 # 上限と強化+の上限(up limit)
