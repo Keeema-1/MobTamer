@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:lead"
+      "item": "minecraft:zombie_spawn_egg"
     },
     "title": "テイムしたモブ",
     "description": "テイムしたモブの種類が記録されます。",

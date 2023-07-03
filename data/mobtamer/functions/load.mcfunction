@@ -11,6 +11,7 @@ scoreboard objectives add mt.cost dummy
 # 共通．(etc. チャンスタイム)
 scoreboard objectives add mt.score dummy
 # スポーンエッグでの召喚のチェックを，「スポーンエッグを手に持っている時から一定tick」にする
+# さらに、召喚後のペットにこのスコアを付与し、一定時間後にコスト計算を行う（召喚直後は武器が反映されないことが多いため）
 scoreboard objectives add mt.summon_check_time dummy
 
 scoreboard objectives add mt.trigger trigger

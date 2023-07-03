@@ -8,6 +8,7 @@ data modify storage mobtamer:temp data.pet.UUID set from entity @s UUID
 tag @s add mt.pet_check
 execute if entity @s[tag=!mt.down] run function mobtamer:sys/player/pet/each/alive
 execute if entity @s[tag=mt.down] run function mobtamer:sys/player/pet/each/down/is_down/0
+execute if score @s mt.summon_check_time matches 1.. run function mobtamer:sys/player/pet/each/after_summon
 function mobtamer:sys/player/pet/each/unique/0
 execute unless data storage mobtamer:settings data{forceload_pet_chunk:1b} unless entity @a[tag=mt.player_check,distance=..72] at @a[tag=mt.player_check] run function mobtamer:sys/player/pet/each/store/tellraw
 execute if data storage mobtamer:settings data{forceload_pet_chunk:1b} at @s unless entity @a[tag=mt.player_check,distance=..72] run forceload add ~ ~
