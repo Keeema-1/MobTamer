@@ -2,9 +2,8 @@ scoreboard players operation @s mt.id = $mt.sys mt.id
 scoreboard players add $mt.sys mt.id 1
 # tellraw @s "first login"
 give @s golden_apple
-function mobtamer:command/give/conductor
 
-scoreboard players set @s mt.cost 20
+scoreboard players set @s mt.cost 0
 
 tellraw @s ["",{"text":"=====================================================","color": "green"}]
 tellraw @s ["",{"text":"モブテイマーの世界へようこそ！","color": "green","italic": true}]

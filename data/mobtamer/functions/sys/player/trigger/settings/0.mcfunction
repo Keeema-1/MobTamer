@@ -6,9 +6,11 @@ execute if score @s mt.trigger matches 31 run function mobtamer:sys/player/trigg
 execute if score @s mt.trigger matches 32 run function mobtamer:sys/player/trigger/settings/status_variant/change
 execute if score @s mt.trigger matches 41 run function mobtamer:sys/player/trigger/settings/exp_display/start
 execute if score @s mt.trigger matches 42 run function mobtamer:sys/player/trigger/settings/exp_display/change
-execute if score @s mt.trigger matches 51 run function mobtamer:sys/player/trigger/settings/baby_grow/start
-execute if score @s mt.trigger matches 52 run function mobtamer:sys/player/trigger/settings/baby_grow/change
-execute if score @s mt.trigger matches 61 run function mobtamer:sys/player/trigger/settings/team_collition/start
-execute if score @s mt.trigger matches 62 run function mobtamer:sys/player/trigger/settings/team_collition/change
-execute if score @s mt.trigger matches 71 run function mobtamer:sys/player/trigger/settings/team_color/start
-execute if score @s mt.trigger matches 72 run function mobtamer:sys/player/trigger/settings/team_color/change
+execute if score @s mt.trigger matches 51 run function mobtamer:sys/player/trigger/settings/store_when_sleep/start
+execute if score @s mt.trigger matches 52 run function mobtamer:sys/player/trigger/settings/store_when_sleep/change
+execute if score @s mt.trigger matches 61 run function mobtamer:sys/player/trigger/settings/baby_grow/start
+execute if score @s mt.trigger matches 62 run function mobtamer:sys/player/trigger/settings/baby_grow/change
+execute if score @s mt.trigger matches 71 run function mobtamer:sys/player/trigger/settings/team_collition/start
+execute if score @s mt.trigger matches 72 run function mobtamer:sys/player/trigger/settings/team_collition/change
+execute if score @s mt.trigger matches 81 run function mobtamer:sys/player/trigger/settings/team_color/start
+execute if score @s mt.trigger matches 82 run function mobtamer:sys/player/trigger/settings/team_color/change
