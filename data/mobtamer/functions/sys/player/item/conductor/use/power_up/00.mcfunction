@@ -1,2 +1,2 @@
 
-tellraw @a {"text": "他の強化モードのペットと近すぎます。","color": "red"}
+tellraw @s {"text": "他の強化モードのペットと近すぎます。","color": "red"}

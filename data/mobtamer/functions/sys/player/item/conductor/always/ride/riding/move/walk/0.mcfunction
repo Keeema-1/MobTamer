@@ -12,6 +12,8 @@ scoreboard players operation $mt.motion.z mt.score *= $mt.speed mt.score
 
 function mobtamer:sys/player/item/conductor/always/ride/riding/move/walk/speed/0
 execute if data entity @s {OnGround:1b} at @s rotated ~ 0 positioned ^ ^ ^1 unless block ~ ~ ~ #mobtamer:space run data modify storage mobtamer:temp data.Motion[1] set value 0.37
+execute if data entity @s {OnGround:1b} at @s rotated ~20 0 positioned ^ ^ ^1 unless block ~ ~ ~ #mobtamer:space run data modify storage mobtamer:temp data.Motion[1] set value 0.37
+execute if data entity @s {OnGround:1b} at @s rotated ~-20 0 positioned ^ ^ ^1 unless block ~ ~ ~ #mobtamer:space run data modify storage mobtamer:temp data.Motion[1] set value 0.37
 execute if entity @s[type=goat] if data entity @s {OnGround:1b} at @s rotated ~ 0 positioned ^ ^ ^1 unless block ~ ~ ~ #mobtamer:space run data modify storage mobtamer:temp data.Motion[1] set value 0.6
 # execute if data entity @s {OnGround:1b} at @s rotated ~ 0 positioned ^ ^ ^1 unless block ~ ~ ~ air run particle end_rod ~ ~2 ~ 0 0 0 0 1
 

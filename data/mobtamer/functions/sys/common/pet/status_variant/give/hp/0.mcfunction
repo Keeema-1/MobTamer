@@ -24,6 +24,4 @@ execute if score $mt.random mt.score matches 3 run attribute @s generic.max_heal
 execute if score $mt.random mt.score matches 4 run attribute @s generic.max_health modifier add 0-0-0-0-aea "mt.max_health.add" 8 add
 execute if score $mt.random mt.score matches 5 run attribute @s generic.max_health modifier add 0-0-0-0-aea "mt.max_health.add" 10 add
 
-# tellraw @a [{"score":{"name": "$mt.random","objective": "mt.score"}}]
-
 scoreboard players reset $mt.random mt.score

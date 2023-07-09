@@ -1,6 +1,4 @@
 
-# tellraw @a "trigger"
-
 function mobtamer:sys/player/trigger/settings/0
 
 scoreboard players reset @s mt.trigger

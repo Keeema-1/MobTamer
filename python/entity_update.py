@@ -66,7 +66,7 @@ if(1):
     for entity_name in can_tame_list:
         output = []
         output.append('summon ' + entity_name + '\n')
-        output.append('execute as @e[team=!mt.common,type=' + entity_name + ',tag=!mt.pet,sort=nearest,distance=..8,limit=1] run function mobtamer:sys/tame/success/common/0\n')
+        output.append('execute as @e[team=!mt.common,type=' + entity_name + ',tag=!mt.pet,sort=nearest,distance=..8,limit=1] run function mobtamer:sys/common/summon/tame\n')
         path = '../data/mobtamer/functions/command/tame/summon/' + entity_name + '.mcfunction'
         with open(path, 'w', encoding='utf-8') as f:
             f.writelines(output)
@@ -74,6 +74,21 @@ if(1):
     for entity_name in can_tame_list:
         output.append('function mobtamer:command/tame/summon/' + entity_name + '\n')
     path = '../data/mobtamer/functions/command/tame/summon/all.mcfunction'
+    with open(path, 'w', encoding='utf-8') as f:
+        f.writelines(output)
+
+    # command gacha
+    output = []
+    output.append('function mobtamer:sys/common/random/1024\n')
+    output.append('scoreboard players set $mt.temp mt.score ' + str(len(can_tame_list)) + '\n')
+    output.append('scoreboard players operation $mt.random mt.score %= $mt.temp mt.score\n')
+    i = 0
+    for entity_name in can_tame_list:
+        output.append('execute if score $mt.random mt.score matches ' + str(i) + ' run function mobtamer:command/tame/summon/' + entity_name + '\n')
+        i += 1
+    output.append('scoreboard players reset $mt.temp mt.score\n')
+    output.append('scoreboard players reset $mt.random mt.score\n')
+    path = '../data/mobtamer/functions/command/gacha/all.mcfunction'
     with open(path, 'w', encoding='utf-8') as f:
         f.writelines(output)
 
@@ -191,8 +206,8 @@ if(1):
     print(hitbox_list)
     print()
 
-    hitbox_other_list = filter_name_list(other_filter)
+    hitbox_list = filter_name_list(other_filter)
     print('other')
     write_entity_types_json(hitbox_list, 'hitbox/other')
-    print(hitbox_other_list)
+    print(hitbox_list)
     print()

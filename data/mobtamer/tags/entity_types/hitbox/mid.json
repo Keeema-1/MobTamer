@@ -1,21 +1,21 @@
 {
     "replace": false,
     "values": [
-        "hoglin",
-        "zoglin",
         "polar_bear",
         "panda",
+        "goat",
+        "cow",
+        "mooshroom",
+        "sheep",
         "llama",
         "trader_llama",
-        "goat",
         "donkey",
         "horse",
         "mule",
-        "strider",
+        "zoglin",
         "skeleton_horse",
         "zombie_horse",
-        "cow",
-        "mooshroom",
-        "sheep"
+        "hoglin",
+        "strider"
     ]
 }

@@ -1,24 +1,24 @@
 {
     "replace": false,
     "values": [
-        "cave_spider",
-        "wolf",
+        "cod",
+        "pufferfish",
+        "salmon",
+        "tropical_fish",
         "vex",
+        "silverfish",
+        "cave_spider",
         "allay",
         "bee",
-        "silverfish",
         "fox",
-        "endermite",
-        "cat",
         "frog",
+        "cat",
         "ocelot",
         "bat",
         "parrot",
         "chicken",
-        "cod",
-        "pufferfish",
         "rabbit",
-        "salmon",
-        "tropical_fish"
+        "wolf",
+        "endermite"
     ]
 }

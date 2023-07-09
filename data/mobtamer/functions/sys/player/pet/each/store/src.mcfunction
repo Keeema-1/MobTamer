@@ -12,6 +12,7 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.CustomName set from en
 data modify storage mobtamer:temp data.Item.tag.EntityTag.CustomNameVisible set from entity @s CustomNameVisible
 data modify storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems set from entity @s ArmorItems
 data modify storage mobtamer:temp data.Item.tag.EntityTag.HandItems set from entity @s HandItems
+data modify storage mobtamer:temp data.Item.tag.EntityTag.LeftHanded set from entity @s LeftHanded
 data modify storage mobtamer:temp data.Item.tag.EntityTag.IsBaby set value 0b
 data modify storage mobtamer:temp data.Item.tag.EntityTag.IsBaby set from entity @s IsBaby
 data modify storage mobtamer:temp data.Item.tag.EntityTag.CanPickUpLoot set value 0b
@@ -23,6 +24,9 @@ data remove storage mobtamer:temp data.Item.tag.EntityTag.Attributes[{Name:"mine
 data modify storage mobtamer:temp data.Item.tag.EntityTag.ActiveEffects set from entity @s ActiveEffects
 data modify storage mobtamer:temp data.Item.tag.EntityTag.SaddleItem set from entity @s SaddleItem
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Variant set from entity @s Variant
+data modify storage mobtamer:temp data.Item.tag.EntityTag.variant set from entity @s variant
+data modify storage mobtamer:temp data.Item.tag.EntityTag.CollarColor set from entity @s CollarColor
+data modify storage mobtamer:temp data.Item.tag.EntityTag.powered set from entity @s powered
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Strength set from entity @s Strength
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Tame set from entity @s Tame
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Size set from entity @s Size
@@ -37,10 +41,19 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.HiddenGene set from en
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Owner set from entity @s Owner
 data modify storage mobtamer:temp data.Item.tag.EntityTag.PersistenceRequired set value 1b
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Passengers set value []
+data modify storage mobtamer:temp data.Item.tag.EntityTag.VillagerData set from entity @s VillagerData
+data modify storage mobtamer:temp data.Item.tag.EntityTag.Gossips set from entity @s Gossips
+data modify storage mobtamer:temp data.Item.tag.EntityTag.LastGossipDecay set from entity @s LastGossipDecay
+data modify storage mobtamer:temp data.Item.tag.EntityTag.LastRestock set from entity @s LastRestock
+data modify storage mobtamer:temp data.Item.tag.EntityTag.RestocksToday set from entity @s RestocksToday
+data modify storage mobtamer:temp data.Item.tag.EntityTag.Inventory set from entity @s Inventory
+data modify storage mobtamer:temp data.Item.tag.EntityTag.Offers set from entity @s Offers
+data modify storage mobtamer:temp data.Item.tag.EntityTag.Xp set from entity @s Xp
+
 data modify storage mobtamer:temp data.Item.tag.display.Name set from entity @s CustomName
 
 # xp
-execute store result storage mobtamer:temp data.Item.tag.EntityTag.PortalCooldown int 1 run scoreboard players add @s mt.xp 2
+execute store result storage mobtamer:temp data.Item.tag.EntityTag.PortalCooldown int 1 run scoreboard players add @s mt.xp 0
 
 # health
 execute store result storage mobtamer:temp data.Item.tag.EntityTag.Health float 0.01 run scoreboard players get @s mt.health
@@ -49,10 +62,7 @@ execute if entity @s[tag=mt.down] run data modify storage mobtamer:temp data.Ite
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags set from entity @s Tags
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags append value "mt.was_stored"
 
-# storage mobtamer:temp data.pet_status をセット
 function mobtamer:sys/common/pet/status/all
-
-# tellraw @a [{"storage":"mobtamer:temp","nbt":"data.pet_status"}]
 
 # Lore
 function mobtamer:sys/common/pet/egg_lore

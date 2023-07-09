@@ -127,7 +127,7 @@ if(1):
                 if next_idx >= len(item["states"]):
                     next_idx = 0
                 if group["each_player"]:
-                    output.append('execute if score $mt.check mt.score matches ' + str(j) + ' run data modify storage mobtamer:temp data.player_settings' + item["name"] + ' set value ' + str(item["states"][next_idx][0]) + '\n')
+                    output.append('execute if score $mt.check mt.score matches ' + str(j) + ' run data modify storage mobtamer:temp data.player_settings.' + item["name"] + ' set value ' + str(item["states"][next_idx][0]) + '\n')
                 else:
                     output.append('execute if score $mt.check mt.score matches ' + str(j) + ' run data modify storage mobtamer:settings data.' + item["name"] + ' set value ' + str(item["states"][next_idx][0]) + '\n')
                 output.append('execute if score $mt.check mt.score matches ' + str(j) + ' run tellraw @s ["",{"text": "  "},{"text": "' + item["display"]["title"] + '","color": "green","hoverEvent": {"action": "show_text","value": [{"text":"' + item["display"]["detail"] + '"},{"text":"\\n\\nデフォルト：' + item["states"][0][1] + '","color":"gray"}]}},{"text": "","color": "yellow"},{"text": " ＜' + item["states"][next_idx][1] + '＞ ","color": "' + item["states"][next_idx][2] + '"},{"text": "[変更]","color": "light_purple","clickEvent": {"action":"run_command","value": "/trigger mt.trigger set ' + str(count*10+2) + '"}}]\n')

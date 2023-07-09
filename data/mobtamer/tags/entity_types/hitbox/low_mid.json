@@ -1,15 +1,15 @@
 {
     "replace": false,
     "values": [
-        "shulker",
-        "spider",
         "guardian",
-        "phantom",
-        "dolphin",
-        "axolotl",
         "turtle",
+        "axolotl",
+        "dolphin",
         "glow_squid",
+        "squid",
+        "phantom",
+        "spider",
         "pig",
-        "squid"
+        "shulker"
     ]
 }

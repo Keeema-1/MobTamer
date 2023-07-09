@@ -1,5 +1,6 @@
 function mobtamer:sys/common/sendcommandfeedback/start
 execute if data storage mobtamer:settings data{forceload_pet_chunk:1b} run forceload remove all
+execute if data storage mobtamer:settings data{forceload_pet_chunk:1b} as @e[type=text_display,tag=mt.logout_display] run forceload add ~ ~
 execute as @e[type=text_display,tag=mt.pet_display] at @s run function mobtamer:sys/display/0
 execute as @a at @s run function mobtamer:sys/player/tick
 execute if predicate mobtamer:random/50m run function mobtamer:sys/team/0

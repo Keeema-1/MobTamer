@@ -13,9 +13,6 @@ execute store result score $mt.pet.health mt.score run data get storage mobtamer
 execute store result score $mt.pet.armor mt.score run data get storage mobtamer:temp data.pet_status.armor
 execute store result score $mt.pet.knockback mt.score run data get storage mobtamer:temp data.pet_status.knockback
 execute store result score $mt.cost mt.score run data get storage mobtamer:temp data.pet_status.cost.value
-# execute store result score $mt.pet.attack.variant mt.score run attribute @s 
-
-# tellraw @a [{"storage":"mobtamer:temp","nbt":"data.pet_status"}]
 
 item replace entity @s weapon.mainhand with stick
 item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/name

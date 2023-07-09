@@ -8,7 +8,7 @@ scoreboard players reset $mt.cost.before mt.score
 tellraw @s ["",{"text":"進捗達成の報酬としてコンダクターを入手しました。","color": "yellow"}]
 
 tellraw @s ["",{"text":"=====================================================","color": "green"}]
-tellraw @s ["",{"text":"＜コンダクターについて＞","color": "green","italic": true,"underlined": true}]
+tellraw @s ["",{"text":"＜コンダクターについて＞","color": "green","italic": true}]
 tellraw @s ["",{"text":"コンダクターというアイテムを使用することで、モブにさまざまなアクションを行うことができます。（例えば、ペットをアイテム化したり、モブに騎乗することなどが可能です。）","color": "green","italic": true}]
 tellraw @s ["",{"text":"コンダクターはテイマー商人と呼ばれる特別な行商人から買うことができます。テイマー商人に会うためのアイテムは、通常の行商人との交易で入手することができます。","color": "green","italic": true}]
 tellraw @s ["",{"text":"=====================================================","color": "green"}]

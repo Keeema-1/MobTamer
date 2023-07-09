@@ -13,6 +13,7 @@ function mobtamer:sys/player/item/conductor/always/ride/riding/move/fly/speed/1
 execute if entity @s[type=allay] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/fly/speed/2
 execute if entity @s[type=ghast] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/fly/speed/3
 execute if entity @s[type=vex] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/fly/speed/4
+execute if entity @s[type=bat] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/fly/speed/4
 
 # title @a actionbar [{"storage":"mobtamer:temp","nbt":"data.Motion"}]
 

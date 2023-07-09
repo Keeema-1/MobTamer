@@ -1,9 +1,9 @@
 {
     "replace": false,
     "values": [
-        "warden",
-        "iron_golem",
+        "elder_guardian",
         "ravager",
-        "elder_guardian"
+        "warden",
+        "iron_golem"
     ]
 }

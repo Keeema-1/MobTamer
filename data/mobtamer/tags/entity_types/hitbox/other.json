@@ -1,9 +1,13 @@
 {
     "replace": false,
     "values": [
-        "warden",
-        "iron_golem",
-        "ravager",
-        "elder_guardian"
+        "slime",
+        "camel",
+        "sniffer",
+        "wither",
+        "giant",
+        "ghast",
+        "magma_cube",
+        "ender_dragon"
     ]
 }

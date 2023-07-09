@@ -1,18 +1,17 @@
 {
     "replace": false,
     "values": [
-        "wither",
-        "zoglin",
-        "zombified_piglin",
-        "wither_skeleton",
-        "skeleton",
-        "stray",
         "drowned",
         "husk",
         "zombie",
         "zombie_villager",
+        "skeleton",
+        "stray",
         "phantom",
+        "zoglin",
         "skeleton_horse",
-        "zombie_horse"
+        "zombie_horse",
+        "zombified_piglin",
+        "wither_skeleton"
     ]
 }

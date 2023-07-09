@@ -13,14 +13,6 @@ scoreboard players operation $mt.pet.attack.add.weapon mt.score -= $mt.pet.attac
 scoreboard players operation $mt.pet.attack.add.effect mt.score = $mt.pet.attack mt.score
 scoreboard players operation $mt.pet.attack.add.effect mt.score -= $mt.pet.attack.no_effect mt.score
 
-# tellraw @a [{"text": "final: "},{"score":{"name": "$mt.pet.attack","objective": "mt.score"}}]
-# tellraw @a [{"text": "no_effect: "},{"score":{"name": "$mt.pet.attack.no_effect","objective": "mt.score"}}]
-# tellraw @a [{"text": "base: "},{"score":{"name": "$mt.pet.attack.base","objective": "mt.score"}}]
-# tellraw @a [{"text": "add: "},{"score":{"name": "$mt.pet.attack.add","objective": "mt.score"}}]
-# tellraw @a [{"text": "add.variant: "},{"score":{"name": "$mt.pet.attack.add.variant","objective": "mt.score"}}]
-# tellraw @a [{"text": "add.weapon: "},{"score":{"name": "$mt.pet.attack.add.weapon","objective": "mt.score"}}]
-# tellraw @a [{"text": "add.effect: "},{"score":{"name": "$mt.pet.attack.add.effect","objective": "mt.score"}}]
-
 data modify entity @s ActiveEffects set from storage mobtamer:temp data.ActiveEffects
 data remove storage mobtamer:temp data.ActiveEffects
 

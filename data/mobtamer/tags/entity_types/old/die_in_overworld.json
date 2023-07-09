@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "minecraft:hoglin",
-    "minecraft:piglin",
-    "minecraft:piglin_brute",
-    "minecraft:strider"
-  ]
-}

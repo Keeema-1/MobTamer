@@ -1,2 +1,2 @@
-execute if entity @s[type=!drowned,type=!hoglin] as @e[type=#mobtamer:be_hostile/always,team=!mt.common,predicate=mobtamer:targeting,distance=..12,sort=nearest,limit=1] run function mobtamer:sys/player/pet/each/be_hostile/000
+execute if entity @s[type=!drowned,type=!hoglin,tag=!zoglin] as @e[type=#mobtamer:be_hostile/always,team=!mt.common,predicate=mobtamer:targeting,distance=..12,sort=nearest,limit=1] run function mobtamer:sys/player/pet/each/be_hostile/000
 execute if entity @s[type=drowned] as @e[type=#mobtamer:be_hostile/always,type=!drowned,team=!mt.common,predicate=mobtamer:targeting,distance=..12,sort=nearest,limit=1] run function mobtamer:sys/player/pet/each/be_hostile/000

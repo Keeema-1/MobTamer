@@ -18,9 +18,6 @@ execute as @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=!mt.down,tag=!mt
 scoreboard players operation $mt.xp.add.killer mt.score += $mt.xp.remain mt.score
 scoreboard players operation @s mt.xp += $mt.xp.add.killer mt.score
 
-# tellraw @a ["",{"selector":"@s","color": "aqua"},{"text":" Exp +","color":"aqua"},{"score":{"name":"$mt.xp.add.killer","objective":"mt.score"},"color":"aqua"}]
-# execute as @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=!mt.pet_check] run tellraw @a ["",{"selector":"@s","color": "aqua"},{"text":" Exp +","color":"aqua"},{"score":{"name":"$mt.xp.add","objective":"mt.score"},"color":"aqua"}]
-# execute on target run tellraw @a [{"text":"  "},{"selector":"@s","color": "red"},{"text": "  (xp:","color": "yellow"},{"score":{"name": "$mt.xp.add","objective": "mt.score"},"color": "aqua"},{"text": ")","color": "yellow"}]
 execute if data storage mobtamer:settings data{exp_display:1b} run function mobtamer:sys/player/pet/each/xp/display/0
 
 scoreboard players reset $mt.xp.add

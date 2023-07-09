@@ -6,6 +6,7 @@ scoreboard objectives add mt.max_health dummy
 scoreboard objectives add mt.xp dummy
 scoreboard objectives add mt.settings dummy
 scoreboard objectives add mt.tame_type_count dummy
+scoreboard objectives add mt.hostile_interval dummy
 # プレイヤー：パーティーの最大コスト，ペット：自身のコスト
 scoreboard objectives add mt.cost dummy
 # 共通．(etc. チャンスタイム)
@@ -26,7 +27,15 @@ team add mt.common "共通チーム"
 
 tellraw @a "Loaded: MobTamer_For20"
 
-# function mobtamer:sys/set_text/0
 function mobtamer:sys/database/0
 
 execute unless data storage mobtamer:settings data run function mobtamer:init
+
+execute store result score $mt.ver.old.main mt.score run data get storage mobtamer:settings data.version.main
+execute store result score $mt.ver.old.beta mt.score run data get storage mobtamer:settings data.version.beta
+data modify storage mobtamer:settings data.version merge value {main:10000, beta:1}
+execute store result score $mt.ver.now.main mt.score run data get storage mobtamer:settings data.version.main
+execute store result score $mt.ver.now.beta mt.score run data get storage mobtamer:settings data.version.beta
+execute unless score $mt.ver.old.main mt.score = $mt.ver.now.main mt.score unless score $mt.ver.old.beta mt.score = $mt.ver.now.beta mt.score run function mobtamer:version_changed
+scoreboard players reset $mt.ver.old.main mt.score
+scoreboard players reset $mt.ver.old.beta mt.score

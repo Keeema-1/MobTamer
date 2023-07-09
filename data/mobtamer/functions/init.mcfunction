@@ -11,7 +11,7 @@ function mobtamer:init_settings
 # 上限と強化+の上限(up limit)
 data modify storage mobtamer:settings data.values.power_up_max merge value {attack:6,max_health:40}
 
-data modify storage mobtamer:settings data merge value {datapack_ver:[0,0,0]}
+data modify storage mobtamer:settings data merge value {version:{main:10000, beta:1}}
 forceload remove all
 
 scoreboard players set $mt.sys mt.slot 6
@@ -19,4 +19,3 @@ scoreboard players set $mt.sys mt.slot 6
 tellraw @a {"text": "設定が初期化されました。","color": "green"}
 
 gamerule sendCommandFeedback false
-# tellraw @a [{"text": "gamerule: sendCommandFeedback が False になりました。"}]

@@ -6,3 +6,4 @@ execute if score $mt.conductor.mode1 mt.score matches 2 run function mobtamer:sy
 execute if score $mt.conductor.mode1 mt.score matches 3 run function mobtamer:sys/player/item/conductor/title/attack/0
 execute if score $mt.conductor.mode1 mt.score matches 4 run function mobtamer:sys/player/item/conductor/title/ride/0
 execute if score $mt.conductor.mode1 mt.score matches 5 run function mobtamer:sys/player/item/conductor/title/power_up/0
+execute if score $mt.conductor.mode1 mt.score matches 6 run function mobtamer:sys/player/item/conductor/title/gather/0
