@@ -1,8 +1,0 @@
-execute positioned ~ 96 ~ positioned ~ ~-32 ~ positioned ~ ~4 ~ if entity @s[distance=..4] run spreadplayers ~ ~ 2 4 under 72 false @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=!mt.down,tag=!mt.stop]
-execute positioned ~ 96 ~ positioned ~ ~-24 ~ positioned ~ ~4 ~ if entity @s[distance=..4] run spreadplayers ~ ~ 2 4 under 80 false @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=!mt.down,tag=!mt.stop]
-execute positioned ~ 96 ~ positioned ~ ~-16 ~ positioned ~ ~4 ~ if entity @s[distance=..4] run spreadplayers ~ ~ 2 4 under 88 false @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=!mt.down,tag=!mt.stop]
-execute positioned ~ 96 ~ positioned ~ ~-8 ~ positioned ~ ~4 ~ if entity @s[distance=..4] run spreadplayers ~ ~ 2 4 under 96 false @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=!mt.down,tag=!mt.stop]
-execute positioned ~ 96 ~ positioned ~ ~0 ~ positioned ~ ~4 ~ if entity @s[distance=..4] run spreadplayers ~ ~ 2 4 under 104 false @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=!mt.down,tag=!mt.stop]
-execute positioned ~ 96 ~ positioned ~ ~8 ~ positioned ~ ~4 ~ if entity @s[distance=..4] run spreadplayers ~ ~ 2 4 under 112 false @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=!mt.down,tag=!mt.stop]
-execute positioned ~ 96 ~ positioned ~ ~16 ~ positioned ~ ~4 ~ if entity @s[distance=..4] run spreadplayers ~ ~ 2 4 under 120 false @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=!mt.down,tag=!mt.stop]
-execute positioned ~ 96 ~ positioned ~ ~24 ~ positioned ~ ~4 ~ if entity @s[distance=..4] run spreadplayers ~ ~ 2 4 under 128 false @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=!mt.down,tag=!mt.stop]
