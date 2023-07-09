@@ -1,0 +1,7 @@
+execute if entity @a[distance=..8] run schedule function mobtamer:sys/schedule/data_transfer/0 1t replace
+
+data modify storage mobtamer:data_transfer data.Items set from entity @s Items
+
+execute unless entity @a[distance=..8] run particle poof ~ ~ ~ 0 0 0 0.1 10
+execute unless entity @a[distance=..8] run data remove entity @s Items
+execute unless entity @a[distance=..8] run kill @s
