@@ -40,3 +40,11 @@ execute store result score $mt.ver.now.beta mt.score run data get storage mobtam
 execute unless score $mt.ver.old.main mt.score = $mt.ver.now.main mt.score unless score $mt.ver.old.beta mt.score = $mt.ver.now.beta mt.score run function mobtamer:version_changed
 scoreboard players reset $mt.ver.old.main mt.score
 scoreboard players reset $mt.ver.old.beta mt.score
+
+scoreboard players set $mt.conductor.mode1.info mt.score 0
+scoreboard players set $mt.conductor.mode1.stop mt.score 1
+scoreboard players set $mt.conductor.mode1.gather mt.score 2
+scoreboard players set $mt.conductor.mode1.attack mt.score 3
+scoreboard players set $mt.conductor.mode1.store mt.score 4
+scoreboard players set $mt.conductor.mode1.ride mt.score 5
+scoreboard players set $mt.conductor.mode1.power_up mt.score 6
