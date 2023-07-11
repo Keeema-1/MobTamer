@@ -6,14 +6,15 @@
       }
     ],
     "description": [
-      {
-        "text": "金装備を一式揃えたモブをテイムする"
-      }
+      [
+        {"text": "金の防具を一式揃えたモブをテイムする"}
+      ]
     ],
     "icon": {
       "item": "minecraft:golden_chestplate"
     },
-    "hidden": true
+    "hidden": true,
+    "frame": "challenge"
   },
   "parent": "mobtamer:mobtamer/challenge",
   "criteria": {

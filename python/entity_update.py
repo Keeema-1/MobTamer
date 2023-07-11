@@ -125,6 +125,7 @@ if(1):
         output.append('scoreboard players operation $mt.cost.before mt.score = @s mt.cost\n')
         output.append('scoreboard players add @s mt.cost ' + item[idx] + '\n')
         output.append('scoreboard players add @s mt.tame_type_count 1\n')
+        output.append('data modify storage mobtamer:database data.record.' + item[0] + '.any set value 1b\n')
         # output.append('tellraw @s {"text":"パーティーのコスト上限 +' + item[idx] + '","color": "aqua"}\n')
         output.append('tellraw @s [{"text":"パーティーのコスト上限が増加しました。 （","color": "aqua"},{"score":{"name": "$mt.cost.before","objective": "mt.score"}},{"text":"→","color": "aqua"},{"score":{"name": "@s","objective": "mt.cost"}},{"text":"）","color": "aqua"}]\n')
         output.append('scoreboard players reset $mt.cost.before mt.score\n')

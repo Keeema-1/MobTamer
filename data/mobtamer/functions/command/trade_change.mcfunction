@@ -1,0 +1,1 @@
+function mobtamer:sys/trader/daily_change/0

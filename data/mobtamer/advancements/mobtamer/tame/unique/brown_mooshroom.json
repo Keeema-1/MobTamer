@@ -13,7 +13,8 @@
     "icon": {
       "item": "minecraft:brown_mushroom"
     },
-    "hidden": true
+    "hidden": true,
+    "frame": "challenge"
   },
   "parent": "mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/mooshroom",
   "criteria": {
