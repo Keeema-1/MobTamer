@@ -6,7 +6,7 @@ execute if entity @s[tag=!mt.handitem_was_conductor] unless data storage mobtame
 
 execute if score @s mt.dropped.fishing_rod matches 1.. run function mobtamer:sys/player/item/drop/fishing_rod/0
 execute if score @s mt.dropped.golden_apple matches 1.. run function mobtamer:sys/player/item/drop/golden_apple/0
-execute if score @s mt.dropped.knowledge_book matches 1.. run function mobtamer:sys/player/item/drop/knowledge_book/0
+execute if score @s mt.dropped.book matches 1.. run function mobtamer:sys/player/item/drop/book/0
 
 tag @s remove mt.handitem_was_conductor
 

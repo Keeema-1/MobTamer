@@ -5,7 +5,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:knowledge_book",
+            "name": "minecraft:book",
             "functions": [
               {
                 "function": "minecraft:set_nbt",
