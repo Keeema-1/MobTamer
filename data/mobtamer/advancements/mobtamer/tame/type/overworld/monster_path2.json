@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:air"
+        },
+        "title": "",
+        "description": "",
+        "hidden": true
+    },
+    "parent": "mobtamer:mobtamer/tame/type/overworld/monster_path1",
+    "criteria": {
+      "enter": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

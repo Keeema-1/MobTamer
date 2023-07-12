@@ -15,7 +15,7 @@
       },
       "hidden": true
     },
-    "parent": "mobtamer:mobtamer/tame/type/overworld/monster",
+    "parent": "mobtamer:mobtamer/tame/type/overworld/monster/aquatic_path",
     "criteria": {
       "enter": {
         "trigger": "minecraft:impossible"

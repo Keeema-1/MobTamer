@@ -15,7 +15,7 @@
       },
       "hidden": true
     },
-    "parent": "mobtamer:mobtamer/tame/type/overworld",
+    "parent": "mobtamer:mobtamer/tame/type/overworld/monster_path2",
     "criteria": {
       "enter": {
         "trigger": "minecraft:impossible"

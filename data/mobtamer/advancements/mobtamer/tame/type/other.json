@@ -15,7 +15,7 @@
       },
       "hidden": true
     },
-    "parent": "mobtamer:mobtamer/tame/tame_type",
+    "parent": "mobtamer:mobtamer/tame/type/path5",
     "criteria": {
       "enter": {
         "trigger": "minecraft:impossible"

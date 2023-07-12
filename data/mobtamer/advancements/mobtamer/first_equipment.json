@@ -1,0 +1,20 @@
+{
+  "display": {
+    "title": "チャキーン！",
+    "description": [
+      {"text":"ペットにペット用装備を着せる（ペット用装備は進捗で開放されます）"}
+    ],
+    "icon": {
+      "item": "minecraft:leather_chestplate"
+    }
+  },
+  "parent": "mobtamer:mobtamer/first_tame",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/first_equipment"
+  }
+}

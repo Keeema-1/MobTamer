@@ -20,5 +20,8 @@ data modify storage mobtamer:database data.item.manual.pages append value '["",{
 
 data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"ペットの強化\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　ペットはモブを倒した際にExp（経験値）を得ることがあります。そのExpを消費してペットを強化することができます。\\n"},{"text":"コンダクターの強化モードからペットを強化することができます。"}]'
 
-
-# tellraw @a ["",{"text": "a","hoverEvent": {"action":"show_text","contents": [{"text": "test"}]}}]
+data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"注意点\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　本データパックはMinecraftのゲームシステムをそのまま使用している部分が大きいため、ゲームシステムの仕様によって予期せぬ挙動を起こす場合があります。次ページ以降に注意点を記載します。\\n\\n"}]'
+data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"注意点-1\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"・召喚したいモブと同じ種族のモブに目線を合わせてスポーンエッグを使用すると、ペットデータの消えた子供のモブを召喚してしまいます。\\n\\n"},{"text":"・ペットのウーパールーパーをバケツで回収するとペットデータが消えてしまいます。\\n\\n"}]'
+data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"注意点-2\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"・アイアンゴーレムが味方のモンスターを攻撃してしまうときがあります。\\n\\n"},{"text":"・ペットのマグマキューブに触れるとダメージを受けてしまいます。\\n\\n"},{"text":"・ペットのファントムは日中には召喚できません。\\n\\n"}]'
+data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"注意点-3\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"・ガストの火球、ガーディアンのビーム、スライム／マグマキューブ／ファントムの体当たりなど、一部の攻撃はペットになっても他のモブに対して行いません。\\n\\n"}]'
+data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"注意点-4\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"・モンスタースポナーに対してペットのスポーンエッグを使用できてしまいます。\\n\\n"}]'
