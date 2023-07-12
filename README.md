@@ -5,3 +5,6 @@
 Minecraft Java Edition version 1.20.1 対応
 
 本データパックは未だデバッグ・調整が不十分です．バグが発生し，プレイやワールドに影響が出る可能性があるので，理解した上でプレイしてください．
+
+配布ページURL
+https://github.com/Keeema-1/MobTamer/wiki
