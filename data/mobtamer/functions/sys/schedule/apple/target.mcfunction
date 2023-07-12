@@ -24,3 +24,5 @@ effect give @s fire_resistance 60 1 true
 playsound minecraft:entity.fox.eat master @a ~ ~ ~ 1 1
 
 schedule function mobtamer:sys/schedule/chance/0 1t
+
+execute as @a run function mobtamer:sys/player/status_update

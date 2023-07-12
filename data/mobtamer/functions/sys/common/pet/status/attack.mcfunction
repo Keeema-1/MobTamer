@@ -16,6 +16,9 @@ scoreboard players operation $mt.pet.attack.add.effect mt.score -= $mt.pet.attac
 data modify entity @s ActiveEffects set from storage mobtamer:temp data.ActiveEffects
 data remove storage mobtamer:temp data.ActiveEffects
 
+execute if entity @s[type=rabbit] if data entity @s {RabbitType:99} run scoreboard players set $mt.pet.attack.base mt.score 8
+execute if entity @s[type=rabbit] if data entity @s {RabbitType:99} run scoreboard players set $mt.pet.attack.no_effect mt.score 8
+execute if entity @s[type=rabbit] if data entity @s {RabbitType:99} run scoreboard players set $mt.pet.attack mt.score 8
 
 execute store result storage mobtamer:temp data.pet_status.attack.base int 1 run scoreboard players get $mt.pet.attack.base mt.score
 execute store result storage mobtamer:temp data.pet_status.attack.no_effect int 1 run scoreboard players get $mt.pet.attack.no_effect mt.score

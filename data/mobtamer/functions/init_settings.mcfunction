@@ -8,3 +8,5 @@ data modify storage mobtamer:settings data merge value {team_collition:1b}
 team modify mt.common collisionRule always
 data modify storage mobtamer:settings data merge value {team_color:aqua}
 team modify mt.common color aqua
+data modify storage mobtamer:settings data merge value {weakness:"never"}
+execute as @a run function mobtamer:sys/player/status_update

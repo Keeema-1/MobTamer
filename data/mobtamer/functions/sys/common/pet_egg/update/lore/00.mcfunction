@@ -27,7 +27,7 @@ execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[0].Coun
 # 上でmainhandを塗り替えてしまったのでなんとかする
 data modify entity @s ArmorItems[3] set from storage mobtamer:temp data.Item.tag.EntityTag.HandItems[0]
 execute if data storage mobtamer:temp data.Item.tag.EntityTag.HandItems[0].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/mainhand
-data modify entity @s ArmorItems[3] set from storage mobtamer:temp data.Item.tag.EntityTag.HandItems[0]
+data modify entity @s ArmorItems[3] set from storage mobtamer:temp data.Item.tag.EntityTag.HandItems[1]
 execute if data storage mobtamer:temp data.Item.tag.EntityTag.HandItems[1].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/offhand
 
 item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/cost

@@ -2,6 +2,9 @@
 # cost計算
 function mobtamer:sys/common/pet/calc_cost
 
+tellraw @a ""
+tellraw @a [{"storage":"mobtamer:temp","nbt":"data.pet_status"}]
+
 data modify storage mobtamer:temp data.pet_status_before set from storage mobtamer:temp data.pet_status
 
 execute at @s on passengers if entity @s[tag=mt.text_display.power_up.explain] run function mobtamer:sys/common/pet_egg/update/text_display/explain
@@ -18,6 +21,9 @@ function mobtamer:sys/common/pet_egg/update/lore/0
 
 data modify entity @s Item.tag.mt_pet_status set from storage mobtamer:temp data.pet_status_before
 data modify entity @s Item.tag.EntityTag.PortalCooldown set from storage mobtamer:temp data.pet_status_before.xp
+
+tellraw @a ""
+tellraw @a [{"storage":"mobtamer:temp","nbt":"data.pet_status"}]
 
 data remove storage mobtamer:temp data.pet_status_before
 data remove storage mobtamer:temp data.pet_status

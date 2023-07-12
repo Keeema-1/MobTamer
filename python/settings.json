@@ -114,5 +114,24 @@
                 ]
             }
         ]
+    },
+    {
+        "class":"tied_up",
+        "title":"縛り設定",
+        "each_player":false,
+        "contents":[
+            {
+                "name":"weakness",
+                "display":{
+                    "title":"プレイヤーの攻撃力低下",
+                    "detail":"プレイヤーの攻撃力と矢のダメージが1/10に低下し、トライデントを投げられなくなる"
+                },
+                "states":[
+                    ["\"never\"","無効","gray",["execute as @a run function mobtamer:sys/player/status_update"]],
+                    ["\"only_tame_challenge\"","テイムチャレンジ中のみ有効","yellow",["execute as @a run function mobtamer:sys/player/status_update"]],
+                    ["\"always\"","常に有効","aqua",["execute as @a run function mobtamer:sys/player/status_update"]]
+                ]
+            }
+        ]
     }
 ]

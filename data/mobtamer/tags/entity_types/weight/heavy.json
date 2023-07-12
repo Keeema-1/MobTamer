@@ -1,0 +1,25 @@
+{
+    "replace": false,
+    "values": [
+        "skeleton_horse",
+        "elder_guardian",
+        "ravager",
+        "warden",
+        "iron_golem",
+        "camel",
+        "polar_bear",
+        "panda",
+        "llama",
+        "trader_llama",
+        "donkey",
+        "horse",
+        "mule",
+        "zoglin",
+        "zombie_horse",
+        "sniffer",
+        "giant",
+        "hoglin",
+        "wither",
+        "ender_dragon"
+    ]
+}

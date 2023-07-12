@@ -15,6 +15,7 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.HandItems set from ent
 data modify storage mobtamer:temp data.Item.tag.EntityTag.LeftHanded set from entity @s LeftHanded
 data modify storage mobtamer:temp data.Item.tag.EntityTag.IsBaby set value 0b
 data modify storage mobtamer:temp data.Item.tag.EntityTag.IsBaby set from entity @s IsBaby
+data modify storage mobtamer:temp data.Item.tag.EntityTag.RabbitType set from entity @s RabbitType
 data modify storage mobtamer:temp data.Item.tag.EntityTag.CanPickUpLoot set value 0b
 data modify storage mobtamer:temp data.Item.tag.EntityTag.ArmorDropChances set from entity @s ArmorDropChances
 data modify storage mobtamer:temp data.Item.tag.EntityTag.HandDropChances set from entity @s HandDropChances
@@ -38,6 +39,7 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.DecorItem set from ent
 data modify storage mobtamer:temp data.Item.tag.EntityTag.ChestedHorse set from entity @s ChestedHorse
 data modify storage mobtamer:temp data.Item.tag.EntityTag.MainGene set from entity @s MainGene
 data modify storage mobtamer:temp data.Item.tag.EntityTag.HiddenGene set from entity @s HiddenGene
+data modify storage mobtamer:temp data.Item.tag.EntityTag.carriedBlockState set from entity @s carriedBlockState
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Owner set from entity @s Owner
 data modify storage mobtamer:temp data.Item.tag.EntityTag.PersistenceRequired set value 1b
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Passengers set value []

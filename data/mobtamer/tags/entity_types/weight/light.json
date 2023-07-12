@@ -1,0 +1,27 @@
+{
+    "replace": false,
+    "values": [
+        "axolotl",
+        "cod",
+        "pufferfish",
+        "salmon",
+        "tropical_fish",
+        "vex",
+        "phantom",
+        "silverfish",
+        "cave_spider",
+        "allay",
+        "bee",
+        "fox",
+        "frog",
+        "cat",
+        "ocelot",
+        "endermite",
+        "ghast",
+        "rabbit",
+        "bat",
+        "parrot",
+        "chicken",
+        "blaze"
+    ]
+}

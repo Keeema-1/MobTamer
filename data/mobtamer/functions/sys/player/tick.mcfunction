@@ -12,6 +12,8 @@ data modify storage mobtamer:temp data.player.SelectedItem set from entity @s Se
 function mobtamer:sys/player/summon/tick
 function mobtamer:sys/player/pet/tick
 function mobtamer:sys/player/item/tick
+function mobtamer:sys/player/weakness/tick
+function mobtamer:sys/player/death/tick
 execute if predicate mobtamer:random/100m unless data storage mobtamer:settings data{store_when_sleep:"never"} if predicate mobtamer:can_sleep if entity @e[team=mt.common,tag=mt.player_check,tag=mt.pet,limit=1] run function mobtamer:sys/player/bed/0
 # sneak終了チェックのためitemより後
 function mobtamer:sys/player/state/tick

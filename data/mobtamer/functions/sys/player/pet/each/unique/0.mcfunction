@@ -12,9 +12,13 @@ execute if entity @s[type=fox,tag=mt.following] run function mobtamer:sys/player
 
 execute if entity @s[type=wolf,tag=mt.following] if data entity @s {Sitting:1b} run data modify entity @s Sitting set value 0b
 
+execute if entity @s[type=#mobtamer:can_fly] run function mobtamer:sys/player/pet/each/unique/can_fly
+
 execute if predicate mobtamer:random/1m if data storage mobtamer:settings data{baby_grow:0b} if predicate mobtamer:is_baby run data modify entity @s Age set value -100000
 
 execute if entity @s[type=goat] if predicate mobtamer:random/50m if data entity @s Brain.memories."minecraft:ram_cooldown_ticks" run data modify entity @s Brain.memories."minecraft:ram_cooldown_ticks" set value 0
+
+execute if entity @s[type=phantom] if predicate mobtamer:random/50m unless predicate mobtamer:undead_dont_burn run function mobtamer:sys/player/pet/each/unique/phantom_store
 
 execute if entity @s[type=evoker] if predicate mobtamer:targeting_not_common_team run team join mt.common @e[type=vex,team=!mt.common,distance=..4]
 
