@@ -1,15 +1,16 @@
 {
-    "condition": "minecraft:any_of",
-    "terms": [
-      {
-        "condition": "minecraft:time_check",
-        "value": {
-          "min": 12542
-        }
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:time_check",
+      "value": {
+        "min": 12542
       },
-      {
-        "condition": "minecraft:weather_check",
-        "thundering": true
-      }
-    ]
-}  
+      "period": 24000
+    },
+    {
+      "condition": "minecraft:weather_check",
+      "thundering": true
+    }
+  ]
+}
