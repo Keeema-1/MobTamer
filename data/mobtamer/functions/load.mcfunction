@@ -49,3 +49,5 @@ scoreboard players set $mt.conductor.mode1.attack mt.score 3
 scoreboard players set $mt.conductor.mode1.store mt.score 4
 scoreboard players set $mt.conductor.mode1.ride mt.score 5
 scoreboard players set $mt.conductor.mode1.power_up mt.score 6
+
+execute as @e[type=chest_minecart,tag=mt.data_transfer] run data modify entity @s Items set from storage mobtamer_transfer:data data.Items
