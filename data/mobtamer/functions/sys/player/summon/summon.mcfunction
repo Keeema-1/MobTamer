@@ -1,5 +1,5 @@
 
-execute if entity @s[type=phantom] run effect give @s fire_resistance infinite 1 true
+# execute if entity @s[type=phantom] run effect give @s fire_resistance infinite 1 true
 execute if entity @s[type=#mobtamer:slimes] run effect give @s weakness infinite 31 true
 # execute if entity @s[type=#mobtamer:slimes] run attribute @s generic.attack_damage modifier add 3859f171-dc76-4318-be87-d6578c1fbe25 "mt.attack.0" 0 multiply_base
 # execute if entity @s[type=#mobtamer:slimes] run attribute @s generic.attack_damage base set 0

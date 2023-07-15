@@ -16,7 +16,7 @@ scoreboard players operation @s mt.health = @s mt.max_health
 scoreboard players reset $mt.health mt.score
 scoreboard players reset $mt.max_health.add mt.score
 
-execute if entity @s[type=#mobtamer:burn_in_the_sun] run function mobtamer:sys/tame/success/common/helmet
+execute if entity @s[type=#mobtamer:burn_in_the_sun] if entity @s[type=#mobtamer:can_equip/all] run function mobtamer:sys/tame/success/common/helmet
 
 data modify entity @s ArmorItems[0].tag.Unbreakable set value 1b
 data modify entity @s ArmorItems[1].tag.Unbreakable set value 1b
