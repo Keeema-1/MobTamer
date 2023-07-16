@@ -2,7 +2,13 @@
   "display": {
     "title": "10種類のモブのテイム",
     "description": [
-      {"text":""}
+      {"text":"【報酬】ペット用装備の取引追加","color":"light_purple"},{"text":"（","color": "green"},{"translate":"item.minecraft.wooden_hoe","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.golden_hoe","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.leather_helmet","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.leather_chestplate","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.leather_leggings","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.leather_boots","color": "green"},
+      {"text":"）","color": "green"}
     ],
     "icon": {
       "item": "minecraft:golden_apple"

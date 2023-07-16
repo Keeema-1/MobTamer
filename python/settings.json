@@ -3,6 +3,7 @@
         "class":"general",
         "title":"プレイヤー共通設定",
         "each_player":false,
+        "only_run_command":false,
         "contents":[
             {
                 "name":"equipment_when_tame",
@@ -66,6 +67,7 @@
         "class":"each_player",
         "title":"プレイヤーごとの設定",
         "each_player":true,
+        "only_run_command":false,
         "contents":[
             {
                 "name":"baby_grow",
@@ -84,6 +86,7 @@
         "class":"common_team",
         "title":"共通チーム設定",
         "each_player":false,
+        "only_run_command":false,
         "contents":[
             {
                 "name":"team_collition",
@@ -119,6 +122,7 @@
         "class":"tied_up",
         "title":"縛り設定",
         "each_player":false,
+        "only_run_command":false,
         "contents":[
             {
                 "name":"weakness",
@@ -130,6 +134,27 @@
                     ["\"never\"","無効","gray",["execute as @a run function mobtamer:sys/player/status_update"]],
                     ["\"only_tame_challenge\"","テイムチャレンジ中のみ有効","yellow",["execute as @a run function mobtamer:sys/player/status_update"]],
                     ["\"always\"","常に有効","aqua",["execute as @a run function mobtamer:sys/player/status_update"]]
+                ]
+            }
+        ]
+    },
+    {
+        "class":"data_transfer",
+        "title":"データ移行",
+        "each_player":false,
+        "only_run_command":true,
+        "contents":[
+            {
+                "name":"data_transfer",
+                "display":{
+                    "title":"データ移行",
+                    "detail":"他のワールドにペットを持ち込む"
+                },
+                "commands":[
+                    "function mobtamer:command/data_transfer"
+                ],
+                "states":[
+                    ["","","",[]]
                 ]
             }
         ]

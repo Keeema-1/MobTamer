@@ -16,3 +16,4 @@ execute if score @s mt.trigger matches 81 run function mobtamer:sys/player/trigg
 execute if score @s mt.trigger matches 82 run function mobtamer:sys/player/trigger/settings/team_color/change
 execute if score @s mt.trigger matches 91 run function mobtamer:sys/player/trigger/settings/weakness/start
 execute if score @s mt.trigger matches 92 run function mobtamer:sys/player/trigger/settings/weakness/change
+execute if score @s mt.trigger matches 101 run function mobtamer:sys/player/trigger/settings/data_transfer/start

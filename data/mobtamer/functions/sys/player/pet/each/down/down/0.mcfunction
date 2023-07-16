@@ -7,3 +7,5 @@ scoreboard players set @s mt.health -120
 execute summon text_display run function mobtamer:sys/player/pet/each/down/down/display
 
 playsound minecraft:item.totem.use master @a ~ ~ ~ 1
+
+tellraw @a[tag=mt.player_check,limit=1] [{"selector":"@s"},{"text":"がダウンしました。","color":"red"}]
