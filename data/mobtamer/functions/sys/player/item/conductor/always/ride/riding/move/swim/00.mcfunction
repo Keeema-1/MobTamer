@@ -12,7 +12,9 @@ scoreboard players operation $mt.motion.z mt.score *= $mt.speed mt.score
 execute if entity @s[type=squid] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/swim/speed/0
 execute if entity @s[type=glow_squid] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/swim/speed/0
 execute if entity @s[type=elder_guardian] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/swim/speed/2
-execute if entity @s[type=!squid,type=!glow_squid,type=!elder_guardian] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/swim/speed/1
+execute if entity @s[type=guardian] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/swim/speed/2
+execute if entity @s[type=turtle] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/swim/speed/2
+execute if entity @s[type=!squid,type=!glow_squid,type=!elder_guardian,type=!guardian,type=!turtle] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/swim/speed/1
 
 # title @a actionbar [{"storage":"mobtamer:temp","nbt":"data.Motion"}]
 
