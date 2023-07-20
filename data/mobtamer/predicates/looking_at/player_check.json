@@ -5,8 +5,7 @@
       "type_specific": {
         "type": "player",
         "looking_at": {
-          "nbt": "{Tags:[\"mt.player_check\"]}",
-          "team": "mt.common"
+          "nbt": "{Tags:[\"mt.player_check\"]}"
         }
       }
     }
