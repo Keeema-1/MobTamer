@@ -7,29 +7,5 @@
         "selector": "@s"
       }
     ]
-  },
-  {
-    "function": "minecraft:set_name",
-    "entity": "this",
-    "name": [
-      {
-        "selector": "@s",
-        "color": "red"
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "minecraft:value_check",
-        "value": {
-          "type": "minecraft:score",
-          "target": {
-            "type": "minecraft:fixed",
-            "name": "$mt.pet.health"
-          },
-          "score": "mt.score"
-        },
-        "range": 0
-      }
-    ]
   }
 ]

@@ -15,6 +15,7 @@ execute store result score $mt.pet.knockback mt.score run data get storage mobta
 execute store result score $mt.cost mt.score run data get storage mobtamer:temp data.pet_status.cost.value
 
 item replace entity @s weapon.mainhand with stick
+team leave @s
 item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/name
 execute unless score $mt.pet.max_health.add.variant mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/health/base
 execute if score $mt.pet.max_health.add.variant mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/health/variant
