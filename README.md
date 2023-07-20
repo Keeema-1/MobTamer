@@ -8,3 +8,6 @@ Minecraft Java Edition version 1.20.1 用
 
 配布ページURL
 https://github.com/Keeema-1/MobTamer/wiki
+
+ライセンス/LICENSE
+MIT License (https://github.com/Keeema-1/MobTamer/blob/main/LICENSE)
