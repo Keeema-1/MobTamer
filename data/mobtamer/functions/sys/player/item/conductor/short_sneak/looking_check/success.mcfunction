@@ -1,7 +1,7 @@
 
 scoreboard players set $mt.looking_check mt.score 1
 
-tag @e[team=mt.common,tag=mt.player_check] remove mt.selected
+tag @e[team=!,tag=mt.player_check] remove mt.selected
 
 tag @s add mt.selected
 

@@ -1,5 +1,5 @@
 
-execute as @a[predicate=mobtamer:is_sneaking,distance=..4] at @s as @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=mt.down,sort=nearest,limit=1,distance=..4] if entity @s[tag=mt.pet_check] run scoreboard players add @s mt.health 2
+execute as @a[predicate=mobtamer:is_sneaking,distance=..4] at @s as @e[team=!,tag=mt.player_check,tag=mt.pet,tag=mt.down,sort=nearest,limit=1,distance=..4] if entity @s[tag=mt.pet_check] run scoreboard players add @s mt.health 2
 
 execute if score @s mt.health matches -119.. run scoreboard players remove @s mt.health 1
 

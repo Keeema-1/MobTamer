@@ -11,10 +11,10 @@ scoreboard players operation $mt.xp.add.killer mt.score /= $mt.temp mt.score
 scoreboard players operation $mt.xp.remain mt.score -= $mt.xp.add.killer mt.score
 
 scoreboard players operation $mt.xp.add mt.score = $mt.xp.remain mt.score
-execute store result score $mt.temp mt.score if entity @e[team=mt.common,tag=mt.player_check,tag=mt.pet]
+execute store result score $mt.temp mt.score if entity @e[team=!,tag=mt.player_check,tag=mt.pet]
 scoreboard players operation $mt.xp.add mt.score /= $mt.temp mt.score
-scoreboard players operation @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=!mt.down,tag=!mt.stop,tag=!mt.pet_check] mt.xp += $mt.xp.add mt.score
-execute as @e[team=mt.common,tag=mt.player_check,tag=mt.pet,tag=!mt.down,tag=!mt.stop,tag=!mt.pet_check] run scoreboard players operation $mt.xp.remain mt.score -= $mt.xp.add mt.score
+scoreboard players operation @e[team=!,tag=mt.player_check,tag=mt.pet,tag=!mt.down,tag=!mt.stop,tag=!mt.pet_check] mt.xp += $mt.xp.add mt.score
+execute as @e[team=!,tag=mt.player_check,tag=mt.pet,tag=!mt.down,tag=!mt.stop,tag=!mt.pet_check] run scoreboard players operation $mt.xp.remain mt.score -= $mt.xp.add mt.score
 scoreboard players operation $mt.xp.add.killer mt.score += $mt.xp.remain mt.score
 scoreboard players operation @s mt.xp += $mt.xp.add.killer mt.score
 

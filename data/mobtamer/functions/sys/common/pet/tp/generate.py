@@ -22,7 +22,7 @@ for i in range(6):
     for j in range(4):
         output = []
         for k in range(4):
-            output.append('execute positioned ~ ' + str(-32+i*64 -32+8-8+2 + j*16 + k*4) + ' ~ if entity @s[distance=..2] run spreadplayers ~ ~ 2 4 under ' + str(-32+i*64 -32+8-8+2+3 + j*16 + k*4) + ' false @e[team=mt.common,tag=mt.tp_pet]\n')
+            output.append('execute positioned ~ ' + str(-32+i*64 -32+8-8+2 + j*16 + k*4) + ' ~ if entity @s[distance=..2] run spreadplayers ~ ~ 2 4 under ' + str(-32+i*64 -32+8-8+2+3 + j*16 + k*4) + ' false @e[team=!,tag=mt.tp_pet]\n')
         path = '0' + str(i) + str(j) + '.mcfunction'
         with open(path, 'w', encoding='utf-8') as f:
             f.writelines(output)
