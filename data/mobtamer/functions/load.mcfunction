@@ -31,6 +31,10 @@ team add mt.red "赤チーム"
 team modify mt.red color red
 team add mt.blue "青チーム"
 team modify mt.blue color blue
+team add mt.green "緑チーム"
+team modify mt.green color green
+team add mt.gold "橙チーム"
+team modify mt.gold color gold
 
 function mobtamer:sys/database/0
 

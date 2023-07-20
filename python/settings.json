@@ -175,6 +175,32 @@
                 "states":[
                     ["","","",[]]
                 ]
+            },
+            {
+                "name":"join_green_team",
+                "display":{
+                    "title":"緑チームに参加",
+                    "detail":"このチームは村人たちと敵対します"
+                },
+                "commands":[
+                    "function mobtamer:command/team/change/green"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            },
+            {
+                "name":"join_gold_team",
+                "display":{
+                    "title":"橙チームに参加",
+                    "detail":"このチームは村人たちと敵対します"
+                },
+                "commands":[
+                    "function mobtamer:command/team/change/gold"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
             }
         ]
     },

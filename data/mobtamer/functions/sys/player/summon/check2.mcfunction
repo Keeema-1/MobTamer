@@ -4,6 +4,8 @@ tag @s remove mt.was_stored
 execute if entity @a[tag=mt.player_check,team=mt.common,limit=1] run team join mt.common @s
 execute if entity @a[tag=mt.player_check,team=mt.red,limit=1] run team join mt.red @s
 execute if entity @a[tag=mt.player_check,team=mt.blue,limit=1] run team join mt.blue @s
+execute if entity @a[tag=mt.player_check,team=mt.green,limit=1] run team join mt.green @s
+execute if entity @a[tag=mt.player_check,team=mt.gold,limit=1] run team join mt.gold @s
 
 execute on passengers run data merge entity @s {DeathLootTable:"empty",Health:0.0f,Silent:1b}
 
