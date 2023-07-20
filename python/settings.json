@@ -106,14 +106,74 @@
                     "detail":"チームカラーの変更"
                 },
                 "states":[
+                    ["white","ホワイト","white",["team modify mt.common color white"]],
                     ["aqua","アクア","aqua",["team modify mt.common color aqua"]],
                     ["blue","ブルー","blue",["team modify mt.common color blue"]],
                     ["green","グリーン","green",["team modify mt.common color green"]],
                     ["yellow","イエロー","yellow",["team modify mt.common color yellow"]],
                     ["gold","オレンジ","gold",["team modify mt.common color gold"]],
                     ["light_purple","パープル","light_purple",["team modify mt.common color light_purple"]],
-                    ["red","レッド","red",["team modify mt.common color red"]],
-                    ["white","ホワイト","white",["team modify mt.common color white"]]
+                    ["red","レッド","red",["team modify mt.common color red"]]
+                ]
+            }
+        ]
+    },
+    {
+        "class":"teams",
+        "title":"チーム参加",
+        "each_player":false,
+        "only_run_command":true,
+        "contents":[
+            {
+                "name":"member_list",
+                "display":{
+                    "title":"各チームの参加者一覧",
+                    "detail":"各チームの参加者一覧を表示"
+                },
+                "commands":[
+                    "function mobtamer:command/team/list/all"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            },
+            {
+                "name":"join_common_team",
+                "display":{
+                    "title":"共通チームに参加",
+                    "detail":"このチームは村人たちとは敵対しません"
+                },
+                "commands":[
+                    "function mobtamer:command/team/change/common"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            },
+            {
+                "name":"join_red_team",
+                "display":{
+                    "title":"赤チームに参加",
+                    "detail":"このチームは村人たちと敵対します"
+                },
+                "commands":[
+                    "function mobtamer:command/team/change/red"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            },
+            {
+                "name":"join_blue_team",
+                "display":{
+                    "title":"青チームに参加",
+                    "detail":"このチームは村人たちと敵対します"
+                },
+                "commands":[
+                    "function mobtamer:command/team/change/blue"
+                ],
+                "states":[
+                    ["","","",[]]
                 ]
             }
         ]

@@ -14,6 +14,10 @@ execute if score @s mt.trigger matches 71 run function mobtamer:sys/player/trigg
 execute if score @s mt.trigger matches 72 run function mobtamer:sys/player/trigger/settings/team_collition/change
 execute if score @s mt.trigger matches 81 run function mobtamer:sys/player/trigger/settings/team_color/start
 execute if score @s mt.trigger matches 82 run function mobtamer:sys/player/trigger/settings/team_color/change
-execute if score @s mt.trigger matches 91 run function mobtamer:sys/player/trigger/settings/weakness/start
-execute if score @s mt.trigger matches 92 run function mobtamer:sys/player/trigger/settings/weakness/change
-execute if score @s mt.trigger matches 101 run function mobtamer:sys/player/trigger/settings/data_transfer/start
+execute if score @s mt.trigger matches 91 run function mobtamer:sys/player/trigger/settings/member_list/start
+execute if score @s mt.trigger matches 101 run function mobtamer:sys/player/trigger/settings/join_common_team/start
+execute if score @s mt.trigger matches 111 run function mobtamer:sys/player/trigger/settings/join_red_team/start
+execute if score @s mt.trigger matches 121 run function mobtamer:sys/player/trigger/settings/join_blue_team/start
+execute if score @s mt.trigger matches 131 run function mobtamer:sys/player/trigger/settings/weakness/start
+execute if score @s mt.trigger matches 132 run function mobtamer:sys/player/trigger/settings/weakness/change
+execute if score @s mt.trigger matches 141 run function mobtamer:sys/player/trigger/settings/data_transfer/start
