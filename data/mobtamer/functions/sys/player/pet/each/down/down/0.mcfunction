@@ -8,4 +8,8 @@ execute summon text_display run function mobtamer:sys/player/pet/each/down/down/
 
 playsound minecraft:item.totem.use master @a ~ ~ ~ 1
 
+# execute on attacker if entity @s[type=player,tag=!mt.player_check] run tellraw @a [{"selector":"@s"},{"text":"が","color":"red"},{"selector":"@e[team=!,tag=mt.pet_check,limit=1]"},{"text":"をダウンさせました。","color":"red"}]
+# execute on attacker if entity @s[type=player,tag=!mt.player_check] run return 1
+# execute on attacker if entity @s[tag=mt.pet,tag=!mt.player_check] run tellraw @a [{"selector":"@s"},{"text":"が","color":"red"},{"selector":"@e[team=!,tag=mt.pet_check,limit=1]"},{"text":"をダウンさせました。","color":"red"}]
+# execute on attacker if entity @s[tag=mt.pet,tag=!mt.player_check] run return 1
 tellraw @a[tag=mt.player_check,limit=1] [{"selector":"@s"},{"text":"がダウンしました。","color":"red"}]
