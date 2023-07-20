@@ -1,1 +1,1 @@
-tag @e[team=!,tag=mt.same_team] add mt.same_team
+tag @e[team=!,tag=mt.same_team] remove mt.same_team
