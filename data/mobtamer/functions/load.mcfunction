@@ -27,6 +27,11 @@ scoreboard objectives add mt.death deathCount
 
 team add mt.common "共通チーム"
 
+team add mt.red "赤チーム"
+team modify mt.red color red
+team add mt.blue "青チーム"
+team modify mt.blue color blue
+
 tellraw @a "Loaded: MobTamer_For20"
 
 function mobtamer:sys/database/0

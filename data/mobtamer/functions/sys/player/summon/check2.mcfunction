@@ -1,6 +1,9 @@
 scoreboard players operation @s mt.id = $mt.player mt.id
 tag @s remove mt.was_stored
+
 team join mt.common @s
+execute if entity @a[tag=mt.player_check,team=mt.red,limit=1] run team join mt.red @s
+execute if entity @a[tag=mt.player_check,team=mt.blue,limit=1] run team join mt.blue @s
 
 execute on passengers run data merge entity @s {DeathLootTable:"empty",Health:0.0f,Silent:1b}
 
