@@ -118,9 +118,9 @@ if(1):
 
     count = 0
     for group in database:
-        if not group["only_run_command"]:
-            for item in group["contents"]:
-                count += 1
+        for item in group["contents"]:
+            count += 1
+            if not group["only_run_command"]:
                 output = []
                 if group["each_player"]:
                     output.append('function mobtamer:sys/common/player/settings/score2storage\n')
