@@ -1,0 +1,38 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{mt_gacha:1b,mt_gacha_type:\"diamond\"}"
+              },
+              {
+                "function": "minecraft:copy_nbt",
+                "source": {
+                  "type": "minecraft:storage",
+                  "source": "mobtamer:database"
+                },
+                "ops": [
+                  {
+                    "source": "data.item.diamond_gacha.display",
+                    "target": "display",
+                    "op": "replace"
+                  },{
+                    "source": "data.item.diamond_gacha.HideFlags",
+                    "target": "HideFlags",
+                    "op": "replace"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

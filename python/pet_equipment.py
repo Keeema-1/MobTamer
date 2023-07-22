@@ -42,11 +42,25 @@ database = [
     {"id":"iron_chestplate", "release": 5, "weight": 3, "price": 11, "part": "chest"},
     {"id":"iron_leggings", "release": 5, "weight": 3, "price": 10, "part": "legs"},
     {"id":"iron_boots", "release": 5, "weight": 3, "price": 7, "part": "feet"},
+    {"id":"bow", "release": 5, "weight": 5, "price": 15, "part": "mainhand"},
+    {"id":"crossbow", "release": 5, "weight": 5, "price": 15, "part": "mainhand"},
 
-    {"id":"wooden_axe", "release": 6, "weight": 0, "price": 1, "part": "mainhand"},
-    {"id":"golden_axe", "release": 6, "weight": 0, "price": 1, "part": "mainhand"},
-    {"id":"iron_axe", "release": 6, "weight": 0, "price": 1, "part": "mainhand"},
-    {"id":"stone_axe", "release": 6, "weight": 0, "price": 1, "part": "mainhand"},
+    {"id":"wooden_axe", "release": 6, "weight": 1, "price": 32, "part": "mainhand"},
+    {"id":"golden_axe", "release": 6, "weight": 1, "price": 32, "part": "mainhand"},
+    {"id":"iron_axe", "release": 6, "weight": 1, "price": 32, "part": "mainhand"},
+    {"id":"stone_axe", "release": 6, "weight": 1, "price": 32, "part": "mainhand"},
+    {"id":"diamond_axe", "release": 6, "weight": 1, "price": 32, "part": "mainhand"},
+    {"id":"diamond_sword", "release": 6, "weight": 1, "price": 32, "part": "mainhand"},
+    {"id":"diamond_hoe", "release": 6, "weight": 1, "price": 32, "part": "mainhand"},
+    {"id":"diamond_shovel", "release": 6, "weight": 1, "price": 32, "part": "mainhand"},
+    {"id":"diamond_pickaxe", "release": 6, "weight": 1, "price": 32, "part": "mainhand"},
+    {"id":"diamond_helmet", "release": 6, "weight": 1, "price": 32, "part": "head"},
+    {"id":"diamond_chestplate", "release": 6, "weight": 1, "price": 32, "part": "chest"},
+    {"id":"diamond_leggings", "release": 6, "weight": 1, "price": 32, "part": "legs"},
+    {"id":"diamond_boots", "release": 6, "weight": 1, "price": 32, "part": "feet"},
+    {"id":"elytra", "release": 6, "weight": 1, "price": 32, "part": "chest"},
+    {"id":"trident", "release": 6, "weight": 1, "price": 32, "part": "mainhand"},
+    {"id":"turtle_helmet", "release": 6, "weight": 1, "price": 32, "part": "head"},
 
 ]
 
@@ -57,7 +71,7 @@ for item in database:
     with open(path, 'w', encoding='utf-8') as f:
         f.writelines(output)
 
-for i in range(1, 6):
+for i in range(1, 7):
     weight_sum = 0
     for item in database:
         if item["release"] <= i:

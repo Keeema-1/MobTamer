@@ -2,6 +2,7 @@
 execute if data entity @s Item.tag{mt_gacha_type:"bronze"} run function mobtamer:sys/common/gacha/only_already_tamed/bronze
 execute if data entity @s Item.tag{mt_gacha_type:"silver"} run function mobtamer:sys/common/gacha/only_already_tamed/silver
 execute if data entity @s Item.tag{mt_gacha_type:"gold"} run function mobtamer:sys/common/gacha/only_already_tamed/gold
+execute if data entity @s Item.tag{mt_gacha_type:"diamond"} run function mobtamer:sys/common/gacha/any/diamond
 
 
 tp ~ ~1 ~

@@ -1,0 +1,1 @@
+data modify storage mobtamer:database data.item.diamond_gacha set value {display:{Name:'{"text":"ダイヤガチャ","italic": false,"color":"aqua"}',Lore:['[{"text":"このアイテムをドロップすると、","italic":false}]','[{"text":"ランダムに抽選されたペットを入","italic":false}]','[{"text":"手することができます。","italic":false}]']}}

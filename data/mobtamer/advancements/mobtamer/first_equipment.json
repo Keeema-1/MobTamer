@@ -2,7 +2,7 @@
   "display": {
     "title": "チャキーン！",
     "description": [
-      {"text":"ペットにペット用装備を着せる（ペット用装備は進捗で開放されます）"}
+      {"text":"ペットにペット用装備を着せる（ペット用装備は進捗で解放されます）"}
     ],
     "icon": {
       "item": "minecraft:leather_chestplate"

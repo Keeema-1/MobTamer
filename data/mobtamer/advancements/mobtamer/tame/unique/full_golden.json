@@ -13,7 +13,6 @@
     "icon": {
       "item": "minecraft:golden_chestplate"
     },
-    "hidden": true,
     "frame": "challenge"
   },
   "parent": "mobtamer:mobtamer/challenge",

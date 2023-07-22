@@ -11,6 +11,8 @@
       {"text":"、","color": "green"},{"translate":"item.minecraft.iron_chestplate","color": "green"},
       {"text":"、","color": "green"},{"translate":"item.minecraft.iron_leggings","color": "green"},
       {"text":"、","color": "green"},{"translate":"item.minecraft.iron_boots","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.bow","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.crossbow","color": "green"},
       {"text":"）","color": "green"}
     ],
     "icon": {

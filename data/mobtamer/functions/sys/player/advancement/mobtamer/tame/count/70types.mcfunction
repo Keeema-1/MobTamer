@@ -16,5 +16,7 @@ execute unless score $mt.pet_equipment.release_progress mt.score matches 5.. run
 execute unless score $mt.pet_equipment.release_progress mt.score matches 5.. run tellraw @s [{"text": "  ","color": "yellow"},{"translate":"item.minecraft.iron_chestplate","color": "yellow"},{"text": "（ペット用）","color": "yellow"}]
 execute unless score $mt.pet_equipment.release_progress mt.score matches 5.. run tellraw @s [{"text": "  ","color": "yellow"},{"translate":"item.minecraft.iron_leggings","color": "yellow"},{"text": "（ペット用）","color": "yellow"}]
 execute unless score $mt.pet_equipment.release_progress mt.score matches 5.. run tellraw @s [{"text": "  ","color": "yellow"},{"translate":"item.minecraft.iron_boots","color": "yellow"},{"text": "（ペット用）","color": "yellow"}]
+execute unless score $mt.pet_equipment.release_progress mt.score matches 5.. run tellraw @s [{"text": "  ","color": "yellow"},{"translate":"item.minecraft.bow","color": "yellow"},{"text": "（ペット用）","color": "yellow"}]
+execute unless score $mt.pet_equipment.release_progress mt.score matches 5.. run tellraw @s [{"text": "  ","color": "yellow"},{"translate":"item.minecraft.crossbow","color": "yellow"},{"text": "（ペット用）","color": "yellow"}]
 
 scoreboard players reset $mt.pet_equipment.release_progress mt.score

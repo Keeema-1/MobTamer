@@ -1,0 +1,21 @@
+{
+  "display": {
+    "title": "縛りでテイム Lv.2",
+    "description": [
+      {"text":"縛りモードでゾンビをテイムする"}
+    ],
+    "icon": {
+      "item": "minecraft:zombie_spawn_egg"
+    },
+    "frame": "challenge"
+  },
+  "parent": "mobtamer:mobtamer/challenge/weakness/any",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/challenge/weakness/zombie"
+  }
+}

@@ -57,4 +57,11 @@ data modify storage mobtamer:temp data.item merge value {sell:{id:"book",Count:1
 data modify storage mobtamer:temp data.item.sell.tag merge from storage mobtamer:database data.item.gold_gacha
 execute if data storage mobtamer:settings data.release_progress.gacha{gold:1b} run data modify storage mobtamer:database data.item.trader.EntityTag.Offers.Recipes append from storage mobtamer:temp data.item
 
+data modify storage mobtamer:temp data.item set value {}
+data modify storage mobtamer:temp data.item merge value {buy:{id:"golden_apple",Count:2b},buyB:{id:"copper_ingot",Count:64b}}
+data modify storage mobtamer:temp data.item merge value {xp:0,priceMultiplier:0f,rewardExp:1b,maxUses:10000}
+data modify storage mobtamer:temp data.item merge value {sell:{id:"book",Count:1b}}
+data modify storage mobtamer:temp data.item.sell.tag merge from storage mobtamer:database data.item.diamond_gacha
+execute if data storage mobtamer:settings data.release_progress.gacha{diamond:1b} run data modify storage mobtamer:database data.item.trader.EntityTag.Offers.Recipes append from storage mobtamer:temp data.item
+
 data remove storage mobtamer:temp data

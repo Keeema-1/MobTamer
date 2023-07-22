@@ -1,0 +1,21 @@
+{
+  "display": {
+    "title": "縛りでテイム Lv.4",
+    "description": [
+      {"text":"縛りモードでアイアンゴーレムをテイムする"}
+    ],
+    "icon": {
+      "item": "minecraft:iron_golem_spawn_egg"
+    },
+    "frame": "challenge"
+  },
+  "parent": "mobtamer:mobtamer/challenge/weakness/wither_skeleton",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/challenge/weakness/iron_golem"
+  }
+}

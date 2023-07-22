@@ -1,5 +1,5 @@
 function mobtamer:sys/common/random/1024
-scoreboard players set $mt.temp mt.score 183
+scoreboard players set $mt.temp mt.score 193
 scoreboard players operation $mt.random mt.score %= $mt.temp mt.score
 execute if score $mt.random mt.score matches 0..11 run function mobtamer:sys/trader/daily_change/pet_equipment/append/wooden_hoe
 execute if score $mt.random mt.score matches 12..23 run function mobtamer:sys/trader/daily_change/pet_equipment/append/golden_hoe
@@ -33,3 +33,5 @@ execute if score $mt.random mt.score matches 171..173 run function mobtamer:sys/
 execute if score $mt.random mt.score matches 174..176 run function mobtamer:sys/trader/daily_change/pet_equipment/append/iron_chestplate
 execute if score $mt.random mt.score matches 177..179 run function mobtamer:sys/trader/daily_change/pet_equipment/append/iron_leggings
 execute if score $mt.random mt.score matches 180..182 run function mobtamer:sys/trader/daily_change/pet_equipment/append/iron_boots
+execute if score $mt.random mt.score matches 183..187 run function mobtamer:sys/trader/daily_change/pet_equipment/append/bow
+execute if score $mt.random mt.score matches 188..192 run function mobtamer:sys/trader/daily_change/pet_equipment/append/crossbow

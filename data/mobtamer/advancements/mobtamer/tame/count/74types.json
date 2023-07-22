@@ -1,0 +1,39 @@
+{
+  "display": {
+    "title": "74種類のモブのテイム",
+    "description": [
+      {"text":"【報酬】ペット用装備の取引追加","color":"light_purple"},
+      {"text":"（","color": "green"},{"translate":"item.minecraft.wooden_axe","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.golden_axe","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.iron_axe","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.stone_axe","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_axe","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_sword","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_hoe","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_shovel","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_pickaxe","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_helmet","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_chestplate","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_leggings","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_boots","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.elytra","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.trident","color": "green"},
+      {"text":"、","color": "green"},{"translate":"item.minecraft.turtle_helmet","color": "green"},
+      {"text":"）","color": "green"},
+      {"text":"、ダイヤガチャの取引追加","color":"light_purple"},
+      {"text":"、ペット装備商人の追加","color":"light_purple"}
+    ],
+    "icon": {
+      "item": "minecraft:enchanted_golden_apple"
+    }
+  },
+  "parent": "mobtamer:mobtamer/tame/count/70types",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/tame/count/74types"
+  }
+}

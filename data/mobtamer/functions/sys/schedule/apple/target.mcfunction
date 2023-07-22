@@ -26,3 +26,6 @@ playsound minecraft:entity.fox.eat master @a ~ ~ ~ 1 1
 schedule function mobtamer:sys/schedule/chance/0 1t
 
 execute as @a run function mobtamer:sys/player/status_update
+
+execute if data storage mobtamer:settings data.weakness unless data storage mobtamer:settings data{weakness:"never"} run data modify storage mobtamer:temp hold.weakness_challenge set value 1b
+data modify storage mobtamer:temp hold.only_pufferfish set value 1b

@@ -1,0 +1,21 @@
+{
+  "display": {
+    "title": "縛りでテイム Lv.3",
+    "description": [
+      {"text":"縛りモードでウィザースケルトンをテイムする"}
+    ],
+    "icon": {
+      "item": "minecraft:wither_skeleton_spawn_egg"
+    },
+    "frame": "challenge"
+  },
+  "parent": "mobtamer:mobtamer/challenge/weakness/zombie",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/challenge/weakness/wither_skeleton"
+  }
+}

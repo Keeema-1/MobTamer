@@ -27,6 +27,9 @@ execute if entity @s[type=#mobtamer:pet_type/other] run function mobtamer:sys/ta
 execute if entity @s[type=mooshroom] if data entity @s {Type:"brown"} run advancement grant @a[distance=..16] only mobtamer:mobtamer/tame/unique/brown_mooshroom
 execute if entity @s[type=axolotl] if data entity @s {Variant:4} run advancement grant @a[distance=..16] only mobtamer:mobtamer/tame/unique/blue_axolotl
 
+execute if entity @s[type=creeper,tag=!mt.gacha.powered_creeper] if data entity @s {powered:1b} run advancement grant @a[distance=..16] only mobtamer:mobtamer/tame/unique/powered_creeper
+tag @s remove mt.gacha.powered_creeper
+
 execute if data entity @s {ArmorItems:[{id:"minecraft:diamond_boots"},{id:"minecraft:diamond_leggings"},{id:"minecraft:diamond_chestplate"},{id:"minecraft:diamond_helmet"}]} run advancement grant @a[distance=..16] only mobtamer:mobtamer/tame/unique/full_diamond
 execute if data entity @s {ArmorItems:[{id:"minecraft:golden_boots"},{id:"minecraft:golden_leggings"},{id:"minecraft:golden_chestplate"},{id:"minecraft:golden_helmet"}]} run advancement grant @a[distance=..16] only mobtamer:mobtamer/tame/unique/full_golden
 
@@ -37,3 +40,6 @@ execute as @a[distance=..16] if score @s mt.tame_type_count matches 40.. run adv
 execute as @a[distance=..16] if score @s mt.tame_type_count matches 50.. run advancement grant @s only mobtamer:mobtamer/tame/count/50types
 execute as @a[distance=..16] if score @s mt.tame_type_count matches 60.. run advancement grant @s only mobtamer:mobtamer/tame/count/60types
 execute as @a[distance=..16] if score @s mt.tame_type_count matches 70.. run advancement grant @s only mobtamer:mobtamer/tame/count/70types
+execute as @a[distance=..16] if score @s mt.tame_type_count matches 74.. run advancement grant @s only mobtamer:mobtamer/tame/count/74types
+
+advancement grant @a[distance=..16] only mobtamer:mobtamer/challenge
