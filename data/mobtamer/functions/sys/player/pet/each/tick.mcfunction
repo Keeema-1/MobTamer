@@ -3,6 +3,8 @@ data modify storage mobtamer:temp data.pet.Motion set from entity @s Motion
 data modify storage mobtamer:temp data.pet.OnGround set from entity @s OnGround
 data modify storage mobtamer:temp data.pet.Health set from entity @s Health
 data modify storage mobtamer:temp data.pet.UUID set from entity @s UUID
+data modify storage mobtamer:temp data.pet.ArmorItems set from entity @s ArmorItems
+data modify storage mobtamer:temp data.pet.HandItems set from entity @s HandItems
 tag @s add mt.pet_check
 execute if entity @s[tag=mt.logout] run function mobtamer:sys/player/pet/each/login
 execute if entity @s[tag=!mt.down] run function mobtamer:sys/player/pet/each/alive
