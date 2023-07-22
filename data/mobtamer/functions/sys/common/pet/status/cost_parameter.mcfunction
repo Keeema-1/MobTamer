@@ -5,6 +5,7 @@ data modify storage mobtamer:temp data.MainHand set from entity @s HandItems[0]
 execute if entity @s[type=skeleton] if data storage mobtamer:temp data.MainHand{id:"minecraft:bow"} run data modify storage mobtamer:temp data.pet_status.cost.attack.force set value 5
 execute if entity @s[type=stray] if data storage mobtamer:temp data.MainHand{id:"minecraft:bow"} run data modify storage mobtamer:temp data.pet_status.cost.attack.force set value 6
 execute if entity @s[type=wither_skeleton] if data storage mobtamer:temp data.MainHand{id:"minecraft:bow"} run data modify storage mobtamer:temp data.pet_status.cost.attack.force set value 8
+execute if entity @s[type=illusioner] if data storage mobtamer:temp data.MainHand{id:"minecraft:bow"} run data modify storage mobtamer:temp data.pet_status.cost.attack.force set value 8
 execute if data storage mobtamer:temp data.MainHand{id:"minecraft:crossbow"} run data modify storage mobtamer:temp data.pet_status.cost.attack.force set value 5
 execute if entity @s[type=drowned] if data storage mobtamer:temp data.MainHand{id:"minecraft:trident"} run data modify storage mobtamer:temp data.pet_status.cost.attack.force set value 12
 

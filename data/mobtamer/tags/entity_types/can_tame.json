@@ -62,7 +62,6 @@
         "wolf",
         "zoglin",
         "skeleton_horse",
-        "zombie_horse",
         "sniffer",
         "endermite",
         "wither",
@@ -75,6 +74,8 @@
         "strider",
         "piglin",
         "magma_cube",
-        "shulker"
+        "shulker",
+        "zombie_horse",
+        "illusioner"
     ]
 }

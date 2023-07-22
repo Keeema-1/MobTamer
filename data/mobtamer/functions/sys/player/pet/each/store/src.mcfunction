@@ -63,6 +63,7 @@ execute if entity @s[tag=mt.down] run data modify storage mobtamer:temp data.Ite
 
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags set from entity @s Tags
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags append value "mt.was_stored"
+execute if entity @s[type=illusioner] run data modify storage mobtamer:temp data.Item.tag.EntityTag.Tags append value "mt.is_illusioner"
 
 function mobtamer:sys/common/pet/status/all
 

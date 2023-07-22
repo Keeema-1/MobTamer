@@ -1,16 +1,17 @@
-﻿Entity Name,weight
-drowned_trident,10
-enderman_diamond_block,1
-killer_rabbit,50
-phantom_size_5,5
-phantom_size_10,2
-pillager_firework,30
-powered_creeper,10
-skeleton_poison_arrow,10
-wither_skeleton_bow,30
-azalea_zombie,10
-enderman_diamond_ore,10
-mushroom_zombie,10
-pumpkin_skeleton,10
-pumpkin_zombie,10
-zombie_horse,50
+﻿Entity Name,weight,Japanese
+killer_rabbit,50,殺人ウサギ
+zombie_horse,50,ゾンビホース
+pillager_firework,30,花火持ちピリジャー
+wither_skeleton_bow,30,弓持ちウィザースケルトン
+illusioner,30,イリュージョナー
+drowned_trident,10,トライデント持ちドラウンド
+powered_creeper,10,帯電クリーパー
+skeleton_poison_arrow,10,毒矢持ちスケルトン
+azalea_zombie,10,ツツジ頭のゾンビ
+enderman_diamond_ore,10,ダイヤモンド鉱石持ちエンダーマン
+mushroom_zombie,10,キノコ頭のゾンビ
+pumpkin_skeleton,10,カボチャ頭のスケルトン
+pumpkin_zombie,10,カボチャ頭のゾンビ
+phantom_size_5,5,大きいファントム
+phantom_size_10,2,巨大なファントム
+enderman_diamond_block,1,ダイヤモンドブロック持ちのエンダーマン

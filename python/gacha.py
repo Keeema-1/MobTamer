@@ -61,18 +61,17 @@ def diamond_weight(weight):
 # entity_list = []
 # weight_list = []
 name_idx = headings.index('Entity Name')
-weight_idx = headings.index('weight')
 bronze_weight_sum = 0
 silver_weight_sum = 0
 gold_weight_sum = 0
 diamond_weight_sum = 0
 for item in database:
-    # entity_list.append(item[name_idx])
-    # weight_list.append(item[weight_idx])
-    bronze_weight_sum += bronze_weight(int(item[weight_idx]))
-    silver_weight_sum += silver_weight(int(item[weight_idx]))
-    gold_weight_sum += gold_weight(int(item[weight_idx]))
-    diamond_weight_sum += diamond_weight(int(item[weight_idx]))
+    # entity_list.append(item[0])
+    # weight_list.append(item[1])
+    bronze_weight_sum += bronze_weight(int(item[1]))
+    silver_weight_sum += silver_weight(int(item[1]))
+    gold_weight_sum += gold_weight(int(item[1]))
+    diamond_weight_sum += diamond_weight(int(item[1]))
 for item in database2:
     diamond_weight_sum += diamond_weight(int(item[1]))
 
@@ -97,25 +96,25 @@ for gacha in ['bronze', 'silver', 'gold', 'diamond']:
         n = 0
         for item in database:
             if gacha == 'bronze':
-                weight = bronze_weight(int(item[weight_idx]))
+                weight = bronze_weight(int(item[1]))
             elif gacha == 'silver':
-                weight = silver_weight(int(item[weight_idx]))
+                weight = silver_weight(int(item[1]))
             elif gacha == 'gold':
-                weight = gold_weight(int(item[weight_idx]))
+                weight = gold_weight(int(item[1]))
             elif gacha == 'diamond':
-                weight = diamond_weight(int(item[weight_idx]))
+                weight = diamond_weight(int(item[1]))
             if weight > 0:
                 if x == 0:
-                    output.append('execute if score $mt.random mt.score matches ' + str(n) + '..' + str(n+weight-1) + ' run function mobtamer:sys/common/gacha/only_already_tamed/each/' + item[name_idx] + '\n')
+                    output.append('execute if score $mt.random mt.score matches ' + str(n) + '..' + str(n+weight-1) + ' run function mobtamer:sys/common/gacha/only_already_tamed/each/' + item[0] + '\n')
                 else:
-                    output.append('execute if score $mt.random mt.score matches ' + str(n) + '..' + str(n+weight-1) + ' run function mobtamer:command/tame/summon/' + item[name_idx] + '\n')
+                    output.append('execute if score $mt.random mt.score matches ' + str(n) + '..' + str(n+weight-1) + ' run function mobtamer:command/tame/summon/' + item[0] + '\n')
             n += weight
         if gacha == 'diamond':
             for item in database2:
-                weight = diamond_weight(int(item[weight_idx]))
+                weight = diamond_weight(int(item[1]))
                 if weight > 0:
                     if not x == 0:
-                        output.append('execute if score $mt.random mt.score matches ' + str(n) + '..' + str(n+weight-1) + ' run function mobtamer:command/tame/summon/unique/' + item[name_idx] + '\n')
+                        output.append('execute if score $mt.random mt.score matches ' + str(n) + '..' + str(n+weight-1) + ' run function mobtamer:command/tame/summon/unique/' + item[0] + '\n')
                 n += weight
         output.append('scoreboard players reset $mt.temp mt.score\n')
         output.append('scoreboard players reset $mt.random mt.score\n')
@@ -133,8 +132,36 @@ for gacha in ['bronze', 'silver', 'gold', 'diamond']:
         if x == 0:
             for item in database:
                 output = []
-                output.append('execute if data storage mobtamer:database data.record.' + item[name_idx] + '{any:1b} run function mobtamer:command/tame/summon/' + item[name_idx] + '\n')
-                output.append('execute unless data storage mobtamer:database data.record.' + item[name_idx] + '{any:1b} run scoreboard players set $mt.not_tamed mt.score 1\n')
-                path = common_path + 'sys/common/gacha/only_already_tamed/each/' + item[name_idx] + '.mcfunction'
+                output.append('execute if data storage mobtamer:database data.record.' + item[0] + '{any:1b} run function mobtamer:command/tame/summon/' + item[0] + '\n')
+                output.append('execute unless data storage mobtamer:database data.record.' + item[0] + '{any:1b} run scoreboard players set $mt.not_tamed mt.score 1\n')
+                path = common_path + 'sys/common/gacha/only_already_tamed/each/' + item[0] + '.mcfunction'
                 with open(path, 'w', encoding='utf-8') as f:
                     f.writelines(output)
+
+
+path = 'gacha.md'
+output = []
+for gacha in ['bronze', 'silver', 'gold', 'diamond']:
+    output.append(gacha + ' gacha\n')
+    output.append('\n')
+    output.append('| 対象 | 排出率 |\n')
+    output.append('| ---- | ---- |\n')
+    n = 0
+    for item in database:
+        if gacha == 'bronze':
+            weight = bronze_weight(int(item[1])) / bronze_weight_sum
+        elif gacha == 'silver':
+            weight = silver_weight(int(item[1])) / silver_weight_sum
+        elif gacha == 'gold':
+            weight = gold_weight(int(item[1])) / gold_weight_sum
+        elif gacha == 'diamond':
+            weight = diamond_weight(int(item[1])) / diamond_weight_sum
+        if weight > 0:
+            output.append('|  ' + item[2] + '  |  ' +  '{:.2f}'.format(weight * 100) + ' %  |\n')
+    if gacha == 'diamond':
+        for item in database2:
+            weight = diamond_weight(int(item[1])) / diamond_weight_sum
+            if weight > 0:
+                output.append('|  ' + item[2] + '  |  ' +  '{:.2f}'.format(weight * 100) + ' %  |\n')
+with open(path, 'w', encoding='utf-8') as f:
+    f.writelines(output)
