@@ -20,6 +20,7 @@ scoreboard players enable @a mt.trigger
 
 scoreboard objectives add mt.dropped.fishing_rod dropped:fishing_rod
 scoreboard objectives add mt.dropped.golden_apple dropped:golden_apple
+scoreboard objectives add mt.dropped.enchanted_golden_apple dropped:enchanted_golden_apple
 scoreboard objectives add mt.dropped.book dropped:book
 scoreboard objectives add mt.sneak_time custom:sneak_time
 scoreboard objectives add mt.death deathCount
