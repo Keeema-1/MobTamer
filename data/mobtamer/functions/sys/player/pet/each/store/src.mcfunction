@@ -22,6 +22,8 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.HandDropChances set fr
 data modify storage mobtamer:temp data.Item.tag.EntityTag.IsImmuneToZombification set from entity @s IsImmuneToZombification
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Attributes set from entity @s Attributes
 data remove storage mobtamer:temp data.Item.tag.EntityTag.Attributes[{Name:"minecraft:generic.follow_range"}]
+data remove storage mobtamer:temp data.Item.tag.EntityTag.Attributes[].Modifiers[{"Name":"Leader zombie bonus"}]
+data remove storage mobtamer:temp data.Item.tag.EntityTag.Attributes[].Modifiers[{"Name":"Random spawn bonus"}]
 data modify storage mobtamer:temp data.Item.tag.EntityTag.ActiveEffects set from entity @s ActiveEffects
 data modify storage mobtamer:temp data.Item.tag.EntityTag.SaddleItem set from entity @s SaddleItem
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Variant set from entity @s Variant
