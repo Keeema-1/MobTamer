@@ -1,0 +1,33 @@
+[
+    {
+      "function": "minecraft:copy_nbt",
+      "source": {
+        "type": "minecraft:storage",
+        "source": "mobtamer:database"
+      },
+      "ops": [
+        {
+          "source": "data.item.settings.title",
+          "target": "title",
+          "op": "replace"
+        },{
+          "source": "data.item.settings.author",
+          "target": "author",
+          "op": "replace"
+        },{
+          "source": "data.item.settings.filtered_title",
+          "target": "filtered_title",
+          "op": "replace"
+        },{
+          "source": "data.item.settings.pages",
+          "target": "pages",
+          "op": "replace"
+        },{
+          "source": "data.item.settings.HideFlags",
+          "target": "HideFlags",
+          "op": "replace"
+        }
+      ]
+    }
+  ]
+  

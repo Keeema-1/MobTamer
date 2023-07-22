@@ -34,6 +34,10 @@
                     "source": "data.item.settings.HideFlags",
                     "target": "HideFlags",
                     "op": "replace"
+                  },{
+                    "source": "data.item.settings.mt_settings",
+                    "target": "mt_settings",
+                    "op": "replace"
                   }
                 ]
               }

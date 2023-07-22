@@ -18,6 +18,7 @@ execute if predicate mobtamer:random/100m unless data storage mobtamer:settings 
 # sneak終了チェックのためitemより後
 function mobtamer:sys/player/state/tick
 execute if score @s mt.trigger matches 1.. run function mobtamer:sys/player/trigger/0
+execute if score @s mt.trigger matches ..-1 run function mobtamer:sys/player/trigger/0
 
 function mobtamer:sys/player/player_check_remove
 
