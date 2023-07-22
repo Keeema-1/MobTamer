@@ -1,0 +1,36 @@
+[
+    {
+        "class":"cheat_book",
+        "title":"チートブック",
+        "each_player":false,
+        "only_run_command":true,
+        "contents":[
+            {
+                "name":"cheat_trader",
+                "display":{
+                    "title":"チート商人",
+                    "detail":"チート用アイテムを取引できる商人を召喚する"
+                },
+                "commands":[
+                    "function mobtamer:command/give/cheat_trader"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            },
+            {
+                "name":"xp_add",
+                "display":{
+                    "title":"Exp +1000",
+                    "detail":"ペットに経験値を与える"
+                },
+                "commands":[
+                    "function mobtamer:command/add_xp"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            }
+        ]
+    }
+]

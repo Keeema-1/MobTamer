@@ -1,0 +1,1 @@
+give @s golden_apple{mt_immediate_tame:1b,display:{Name:'[{"text":"確定テイム用アイテム","color":"aqua"}]'}}

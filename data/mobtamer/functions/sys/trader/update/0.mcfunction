@@ -5,6 +5,8 @@ data modify entity @s Offers.Recipes append from storage mobtamer:database data.
 
 execute if entity @s[tag=mt.trader.pet_equipment] run data modify entity @s Offers.Recipes set from storage mobtamer:database data.daily.pet_equipment_trader
 
+execute if entity @s[tag=mt.trader.cheat] run data modify entity @s Offers.Recipes set from storage mobtamer:database data.item.cheat_trader.EntityTag.Offers.Recipes
+
 execute if entity @p[team=mt.common] run team join mt.common @s
 execute if entity @p[team=mt.red] run team join mt.red @s
 execute if entity @p[team=mt.blue] run team join mt.blue @s

@@ -1,0 +1,1 @@
+scoreboard players add @e[team=!,tag=mt.player_check,tag=mt.pet] mt.cost 1000

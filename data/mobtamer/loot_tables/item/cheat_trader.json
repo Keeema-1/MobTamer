@@ -1,0 +1,34 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:wandering_trader_spawn_egg",
+            "functions": [
+              {
+                "function": "minecraft:copy_nbt",
+                "source": {
+                  "type": "minecraft:storage",
+                  "source": "mobtamer:database"
+                },
+                "ops": [
+                  {
+                    "source": "data.item.cheat_trader.EntityTag",
+                    "target": "EntityTag",
+                    "op": "replace"
+                  },{
+                    "source": "data.item.cheat_trader.display",
+                    "target": "display",
+                    "op": "replace"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
