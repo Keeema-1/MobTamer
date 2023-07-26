@@ -16,7 +16,8 @@ execute as @e[team=!,type=#mobtamer:can_tame,tag=mt.pet] if score @s mt.id = $mt
 execute store result score @s mt.max_health run attribute @s generic.max_health get 100
 scoreboard players remove @s mt.max_health 10000
 execute store result score @s mt.health run data get entity @s Health 100
-execute store result entity @s Health float 1 run attribute @s generic.max_health get 100
+# execute store result entity @s Health float 1 run attribute @s generic.max_health get 100
+data modify entity @s Health set value 100.0f
 
 # xp
 execute store result score @s mt.xp run data get entity @s PortalCooldown
