@@ -9,8 +9,8 @@ execute store result score @s mt.health_nbt run data get storage mobtamer:temp d
 
 scoreboard players operation @s mt.health += $mt.damage mt.health
 
-execute if score @s mt.health_nbt matches ..90000 run data modify entity @s Health set value 100.0f
-execute if score @s mt.health_nbt matches ..90000 run scoreboard players set @s mt.health_nbt 10000
+execute if score @s mt.health_nbt matches ..9000 run data modify entity @s Health set value 100.0f
+execute if score @s mt.health_nbt matches ..9000 run scoreboard players set @s mt.health_nbt 10000
 
 execute unless predicate mobtamer:targeting if score @s mt.health < @s mt.max_health run scoreboard players add @s mt.health 1
 execute if score @s mt.health > @s mt.max_health run scoreboard players operation @s mt.health = @s mt.max_health
