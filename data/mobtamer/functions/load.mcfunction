@@ -8,6 +8,8 @@ scoreboard objectives add mt.xp dummy
 scoreboard objectives add mt.settings dummy
 scoreboard objectives add mt.tame_type_count dummy
 scoreboard objectives add mt.hostile_interval dummy
+scoreboard objectives add mt.version.main dummy
+scoreboard objectives add mt.version.beta dummy
 # プレイヤー：パーティーの最大コスト，ペット：自身のコスト
 scoreboard objectives add mt.cost dummy
 # 共通．(etc. チャンスタイム)
@@ -62,6 +64,9 @@ execute if score $mt.ver.old.main mt.score = $mt.ver.now.main mt.score unless sc
 
 execute if score $mt.ver.now.beta mt.score matches 1.. run tellraw @a [{"text": "Loaded: ","color": "green"},{"text": "MobTamer For 1.20.1","color": "green","underlined":true},{"text": "  Ver ","color": "yellow"},{"score":{"name": "$mt.ver.now.main.1","objective": "mt.score"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "$mt.ver.now.main.2","objective": "mt.score"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "$mt.ver.now.main.3","objective": "mt.score"},"color": "yellow"},{"text": " Beta","color": "yellow"},{"score":{"name": "$mt.ver.now.beta","objective": "mt.score"},"color": "yellow"}]
 execute unless score $mt.ver.now.beta mt.score matches 1.. run tellraw @a [{"text": "Loaded: MobTamer For 1.20.1","color": "green"},{"text": "  Ver ","color": "yellow"},{"score":{"name": "$mt.ver.now.main.1","objective": "mt.score"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "$mt.ver.now.main.2","objective": "mt.score"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "$mt.ver.now.main.3","objective": "mt.score"},"color": "yellow"}]
+
+execute as @a unless score @s mt.version.main = $mt.ver.now.main mt.score run function mobtamer:sys/player/version_up/0
+execute as @a if score @s mt.version.main = $mt.ver.now.main mt.score unless score @s mt.version.beta = $mt.ver.now.beta mt.score run function mobtamer:sys/player/version_up/0
 
 scoreboard players reset $mt.ver.old.main mt.score
 scoreboard players reset $mt.ver.old.beta mt.score
