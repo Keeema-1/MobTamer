@@ -8,7 +8,7 @@ execute if entity @s[type=dolphin] unless predicate mobtamer:location_water if p
 
 execute if entity @s[type=bee] if entity @s[nbt={HasStung:1b}] run data merge entity @s {HasStung:0b,TicksSincePollination:0}
 
-execute if entity @s[type=fox,tag=mt.following] run function mobtamer:sys/player/pet/each/unique/fox
+execute if entity @s[type=fox] run function mobtamer:sys/player/pet/each/unique/fox
 
 execute if entity @s[type=wolf,tag=mt.following] if data entity @s {Sitting:1b} run data modify entity @s Sitting set value 0b
 
