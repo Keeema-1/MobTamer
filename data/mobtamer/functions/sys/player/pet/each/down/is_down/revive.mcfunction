@@ -4,7 +4,7 @@ execute on passengers if entity @s[type=text_display] run kill @s
 tag @s remove mt.down
 
 execute store result entity @s Health float 1 run attribute @s generic.max_health base get
-execute store result score @s mt.health_nbt run data get storage mobtamer:temp data.pet.Health 100
+execute store result score @s mt.health_nbt run data get entity @s Health 100
 scoreboard players set @s mt.health 1000
 effect clear @s invisibility
 data merge entity @s {Glowing:0b,NoAI:0b,Invulnerable:0b,Silent:0b}
