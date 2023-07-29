@@ -48,49 +48,51 @@ def filter_name_list(condition):
 database_name = get_column('Entity Name')
 # print(database_name)
 
-if(1):
-    can_tame_list = filter_name_list(get_column_as_np('Can Tame') == 1)
+# if(1):
+#     can_tame_list = filter_name_list(get_column_as_np('Can Tame') == 1)
 
-    # tags/entity_types/can_tame
-    write_entity_types_json(can_tame_list, 'can_tame')
+#     # tags/entity_types/can_tame
+#     write_entity_types_json(can_tame_list, 'can_tame')
 
-    # store spawn egg
-    output = []
-    for entity_name in can_tame_list:
-        output.append('execute if entity @s[type='+entity_name+'] run data modify storage mobtamer:temp data.Item.id set value "'+entity_name+'_spawn_egg"\n')
-    path = '../data/mobtamer/functions/sys/player/pet/each/store/each_type.mcfunction'
-    with open(path, 'w', encoding='utf-8') as f:
-        f.writelines(output)
+#     # store spawn egg
+#     output = []
+#     for entity_name in can_tame_list:
+#         output.append('execute if entity @s[type='+entity_name+'] run data modify storage mobtamer:temp data.Item.id set value "'+entity_name+'_spawn_egg"\n')
+#     output.append('\n')
+#     output.append('execute if entity @s[type=illusioner] run data modify storage mobtamer:temp data.Item.id set value "vindicator_spawn_egg"\n')
+#     path = '../data/mobtamer/functions/sys/player/pet/each/store/each_type.mcfunction'
+#     with open(path, 'w', encoding='utf-8') as f:
+#         f.writelines(output)
 
-    # command tame
-    for entity_name in can_tame_list:
-        output = []
-        output.append('summon ' + entity_name + '\n')
-        output.append('execute as @e[team=!mt.common,type=' + entity_name + ',tag=!mt.pet,sort=nearest,distance=..8,limit=1] run function mobtamer:sys/common/summon/tame\n')
-        path = '../data/mobtamer/functions/command/tame/summon/' + entity_name + '.mcfunction'
-        with open(path, 'w', encoding='utf-8') as f:
-            f.writelines(output)
-    output = []
-    for entity_name in can_tame_list:
-        output.append('function mobtamer:command/tame/summon/' + entity_name + '\n')
-    path = '../data/mobtamer/functions/command/tame/summon/all.mcfunction'
-    with open(path, 'w', encoding='utf-8') as f:
-        f.writelines(output)
+#     # command tame
+#     for entity_name in can_tame_list:
+#         output = []
+#         output.append('summon ' + entity_name + '\n')
+#         output.append('execute as @e[team=,type=' + entity_name + ',tag=!mt.pet,sort=nearest,distance=..8,limit=1] run function mobtamer:sys/common/summon/tame\n')
+#         path = '../data/mobtamer/functions/command/tame/summon/' + entity_name + '.mcfunction'
+#         with open(path, 'w', encoding='utf-8') as f:
+#             f.writelines(output)
+#     output = []
+#     for entity_name in can_tame_list:
+#         output.append('function mobtamer:command/tame/summon/' + entity_name + '\n')
+#     path = '../data/mobtamer/functions/command/tame/summon/all.mcfunction'
+#     with open(path, 'w', encoding='utf-8') as f:
+#         f.writelines(output)
 
-    # command gacha
-    output = []
-    output.append('function mobtamer:sys/common/random/1024\n')
-    output.append('scoreboard players set $mt.temp mt.score ' + str(len(can_tame_list)) + '\n')
-    output.append('scoreboard players operation $mt.random mt.score %= $mt.temp mt.score\n')
-    i = 0
-    for entity_name in can_tame_list:
-        output.append('execute if score $mt.random mt.score matches ' + str(i) + ' run function mobtamer:command/tame/summon/' + entity_name + '\n')
-        i += 1
-    output.append('scoreboard players reset $mt.temp mt.score\n')
-    output.append('scoreboard players reset $mt.random mt.score\n')
-    path = '../data/mobtamer/functions/command/gacha/all.mcfunction'
-    with open(path, 'w', encoding='utf-8') as f:
-        f.writelines(output)
+#     # command gacha
+#     output = []
+#     output.append('function mobtamer:sys/common/random/1024\n')
+#     output.append('scoreboard players set $mt.temp mt.score ' + str(len(can_tame_list)) + '\n')
+#     output.append('scoreboard players operation $mt.random mt.score %= $mt.temp mt.score\n')
+#     i = 0
+#     for entity_name in can_tame_list:
+#         output.append('execute if score $mt.random mt.score matches ' + str(i) + ' run function mobtamer:command/tame/summon/' + entity_name + '\n')
+#         i += 1
+#     output.append('scoreboard players reset $mt.temp mt.score\n')
+#     output.append('scoreboard players reset $mt.random mt.score\n')
+#     path = '../data/mobtamer/functions/command/gacha/all.mcfunction'
+#     with open(path, 'w', encoding='utf-8') as f:
+#         f.writelines(output)
 
     # # advancement
     # for entity_name in can_tame_list:
@@ -159,56 +161,75 @@ if(1):
 if(1):
     other_filter = np.full(len(database), True)
 
-    filter = other_filter & (get_column_as_np('Height') <= 1.0) & (get_column_as_np('Width') <= 0.7)
+    filter = (get_column_as_np('Width') > 1.0)
     hitbox_list = filter_name_list(filter)
-    write_entity_types_json(hitbox_list, 'hitbox/small')
+    write_entity_types_json(hitbox_list, 'hitbox/wide')
     other_filter = np.logical_not(filter) & other_filter
-    print('small')
+    print('wide')
     print(hitbox_list)
     print()
 
-    filter = other_filter & (get_column_as_np('Height') <= 2.0) & (get_column_as_np('Width') <= 0.7)
+    filter = (get_column_as_np('Height') > 2.0)
     hitbox_list = filter_name_list(filter)
-    write_entity_types_json(hitbox_list, 'hitbox/human')
+    write_entity_types_json(hitbox_list, 'hitbox/tall')
     other_filter = np.logical_not(filter) & other_filter
-    print('human')
+    print('tall')
     print(hitbox_list)
     print()
 
-    filter = other_filter & (get_column_as_np('Height') <= 3.0) & (get_column_as_np('Width') <= 0.7)
-    hitbox_list = filter_name_list(filter)
-    write_entity_types_json(hitbox_list, 'hitbox/human_tall')
-    other_filter = np.logical_not(filter) & other_filter
-    print('human tall')
-    print(hitbox_list)
-    print()
+# if(1):
+#     other_filter = np.full(len(database), True)
 
-    filter = other_filter & (get_column_as_np('Height') <= 1.0) & (get_column_as_np('Width') <= 1.4)
-    hitbox_list = filter_name_list(filter)
-    write_entity_types_json(hitbox_list, 'hitbox/low_mid')
-    other_filter = np.logical_not(filter) & other_filter
-    print('low mid')
-    print(hitbox_list)
-    print()
+#     filter = other_filter & (get_column_as_np('Height') <= 1.0) & (get_column_as_np('Width') <= 0.7)
+#     hitbox_list = filter_name_list(filter)
+#     write_entity_types_json(hitbox_list, 'hitbox/small')
+#     other_filter = np.logical_not(filter) & other_filter
+#     print('small')
+#     print(hitbox_list)
+#     print()
 
-    filter = other_filter & (get_column_as_np('Height') <= 2.0) & (get_column_as_np('Width') <= 1.4)
-    hitbox_list = filter_name_list(filter)
-    write_entity_types_json(hitbox_list, 'hitbox/mid')
-    other_filter = np.logical_not(filter) & other_filter
-    print('mid')
-    print(hitbox_list)
-    print()
+#     filter = other_filter & (get_column_as_np('Height') <= 2.0) & (get_column_as_np('Width') <= 0.7)
+#     hitbox_list = filter_name_list(filter)
+#     write_entity_types_json(hitbox_list, 'hitbox/human')
+#     other_filter = np.logical_not(filter) & other_filter
+#     print('human')
+#     print(hitbox_list)
+#     print()
 
-    filter = other_filter & (get_column_as_np('Height') <= 3.0) & (get_column_as_np('Width') <= 2.0)
-    hitbox_list = filter_name_list(filter)
-    write_entity_types_json(hitbox_list, 'hitbox/big')
-    other_filter = np.logical_not(filter) & other_filter
-    print('big')
-    print(hitbox_list)
-    print()
+#     filter = other_filter & (get_column_as_np('Height') <= 3.0) & (get_column_as_np('Width') <= 0.7)
+#     hitbox_list = filter_name_list(filter)
+#     write_entity_types_json(hitbox_list, 'hitbox/human_tall')
+#     other_filter = np.logical_not(filter) & other_filter
+#     print('human tall')
+#     print(hitbox_list)
+#     print()
 
-    hitbox_list = filter_name_list(other_filter)
-    print('other')
-    write_entity_types_json(hitbox_list, 'hitbox/other')
-    print(hitbox_list)
-    print()
+#     filter = other_filter & (get_column_as_np('Height') <= 1.0) & (get_column_as_np('Width') <= 1.4)
+#     hitbox_list = filter_name_list(filter)
+#     write_entity_types_json(hitbox_list, 'hitbox/low_mid')
+#     other_filter = np.logical_not(filter) & other_filter
+#     print('low mid')
+#     print(hitbox_list)
+#     print()
+
+#     filter = other_filter & (get_column_as_np('Height') <= 2.0) & (get_column_as_np('Width') <= 1.4)
+#     hitbox_list = filter_name_list(filter)
+#     write_entity_types_json(hitbox_list, 'hitbox/mid')
+#     other_filter = np.logical_not(filter) & other_filter
+#     print('mid')
+#     print(hitbox_list)
+#     print()
+
+#     filter = other_filter & (get_column_as_np('Height') <= 3.0) & (get_column_as_np('Width') <= 2.0)
+#     hitbox_list = filter_name_list(filter)
+#     write_entity_types_json(hitbox_list, 'hitbox/big')
+#     other_filter = np.logical_not(filter) & other_filter
+#     print('big')
+#     print(hitbox_list)
+#     print()
+
+#     hitbox_list = filter_name_list(other_filter)
+#     print('other')
+#     write_entity_types_json(hitbox_list, 'hitbox/other')
+#     print(hitbox_list)
+#     print()
