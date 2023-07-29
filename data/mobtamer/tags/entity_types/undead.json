@@ -3,16 +3,16 @@
     "values": [
         "drowned",
         "husk",
-        "zombie",
-        "zombie_villager",
-        "skeleton",
-        "stray",
         "phantom",
-        "zoglin",
+        "skeleton",
         "skeleton_horse",
-        "zombie_horse",
+        "stray",
         "wither",
-        "zombified_piglin",
-        "wither_skeleton"
+        "wither_skeleton",
+        "zoglin",
+        "zombie",
+        "zombie_horse",
+        "zombie_villager",
+        "zombified_piglin"
     ]
 }
