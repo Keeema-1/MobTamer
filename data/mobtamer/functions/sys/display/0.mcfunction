@@ -8,5 +8,6 @@ execute unless data storage mobtamer:temp data.pet.state{down:1b} run function m
 scoreboard players reset $mt.pet mt.health
 scoreboard players reset $mt.pet mt.max_health
 scoreboard players reset $mt.const mt.score
+scoreboard players reset $mt.health.color mt.score
 
 data remove storage mobtamer:temp data.pet
