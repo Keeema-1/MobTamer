@@ -27,7 +27,7 @@ execute if score $mt.pet mt.health <= $mt.border mt.score run scoreboard players
 
 tag @s remove mt.health.yellow
 tag @s remove mt.health.red
-execute if score $mt.health.color mt.score matches 1 run tag @s add mt.health.yellow
+execute if score $mt.health.color mt.score matches 1.. run tag @s add mt.health.yellow
 execute if score $mt.health.color mt.score matches 2 run tag @s add mt.health.red
 
 scoreboard players reset $mt.border mt.score
