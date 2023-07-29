@@ -10,6 +10,7 @@ scoreboard objectives add mt.tame_type_count dummy
 scoreboard objectives add mt.hostile_interval dummy
 scoreboard objectives add mt.version.main dummy
 scoreboard objectives add mt.version.beta dummy
+scoreboard objectives add mt.strategy dummy
 # プレイヤー：パーティーの最大コスト，ペット：自身のコスト
 scoreboard objectives add mt.cost dummy
 # 共通．(etc. チャンスタイム)
@@ -82,5 +83,11 @@ scoreboard players set $mt.conductor.mode1.attack mt.score 3
 scoreboard players set $mt.conductor.mode1.store mt.score 4
 scoreboard players set $mt.conductor.mode1.ride mt.score 5
 scoreboard players set $mt.conductor.mode1.power_up mt.score 6
+scoreboard players set $mt.conductor.mode1.strategy mt.score 7
+
+scoreboard players set $mt.strategy.attack mt.score 0
+scoreboard players set $mt.strategy.balance mt.score 1
+scoreboard players set $mt.strategy.recover mt.score 2
+scoreboard players set $mt.strategy.follow mt.score 3
 
 execute as @e[type=chest_minecart,tag=mt.data_transfer] run data modify entity @s Items set from storage mobtamer_transfer:data data.Items
