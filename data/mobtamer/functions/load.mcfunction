@@ -47,7 +47,7 @@ execute unless data storage mobtamer:settings data run function mobtamer:init
 
 execute store result score $mt.ver.old.main mt.score run data get storage mobtamer:settings data.version.main
 execute store result score $mt.ver.old.beta mt.score run data get storage mobtamer:settings data.version.beta
-data modify storage mobtamer:settings data.version merge value {main:10000, beta:3}
+data modify storage mobtamer:settings data.version merge value {main:10000, beta:4}
 execute store result score $mt.ver.now.main mt.score run data get storage mobtamer:settings data.version.main
 execute store result score $mt.ver.now.beta mt.score run data get storage mobtamer:settings data.version.beta
 

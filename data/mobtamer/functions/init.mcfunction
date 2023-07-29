@@ -21,7 +21,6 @@ data modify storage mobtamer:settings data.values.power_up_max merge value {atta
 ## 5: +鉄防具，斧以外の鉄ツール
 data modify storage mobtamer:settings data.release_progress merge value {gacha:{},pet_equipment:0,pet_equipment_trader:0b}
 
-data modify storage mobtamer:settings data merge value {version:{main:10000, beta:1}}
 forceload remove all
 
 scoreboard players set $mt.sys mt.slot 6
