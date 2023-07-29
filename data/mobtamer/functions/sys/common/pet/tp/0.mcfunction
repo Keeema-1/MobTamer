@@ -8,3 +8,4 @@ execute if entity @s[type=!#mobtamer:hitbox/wide] if entity @s[type=#mobtamer:hi
 execute if entity @s[type=#mobtamer:hitbox/wide] if entity @s[type=#mobtamer:hitbox/tall] at @s run function mobtamer:sys/common/pet/tp/wide_tall
 
 execute if entity @a[tag=mt.player_check,tag=mt.flying,limit=1] run function mobtamer:sys/common/pet/tp/flying
+execute if entity @s[type=#mobtamer:can_swim] at @a[tag=mt.player_check,limit=1] if block ~ ~ ~ water if block ~ ~1 ~ water run function mobtamer:sys/common/pet/tp/swiming
