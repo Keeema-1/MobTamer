@@ -10,6 +10,8 @@ execute if entity @s[type=bee] if entity @s[nbt={HasStung:1b}] run data merge en
 
 execute if entity @s[type=fox] run function mobtamer:sys/player/pet/each/unique/fox
 
+execute if entity @s[type=#mobtamer:guardians] run function mobtamer:sys/player/pet/each/unique/guardian/0
+
 execute if entity @s[type=wolf,tag=mt.following] if data entity @s {Sitting:1b} run data modify entity @s Sitting set value 0b
 
 execute if entity @s[type=#mobtamer:can_fly] run function mobtamer:sys/player/pet/each/unique/can_fly
