@@ -1,7 +1,7 @@
 
 execute positioned as @s run tp @s ~ ~ ~ ~ 0
 execute if entity @s[type=ender_dragon] positioned as @s run tp @s ~ ~ ~ ~180 0
-execute if entity @s[type=ender_dragon] run data modify entity @s DragonPhase set value 10
+# execute if entity @s[type=ender_dragon] run data modify entity @s DragonPhase set value 10
 
 data modify storage mobtamer:temp data.Motion set from entity @s Motion
 execute store result score $mt.motion.x mt.score run data get storage mobtamer:temp data.player.Motion[0] 10000
