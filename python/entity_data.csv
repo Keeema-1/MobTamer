@@ -15,7 +15,7 @@ dolphin,overworld,sea animal,2,1,10,,,3,120,,,30,5,1,0.6,0.9,,,1,1,,,1,
 donkey,overworld,animal,0,,Varies,,,0,17,,,#VALUE!,2,1,1.5,1.3965,0.75,0.6982,0,1,,,,
 drowned,overworld,sea monster,3,2,20,6,2,3,23,2,,60,10,1,1.95,0.6,0.975,0.3,1,1,1,1,1,
 elder_guardian,overworld,sea monster,-1,,80,6,2,8,30,,,640,100,1,1.9975,1.9975,,,,1,,,,
-ender_dragon,end,,-1,,200,,,0,69,,,0,,1,(Not cuboid),(Not cuboid),,,,0,,,,
+ender_dragon,end,,-1,,200,,,0,69,,,0,,1,8,8,,,,1,,,,1
 enderman,overworld,overworld monster,5,3,40,6,2,7,30,,,280,50,1,2.9,0.6,,,1,1,,,1,
 endermite,other,,2,1,8,6,2,2,25,,,16,5,1,0.3,0.4,,,1,1,,,1,
 evoker,overworld,raider,6,3,24,,,2,50,,,48,40,1,1.95,0.6,,,1,1,,,1,

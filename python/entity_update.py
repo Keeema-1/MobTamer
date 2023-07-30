@@ -48,11 +48,10 @@ def filter_name_list(condition):
 database_name = get_column('Entity Name')
 # print(database_name)
 
-# if(1):
-#     can_tame_list = filter_name_list(get_column_as_np('Can Tame') == 1)
+can_tame_list = filter_name_list(get_column_as_np('Can Tame') == 1)
 
-#     # tags/entity_types/can_tame
-#     write_entity_types_json(can_tame_list, 'can_tame')
+# tags/entity_types/can_tame
+write_entity_types_json(can_tame_list, 'can_tame')
 
 #     # store spawn egg
 #     output = []
