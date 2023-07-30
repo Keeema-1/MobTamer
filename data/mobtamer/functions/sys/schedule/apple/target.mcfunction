@@ -21,6 +21,7 @@ data modify entity @s CanPickUpLoot set value 0b
 execute if data storage mobtamer:settings data{equipment_when_tame:"only_initial_equipment"} run function mobtamer:sys/schedule/apple/drop_equipment/0
 
 effect give @s fire_resistance 60 1 true
+effect give @s water_breathing 60 1 true
 playsound minecraft:entity.fox.eat master @a ~ ~ ~ 1 1
 
 schedule function mobtamer:sys/schedule/chance/0 1t
