@@ -23,5 +23,6 @@ execute if entity @s[type=frog] run data modify storage mobtamer:temp data.pet_s
 execute if entity @s[type=warden] run data modify storage mobtamer:temp data.pet_status.cost.attack.add set value -20
 
 execute if entity @s[type=wither] run data modify storage mobtamer:temp data.pet_status.cost.force set value 600
+execute if entity @s[type=ender_dragon] run data modify storage mobtamer:temp data.pet_status.cost.force set value 500
 
 data remove storage mobtamer:temp data.MainHand

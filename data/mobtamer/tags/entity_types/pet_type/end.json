@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "shulker"
+        "shulker",
+        "ender_dragon"
     ]
 }
