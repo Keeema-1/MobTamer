@@ -26,6 +26,8 @@ execute if entity @s[type=phantom] if predicate mobtamer:random/50m unless predi
 
 execute if entity @s[type=evoker] if predicate mobtamer:targeting run function mobtamer:sys/player/pet/each/unique/evoker
 
+execute if entity @s[type=wither] unless predicate mobtamer:targeting as @e[type=wither_skull,distance=..4] run function mobtamer:sys/player/pet/each/unique/wither
+
 execute if predicate mobtamer:random/50m on passengers on vehicle if entity @s[tag=mt.pet_check] if data entity @s {CustomNameVisible:1b} run data modify entity @s CustomNameVisible set value 0b
 execute if predicate mobtamer:random/50m unless predicate mobtamer:passenger_exists unless data entity @s {CustomNameVisible:1b} run data modify entity @s CustomNameVisible set value 1b
 
