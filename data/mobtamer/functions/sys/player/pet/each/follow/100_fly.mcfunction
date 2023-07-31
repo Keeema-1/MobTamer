@@ -6,7 +6,7 @@ execute store result score $mt.pos.to.y mt.score run data get storage mobtamer:t
 scoreboard players operation $mt.pos.to.y mt.score -= $mt.pos.from.y mt.score
 
 execute if entity @s[type=ghast] run scoreboard players add $mt.pos.to.y mt.score 700
-execute if entity @s[type=phantom] run scoreboard players add $mt.pos.to.y mt.score 300
+execute if entity @s[type=phantom] run scoreboard players add $mt.pos.to.y mt.score 400
 
 # execute if entity @s[type=ender_dragon] if score $mt.pos.to.y mt.score matches ..-50 at @s run tp @s ~ ~-0.3 ~
 # execute if entity @s[type=ender_dragon] if score $mt.pos.to.y mt.score matches 50.. at @s run tp @s ~ ~0.3 ~
