@@ -37,6 +37,13 @@ data modify storage mobtamer:temp data.item merge value {sell:{id:"name_tag",Cou
 data modify storage mobtamer:database data.item.trader.EntityTag.Offers.Recipes append from storage mobtamer:temp data.item
 
 data modify storage mobtamer:temp data.item set value {}
+data modify storage mobtamer:temp data.item merge value {buy:{id:"copper_ingot",Count:1b},buyB:{id:"air",Count:0b}}
+data modify storage mobtamer:temp data.item merge value {xp:0,priceMultiplier:0f,rewardExp:1b,maxUses:10000}
+data modify storage mobtamer:temp data.item merge value {sell:{id:"feather",Count:1b}}
+data modify storage mobtamer:temp data.item.sell.tag merge from storage mobtamer:database data.item.pet_release
+data modify storage mobtamer:database data.item.trader.EntityTag.Offers.Recipes append from storage mobtamer:temp data.item
+
+data modify storage mobtamer:temp data.item set value {}
 data modify storage mobtamer:temp data.item merge value {buy:{id:"golden_apple",Count:1b},buyB:{id:"copper_ingot",Count:1b}}
 data modify storage mobtamer:temp data.item merge value {xp:0,priceMultiplier:0f,rewardExp:1b,maxUses:10000}
 data modify storage mobtamer:temp data.item merge value {sell:{id:"book",Count:1b}}
