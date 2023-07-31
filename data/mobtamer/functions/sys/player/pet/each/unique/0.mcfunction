@@ -24,6 +24,8 @@ execute if entity @s[type=goat] if predicate mobtamer:random/50m if data entity 
 
 execute if entity @s[type=phantom] if predicate mobtamer:random/50m unless predicate mobtamer:undead_dont_burn unless score $mt.schedule.store.phantom mt.score matches 1.. if dimension overworld unless data entity @s {Fire:-1s} run function mobtamer:sys/player/pet/each/unique/phantom_store
 
+execute if entity @s[type=#mobtamer:slimes] run function mobtamer:sys/player/pet/each/unique/slime/0
+
 execute if entity @s[type=evoker] if predicate mobtamer:targeting run function mobtamer:sys/player/pet/each/unique/evoker
 
 execute if entity @s[type=wither] unless predicate mobtamer:targeting as @e[type=wither_skull,distance=..4] run function mobtamer:sys/player/pet/each/unique/wither
