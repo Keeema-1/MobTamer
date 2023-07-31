@@ -5,6 +5,7 @@ execute if entity @s[type=skeleton] if predicate mobtamer:random/100m run functi
 
 execute if entity @s[type=#mobtamer:breathe_underwater] unless predicate mobtamer:location_water if predicate mobtamer:random/100m run data modify entity @s Air set value 1000s
 execute if entity @s[type=dolphin] unless predicate mobtamer:location_water if predicate mobtamer:random/10m run data modify entity @s Moistness set value 2400
+execute if entity @s[type=dolphin] if predicate mobtamer:targeting run function mobtamer:sys/player/pet/each/unique/dolphin/0
 
 execute if entity @s[type=bee] if entity @s[nbt={HasStung:1b}] run data merge entity @s {HasStung:0b,TicksSincePollination:0}
 
