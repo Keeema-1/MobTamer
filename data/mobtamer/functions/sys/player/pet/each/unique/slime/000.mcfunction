@@ -12,6 +12,6 @@ execute if score $mt.attack_damage mt.score matches 8 run damage @s 8 mob_attack
 execute if score $mt.attack_damage mt.score matches 9 run damage @s 9 mob_attack by @e[team=!,type=#mobtamer:slimes,tag=mt.pet_check,tag=mt.pet,limit=1]
 execute if score $mt.attack_damage mt.score matches 10.. run damage @s 10 mob_attack by @e[team=!,type=#mobtamer:slimes,tag=mt.pet_check,tag=mt.pet,limit=1]
 
-scoreboard players set @s mt.hostile_interval 30
+scoreboard players set @e[team=!,type=#mobtamer:slimes,tag=mt.pet_check,tag=mt.pet,limit=1] mt.hostile_interval 30
 
 scoreboard players reset $mt.attack_damage mt.score
