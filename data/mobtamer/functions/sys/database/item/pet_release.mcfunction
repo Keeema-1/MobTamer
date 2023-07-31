@@ -1,0 +1,2 @@
+
+data modify storage mobtamer:database data.item.pet_release set value {display:{Name:'{"text":"ペットリリース用アイテム","italic": false}',Lore:['[{"text":"コンダクターで停止させたペットに","italic":false}]','[{"text":"向かってドロップすることでペット","italic":false}]','[{"text":"をリリースします。","italic":false}]','[{"text":"リリースされたペットは共通チーム","italic":false}]','[{"text":"に所属し、自由に行動します。","italic":false}]']},mt_pet_release:1b,Enchantments:[{id:"infinity"}],HideFlags:1}

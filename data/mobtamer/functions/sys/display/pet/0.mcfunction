@@ -1,5 +1,6 @@
 tag @s add mt.display_exist
 
+execute if entity @s[tag=mt.pet] run data modify storage mobtamer:temp data.pet.is_pet set value 1b
 data modify storage mobtamer:temp data.pet.Pos set from entity @s Pos
 data modify storage mobtamer:temp data.pet.Motion set from entity @s Motion
 

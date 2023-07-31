@@ -10,5 +10,7 @@ function mobtamer:sys/database/item/gacha/diamond
 function mobtamer:sys/database/item/trader
 function mobtamer:sys/database/item/pet_equipment_trader
 
+function mobtamer:sys/database/item/pet_release
+
 function mobtamer:sys/database/item/cheat_trader
 function mobtamer:sys/database/item/cheat

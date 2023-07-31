@@ -1,0 +1,42 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:feather",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{mt_pet_release:1b}"
+              },
+              {
+                "function": "minecraft:copy_nbt",
+                "source": {
+                  "type": "minecraft:storage",
+                  "source": "mobtamer:database"
+                },
+                "ops": [
+                  {
+                    "source": "data.item.pet_release.display",
+                    "target": "display",
+                    "op": "replace"
+                  },{
+                    "source": "data.item.pet_release.HideFlags",
+                    "target": "HideFlags",
+                    "op": "replace"
+                  },{
+                    "source": "data.item.pet_release.Enchantments",
+                    "target": "Enchantments",
+                    "op": "replace"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
