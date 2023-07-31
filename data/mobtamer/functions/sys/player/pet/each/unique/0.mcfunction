@@ -7,6 +7,8 @@ execute if entity @s[type=#mobtamer:breathe_underwater] unless predicate mobtame
 execute if entity @s[type=dolphin] unless predicate mobtamer:location_water if predicate mobtamer:random/10m run data modify entity @s Moistness set value 2400
 execute if entity @s[type=dolphin] if predicate mobtamer:location_water if predicate mobtamer:targeting run function mobtamer:sys/player/pet/each/unique/dolphin/0
 
+execute if entity @s[type=vex] if predicate mobtamer:targeting run function mobtamer:sys/player/pet/each/unique/vex/0
+
 execute if entity @s[type=bee] if entity @s[nbt={HasStung:1b}] run data merge entity @s {HasStung:0b,TicksSincePollination:0}
 
 execute if entity @s[type=fox] run function mobtamer:sys/player/pet/each/unique/fox
