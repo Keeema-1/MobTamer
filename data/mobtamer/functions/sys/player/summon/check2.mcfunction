@@ -1,8 +1,6 @@
 scoreboard players operation @s mt.id = $mt.player mt.id
 tag @s remove mt.was_stored
 
-data remove entity @s Attributes[].Modifiers[{"Name":"Leader zombie bonus"}]
-
 execute if entity @a[tag=mt.player_check,team=mt.common,limit=1] run team join mt.common @s
 execute if entity @a[tag=mt.player_check,team=mt.red,limit=1] run team join mt.red @s
 execute if entity @a[tag=mt.player_check,team=mt.blue,limit=1] run team join mt.blue @s
@@ -13,7 +11,10 @@ execute on passengers run data merge entity @s {DeathLootTable:"empty",Health:0.
 
 execute as @e[team=!,type=#mobtamer:can_tame,tag=mt.pet] if score @s mt.id = $mt.player mt.id at @s run tag @s add mt.player_check
 
-execute store result score @s mt.max_health run attribute @s generic.max_health get 100
+execute store result score @s mt.max_health run attribute @s generic.max_health base get 100
+execute store result score $mt.health_modifier mt.score run attribute @s generic.max_health modifier value get 0-0-0-0-aea 100
+scoreboard players operation @s mt.max_health += $mt.health_modifier mt.score
+scoreboard players reset $mt.health_modifier mt.score
 scoreboard players remove @s mt.max_health 10000
 execute store result score @s mt.health run data get entity @s Health 100
 # execute store result entity @s Health float 1 run attribute @s generic.max_health get 100
