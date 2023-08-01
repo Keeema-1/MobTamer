@@ -44,6 +44,7 @@ team modify mt.gold color gold
 function mobtamer:sys/database/0
 
 execute unless data storage mobtamer:settings data run function mobtamer:init
+function mobtamer:update_settings
 
 execute store result score $mt.ver.old.main mt.score run data get storage mobtamer:settings data.version.main
 execute store result score $mt.ver.old.beta mt.score run data get storage mobtamer:settings data.version.beta

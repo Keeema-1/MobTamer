@@ -7,6 +7,7 @@
         "contents":[
             {
                 "name":"equipment_when_tame",
+                "trigger":10,
                 "display":{
                     "title":"テイム時のペットの装備",
                     "detail":"スポーン時の装備のみ有効とするか否か"
@@ -18,6 +19,7 @@
             },
             {
                 "name":"party_cost_max",
+                "trigger":20,
                 "display":{
                     "title":"パーティーのコスト上限",
                     "detail":"パーティーのコスト上限を有効とするか否か"
@@ -29,6 +31,7 @@
             },
             {
                 "name":"status_variant",
+                "trigger":30,
                 "display":{
                     "title":"モブの個体差",
                     "detail":"テイムしたモブのステータスの個体差を有効とするか否か"
@@ -40,6 +43,7 @@
             },
             {
                 "name":"exp_display",
+                "trigger":40,
                 "display":{
                     "title":"ペットの獲得経験値表示",
                     "detail":"ペットがモブを倒して獲得した経験値を表示するか否か"
@@ -51,6 +55,7 @@
             },
             {
                 "name":"store_when_sleep",
+                "trigger":50,
                 "display":{
                     "title":"睡眠時のペット",
                     "detail":"睡眠可能な時間にベッドの前に立ったとき、ペットをアイテム化するか否か"
@@ -71,6 +76,7 @@
         "contents":[
             {
                 "name":"baby_grow",
+                "trigger":60,
                 "display":{
                     "title":"子供ペットの成長",
                     "detail":"子供のペットの成長を有効とするか否か"
@@ -90,6 +96,7 @@
         "contents":[
             {
                 "name":"team_collition",
+                "trigger":70,
                 "display":{
                     "title":"チームの衝突設定",
                     "detail":"ペットを含む味方同士での衝突を有効とするか否か"
@@ -101,6 +108,7 @@
             },
             {
                 "name":"team_color",
+                "trigger":80,
                 "display":{
                     "title":"チームカラー",
                     "detail":"チームカラーの変更"
@@ -126,6 +134,7 @@
         "contents":[
             {
                 "name":"member_list",
+                "trigger":90,
                 "display":{
                     "title":"各チームの参加者一覧",
                     "detail":"各チームの参加者一覧を表示"
@@ -139,6 +148,7 @@
             },
             {
                 "name":"join_common_team",
+                "trigger":100,
                 "display":{
                     "title":"共通チームに参加",
                     "detail":"このチームは村人たちとは敵対しません"
@@ -152,6 +162,7 @@
             },
             {
                 "name":"join_red_team",
+                "trigger":110,
                 "display":{
                     "title":"赤チームに参加",
                     "detail":"このチームは村人たちと敵対します"
@@ -165,6 +176,7 @@
             },
             {
                 "name":"join_blue_team",
+                "trigger":120,
                 "display":{
                     "title":"青チームに参加",
                     "detail":"このチームは村人たちと敵対します"
@@ -178,6 +190,7 @@
             },
             {
                 "name":"join_green_team",
+                "trigger":130,
                 "display":{
                     "title":"緑チームに参加",
                     "detail":"このチームは村人たちと敵対します"
@@ -191,6 +204,7 @@
             },
             {
                 "name":"join_gold_team",
+                "trigger":140,
                 "display":{
                     "title":"橙チームに参加",
                     "detail":"このチームは村人たちと敵対します"
@@ -212,6 +226,7 @@
         "contents":[
             {
                 "name":"weakness",
+                "trigger":150,
                 "display":{
                     "title":"プレイヤーの攻撃力低下",
                     "detail":"プレイヤーの攻撃力と矢のダメージが1/10に低下し、トライデントを投げられなくなる"
@@ -232,6 +247,7 @@
         "contents":[
             {
                 "name":"data_transfer",
+                "trigger":160,
                 "display":{
                     "title":"データ移行",
                     "detail":"他のワールドにペットを持ち込む"
