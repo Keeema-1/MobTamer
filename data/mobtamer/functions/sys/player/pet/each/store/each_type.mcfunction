@@ -41,6 +41,7 @@ execute if entity @s[type=bee] run data modify storage mobtamer:temp data.Item.i
 execute if entity @s[type=fox] run data modify storage mobtamer:temp data.Item.id set value "fox_spawn_egg"
 execute if entity @s[type=goat] run data modify storage mobtamer:temp data.Item.id set value "goat_spawn_egg"
 execute if entity @s[type=frog] run data modify storage mobtamer:temp data.Item.id set value "frog_spawn_egg"
+execute if entity @s[type=tadpole] run data modify storage mobtamer:temp data.Item.id set value "tadpole_spawn_egg"
 execute if entity @s[type=cat] run data modify storage mobtamer:temp data.Item.id set value "cat_spawn_egg"
 execute if entity @s[type=ocelot] run data modify storage mobtamer:temp data.Item.id set value "ocelot_spawn_egg"
 execute if entity @s[type=cow] run data modify storage mobtamer:temp data.Item.id set value "cow_spawn_egg"

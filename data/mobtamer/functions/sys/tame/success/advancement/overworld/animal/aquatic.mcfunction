@@ -8,3 +8,4 @@ execute if entity @s[type=squid] run advancement grant @a only mobtamer:mobtamer
 execute if entity @s[type=cod] run advancement grant @a only mobtamer:mobtamer/tame/type/overworld/animal/aquatic/cod
 execute if entity @s[type=pufferfish] run advancement grant @a only mobtamer:mobtamer/tame/type/overworld/animal/aquatic/pufferfish
 execute if entity @s[type=salmon] run advancement grant @a only mobtamer:mobtamer/tame/type/overworld/animal/aquatic/salmon
+execute if entity @s[type=tadpole] run advancement grant @a only mobtamer:mobtamer/tame/type/overworld/animal/aquatic/tadpole
