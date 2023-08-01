@@ -2,6 +2,8 @@ execute unless score @s mt.login matches 1.. run function mobtamer:sys/player/lo
 
 function mobtamer:sys/player/player_check_add
 
+function mobtamer:sys/common/player/settings/score2storage
+
 data modify storage mobtamer:temp data.player.Pos set from entity @s Pos
 data modify storage mobtamer:temp data.player.Motion set from entity @s Motion
 data modify storage mobtamer:temp data.player.Rotation set from entity @s Rotation
@@ -23,3 +25,4 @@ execute if score @s mt.trigger matches ..-1 run function mobtamer:sys/player/tri
 function mobtamer:sys/player/player_check_remove
 
 data remove storage mobtamer:temp data.player
+data remove storage mobtamer:temp data.player_settings

@@ -10,6 +10,8 @@ execute if score @s mt.trigger matches 51 run function mobtamer:sys/player/trigg
 execute if score @s mt.trigger matches 52 run function mobtamer:sys/player/trigger/settings/store_when_sleep/change
 execute if score @s mt.trigger matches 61 run function mobtamer:sys/player/trigger/settings/baby_grow/start
 execute if score @s mt.trigger matches 62 run function mobtamer:sys/player/trigger/settings/baby_grow/change
+execute if score @s mt.trigger matches 171 run function mobtamer:sys/player/trigger/settings/default_strategy/start
+execute if score @s mt.trigger matches 172 run function mobtamer:sys/player/trigger/settings/default_strategy/change
 execute if score @s mt.trigger matches 71 run function mobtamer:sys/player/trigger/settings/team_collition/start
 execute if score @s mt.trigger matches 72 run function mobtamer:sys/player/trigger/settings/team_collition/change
 execute if score @s mt.trigger matches 81 run function mobtamer:sys/player/trigger/settings/team_color/start

@@ -2,6 +2,7 @@ import csv
 import numpy as np
 import json
 import os
+import math
 
 database_path = 'settings.json'
 
@@ -39,8 +40,8 @@ if(1):
             i = 0
             for item in group["contents"]:
                 if group["each_player"]:
-                    i += 1
                     output.append('scoreboard players set $mt.player.settings.' + item["name"] + ' mt.score ' + str(2**i) + '\n')
+                    i += int(math.log2(len(item["states"])))
                 else:
                     output.append('data modify storage mobtamer:settings data merge value {' + item["name"] + ':' + str(item["states"][0][0]) + '}\n')
                 for command in item["states"][0][3]:
@@ -55,10 +56,13 @@ if(1):
         if not group["only_run_command"]:
             i = 0
             for item in group["contents"]:
-                if not group["each_player"]:
+                if group["each_player"]:
+                    output.append('scoreboard players set $mt.player.settings.' + item["name"] + ' mt.score ' + str(2**i) + '\n')
+                    i += int(math.log2(len(item["states"])))
+                else:
                     for command in item["states"][0][3]:
                         output.append('execute unless data storage mobtamer:settings data.' + item["name"] + ' run ' + command + '\n')
-                    output.append('execute unless data storage mobtamer:settings data.' + item["name"] + ' run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：","color":"green"},{"text":"' + group["title"] + '／' + item["display"]["title"] + '","color":"yellow"}]\n')
+                    output.append('execute unless data storage mobtamer:settings data.' + item["name"] + ' run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\\n　","color":"green"},{"text":"' + group["title"] + '／' + item["display"]["title"] + '","color":"yellow"}]\n')
                     output.append('execute unless data storage mobtamer:settings data.' + item["name"] + ' run data modify storage mobtamer:settings data merge value {' + item["name"] + ':' + str(item["states"][0][0]) + '}\n')
     path = common_path + 'update_settings.mcfunction'
     with open(path, 'w', encoding='utf-8') as f:
@@ -66,16 +70,18 @@ if(1):
 
 if(1):
     output = []
-    output.append('scoreboard players set $mt.const mt.score 2\n')
     for group in database:
         i = 0
         if group["class"] == 'each_player':
             for item in group["contents"]:
                 i += 1
+                output.append('scoreboard players set $mt.const mt.score ' + str(int(2*math.log2(len(item["states"])))) + '\n')
                 output.append('scoreboard players operation $mt.player.settings mt.score = @s mt.settings\n')
                 output.append('scoreboard players operation $mt.player.settings mt.score /= $mt.player.settings.' + item["name"] + ' mt.score\n')
                 output.append('scoreboard players operation $mt.player.settings mt.score %= $mt.const mt.score\n')
-                output.append('execute store result storage mobtamer:temp data.player_settings.' + item["name"] + ' byte 1 run scoreboard players get $mt.player.settings mt.score\n')
+                # output.append('execute store result storage mobtamer:temp data.player_settings.' + item["name"] + ' byte 1 run scoreboard players get $mt.player.settings mt.score\n')
+                for j, state in enumerate(item["states"]):
+                    output.append('execute if score $mt.player.settings mt.score matches ' + str(j) + ' run data modify storage mobtamer:temp data.player_settings.' + item["name"] + ' set value ' + state[0] + '\n')
     output.append('scoreboard players reset $mt.const mt.score\n')
     output.append('scoreboard players reset $mt.player.settings mt.score\n')
     path = common_path + 'sys/common/player/settings/score2storage.mcfunction'
@@ -90,7 +96,9 @@ if(1):
         if group["class"] == 'each_player':
             for item in group["contents"]:
                 i += 1
-                output.append('execute store result score $mt.player.settings mt.score run data get storage mobtamer:temp data.player_settings.' + item["name"] + '\n')
+                for j, state in enumerate(item["states"]):
+                    output.append('execute if data storage mobtamer:temp data.player_settings{' + item["name"] + ':' + state[0] + '} run scoreboard players set $mt.player.settings mt.score ' + str(j) + '\n')
+                # output.append('execute store result score $mt.player.settings mt.score run data get storage mobtamer:temp data.player_settings.' + item["name"] + '\n')
                 output.append('scoreboard players operation $mt.player.settings mt.score *= $mt.player.settings.' + item["name"] + ' mt.score\n')
                 output.append('scoreboard players operation @s mt.settings += $mt.player.settings mt.score\n')
     output.append('scoreboard players reset $mt.player.settings mt.score\n')

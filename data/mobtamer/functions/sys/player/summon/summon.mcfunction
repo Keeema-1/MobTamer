@@ -9,6 +9,10 @@ execute if entity @s[type=fox] run data modify entity @s Trusted append from ent
 execute if data entity @s Owner run data modify entity @s Owner set from entity @a[tag=mt.player_check,limit=1] UUID
 
 scoreboard players operation @s mt.strategy = $mt.strategy.attack mt.score
+execute if data storage mobtamer:temp data.player_settings{default_strategy:"attack"} run scoreboard players operation @s mt.strategy = $mt.strategy.attack mt.score
+execute if data storage mobtamer:temp data.player_settings{default_strategy:"balance"} run scoreboard players operation @s mt.strategy = $mt.strategy.balance mt.score
+execute if data storage mobtamer:temp data.player_settings{default_strategy:"recover"} run scoreboard players operation @s mt.strategy = $mt.strategy.recover mt.score
+execute if data storage mobtamer:temp data.player_settings{default_strategy:"follow"} run scoreboard players operation @s mt.strategy = $mt.strategy.follow mt.score
 
 tag @s add mt.pet_check
 execute if entity @s[tag=mt.down] run function mobtamer:sys/player/pet/each/down/down/0

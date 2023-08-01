@@ -85,6 +85,20 @@
                     ["0b","無効","gray",[]],
                     ["1b","有効","aqua",[]]
                 ]
+            },
+            {
+                "name":"default_strategy",
+                "trigger":170,
+                "display":{
+                    "title":"デフォルトの作戦",
+                    "detail":"ペット召喚時に適用される作戦を選択"
+                },
+                "states":[
+                    ["\"attack\"","攻撃優先","red",[]],
+                    ["\"balance\"","バランス","aqua",[]],
+                    ["\"recover\"","回復優先","green",[]],
+                    ["\"follow\"","追従優先","yellow",[]]
+                ]
             }
         ]
     },
