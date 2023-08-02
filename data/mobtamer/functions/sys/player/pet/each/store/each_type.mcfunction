@@ -76,4 +76,5 @@ execute if entity @s[type=magma_cube] run data modify storage mobtamer:temp data
 execute if entity @s[type=shulker] run data modify storage mobtamer:temp data.Item.id set value "shulker_spawn_egg"
 
 execute if entity @s[type=illusioner] run data modify storage mobtamer:temp data.Item.id set value "vindicator_spawn_egg"
+execute if entity @s[type=giant] run data modify storage mobtamer:temp data.Item.id set value "zombie_spawn_egg"
 execute if entity @s[type=ender_dragon] run data modify storage mobtamer:temp data.Item.id set value "ender_dragon_spawn_egg"
