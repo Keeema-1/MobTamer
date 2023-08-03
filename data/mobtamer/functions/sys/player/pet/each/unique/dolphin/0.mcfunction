@@ -1,4 +1,6 @@
 
+execute on vehicle run return 1
+
 execute unless data entity @s {HurtTime:0s} run return 1
 
 forceload add 0 0

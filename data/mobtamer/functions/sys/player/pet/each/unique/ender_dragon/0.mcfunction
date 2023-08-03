@@ -7,6 +7,8 @@ data modify entity @s DragonPhase set value 6
 
 # effect give @s weakness 10 10 true
 
+execute on vehicle run return 1
+
 # execute if entity @s[tag=!mt.following] unless predicate mobtamer:passenger_exists at @s positioned ~-7 ~-3 ~-7 if entity @a[dx=13,dy=5,dz=13,limit=1] at @s facing entity @p eyes run tp @s ^ ^ ^-0.3
 execute unless predicate mobtamer:passenger_exists at @s positioned ~-7 ~-4 ~-7 if entity @a[dx=13,dy=7,dz=13,limit=1] at @s facing entity @p eyes run tp @s ^ ^ ^-0.3
 

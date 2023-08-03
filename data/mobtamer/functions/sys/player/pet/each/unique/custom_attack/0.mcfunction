@@ -1,4 +1,6 @@
 
+execute on vehicle run return 1
+
 execute if score @s mt.hostile_interval matches 1.. run scoreboard players remove @s mt.hostile_interval 1
 
 execute if score @s mt.hostile_interval matches 11.. run scoreboard players set $mt.return mt.score 1

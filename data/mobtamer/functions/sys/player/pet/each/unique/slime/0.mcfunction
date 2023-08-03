@@ -1,4 +1,6 @@
 
+execute on vehicle run return 1
+
 execute store result score $mt.slime.size mt.score run data get entity @s Size
 
 execute if score $mt.slime.size mt.score matches 1.. if score @s mt.hostile_interval matches 1.. run scoreboard players remove @s mt.hostile_interval 1
