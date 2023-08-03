@@ -13,6 +13,10 @@ execute if entity @s[type=bee] if entity @s[nbt={HasStung:1b}] run data merge en
 
 execute if entity @s[type=fox] run function mobtamer:sys/player/pet/each/unique/fox
 
+execute if entity @s[type=ocelot] if entity @s[tag=!mt.down,tag=!mt.stop] run function mobtamer:sys/player/pet/each/unique/custom_attack/0
+execute if entity @s[type=fox] if entity @s[tag=!mt.down,tag=!mt.stop] run function mobtamer:sys/player/pet/each/unique/custom_attack/0
+execute if entity @s[tag=mt.custom_attack] if entity @s[tag=!mt.down,tag=!mt.stop] run function mobtamer:sys/player/pet/each/unique/custom_attack/0
+
 execute if entity @s[type=#mobtamer:guardians,tag=!mt.down,tag=!mt.stop] run function mobtamer:sys/player/pet/each/unique/guardian/0
 
 execute if entity @s[type=wolf,tag=mt.following] if data entity @s {Sitting:1b} run data modify entity @s Sitting set value 0b
