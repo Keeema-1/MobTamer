@@ -5,6 +5,8 @@ scoreboard objectives add mt.health dummy
 scoreboard objectives add mt.health_nbt dummy
 scoreboard objectives add mt.max_health dummy
 scoreboard objectives add mt.xp dummy
+# for custom attack
+scoreboard objectives add mt.attack_damage dummy
 scoreboard objectives add mt.settings dummy
 scoreboard objectives add mt.tame_type_count dummy
 scoreboard objectives add mt.hostile_interval dummy

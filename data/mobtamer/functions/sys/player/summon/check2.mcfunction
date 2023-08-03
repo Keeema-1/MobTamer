@@ -23,6 +23,11 @@ data modify entity @s Health set value 100.0f
 # xp
 execute store result score @s mt.xp run data get entity @s PortalCooldown
 
+# execute if entity @s[type=#mobtamer:custom_attack/can_be,tag=mt.custom_attack] run attribute @s generic.attack_damage base set 1
+execute if entity @s[type=#mobtamer:custom_attack/can_be,tag=mt.custom_attack] store result score @s mt.attack_damage run data get entity @s TicksFrozen
+
+data modify entity @s TicksFrozen set value 0
+
 function mobtamer:sys/common/pet/status/all
 execute store result score @s mt.cost run data get storage mobtamer:temp data.pet_status.cost.value
 

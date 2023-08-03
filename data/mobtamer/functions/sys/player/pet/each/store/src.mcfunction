@@ -59,6 +59,8 @@ data modify storage mobtamer:temp data.Item.tag.display.Name set from entity @s 
 # xp
 execute store result storage mobtamer:temp data.Item.tag.EntityTag.PortalCooldown int 1 run scoreboard players add @s mt.xp 0
 
+execute store result storage mobtamer:temp data.Item.tag.EntityTag.TicksFrozen int 1 run scoreboard players get @s mt.attack_damage
+
 # health
 execute store result storage mobtamer:temp data.Item.tag.EntityTag.Health float 0.01 run scoreboard players get @s mt.health
 execute if entity @s[tag=mt.down] run data modify storage mobtamer:temp data.Item.tag.EntityTag.Health set value 1.0f

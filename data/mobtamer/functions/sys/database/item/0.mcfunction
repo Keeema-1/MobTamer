@@ -14,3 +14,5 @@ function mobtamer:sys/database/item/pet_release
 
 function mobtamer:sys/database/item/cheat_trader
 function mobtamer:sys/database/item/cheat
+
+function mobtamer:sys/database/item/custom_attack

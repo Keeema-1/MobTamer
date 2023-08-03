@@ -12,6 +12,9 @@ scoreboard players operation $mt.pet.attack.add.weapon mt.score -= $mt.pet.attac
 scoreboard players operation $mt.pet.attack.add.weapon mt.score -= $mt.pet.attack.add.variant mt.score
 scoreboard players operation $mt.pet.attack.add.effect mt.score = $mt.pet.attack mt.score
 scoreboard players operation $mt.pet.attack.add.effect mt.score -= $mt.pet.attack.no_effect mt.score
+execute if entity @s[type=#mobtamer:custom_attack/can_be] run scoreboard players operation $mt.pet.attack.base mt.score = @s mt.attack_damage
+execute if entity @s[type=#mobtamer:custom_attack/can_be] run scoreboard players operation $mt.pet.attack mt.score = @s mt.attack_damage
+execute if entity @s[type=#mobtamer:custom_attack/can_be] run scoreboard players operation $mt.pet.attack.no_effect mt.score = @s mt.attack_damage
 
 data modify entity @s ActiveEffects set from storage mobtamer:temp data.ActiveEffects
 data remove storage mobtamer:temp data.ActiveEffects

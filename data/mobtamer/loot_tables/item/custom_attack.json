@@ -1,0 +1,42 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:arrow",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{mt_custom_attack:1b}"
+              },
+              {
+                "function": "minecraft:copy_nbt",
+                "source": {
+                  "type": "minecraft:storage",
+                  "source": "mobtamer:database"
+                },
+                "ops": [
+                  {
+                    "source": "data.item.custom_attack.display",
+                    "target": "display",
+                    "op": "replace"
+                  },{
+                    "source": "data.item.custom_attack.HideFlags",
+                    "target": "HideFlags",
+                    "op": "replace"
+                  },{
+                    "source": "data.item.custom_attack.Enchantments",
+                    "target": "Enchantments",
+                    "op": "replace"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

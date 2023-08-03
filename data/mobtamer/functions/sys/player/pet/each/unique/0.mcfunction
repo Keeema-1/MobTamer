@@ -43,7 +43,7 @@ execute if entity @s[type=ender_dragon,tag=!mt.down,tag=!mt.stop] run function m
 
 execute if entity @s[type=ghast,tag=!mt.down,tag=!mt.stop] run function mobtamer:sys/player/pet/each/unique/ghast/0
 
-execute if predicate mobtamer:random/50m on passengers on vehicle if entity @s[tag=mt.pet_check] if data entity @s {CustomNameVisible:1b} run data modify entity @s CustomNameVisible set value 0b
+execute if predicate mobtamer:random/50m on passengers if entity @s[type=!area_effect_cloud] on vehicle if entity @s[tag=mt.pet_check] if data entity @s {CustomNameVisible:1b} run data modify entity @s CustomNameVisible set value 0b
 execute if predicate mobtamer:random/50m unless predicate mobtamer:passenger_exists unless data entity @s {CustomNameVisible:1b} run data modify entity @s CustomNameVisible set value 1b
 
 execute if data storage mobtamer:temp data.pet.ArmorItems[{id:"minecraft:elytra"}] unless data storage mobtamer:temp data.pet{OnGround:1b} if block ~ ~-2 ~ #mobtamer:space run function mobtamer:sys/player/pet/each/unique/elytra

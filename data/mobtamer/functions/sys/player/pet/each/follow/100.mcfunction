@@ -1,6 +1,7 @@
 tag @s add mt.following
 
-execute if data storage mobtamer:temp data.pet{OnGround:1b} unless block ~ ~ ~ #mobtamer:space run data modify storage mobtamer:temp data.pet.Motion[1] set value 0.37
+execute if entity @s[type=!#mobtamer:breathe_underwater] if data storage mobtamer:temp data.pet{OnGround:1b} unless block ~ ~ ~ #mobtamer:space run data modify storage mobtamer:temp data.pet.Motion[1] set value 0.37
+execute if entity @s[type=#mobtamer:breathe_underwater] if data storage mobtamer:temp data.pet{OnGround:1b} unless block ~ ~ ~ #mobtamer:space run data modify storage mobtamer:temp data.pet.Motion[1] set value 0.2
 #particle end_rod ~ ~ ~ 0 0 0 0 1
 
 execute store result score $mt.pos.from.x mt.score run data get storage mobtamer:temp data.pet.Pos[0] 100
