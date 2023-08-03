@@ -1,6 +1,6 @@
 
-scoreboard players set @e[team=!,tag=mt.pet_check,tag=mt.pet,distance=..10,limit=1] mt.hostile_interval 0
+execute as @e[team=!,type=#mobtamer:guardians,tag=mt.pet_check,tag=mt.pet,limit=1] run function mobtamer:sys/common/pet/attack/src
 
-damage @s 6 mob_attack by @e[team=!,type=guardian,tag=mt.pet_check,tag=mt.pet,distance=..10,limit=1]
+execute if data entity @s {HurtTime:0s} unless data entity @s {Health:0.0f} run function mobtamer:sys/common/pet/attack/dst
 
-damage @s 8 mob_attack by @e[team=!,type=elder_guardian,tag=mt.pet_check,tag=mt.pet,distance=..10,limit=1]
+scoreboard players set @e[team=!,type=#mobtamer:guardians,tag=mt.pet_check,tag=mt.pet,limit=1] mt.hostile_interval 0

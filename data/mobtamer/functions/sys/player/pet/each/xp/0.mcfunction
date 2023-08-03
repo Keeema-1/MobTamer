@@ -1,6 +1,8 @@
 execute on target if entity @s[type=#mobtamer:xp/multiplier/0] run scoreboard players set $mt.xp.add mt.score 0
+execute unless predicate mobtamer:targeting on passengers if entity @s[tag=mt.target_record_entity] on origin if entity @s[type=#mobtamer:xp/multiplier/0] run scoreboard players set $mt.xp.add mt.score 0
 
 execute on target unless entity @s[type=#mobtamer:xp/multiplier/0] run function mobtamer:sys/player/pet/each/xp/00
+execute unless predicate mobtamer:targeting on passengers if entity @s[tag=mt.target_record_entity] on origin unless entity @s[type=#mobtamer:xp/multiplier/0] run function mobtamer:sys/player/pet/each/xp/00
 
 scoreboard players operation $mt.xp.remain mt.score = $mt.xp.add mt.score
 

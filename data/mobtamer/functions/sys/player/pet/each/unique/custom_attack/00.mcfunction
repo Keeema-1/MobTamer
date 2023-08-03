@@ -1,4 +1,6 @@
 
+execute if data entity @s {Health:0.0f} run return 1
+
 scoreboard players set $mt.exist_target_record_entity mt.score 1
 
 execute if score $mt.return mt.score matches 1 run return 1

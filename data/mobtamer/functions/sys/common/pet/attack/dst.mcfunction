@@ -61,6 +61,8 @@ execute if score $mt.damage mt.score matches 20.. run damage @s 20 mob_attack by
 # tellraw @a [{"text":"   DEF: "},{"score":{"name":"$mt.dst.armor","objective":"mt.score"}}]
 # tellraw @a [{"text":"   DMG: "},{"score":{"name":"$mt.damage","objective":"mt.score"}}]
 
+execute if data entity @s {Health:0.0f} as @e[team=!,tag=mt.pet_check,tag=mt.pet,limit=1] run function mobtamer:sys/player/pet/each/xp/0
+
 scoreboard players reset $mt.k mt.score
 scoreboard players reset $mt.k2 mt.score
 scoreboard players reset $mt.const.4 mt.score
