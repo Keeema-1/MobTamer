@@ -19,6 +19,7 @@ execute if entity @s[type=shulker] run data modify storage mobtamer:temp data.pe
 execute if entity @s[type=blaze] run data modify storage mobtamer:temp data.pet_status.cost.attack.add set value 9
 execute if entity @s[type=evoker] run data modify storage mobtamer:temp data.pet_status.cost.attack.add set value 19
 execute if entity @s[type=panda] run data modify storage mobtamer:temp data.pet_status.cost.attack.add set value -2
+execute if entity @s[type=phantom] run data modify storage mobtamer:temp data.pet_status.cost.attack.add set value 2
 # execute if entity @s[type=frog] run data modify storage mobtamer:temp data.pet_status.cost.attack.add set value -6
 execute if entity @s[type=warden] run data modify storage mobtamer:temp data.pet_status.cost.attack.add set value -20
 

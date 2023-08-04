@@ -40,6 +40,6 @@ execute as @a if score @s mt.tame_type_count matches 40.. run advancement grant 
 execute as @a if score @s mt.tame_type_count matches 50.. run advancement grant @s only mobtamer:mobtamer/tame/count/50types
 execute as @a if score @s mt.tame_type_count matches 60.. run advancement grant @s only mobtamer:mobtamer/tame/count/60types
 execute as @a if score @s mt.tame_type_count matches 70.. run advancement grant @s only mobtamer:mobtamer/tame/count/70types
-execute as @a if score @s mt.tame_type_count matches 74.. run advancement grant @s only mobtamer:mobtamer/tame/count/74types
+execute as @a if score @s mt.tame_type_count matches 75.. run advancement grant @s only mobtamer:mobtamer/tame/count/75types
 
 advancement grant @a only mobtamer:mobtamer/challenge

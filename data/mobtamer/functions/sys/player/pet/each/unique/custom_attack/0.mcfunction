@@ -1,7 +1,7 @@
 
 execute on vehicle run return 1
 
-execute if score @s mt.hostile_interval matches 1.. run scoreboard players remove @s mt.hostile_interval 1
+execute unless entity @s[type=#mobtamer:can_revenge] if score @s mt.hostile_interval matches 1.. run scoreboard players remove @s mt.hostile_interval 1
 
 execute if score @s mt.hostile_interval matches 11.. run scoreboard players set $mt.return mt.score 1
 execute unless data entity @s {HurtTime:0s} run scoreboard players set $mt.return mt.score 1
