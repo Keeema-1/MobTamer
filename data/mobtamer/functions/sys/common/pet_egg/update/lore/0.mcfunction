@@ -13,6 +13,7 @@ execute store result score $mt.pet.health mt.score run data get storage mobtamer
 execute store result score $mt.pet.armor mt.score run data get storage mobtamer:temp data.pet_status.armor
 execute store result score $mt.pet.knockback mt.score run data get storage mobtamer:temp data.pet_status.knockback
 execute store result score $mt.cost mt.score run data get storage mobtamer:temp data.pet_status.cost.value
+execute store result score $mt.xp mt.score run data get storage mobtamer:temp data.pet_status.xp
 
 data modify storage mobtamer:temp data.Item set from entity @s Item
 
@@ -35,3 +36,4 @@ scoreboard players reset $mt.pet.max_health.add.variant mt.score
 scoreboard players reset $mt.pet.health mt.score
 
 scoreboard players reset $mt.cost mt.score
+scoreboard players reset $mt.xp mt.score

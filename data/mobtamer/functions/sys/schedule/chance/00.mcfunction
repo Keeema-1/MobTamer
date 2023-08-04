@@ -18,7 +18,7 @@ execute if data storage mobtamer:settings data{weakness:"never"} run data remove
 execute on attacker unless entity @s[type=pufferfish] run data remove storage mobtamer:temp hold.only_pufferfish
 execute if data storage mobtamer:temp hold{only_pufferfish:1b} on attacker if entity @s[type=pufferfish] run data modify storage mobtamer:temp hold.only_pufferfish set value 2b
 
-execute anchored eyes at @s unless block ^ ^ ^ #mobtamer:space run setblock ^ ^ ^ air destroy
+execute anchored eyes at @s unless block ^ ^ ^ #mobtamer:space_and_water run setblock ^ ^ ^ air destroy
 execute at @s if block ~ ~ ~ powder_snow run setblock ~ ~ ~ air destroy
 
 execute store result score $mt.target.fall_distance mt.score run data get entity @s FallDistance

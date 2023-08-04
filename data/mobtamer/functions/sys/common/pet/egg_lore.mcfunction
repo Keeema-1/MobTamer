@@ -13,6 +13,7 @@ execute store result score $mt.pet.health mt.score run data get storage mobtamer
 execute store result score $mt.pet.armor mt.score run data get storage mobtamer:temp data.pet_status.armor
 execute store result score $mt.pet.knockback mt.score run data get storage mobtamer:temp data.pet_status.knockback
 execute store result score $mt.cost mt.score run data get storage mobtamer:temp data.pet_status.cost.value
+execute store result score $mt.xp mt.score run data get storage mobtamer:temp data.pet_status.xp
 
 item replace entity @s weapon.mainhand with stick
 team leave @s
@@ -43,6 +44,8 @@ execute if data storage mobtamer:temp data.Item.tag.EntityTag.HandItems[1].Count
 
 item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/cost
 
+item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/xp
+
 data modify storage mobtamer:temp data.Item.tag.display set from entity @s HandItems[0].tag.display
 
 
@@ -63,3 +66,4 @@ scoreboard players reset $mt.pet.max_health.add.variant mt.score
 scoreboard players reset $mt.pet.health mt.score
 
 scoreboard players reset $mt.cost mt.score
+scoreboard players reset $mt.xp mt.score

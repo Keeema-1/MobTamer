@@ -28,7 +28,7 @@ execute if entity @s[type=!#mobtamer:weight/heavy] if predicate mobtamer:random/
 execute if predicate mobtamer:random/1m if data storage mobtamer:temp data.player_settings{baby_grow:0b} if predicate mobtamer:is_baby run data modify entity @s Age set value -100000
 execute if predicate mobtamer:random/10m if entity @s[type=tadpole] run data modify entity @s Age set value -100000
 
-execute if entity @s[type=goat] if predicate mobtamer:random/50m if data entity @s Brain.memories."minecraft:ram_cooldown_ticks" run data modify entity @s Brain.memories."minecraft:ram_cooldown_ticks" set value 0
+execute if entity @s[type=goat] if predicate mobtamer:random/50m if data entity @s Brain.memories."minecraft:ram_cooldown_ticks" run data modify entity @s Brain.memories."minecraft:ram_cooldown_ticks" set value 1
 
 execute if entity @s[type=phantom] if predicate mobtamer:random/50m unless predicate mobtamer:undead_dont_burn unless score $mt.schedule.store.phantom mt.score matches 1.. if dimension overworld unless data entity @s {Fire:-1s} run function mobtamer:sys/player/pet/each/unique/phantom_store
 execute if entity @s[type=phantom,tag=!mt.down,tag=!mt.stop] run function mobtamer:sys/player/pet/each/unique/phantom/0

@@ -32,6 +32,8 @@ execute if data storage mobtamer:temp data.Item.tag.EntityTag.HandItems[1].Count
 
 item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/cost
 
+item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/xp
+
 data modify storage mobtamer:temp data.Item.tag.display set from entity @s HandItems[0].tag.display
 
 
