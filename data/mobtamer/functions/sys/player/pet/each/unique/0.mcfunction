@@ -37,6 +37,8 @@ execute if entity @s[type=#mobtamer:slimes] run function mobtamer:sys/player/pet
 
 execute if entity @s[type=evoker] if predicate mobtamer:targeting run function mobtamer:sys/player/pet/each/unique/evoker
 
+execute if entity @s[type=silverfish] run function mobtamer:sys/player/pet/each/unique/silverfish
+
 execute if entity @s[type=wither] unless predicate mobtamer:targeting as @e[type=wither_skull,distance=..4] run function mobtamer:sys/player/pet/each/unique/wither
 
 execute if entity @s[type=ender_dragon,tag=!mt.down,tag=!mt.stop] run function mobtamer:sys/player/pet/each/unique/ender_dragon/0
