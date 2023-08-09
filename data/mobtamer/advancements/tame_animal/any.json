@@ -1,0 +1,10 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tame_animal"
+      }
+    },
+    "rewards": {
+      "function": "mobtamer:sys/player/advancement/tame_animal/any"
+    }
+}

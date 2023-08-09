@@ -1,0 +1,19 @@
+{
+    "replace": false,
+    "values": [
+        "camel",
+        "cat",
+        "donkey",
+        "fox",
+        "horse",
+        "llama",
+        "mule",
+        "ocelot",
+        "panda",
+        "parrot",
+        "skeleton_horse",
+        "trader_llama",
+        "wolf",
+        "zombie_horse"
+    ]
+}
