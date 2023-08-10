@@ -4,6 +4,11 @@ scoreboard players add $mt.sys mt.id 1
 give @s golden_apple
 
 scoreboard players set @s mt.cost 0
+scoreboard players set @s mt.tame_type_count 0
+
+advancement revoke @a from mobtamer:mobtamer/road_to_mobtamer
+advancement revoke @a from mobtamer:mobtamer/challenge
+advancement revoke @a from mobtamer:mobtamer/tame/tame_type
 
 tellraw @s ["",{"text":"=====================================================","color": "green"}]
 tellraw @s ["",{"text":"モブテイマーの世界へようこそ！","color": "green","italic": true}]
