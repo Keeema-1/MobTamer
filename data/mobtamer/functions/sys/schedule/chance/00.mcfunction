@@ -26,3 +26,6 @@ execute if score $mt.target.fall_distance mt.score matches 4.. run data modify e
 scoreboard players reset $mt.target.fall_distance mt.score
 
 execute anchored eyes at @s positioned ~-0.5 ~ ~-0.5 as @e[type=falling_block,dx=0,dy=6,dz=0,limit=1] unless data entity @s {FallHurtAmount:0.0f} run data merge entity @s {FallHurtAmount:0.0f,FallDistance:0.0f}
+
+execute on vehicle if entity @s[type=boat] run function mobtamer:sys/common/dismount_and_drop/0
+execute on vehicle if entity @s[type=minecart] run function mobtamer:sys/common/dismount_and_drop/0
