@@ -1,13 +1,21 @@
-execute unless data storage mobtamer:settings data.equipment_when_tame run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"プレイヤー共通設定／テイム時のペットの装備","color":"yellow"}]
+execute unless data storage mobtamer:settings data.equipment_when_tame run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／テイム時のペットの装備","color":"yellow"}]
 execute unless data storage mobtamer:settings data.equipment_when_tame run data modify storage mobtamer:settings data merge value {equipment_when_tame:"only_initial_equipment"}
-execute unless data storage mobtamer:settings data.party_cost_max run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"プレイヤー共通設定／パーティーのコスト上限","color":"yellow"}]
+execute unless data storage mobtamer:settings data.party_cost_max run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／パーティーのコスト上限","color":"yellow"}]
 execute unless data storage mobtamer:settings data.party_cost_max run data modify storage mobtamer:settings data merge value {party_cost_max:1b}
-execute unless data storage mobtamer:settings data.status_variant run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"プレイヤー共通設定／モブの個体差","color":"yellow"}]
+execute unless data storage mobtamer:settings data.status_variant run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／モブの個体差","color":"yellow"}]
 execute unless data storage mobtamer:settings data.status_variant run data modify storage mobtamer:settings data merge value {status_variant:1b}
-execute unless data storage mobtamer:settings data.exp_display run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"プレイヤー共通設定／ペットの獲得経験値表示","color":"yellow"}]
+execute unless data storage mobtamer:settings data.exp_display run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／ペットの獲得経験値表示","color":"yellow"}]
 execute unless data storage mobtamer:settings data.exp_display run data modify storage mobtamer:settings data merge value {exp_display:1b}
-execute unless data storage mobtamer:settings data.store_when_sleep run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"プレイヤー共通設定／睡眠時のペット","color":"yellow"}]
+execute unless data storage mobtamer:settings data.store_when_sleep run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／睡眠時のペット","color":"yellow"}]
 execute unless data storage mobtamer:settings data.store_when_sleep run data modify storage mobtamer:settings data merge value {store_when_sleep:"only_monster"}
+execute unless data storage mobtamer:settings data.can_store_down_pets run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"ダウン設定／ダウン中のペットの格納","color":"yellow"}]
+execute unless data storage mobtamer:settings data.can_store_down_pets run data modify storage mobtamer:settings data merge value {can_store_down_pets:1b}
+execute unless data storage mobtamer:settings data.auto_store_down_pet run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"ダウン設定／ダウン時の自動格納","color":"yellow"}]
+execute unless data storage mobtamer:settings data.auto_store_down_pet run data modify storage mobtamer:settings data merge value {auto_store_down_pet:0b}
+execute unless data storage mobtamer:settings data.auto_store_down_pet_when_far run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"ダウン設定／ダウンペットと離れた時","color":"yellow"}]
+execute unless data storage mobtamer:settings data.auto_store_down_pet_when_far run data modify storage mobtamer:settings data merge value {auto_store_down_pet_when_far:0b}
+execute unless data storage mobtamer:settings data.kill_down_pet run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"ダウン設定／ダウンしたペットの消滅","color":"yellow"}]
+execute unless data storage mobtamer:settings data.kill_down_pet run data modify storage mobtamer:settings data merge value {kill_down_pet:"never"}
 scoreboard players set $mt.player.settings.baby_grow mt.score 1
 scoreboard players set $mt.player.settings.default_strategy mt.score 2
 execute unless data storage mobtamer:settings data.team_collition run team modify mt.common collisionRule always

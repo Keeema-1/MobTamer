@@ -1,5 +1,3 @@
-execute if entity @e[tag=mt.new] run tellraw @a "exist new tag entity"
-
 function mobtamer:sys/player/pet/each/store/src
 summon item ~ ~ ~ {Item:{id:"zombie_spawn_egg",Count:1b},Tags:["mt.new"]}
 execute as @e[type=item,tag=mt.new,distance=..3,sort=nearest,limit=1] at @s run function mobtamer:sys/player/pet/each/store/dst

@@ -1,7 +1,7 @@
 [
     {
         "class":"general",
-        "title":"プレイヤー共通設定",
+        "title":"一般設定",
         "each_player":false,
         "only_run_command":false,
         "contents":[
@@ -64,6 +64,64 @@
                     ["\"only_monster\"","モンスターのペットのみアイテム化する","yellow",[]],
                     ["\"always\"","すべてのペットをアイテム化する","aqua",[]],
                     ["\"never\"","ペットをアイテム化しない","gray",[]]
+                ]
+            }
+        ]
+    },
+    {
+        "class":"down",
+        "title":"ダウン設定",
+        "each_player":false,
+        "only_run_command":false,
+        "contents":[
+            {
+                "name":"can_store_down_pets",
+                "trigger":180,
+                "display":{
+                    "title":"ダウン中のペットの格納",
+                    "detail":"ダウン中のペットをアイテム化できるか否か"
+                },
+                "states":[
+                    ["1b","可","aqua",[]],
+                    ["0b","不可","gray",[]]
+                ]
+            },
+            {
+                "name":"auto_store_down_pet",
+                "trigger":190,
+                "display":{
+                    "title":"ダウン時の自動格納",
+                    "detail":"ダウンしたペットを自動でアイテム化するか否か"
+                },
+                "states":[
+                    ["0b","無効","gray",[]],
+                    ["1b","有効","aqua",[]]
+                ]
+            },
+            {
+                "name":"auto_store_down_pet_when_far",
+                "trigger":200,
+                "display":{
+                    "title":"ダウンペットと離れた時",
+                    "detail":"ダウン状態のペットと32ブロック以上離れたときの仕様"
+                },
+                "states":[
+                    ["0b","何も起こらない","gray",[]],
+                    ["1b","自動でアイテム化する","aqua",[]]
+                ]
+            },
+            {
+                "name":"kill_down_pet",
+                "trigger":210,
+                "display":{
+                    "title":"ダウンしたペットの死亡",
+                    "detail":"ダウン状態のペットが消滅するか否か"
+                },
+                "states":[
+                    ["\"never\"","死亡しない","aqua",[]],
+                    ["\"5min\"","5分後に死亡","red",[]],
+                    ["\"20min\"","20分後に死亡","red",[]],
+                    ["\"immediate\"","即座に死亡","red",[]]
                 ]
             }
         ]

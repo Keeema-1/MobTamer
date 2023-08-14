@@ -9,3 +9,8 @@ execute on passengers if entity @s[type=text_display] run function mobtamer:sys/
 scoreboard players reset $mt.display mt.health
 
 execute if score @s mt.health matches 1.. run function mobtamer:sys/player/pet/each/down/is_down/revive
+
+execute if score @s mt.timer1 matches 1.. run scoreboard players remove @s mt.timer1 1
+execute if score @s mt.timer1 matches 1 run function mobtamer:sys/player/pet/each/down/is_down/kill
+
+execute unless score @s mt.timer1 matches 1 unless score @s mt.health matches 1.. unless entity @a[tag=mt.player_check,distance=..32,limit=1] run function mobtamer:sys/player/pet/each/store/0
