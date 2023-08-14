@@ -23,8 +23,6 @@ data modify storage mobtamer:settings data.release_progress merge value {gacha:{
 
 forceload remove all
 
-scoreboard players set $mt.sys mt.slot 6
-
 tellraw @a {"text": "設定が初期化されました。","color": "green"}
 
 gamerule sendCommandFeedback false

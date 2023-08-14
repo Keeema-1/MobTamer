@@ -65,6 +65,22 @@
                     ["\"always\"","すべてのペットをアイテム化する","aqua",[]],
                     ["\"never\"","ペットをアイテム化しない","gray",[]]
                 ]
+            },
+            {
+                "name":"party_slots",
+                "trigger":220,
+                "display":{
+                    "title":"召喚ペット数の上限",
+                    "detail":"一度に召喚できるペットの数の上限"
+                },
+                "states":[
+                    ["6","6体","aqua",["scoreboard players set $mt.sys mt.slot 6"]],
+                    ["10","10体","aqua",["scoreboard players set $mt.sys mt.slot 10"]],
+                    ["100","100体","aqua",["scoreboard players set $mt.sys mt.slot 100"]],
+                    ["1","1体","aqua",["scoreboard players set $mt.sys mt.slot 1"]],
+                    ["2","2体","aqua",["scoreboard players set $mt.sys mt.slot 2"]],
+                    ["3","3体","aqua",["scoreboard players set $mt.sys mt.slot 3"]]
+                ]
             }
         ]
     },
