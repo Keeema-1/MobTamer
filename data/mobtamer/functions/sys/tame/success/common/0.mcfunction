@@ -27,4 +27,4 @@ data modify entity @s ArmorItems[3].tag.Unbreakable set value 1b
 data modify entity @s HandItems[0].tag.Unbreakable set value 1b
 data modify entity @s HandItems[1].tag.Unbreakable set value 1b
 
-function mobtamer:sys/player/pet/each/store/0
+execute at @s run function mobtamer:sys/player/pet/each/store/0
