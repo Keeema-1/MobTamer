@@ -13,7 +13,9 @@
       "icon": {
         "item": "minecraft:grass_block"
       },
-      "hidden": true
+      "hidden": true,
+      "announce_to_chat": false,
+      "show_toast": false
     },
     "parent": "mobtamer:mobtamer/tame/type/overworld/animal",
     "criteria": {
