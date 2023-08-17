@@ -1,14 +1,16 @@
 data modify storage mobtamer:database data.item.manual set value {title:"モブテイマーの指南書",author:"",filtered_title:"title",pages:[],HideFlags:32}
 
-data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"はじめに\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　本データパックでは、一部のモブをテイムしてペットにすることができます。\\n"},{"text":"\\n\\n\\n"},{"text":"配布ページにも解説記事があります。\\n"},{"text":"             ↓\\n"},{"text":"  [配布ページへジャンプ]\\n","color":"light_purple","clickEvent":{"action":"open_url","value":"https://github.com/Keeema-1/MobTamer/wiki"}}]'
+data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"はじめに\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　本データパックでは、すべてのモブをテイムしてペットにすることができます。\\n"},{"text":"\\n\\n\\n"},{"text":"配布ページにも解説記事があります。\\n"},{"text":"             ↓\\n"},{"text":"  [配布ページへジャンプ]\\n","color":"light_purple","clickEvent":{"action":"open_url","value":"https://github.com/Keeema-1/MobTamer/wiki"}}]'
 
 data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"テイム方法-1\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　プレイヤーがドロップした金のリンゴをモブに当てるとテイムチャレンジが始まります。（金のリンゴが地面に着くまでにモブに当てる必要があります。）\\n"},{"text":"　テイムチャレンジを成功させると、そのモブはあなたのペットになります。\\n"}]'
-data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"テイム方法-2\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　テイムチャレンジの成功条件／失敗条件は以下の通りです。\\n"},{"text":"\\n"},{"text":"成功条件:\\n"},{"text":"・そのモブのHPを一定量減少させる\\n"},{"text":"\\n"},{"text":"失敗条件:\\n"},{"text":"・成功しないまま60秒が経過する\\n"}]'
+data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"テイム方法-2\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　テイムチャレンジの成功条件／失敗条件は以下の通りです。\\n"},{"text":"\\n"},{"text":"成功条件:\\n"},{"text":"・そのモブを倒す\\n"},{"text":"\\n"},{"text":"失敗条件:\\n"},{"text":"・成功しないまま60秒が経過する\\n"}]'
 data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"テイムに成功すると\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　テイムしたモブはアイテム化されます。そのアイテムを使用することでペットを召喚することができます。\\n"}]'
 
 data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"ペットの行動\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　ペットとなったモブは以下の行動をするようになります。\\n"},{"text":"\\n"},{"text":"・プレイヤーに付いてくる\\n"},{"text":"・味方に敵対するモブ／プレイヤーが攻撃したモブを攻撃する\\n"}]'
 
 data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"パーティー\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　プレイヤーと、プレイヤーが連れるペットを合わせてパーティーと呼びます。パーティーには6体までのペットを入れることができます。"}]'
+
+data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"ペットのHP\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　HPが0になったペットはダウン状態になります。"},{"text":"\\n"},{"text":"ダウン状態のペットの近くでスニークを続けると、ダウン状態から復活させることができます。"},{"text":"\\n"},{"text":"\\n"},{"text":"　ペットがモブを敵視していない時には、ペットのHPが自動で回復します。"}]'
 
 data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"コスト\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　ペットにはそれぞれコストが設定されています。パーティーにはコストの上限が存在し、パーティー内のペットの合計コストはそれ以下でなければいけません。\\n"},{"text":"コストの上限は進捗を達成することで増加していきます。"}]'
 
