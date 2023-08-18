@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "                   （エンチャント済み）",
+          "color": "purple",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false
+  }
+]
