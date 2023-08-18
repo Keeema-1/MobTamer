@@ -1,4 +1,4 @@
 function mobtamer:sys/player/player_check_add
 team join mt.green @e[team=!,tag=mt.player_check]
 function mobtamer:sys/player/remove
-tellraw @s [{"text":"緑チームに参加しました。","color":"green"}]
+tellraw @s [{"storage": "mobtamer:text","nbt":"data.team.join.green","interpret": true}]

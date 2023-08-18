@@ -33,7 +33,7 @@ scoreboard players reset @s
 
 team join mt.common
 
-tellraw @a [{"selector":"@s"},{"text":"をリリースしました。","color":"yellow"}]
+tellraw @a[tag=mt.player_check] [{"selector":"@s"},{"storage": "mobtamer:text","nbt":"data.pet.release","interpret": true}]
 
 execute on passengers if entity @s[type=area_effect_cloud] run kill @s
 execute on passengers if entity @s[type=marker] run kill @s

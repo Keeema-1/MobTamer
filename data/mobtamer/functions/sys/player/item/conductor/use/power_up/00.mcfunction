@@ -1,2 +1,2 @@
 
-tellraw @s {"text": "他の強化モードのペットと近すぎます。","color": "red"}
+tellraw @s [{"storage": "mobtamer:text","nbt":"data.power_up.cannot","interpret": true}]

@@ -1,3 +1,3 @@
 function mobtamer:sys/common/pet/kill
 
-tellraw @a [{"selector":"@s"},{"text":"が死亡しました。","color":"red"}]
+tellraw @a[tag=mt.player_check] [{"selector":"@s"},{"storage": "mobtamer:text","nbt":"data.pet.die","interpret": true}]

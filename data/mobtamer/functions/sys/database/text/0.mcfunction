@@ -1,2 +1,2 @@
-data remove storage mobtamer:database data.text
+data remove storage mobtamer:text data
 function mobtamer:sys/database/text/ja/general

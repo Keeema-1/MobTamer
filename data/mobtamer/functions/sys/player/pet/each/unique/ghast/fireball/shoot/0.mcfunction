@@ -3,8 +3,6 @@ scoreboard players set $mt.shoot_flag mt.score 1
 
 scoreboard players set @s mt.hostile_interval 160
 
-# tellraw @a "shoot"
-
 playsound entity.ghast.shoot hostile @a ~ ~ ~ 4 1
 playsound entity.ghast.warn hostile @a ~ ~ ~ 4 1
 

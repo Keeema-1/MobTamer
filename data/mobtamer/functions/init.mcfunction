@@ -23,6 +23,6 @@ data modify storage mobtamer:settings data.release_progress merge value {gacha:{
 
 forceload remove all
 
-tellraw @a {"text": "設定が初期化されました。","color": "green"}
+tellraw @a [{"storage": "mobtamer:text","nbt":"data.settings_initialized","interpret": true}]
 
 gamerule sendCommandFeedback false

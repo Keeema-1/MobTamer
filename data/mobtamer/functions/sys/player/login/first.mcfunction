@@ -11,10 +11,10 @@ advancement revoke @a from mobtamer:mobtamer/challenge
 advancement revoke @a from mobtamer:mobtamer/tame/tame_type
 
 tellraw @s ["",{"text":"=====================================================","color": "green"}]
-tellraw @s ["",{"text":"モブテイマーの世界へようこそ！","color": "green","italic": true}]
-tellraw @s ["",{"text":"この世界では、","color": "green","italic": true},{"translate":"item.minecraft.golden_apple","color": "aqua","italic":true},{"text":"を使ってすべてのモブをテイムすることができます。","color": "green","italic": true}]
-tellraw @s ["",{"text":"テイムしたモブはあなたのペットとなり、連れて歩いたり、共に戦わせることができるようになります。","color": "green","italic": true}]
-tellraw @s ["",{"text":"わからないことがあれば、モブテイマーの指南書があなたを導いてくれるでしょう。","color": "green","italic": true}]
+tellraw @s ["",{"storage": "mobtamer:text","nbt":"data.tutorial.welcome[0]","interpret": true}]
+tellraw @s ["",{"storage": "mobtamer:text","nbt":"data.tutorial.welcome[1]","interpret": true}]
+tellraw @s ["",{"storage": "mobtamer:text","nbt":"data.tutorial.welcome[2]","interpret": true}]
+tellraw @s ["",{"storage": "mobtamer:text","nbt":"data.tutorial.welcome[3]","interpret": true}]
 tellraw @s ["",{"text":"=====================================================","color": "green"}]
 
 function mobtamer:command/give/manual
