@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        "fox",
+        "panda",
+        "polar_bear",
+        "wandering_trader",
+        "ocelot",
+        "villager",
+        "wolf",
+        "silverfish"
+    ]
+}

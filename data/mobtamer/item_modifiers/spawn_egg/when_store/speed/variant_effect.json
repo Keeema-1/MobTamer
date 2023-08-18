@@ -1,0 +1,73 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": "移動速度 ",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.speed",
+            "objective": "mt.score"
+          },
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": " (",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.speed.base",
+            "objective": "mt.score"
+          },
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": "+\uD83E\uDDCD",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.speed.add.variant",
+            "objective": "mt.score"
+          },
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": "+↑",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.speed.add.effect",
+            "objective": "mt.score"
+          },
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": ")",
+          "color": "dark_green",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false
+  }
+]

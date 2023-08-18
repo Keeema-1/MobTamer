@@ -6,7 +6,6 @@
         "bat",
         "bee",
         "blaze",
-        "camel",
         "cat",
         "cave_spider",
         "chicken",
@@ -25,7 +24,6 @@
         "ghast",
         "giant",
         "glow_squid",
-        "goat",
         "guardian",
         "hoglin",
         "horse",
@@ -74,7 +72,6 @@
         "zoglin",
         "zombie",
         "zombie_horse",
-        "zombie_villager",
-        "zombified_piglin"
+        "zombie_villager"
     ]
 }

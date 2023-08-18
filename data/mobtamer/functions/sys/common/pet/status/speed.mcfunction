@@ -4,7 +4,7 @@ data modify storage mobtamer:temp data.ActiveEffects set from entity @s ActiveEf
 effect clear @s
 execute store result score $mt.pet.speed.no_effect mt.score run attribute @s generic.movement_speed get 100
 execute store result score $mt.pet.speed.base mt.score run attribute @s generic.movement_speed base get 100
-execute store result score $mt.pet.speed.add.variant mt.score run attribute @s generic.movement_speed modifier value get 0-0-0-0-ee
+execute store result score $mt.pet.speed.add.variant mt.score run attribute @s generic.movement_speed modifier value get 0-0-0-0-ee 100
 scoreboard players operation $mt.pet.speed.add mt.score = $mt.pet.speed mt.score
 scoreboard players operation $mt.pet.speed.add mt.score -= $mt.pet.speed.base mt.score
 scoreboard players operation $mt.pet.speed.add.effect mt.score = $mt.pet.speed mt.score

@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "elder_guardian",
+        "enderman",
+        "evoker",
+        "ghast",
+        "piglin_brute",
+        "ravager"
+    ]
+}
