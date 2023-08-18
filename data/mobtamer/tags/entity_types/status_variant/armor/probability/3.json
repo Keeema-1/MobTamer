@@ -1,0 +1,20 @@
+{
+    "replace": false,
+    "values": [
+        "hoglin",
+        "zoglin",
+        "piglin_brute",
+        "enderman",
+        "camel",
+        "polar_bear",
+        "guardian",
+        "shulker",
+        "witch",
+        "vindicator",
+        "pillager",
+        "evoker",
+        "blaze",
+        "zombified_piglin",
+        "ghast"
+    ]
+}

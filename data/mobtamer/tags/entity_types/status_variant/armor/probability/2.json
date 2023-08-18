@@ -1,0 +1,24 @@
+{
+    "replace": false,
+    "values": [
+        "turtle",
+        "panda",
+        "wither_skeleton",
+        "drowned",
+        "husk",
+        "zombie",
+        "zombie_villager",
+        "skeleton",
+        "stray",
+        "allay",
+        "creeper",
+        "phantom",
+        "villager",
+        "wandering_trader",
+        "strider",
+        "piglin",
+        "spider",
+        "vex",
+        "cave_spider"
+    ]
+}
