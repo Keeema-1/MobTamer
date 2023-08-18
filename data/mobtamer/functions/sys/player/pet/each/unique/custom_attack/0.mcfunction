@@ -5,8 +5,8 @@ execute unless entity @s[type=#mobtamer:can_revenge] if score @s mt.hostile_inte
 
 execute if score @s mt.hostile_interval matches 11.. run scoreboard players set $mt.return mt.score 1
 execute on target run scoreboard players set $mt.return mt.score 1
-execute if score @s mt.strategy = $mt.strategy.balance mt.score if entity @s[tag=mt.health.red] run scoreboard players set $mt.return mt.score 1
-execute if score @s mt.strategy = $mt.strategy.recover mt.score if entity @s[tag=mt.health.yellow] run scoreboard players set $mt.return mt.score 1
+execute if score @s mt.strategy = $mt.strategy.balance mt.score if entity @s[tag=mt.health.yellow] run scoreboard players set $mt.return mt.score 1
+execute if score @s mt.strategy = $mt.strategy.recover mt.score unless score @s mt.health = @s mt.max_health run scoreboard players set $mt.return mt.score 1
 
 execute if entity @s[type=!#mobtamer:hitbox/wide] at @s on passengers if entity @s[tag=mt.target_record_entity] on origin if entity @s[distance=..20] facing entity @s feet positioned ^ ^ ^0.25 run function mobtamer:sys/player/pet/each/unique/custom_attack/00
 execute if entity @s[type=#mobtamer:hitbox/wide] at @s on passengers if entity @s[tag=mt.target_record_entity] on origin if entity @s[distance=..20] facing entity @s feet positioned ^ ^ ^0.75 run function mobtamer:sys/player/pet/each/unique/custom_attack/00
