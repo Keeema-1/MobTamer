@@ -11,7 +11,7 @@
         },
         {
           "text": "移動速度 ",
-          "color": "yellow",
+          "color": "dark_green",
           "italic": false
         },
         {
@@ -19,7 +19,7 @@
             "name": "$mt.pet.speed",
             "objective": "mt.score"
           },
-          "color": "aqua",
+          "color": "dark_green",
           "italic": false
         }
       ]

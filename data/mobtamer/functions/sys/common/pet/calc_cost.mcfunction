@@ -8,7 +8,7 @@ scoreboard players operation $mt.cost mt.score += $mt.cost.tmp mt.score
 execute store result score $mt.cost.tmp mt.score run data get storage mobtamer:temp data.pet_status.max_health.final
 scoreboard players operation $mt.cost mt.score *= $mt.cost.tmp mt.score
 
-execute store result score $mt.cost.tmp mt.score run data get storage mobtamer:temp data.pet_status.armor
+execute store result score $mt.cost.tmp mt.score run data get storage mobtamer:temp data.pet_status.armor.final
 scoreboard players add $mt.cost.tmp mt.score 20
 scoreboard players operation $mt.cost mt.score *= $mt.cost.tmp mt.score
 

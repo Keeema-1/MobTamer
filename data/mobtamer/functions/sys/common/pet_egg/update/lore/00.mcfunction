@@ -17,8 +17,18 @@ execute unless score $mt.pet.attack.add.weapon mt.score matches 1.. unless score
 execute if score $mt.pet.attack.add.weapon mt.score matches 1.. unless score $mt.pet.attack.add.effect mt.score matches 0 unless score $mt.pet.attack.add.variant mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/attack/weapon_effect
 execute if score $mt.pet.attack.add.weapon mt.score matches 1.. unless score $mt.pet.attack.add.effect mt.score matches 0 if score $mt.pet.attack.add.variant mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/attack/all
 
+execute unless score $mt.pet.armor.add.weapon mt.score matches 1.. if score $mt.pet.armor.add.effect mt.score matches 0 unless score $mt.pet.armor.add.variant mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor/base
+execute unless score $mt.pet.armor.add.weapon mt.score matches 1.. if score $mt.pet.armor.add.effect mt.score matches 0 if score $mt.pet.armor.add.variant mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor/variant
+execute if score $mt.pet.armor.add.weapon mt.score matches 1.. if score $mt.pet.armor.add.effect mt.score matches 0 unless score $mt.pet.armor.add.variant mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor/weapon
+execute unless score $mt.pet.armor.add.weapon mt.score matches 1.. unless score $mt.pet.armor.add.effect mt.score matches 0 unless score $mt.pet.armor.add.variant mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor/effect
+execute if score $mt.pet.armor.add.weapon mt.score matches 1.. if score $mt.pet.armor.add.effect mt.score matches 0 if score $mt.pet.armor.add.variant mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor/variant_weapon
+execute unless score $mt.pet.armor.add.weapon mt.score matches 1.. unless score $mt.pet.armor.add.effect mt.score matches 0 if score $mt.pet.armor.add.variant mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor/variant_effect
+execute if score $mt.pet.armor.add.weapon mt.score matches 1.. unless score $mt.pet.armor.add.effect mt.score matches 0 unless score $mt.pet.armor.add.variant mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor/weapon_effect
+execute if score $mt.pet.armor.add.weapon mt.score matches 1.. unless score $mt.pet.armor.add.effect mt.score matches 0 if score $mt.pet.armor.add.variant mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor/all
+
 execute if score $mt.pet.knockback mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/knockback
 execute if score $mt.pet.armor mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor
+execute if score $mt.pet.speed mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/speed
 execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[3].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/head
 execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[2].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/chest
 execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[1].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/legs

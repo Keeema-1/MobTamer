@@ -1,0 +1,73 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": "防御力 ",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.armor",
+            "objective": "mt.score"
+          },
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": " (",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.armor.base",
+            "objective": "mt.score"
+          },
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": "+👕",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.armor.add.weapon",
+            "objective": "mt.score"
+          },
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": "+↑",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "$mt.pet.armor.add.effect",
+            "objective": "mt.score"
+          },
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": ")",
+          "color": "dark_green",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false
+  }
+]
