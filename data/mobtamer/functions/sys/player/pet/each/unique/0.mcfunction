@@ -51,3 +51,5 @@ execute if predicate mobtamer:random/50m on passengers if entity @s[type=!area_e
 execute if predicate mobtamer:random/50m unless predicate mobtamer:passenger_exists unless data entity @s {CustomNameVisible:1b} run data modify entity @s CustomNameVisible set value 1b
 
 execute if data storage mobtamer:temp data.pet.ArmorItems[{id:"minecraft:elytra"}] unless data storage mobtamer:temp data.pet{OnGround:1b} if block ~ ~-2 ~ #mobtamer:space run function mobtamer:sys/player/pet/each/unique/elytra
+
+# function mobtamer:sys/player/pet/each/unique/speed_test

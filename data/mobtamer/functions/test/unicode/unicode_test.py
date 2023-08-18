@@ -3,7 +3,7 @@ import numpy as np
 import json
 import os
 
-initials = ['a','b']
+initials = ['0','1','2','3','4']
 
 for initial in initials:
     for n in range(16):
@@ -16,3 +16,5 @@ for initial in initials:
         path = initial + format(n, '1x') + '.mcfunction'
         with open(path, 'w', encoding='utf-8') as f:
             f.writelines(output)
+
+# 👕👔👚🎽
