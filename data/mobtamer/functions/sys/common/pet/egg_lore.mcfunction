@@ -6,18 +6,26 @@ execute store result score $mt.pet.attack.base mt.score run data get storage mob
 execute store result score $mt.pet.attack.add.weapon mt.score run data get storage mobtamer:temp data.pet_status.attack.add.weapon
 execute store result score $mt.pet.attack.add.effect mt.score run data get storage mobtamer:temp data.pet_status.attack.add.effect
 execute store result score $mt.pet.attack.add.variant mt.score run data get storage mobtamer:temp data.pet_status.attack.add.variant
+
 execute store result score $mt.pet.armor mt.score run data get storage mobtamer:temp data.pet_status.armor.final
 execute store result score $mt.pet.armor.no_effect mt.score run data get storage mobtamer:temp data.pet_status.armor.no_effect
 execute store result score $mt.pet.armor.base mt.score run data get storage mobtamer:temp data.pet_status.armor.base
 execute store result score $mt.pet.armor.add.weapon mt.score run data get storage mobtamer:temp data.pet_status.armor.add.weapon
 execute store result score $mt.pet.armor.add.effect mt.score run data get storage mobtamer:temp data.pet_status.armor.add.effect
 execute store result score $mt.pet.armor.add.variant mt.score run data get storage mobtamer:temp data.pet_status.armor.add.variant
+
+execute store result score $mt.pet.speed mt.score run data get storage mobtamer:temp data.pet_status.speed.final
+execute store result score $mt.pet.speed.no_effect mt.score run data get storage mobtamer:temp data.pet_status.speed.no_effect
+execute store result score $mt.pet.speed.base mt.score run data get storage mobtamer:temp data.pet_status.speed.base
+execute store result score $mt.pet.speed.add.effect mt.score run data get storage mobtamer:temp data.pet_status.speed.add.effect
+execute store result score $mt.pet.speed.add.variant mt.score run data get storage mobtamer:temp data.pet_status.speed.add.variant
+
 execute store result score $mt.pet.max_health mt.score run data get storage mobtamer:temp data.pet_status.max_health.final
 execute store result score $mt.pet.max_health.base mt.score run data get storage mobtamer:temp data.pet_status.max_health.base
 execute store result score $mt.pet.max_health.add.variant mt.score run data get storage mobtamer:temp data.pet_status.max_health.add.variant
 execute store result score $mt.pet.health mt.score run data get storage mobtamer:temp data.pet_status.health
 # execute store result score $mt.pet.armor mt.score run data get storage mobtamer:temp data.pet_status.armor
-execute store result score $mt.pet.speed mt.score run data get storage mobtamer:temp data.pet_status.speed
+# execute store result score $mt.pet.speed mt.score run data get storage mobtamer:temp data.pet_status.speed
 execute store result score $mt.pet.knockback mt.score run data get storage mobtamer:temp data.pet_status.knockback
 execute store result score $mt.cost mt.score run data get storage mobtamer:temp data.pet_status.cost.value
 execute store result score $mt.xp mt.score run data get storage mobtamer:temp data.pet_status.xp
@@ -48,7 +56,9 @@ execute if score $mt.pet.armor.add.weapon mt.score matches 1.. unless score $mt.
 
 execute if score $mt.pet.knockback mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/knockback
 # execute if score $mt.pet.armor mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor
+
 execute if score $mt.pet.speed mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/speed
+
 execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[3].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/head
 execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[2].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/chest
 execute if data storage mobtamer:temp data.Item.tag.EntityTag.ArmorItems[1].Count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/legs

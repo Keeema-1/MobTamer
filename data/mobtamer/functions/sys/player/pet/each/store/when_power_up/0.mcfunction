@@ -12,10 +12,12 @@ execute summon text_display run function mobtamer:sys/player/pet/each/store/when
 execute summon text_display run function mobtamer:sys/player/pet/each/store/when_power_up/text_display/attack
 execute summon text_display run function mobtamer:sys/player/pet/each/store/when_power_up/text_display/armor
 execute summon text_display run function mobtamer:sys/player/pet/each/store/when_power_up/text_display/hp
+execute summon text_display run function mobtamer:sys/player/pet/each/store/when_power_up/text_display/speed
 
 execute summon interaction run function mobtamer:sys/player/pet/each/store/when_power_up/interaction/hp
 execute summon interaction run function mobtamer:sys/player/pet/each/store/when_power_up/interaction/attack
 execute summon interaction run function mobtamer:sys/player/pet/each/store/when_power_up/interaction/armor
+execute summon interaction run function mobtamer:sys/player/pet/each/store/when_power_up/interaction/speed
 
 tag @s remove mt.new
 
