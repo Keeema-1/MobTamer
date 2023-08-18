@@ -27,4 +27,9 @@ data modify entity @s ArmorItems[3].tag.Unbreakable set value 1b
 data modify entity @s HandItems[0].tag.Unbreakable set value 1b
 data modify entity @s HandItems[1].tag.Unbreakable set value 1b
 
-execute at @s run function mobtamer:sys/player/pet/each/store/0
+scoreboard players operation $mt.pet.id mt.score = @s mt.id
+execute if data storage mobtamer:settings data{tame_spawn_egg_pos:"player"} as @a if score @s mt.id = $mt.pet.id mt.score run tag @s add mt.tame_success_player
+execute at @a[tag=mt.tame_success_player,limit=1] run function mobtamer:sys/player/pet/each/store/0
+execute unless entity @a[tag=mt.tame_success_player,limit=1] run function mobtamer:sys/player/pet/each/store/0
+scoreboard players reset $mt.pet.id mt.score
+tag @a remove mt.tame_success_player

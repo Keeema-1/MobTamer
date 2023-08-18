@@ -10,6 +10,10 @@ execute if score @s mt.trigger matches 51 run function mobtamer:sys/player/trigg
 execute if score @s mt.trigger matches 52 run function mobtamer:sys/player/trigger/settings/store_when_sleep/change
 execute if score @s mt.trigger matches 221 run function mobtamer:sys/player/trigger/settings/party_slots/start
 execute if score @s mt.trigger matches 222 run function mobtamer:sys/player/trigger/settings/party_slots/change
+execute if score @s mt.trigger matches 231 run function mobtamer:sys/player/trigger/settings/advancement_player/start
+execute if score @s mt.trigger matches 232 run function mobtamer:sys/player/trigger/settings/advancement_player/change
+execute if score @s mt.trigger matches 241 run function mobtamer:sys/player/trigger/settings/tame_spawn_egg_pos/start
+execute if score @s mt.trigger matches 242 run function mobtamer:sys/player/trigger/settings/tame_spawn_egg_pos/change
 execute if score @s mt.trigger matches 181 run function mobtamer:sys/player/trigger/settings/can_store_down_pets/start
 execute if score @s mt.trigger matches 182 run function mobtamer:sys/player/trigger/settings/can_store_down_pets/change
 execute if score @s mt.trigger matches 191 run function mobtamer:sys/player/trigger/settings/auto_store_down_pet/start

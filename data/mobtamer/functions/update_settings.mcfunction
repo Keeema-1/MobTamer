@@ -11,6 +11,10 @@ execute unless data storage mobtamer:settings data.store_when_sleep run data mod
 execute unless data storage mobtamer:settings data.party_slots run scoreboard players set $mt.sys mt.slot 6
 execute unless data storage mobtamer:settings data.party_slots run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／召喚ペット数の上限","color":"yellow"}]
 execute unless data storage mobtamer:settings data.party_slots run data modify storage mobtamer:settings data merge value {party_slots:6}
+execute unless data storage mobtamer:settings data.advancement_player run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／進捗達成プレイヤー条件","color":"yellow"}]
+execute unless data storage mobtamer:settings data.advancement_player run data modify storage mobtamer:settings data merge value {advancement_player:"one"}
+execute unless data storage mobtamer:settings data.tame_spawn_egg_pos run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／テイム成功時の卵の位置","color":"yellow"}]
+execute unless data storage mobtamer:settings data.tame_spawn_egg_pos run data modify storage mobtamer:settings data merge value {tame_spawn_egg_pos:"here"}
 execute unless data storage mobtamer:settings data.can_store_down_pets run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"ダウン設定／ダウン中のペットの格納","color":"yellow"}]
 execute unless data storage mobtamer:settings data.can_store_down_pets run data modify storage mobtamer:settings data merge value {can_store_down_pets:1b}
 execute unless data storage mobtamer:settings data.auto_store_down_pet run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"ダウン設定／ダウン時の自動格納","color":"yellow"}]

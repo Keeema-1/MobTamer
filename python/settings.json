@@ -81,6 +81,30 @@
                     ["2","2体","aqua",["scoreboard players set $mt.sys mt.slot 2"]],
                     ["3","3体","aqua",["scoreboard players set $mt.sys mt.slot 3"]]
                 ]
+            },
+            {
+                "name":"advancement_player",
+                "trigger":230,
+                "display":{
+                    "title":"進捗達成プレイヤー条件",
+                    "detail":"テイム進捗を達成するプレイヤーの条件を変更"
+                },
+                "states":[
+                    ["\"one\"","金のリンゴを投げたプレイヤーのみ","aqua",[]],
+                    ["\"all\"","ログイン中のプレイヤー全員","aqua",[]]
+                ]
+            },
+            {
+                "name":"tame_spawn_egg_pos",
+                "trigger":240,
+                "display":{
+                    "title":"テイム成功時の卵の位置",
+                    "detail":"テイム成功時にペットがアイテム化する位置を変更"
+                },
+                "states":[
+                    ["\"here\"","その場所に落ちる","aqua",[]],
+                    ["\"player\"","金のリンゴを投げたプレイヤーが即時に獲得する","aqua",[]]
+                ]
             }
         ]
     },
