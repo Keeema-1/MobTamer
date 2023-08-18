@@ -9,7 +9,7 @@ advancement revoke @a from mobtamer:mobtamer/tame/tame_type
 function mobtamer:init_settings
 
 # 上限と強化+の上限(up limit)
-data modify storage mobtamer:settings data.values.power_up_max merge value {attack:6,max_health:40}
+data modify storage mobtamer:settings data.values.power_up_max merge value {attack:6,max_health:40,armor:10}
 
 # 開放要素
 # pet_equipment:

@@ -16,7 +16,7 @@ execute store result score $mt.pet.max_health mt.score run data get storage mobt
 execute store result score $mt.pet.max_health.base mt.score run data get storage mobtamer:temp data.pet_status.max_health.base
 execute store result score $mt.pet.max_health.add.variant mt.score run data get storage mobtamer:temp data.pet_status.max_health.add.variant
 execute store result score $mt.pet.health mt.score run data get storage mobtamer:temp data.pet_status.health
-execute store result score $mt.pet.armor mt.score run data get storage mobtamer:temp data.pet_status.armor
+# execute store result score $mt.pet.armor mt.score run data get storage mobtamer:temp data.pet_status.armor
 execute store result score $mt.pet.speed mt.score run data get storage mobtamer:temp data.pet_status.speed
 execute store result score $mt.pet.knockback mt.score run data get storage mobtamer:temp data.pet_status.knockback
 execute store result score $mt.cost mt.score run data get storage mobtamer:temp data.pet_status.cost.value

@@ -3,6 +3,7 @@ data modify storage mobtamer:temp data.pet_status set from entity @s Item.tag.mt
 
 execute if score $mt.interaction.action mt.score matches 1 run function mobtamer:sys/schedule/pet_egg/power_up/power_up/hp/0
 execute if score $mt.interaction.action mt.score matches 2 run function mobtamer:sys/schedule/pet_egg/power_up/power_up/attack/0
+execute if score $mt.interaction.action mt.score matches 3 run function mobtamer:sys/schedule/pet_egg/power_up/power_up/armor/0
 
 function mobtamer:sys/common/pet_egg/update/0
 
