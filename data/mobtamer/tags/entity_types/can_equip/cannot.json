@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+        "elder_guardian",
+        "ender_dragon",
+        "giant",
+        "iron_golem",
+        "ravager",
+        "warden",
+        "wither"
+    ]
+}
