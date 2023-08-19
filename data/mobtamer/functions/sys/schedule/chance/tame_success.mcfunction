@@ -8,7 +8,8 @@ execute as @a if score @s mt.id = $mt.pet.id mt.score run tag @s add mt.tame_suc
 scoreboard players reset $mt.pet.id mt.score
 
 tellraw @a[tag=mt.tame_success_player] [{"selector":"@s"},{"storage": "mobtamer:text","nbt":"data.pet.tame","interpret": true}]
-execute if data storage mobtamer:settings data{advancement_player:"all"} run tellraw @a[tag=!mt.tame_success_player] [{"selector":"@a[tag=mt.tame_success_player,limit=1]"},{"text":" が ","color": "yellow"},{"selector":"@s"},{"storage": "mobtamer:text","nbt":"data.pet.tame","interpret": true}]
+execute if data storage mobtamer:settings data{advancement_player:"all"} if entity @a[tag=mt.tame_success_player,limit=1] run tellraw @a[tag=!mt.tame_success_player] [{"selector":"@a[tag=mt.tame_success_player,limit=1]"},{"text":" が ","color": "yellow"},{"selector":"@s"},{"storage": "mobtamer:text","nbt":"data.pet.tame","interpret": true}]
+execute if data storage mobtamer:settings data{advancement_player:"all"} unless entity @a[tag=mt.tame_success_player,limit=1] run tellraw @a[tag=!mt.tame_success_player] [{"selector":"@s"},{"storage": "mobtamer:text","nbt":"data.pet.tame","interpret": true}]
 
 tag @a remove mt.tame_success_player
 
