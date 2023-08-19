@@ -1,7 +1,7 @@
 
 scoreboard players operation $mt.pet.id mt.score = @s mt.id
 execute if data storage mobtamer:settings data{advancement_player:"one"} as @a if score @s mt.id = $mt.pet.id mt.score run tag @s add mt.advancement_grant
-execute if data storage mobtamer:settings data{advancement_player:"all"} as @a run tag @s add mt.advancement_grant
+execute if data storage mobtamer:settings data{advancement_player:"all"} run tag @a add mt.advancement_grant
 scoreboard players reset $mt.pet.id mt.score
 
 advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/first_tame
@@ -49,4 +49,4 @@ execute as @a[tag=mt.advancement_grant] if score @s mt.tame_type_count matches 7
 
 advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/challenge
 
-tag @s remove mt.advancement_grant
+tag @a remove mt.advancement_grant
