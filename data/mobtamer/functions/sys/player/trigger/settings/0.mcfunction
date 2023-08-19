@@ -39,3 +39,9 @@ execute if score @s mt.trigger matches 141 run function mobtamer:sys/player/trig
 execute if score @s mt.trigger matches 151 run function mobtamer:sys/player/trigger/settings/weakness/start
 execute if score @s mt.trigger matches 152 run function mobtamer:sys/player/trigger/settings/weakness/change
 execute if score @s mt.trigger matches 161 run function mobtamer:sys/player/trigger/settings/data_transfer/start
+execute if score @s mt.trigger matches 301 run function mobtamer:sys/player/trigger/settings/player_data/start
+execute if score @s mt.trigger matches 302 run function mobtamer:sys/player/trigger/settings/player_data/change
+execute if score @s mt.trigger matches 311 run function mobtamer:sys/player/trigger/settings/tame_data/start
+execute if score @s mt.trigger matches 312 run function mobtamer:sys/player/trigger/settings/tame_data/change
+execute if score @s mt.trigger matches 321 run function mobtamer:sys/player/trigger/settings/all/start
+execute if score @s mt.trigger matches 322 run function mobtamer:sys/player/trigger/settings/all/change

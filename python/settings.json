@@ -372,5 +372,52 @@
                 ]
             }
         ]
+    },
+    {
+        "class":"reset",
+        "title":"データのリセット",
+        "each_player":false,
+        "only_run_command":false,
+        "contents":[
+            {
+                "name":"player_data",
+                "trigger":300,
+                "display":{
+                    "title":"プレイヤー情報全て",
+                    "detail":"自身の達成したデータパック進捗やテイムした種類の記録を全て削除します"
+                },
+                "commands":[
+                ],
+                "states":[
+                    ["0b","リセット","red",["function mobtamer:command/reset/player_all"]]
+                ]
+            },
+            {
+                "name":"tame_data",
+                "trigger":310,
+                "display":{
+                    "title":"テイム情報",
+                    "detail":"自身のテイムに関する記録を削除します"
+                },
+                "commands":[
+                ],
+                "states":[
+                    ["0b","リセット","red",["function mobtamer:command/reset/player_tame"]]
+                ]
+            },
+            {
+                "name":"all",
+                "trigger":320,
+                "display":{
+                    "title":"全てリセット",
+                    "detail":"ログイン中のプレイヤー全員の進捗、テイム記録、解放された取引内容など、全てをリセットします（召喚中のペットは消滅します）"
+                },
+                "commands":[
+                ],
+                "states":[
+                    ["0b","リセット","red",["function mobtamer:command/reset/all"]]
+                ]
+            }
+        ]
     }
 ]

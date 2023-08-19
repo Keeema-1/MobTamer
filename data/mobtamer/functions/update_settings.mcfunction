@@ -34,3 +34,9 @@ execute unless data storage mobtamer:settings data.team_color run data modify st
 execute unless data storage mobtamer:settings data.weakness run execute as @a run function mobtamer:sys/player/status_update
 execute unless data storage mobtamer:settings data.weakness run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"縛り設定／プレイヤーの攻撃力低下","color":"yellow"}]
 execute unless data storage mobtamer:settings data.weakness run data modify storage mobtamer:settings data merge value {weakness:"never"}
+execute unless data storage mobtamer:settings data.player_data run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"データのリセット／プレイヤー情報全て","color":"yellow"}]
+execute unless data storage mobtamer:settings data.player_data run data modify storage mobtamer:settings data merge value {player_data:0b}
+execute unless data storage mobtamer:settings data.tame_data run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"データのリセット／テイム情報","color":"yellow"}]
+execute unless data storage mobtamer:settings data.tame_data run data modify storage mobtamer:settings data merge value {tame_data:0b}
+execute unless data storage mobtamer:settings data.all run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"データのリセット／全てリセット","color":"yellow"}]
+execute unless data storage mobtamer:settings data.all run data modify storage mobtamer:settings data merge value {all:0b}

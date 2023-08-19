@@ -19,3 +19,6 @@ data modify storage mobtamer:settings data merge value {team_color:white}
 team modify mt.common color white
 data modify storage mobtamer:settings data merge value {weakness:"never"}
 execute as @a run function mobtamer:sys/player/status_update
+data modify storage mobtamer:settings data merge value {player_data:0b}
+data modify storage mobtamer:settings data merge value {tame_data:0b}
+data modify storage mobtamer:settings data merge value {all:0b}
