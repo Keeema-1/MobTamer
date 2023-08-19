@@ -25,7 +25,7 @@ scoreboard players reset $mt.pet_equipment.release_progress mt.score
 
 
 execute unless data storage mobtamer:settings data.release_progress{pet_equipment_trader:1b} run tellraw @s [{"storage": "mobtamer:text","nbt":"data.trader.trade_unlock","interpret": true}]
-execute unless data storage mobtamer:settings data.release_progress{pet_equipment_trader:1b} run tellraw @s [{"text": "  ","color": "yellow"},{"storage": "mobtamer:text","nbt":"data.common.summon_trader","interpret": true,"color": "yellow"}]
+execute unless data storage mobtamer:settings data.release_progress{pet_equipment_trader:1b} run tellraw @s [{"text": "  ","color": "yellow"},{"storage": "mobtamer:text","nbt":"data.common.summon_equipment_trader","interpret": true,"color": "yellow"}]
 execute unless data storage mobtamer:settings data.release_progress{pet_equipment_trader:1b} run data modify storage mobtamer:settings data.release_progress.pet_equipment_trader set value 1b
 
 

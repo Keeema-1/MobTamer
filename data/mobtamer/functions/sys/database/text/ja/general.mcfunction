@@ -52,6 +52,7 @@ data modify storage mobtamer:text data.tutorial.conductor append value '{"text":
 data modify storage mobtamer:text data.common.nothing set value '{"text":"  なし"}'
 data modify storage mobtamer:text data.common.for_pet set value '{"text":"（ペット用）"}'
 data modify storage mobtamer:text data.common.summon_trader set value '{"text":"テイマー商人を呼ぶ"}'
+data modify storage mobtamer:text data.common.summon_equipment_trader set value '{"text":"ペット用装備商人を呼ぶ"}'
 data modify storage mobtamer:text data.common.total_cost set value '{"text": "パーティーの合計コスト"}'
 
 data modify storage mobtamer:text data.common.bronze_gacha set value '{"text":"ブロンズガチャ"}'
