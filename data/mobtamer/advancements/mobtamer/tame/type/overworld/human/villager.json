@@ -15,7 +15,8 @@
     ],
     "icon": {
       "item": "minecraft:villager_spawn_egg"
-    }
+    },
+    "announce_to_chat": false
   },
   "parent": "mobtamer:mobtamer/tame/type/overworld/human",
   "criteria": {

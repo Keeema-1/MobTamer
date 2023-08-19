@@ -15,7 +15,8 @@
     ],
     "icon": {
       "item": "minecraft:cave_spider_spawn_egg"
-    }
+    },
+    "announce_to_chat": false
   },
   "parent": "mobtamer:mobtamer/tame/type/overworld/monster/terrestrial",
   "criteria": {
