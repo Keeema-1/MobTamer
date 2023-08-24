@@ -9,6 +9,7 @@ scoreboard players set @s mt.tame_type_count 0
 advancement revoke @s from mobtamer:mobtamer/road_to_mobtamer
 advancement revoke @s from mobtamer:mobtamer/challenge
 advancement revoke @s from mobtamer:mobtamer/tame/tame_type
+advancement revoke @s from mobtamer:mobtamer/caution/root
 
 tellraw @s ["",{"text":"=====================================================","color": "green"}]
 tellraw @s ["",{"storage": "mobtamer:text","nbt":"data.tutorial.welcome[0]","interpret": true}]

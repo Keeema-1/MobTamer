@@ -4,6 +4,7 @@
         "trigger": "minecraft:impossible"
       }
     },
+    "parent": "mobtamer:mobtamer/caution/root",
     "rewards": {
       "function": "mobtamer:sys/player/advancement/mobtamer/caution/bucket"
     }

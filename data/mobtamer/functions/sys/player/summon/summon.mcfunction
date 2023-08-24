@@ -24,3 +24,5 @@ execute if entity @s[tag=mt.down] run function mobtamer:sys/player/pet/each/down
 tag @s remove mt.pet_check
 
 scoreboard players set @s mt.summon_check_time 10
+
+advancement grant @a[tag=mt.player_check] only mobtamer:mobtamer/caution/summon
