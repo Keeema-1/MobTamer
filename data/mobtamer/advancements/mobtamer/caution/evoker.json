@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "mobtamer:sys/player/advancement/mobtamer/caution/evoker"
+    }
+  }
+  
