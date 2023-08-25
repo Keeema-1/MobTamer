@@ -3,7 +3,10 @@ import numpy as np
 import json
 import os
 
-database_path = 'cheat.json'
+lang = 'ja'
+lang = 'en'
+
+database_path = 'cheat_' + lang + '.json'
 
 with open(database_path , encoding='utf-8') as f:
     database = json.load(f)
@@ -18,7 +21,8 @@ TRIGGER_OFFSET = 1000
 
 if(1):
     output = []
-    output.append('data modify storage mobtamer:database data.item.cheat set value {title:"【モブテイマー】チートブック",author:"",filtered_title:"title",pages:[],HideFlags:32}\n')
+    title = '【モブテイマー】チートブック' if lang == 'ja' else '【MobTamer】Cheat Book'
+    output.append('data modify storage mobtamer:database data.item.cheat set value {title:"' + title + '",author:"",filtered_title:"title",pages:[],HideFlags:32}\n')
     count = 0
     for group in database:
         l = 'data modify storage mobtamer:database data.item.cheat.pages append value \'["",{"text":"' + group["title"] + '\\\\n\\\\n","bold":"true","underlined":true}'

@@ -1,0 +1,36 @@
+[
+    {
+        "class":"cheat_book",
+        "title":"Cheat Book",
+        "each_player":false,
+        "only_run_command":true,
+        "contents":[
+            {
+                "name":"cheat_trader",
+                "display":{
+                    "title":"Cheat Trader",
+                    "detail":"Summon a trader who can trade items for cheats"
+                },
+                "commands":[
+                    "function mobtamer:command/give/cheat_trader"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            },
+            {
+                "name":"xp_add",
+                "display":{
+                    "title":"Exp +1000",
+                    "detail":"Giving experience to pets"
+                },
+                "commands":[
+                    "function mobtamer:command/add_xp"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            }
+        ]
+    }
+]
