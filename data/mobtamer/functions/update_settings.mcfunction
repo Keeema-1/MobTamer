@@ -1,5 +1,3 @@
-execute unless data storage mobtamer:settings data.equipment_when_tame run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／テイム時のペットの装備","color":"yellow"}]
-execute unless data storage mobtamer:settings data.equipment_when_tame run data modify storage mobtamer:settings data merge value {equipment_when_tame:"only_initial_equipment"}
 execute unless data storage mobtamer:settings data.party_cost_max run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／パーティーのコスト上限","color":"yellow"}]
 execute unless data storage mobtamer:settings data.party_cost_max run data modify storage mobtamer:settings data merge value {party_cost_max:1b}
 execute unless data storage mobtamer:settings data.status_variant run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／モブの個体差","color":"yellow"}]

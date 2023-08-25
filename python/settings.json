@@ -6,18 +6,6 @@
         "only_run_command":false,
         "contents":[
             {
-                "name":"equipment_when_tame",
-                "trigger":10,
-                "display":{
-                    "title":"テイム時のペットの装備",
-                    "detail":"スポーン時の装備のみ有効とするか否か"
-                },
-                "states":[
-                    ["\"only_initial_equipment\"","スポーン時の装備のみ有効","aqua",[]],
-                    ["\"any\"","すべて有効","aqua",[]]
-                ]
-            },
-            {
                 "name":"party_cost_max",
                 "trigger":20,
                 "display":{
