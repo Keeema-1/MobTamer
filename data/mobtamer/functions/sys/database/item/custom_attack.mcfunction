@@ -1,2 +1,5 @@
 
-data modify storage mobtamer:database data.item.custom_attack set value {display:{Name:'{"text":"攻めの矢","italic": false}',Lore:['[{"text":"コンダクターで停止させたペットに","italic":false}]','[{"text":"向かってドロップすることで、通常","italic":false}]','[{"text":"は攻撃をしないペットでも敵を攻撃","italic":false}]','[{"text":"するようになります。","italic":false}]','[{"text":"（実験的機能）","italic":false,"color":"red"}]']},mt_custom_attack:1b,Enchantments:[{id:"infinity"}],HideFlags:1}
+data modify storage mobtamer:database data.item.custom_attack set value {mt_custom_attack:1b,Enchantments:[{id:"infinity"}],HideFlags:1}
+
+data modify storage mobtamer:database data.item.custom_attack.display.Name set from storage mobtamer:text data.item.custom_attack.Name
+data modify storage mobtamer:database data.item.custom_attack.display.Lore append from storage mobtamer:text data.item.custom_attack.Lore[]

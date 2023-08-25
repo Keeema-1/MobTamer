@@ -105,6 +105,46 @@ data modify storage mobtamer:text data.tutorial.trader append value '{"text":"�
 data modify storage mobtamer:text data.tutorial.trader append value '{"text":"テイマー商人との取引ではコンダクターやデータパック設定、指南書などを入手することができます。","color": "green","italic": true}'
 data modify storage mobtamer:text data.tutorial.trader append value '{"text":"進捗達成の報酬で取引は増え、ペットガチャやペット用装備が追加されるようになります。","color": "green","italic": true}'
 
+data modify storage mobtamer:text data.item.conductor.Name set value '{"text":"コンダクター","italic":false}'
+data modify storage mobtamer:text data.item.conductor.Lore.info set value '{"text":" 【モード：情報】","italic":"false","color":"green"}'
+data modify storage mobtamer:text data.item.conductor.Lore.stop set value '{"text":" 【モード：停止】","italic":"false","color":"blue"}'
+data modify storage mobtamer:text data.item.conductor.Lore.gather set value '{"text":" 【モード：集合】","italic":"false","color":"yellow"}'
+data modify storage mobtamer:text data.item.conductor.Lore.attack set value '{"text":" 【モード：攻撃】","italic":"false","color":"red"}'
+data modify storage mobtamer:text data.item.conductor.Lore.store set value '{"text":" 【モード：格納】","italic":"false","color":"gold"}'
+data modify storage mobtamer:text data.item.conductor.Lore.ride set value '{"text":" 【モード：騎乗】","italic":"false","color":"dark_red"}'
+data modify storage mobtamer:text data.item.conductor.Lore.power_up set value '{"text":" 【モード：強化】","italic":"false","color":"aqua"}'
+data modify storage mobtamer:text data.item.conductor.Lore.strategy set value '{"text":" 【モード：作戦】","italic":"false","color":"light_purple"}'
+
+data modify storage mobtamer:text data.item.conductor.Lore.common append value '{"text":" 短スニークで対象選択","italic":"false"}'
+data modify storage mobtamer:text data.item.conductor.Lore.common append value '{"text":" アクションで実行","italic":"false"}'
+data modify storage mobtamer:text data.item.conductor.Lore.common append value '{"text":" メインハンドからドロップでモード変更","italic":"false"}'
+data modify storage mobtamer:text data.item.conductor.Lore.common append value '{"text":" スニーク中にアクションで作戦選択","italic":"false"}'
+
+data modify storage mobtamer:text data.item.custom_attack.Name set value '{"text":"攻めの矢","italic": false}'
+data modify storage mobtamer:text data.item.custom_attack.Lore set value ['[{"text":"コンダクターで停止させたペットに","italic":false}]','[{"text":"向かってドロップすることで、通常","italic":false}]','[{"text":"は攻撃をしないペットでも敵を攻撃","italic":false}]','[{"text":"するようになります。","italic":false}]','[{"text":"（実験的機能）","italic":false,"color":"red"}]']
+
+data modify storage mobtamer:text data.item.pet_release.Name set value '{"text":"ペットリリース用アイテム","italic": false}'
+data modify storage mobtamer:text data.item.pet_release.Lore set value ['[{"text":"コンダクターで停止させたペットに","italic":false}]','[{"text":"向かってドロップすることでペット","italic":false}]','[{"text":"をリリースします。","italic":false}]','[{"text":"リリースされたペットは共通チーム","italic":false}]','[{"text":"に所属し、自由に行動します。","italic":false}]']
+
+data modify storage mobtamer:text data.item.trader.Name set value '{"text":"テイマー商人を呼ぶ","italic": false}'
+data modify storage mobtamer:text data.item.pet_equipment_trader.Name set value '{"text":"ペット用装備商人を呼ぶ","italic": false}'
+data modify storage mobtamer:text data.item.cheat_trader.Name set value '{"text":"チート商人を呼ぶ","italic": false}'
+
+data modify storage mobtamer:text data.item.immediate_tame.Name set value '{"text":"確定テイム用アイテム","color":"aqua","italic": false}'
+
+data modify storage mobtamer:text data.item.bronze_gacha.Name set value '{"text":"ブロンズガチャ","italic": false,"color":"#FF9C33"}'
+data modify storage mobtamer:text data.item.bronze_gacha.Lore set value ['[{"text":"このアイテムをドロップすると、","italic":false}]','[{"text":"ランダムに抽選されたペットを入","italic":false}]','[{"text":"手することができます。","italic":false}]','[{"text":"","italic":false}]','[{"text":"排出対象：","italic":false,"color":"blue"}]','[{"text":"　一部のボス級モブを除く","italic":false,"color":"blue"}]','[{"text":"　テイム済みのみ","italic":false,"color":"blue"}]']
+data modify storage mobtamer:text data.item.silver_gacha.Name set value '{"text":"シルバーガチャ","italic": false,"color":"#D1D1D1"}'
+data modify storage mobtamer:text data.item.silver_gacha.Lore set value ['[{"text":"このアイテムをドロップすると、","italic":false}]','[{"text":"ランダムに抽選されたペットを入","italic":false}]','[{"text":"手することができます。","italic":false}]','[{"text":"","italic":false}]','[{"text":"排出対象：","italic":false,"color":"blue"}]','[{"text":"　一部の動物やボス級モブを除く","italic":false,"color":"blue"}]','[{"text":"　テイム済みのみ","italic":false,"color":"blue"}]']
+data modify storage mobtamer:text data.item.gold_gacha.Name set value '{"text":"ゴールドガチャ","italic": false,"color":"yellow"}'
+data modify storage mobtamer:text data.item.gold_gacha.Lore set value ['[{"text":"このアイテムをドロップすると、","italic":false}]','[{"text":"ランダムに抽選されたペットを入","italic":false}]','[{"text":"手することができます。","italic":false}]','[{"text":"","italic":false}]','[{"text":"排出対象：","italic":false,"color":"blue"}]','[{"text":"　一部の動物モブやエンダードラゴンを除く","italic":false,"color":"blue"}]','[{"text":"　テイム済みのみ","italic":false,"color":"blue"}]']
+data modify storage mobtamer:text data.item.diamond_gacha.Name set value '{"text":"ダイヤガチャ","italic": false,"color":"aqua"}'
+data modify storage mobtamer:text data.item.diamond_gacha.Lore set value ['[{"text":"このアイテムをドロップすると、","italic":false}]','[{"text":"ランダムに抽選されたペットを入","italic":false}]','[{"text":"手することができます。","italic":false}]','[{"text":"","italic":false}]','[{"text":"排出対象：","italic":false,"color":"blue"}]','[{"text":"　一部の動物モブやエンダードラゴンを除く","italic":false,"color":"blue"}]','[{"text":"　未テイム含む","italic":false,"color":"blue"}]','[{"text":"　コマンド限定モブを含む","italic":false,"color":"blue"}]']
+
+data modify storage mobtamer:text data.entity_name.trader set value '{"text":"テイマー商人"}'
+data modify storage mobtamer:text data.entity_name.pet_equipment_trader set value '{"text":"ペット用装備商人"}'
+data modify storage mobtamer:text data.entity_name.cheat_trader set value '{"text":"チート商人"}'
+
 data modify storage mobtamer:text data.common.nothing set value '{"text":"  なし"}'
 data modify storage mobtamer:text data.common.for_pet set value '{"text":"（ペット用）"}'
 data modify storage mobtamer:text data.common.summon_trader set value '{"text":"テイマー商人を呼ぶ"}'

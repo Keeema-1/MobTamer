@@ -1,1 +1,3 @@
-data modify storage mobtamer:database data.item.silver_gacha set value {mt_gacha:1b,mt_gacha_type:"silver",display:{Name:'{"text":"シルバーガチャ","italic": false,"color":"#D1D1D1"}',Lore:['[{"text":"このアイテムをドロップすると、","italic":false}]','[{"text":"ランダムに抽選されたペットを入","italic":false}]','[{"text":"手することができます。","italic":false}]','[{"text":"","italic":false}]','[{"text":"排出対象：","italic":false,"color":"blue"}]','[{"text":"　一部を除くテイム済みのペット","italic":false,"color":"blue"}]']}}
+data modify storage mobtamer:database data.item.silver_gacha set value {mt_gacha:1b,mt_gacha_type:"silver"}
+data modify storage mobtamer:database data.item.silver_gacha.display.Name set from storage mobtamer:text data.item.silver_gacha.Name
+data modify storage mobtamer:database data.item.silver_gacha.display.Lore set from storage mobtamer:text data.item.silver_gacha.Lore

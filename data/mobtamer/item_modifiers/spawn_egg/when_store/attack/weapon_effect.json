@@ -5,14 +5,14 @@
     "lore": [
       [
         {
-          "text": "  ",
-          "color": "dark_green",
-          "italic": false
+          "text": "  "
         },
         {
-          "text": "攻撃力 ",
+          "translate":"attribute.name.generic.attack_damage",
           "color": "dark_green",
           "italic": false
+        },{
+          "text": " "
         },
         {
           "score": {

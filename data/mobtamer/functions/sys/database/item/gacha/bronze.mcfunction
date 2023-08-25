@@ -1,1 +1,3 @@
-data modify storage mobtamer:database data.item.bronze_gacha set value {mt_gacha:1b,mt_gacha_type:"bronze",display:{Name:'{"text":"ブロンズガチャ","italic": false,"color":"#FF9C33"}',Lore:['[{"text":"このアイテムをドロップすると、","italic":false}]','[{"text":"ランダムに抽選されたペットを入","italic":false}]','[{"text":"手することができます。","italic":false}]','[{"text":"","italic":false}]','[{"text":"排出対象：","italic":false,"color":"blue"}]','[{"text":"　一部を除くテイム済みのペット","italic":false,"color":"blue"}]']}}
+data modify storage mobtamer:database data.item.bronze_gacha set value {mt_gacha:1b,mt_gacha_type:"bronze"}
+data modify storage mobtamer:database data.item.bronze_gacha.display.Name set from storage mobtamer:text data.item.bronze_gacha.Name
+data modify storage mobtamer:database data.item.bronze_gacha.display.Lore set from storage mobtamer:text data.item.bronze_gacha.Lore

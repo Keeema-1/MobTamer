@@ -5,14 +5,15 @@
     "lore": [
       [
         {
-          "text": "  ",
+          "text": "  "
+        },
+        {
+          "translate":"attribute.name.generic.armor",
           "color": "dark_green",
           "italic": false
         },
         {
-          "text": "防御力 ",
-          "color": "dark_green",
-          "italic": false
+          "text": " "
         },
         {
           "score": {

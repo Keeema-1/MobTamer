@@ -1,6 +1,6 @@
-
-data modify storage mobtamer:database data.item.trader.display merge value {Name:'"テイマー商人を呼ぶ"'}
-data modify storage mobtamer:database data.item.trader.EntityTag merge value {CustomName:'"テイマー商人"',CustomNameVisible:1b,NoAI:1b,Tags:["mt.trader"],PersistenceRequired:1b,Silent:1b,DeathLootTable:"mobtamer:item/trader"}
+data modify storage mobtamer:database data.item.trader.display.Name set from storage mobtamer:text data.item.trader.Name
+data modify storage mobtamer:database data.item.trader.EntityTag.CustomName set from storage mobtamer:text data.entity_name.trader
+data modify storage mobtamer:database data.item.trader.EntityTag merge value {CustomNameVisible:1b,NoAI:1b,Tags:["mt.trader"],PersistenceRequired:1b,Silent:1b,DeathLootTable:"mobtamer:item/trader"}
 data modify storage mobtamer:database data.item.trader.EntityTag.Offers.Recipes set value []
 
 data modify storage mobtamer:temp data.item set value {}

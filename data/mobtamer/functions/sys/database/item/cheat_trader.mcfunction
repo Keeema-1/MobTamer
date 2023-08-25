@@ -1,12 +1,14 @@
 
-data modify storage mobtamer:database data.item.cheat_trader.display merge value {Name:'"チート商人を呼ぶ"'}
-data modify storage mobtamer:database data.item.cheat_trader.EntityTag merge value {CustomName:'"チート商人"',CustomNameVisible:1b,NoAI:1b,Tags:["mt.trader","mt.trader.cheat"],PersistenceRequired:1b,Silent:1b,DeathLootTable:"mobtamer:item/cheat_trader"}
+data modify storage mobtamer:database data.item.cheat_trader.display.Name set from storage mobtamer:text data.item.cheat_trader.Name
+data modify storage mobtamer:database data.item.cheat_trader.EntityTag.CustomName set from storage mobtamer:text data.entity_name.cheat_trader
+data modify storage mobtamer:database data.item.cheat_trader.EntityTag merge value {CustomNameVisible:1b,NoAI:1b,Tags:["mt.trader","mt.trader.cheat"],PersistenceRequired:1b,Silent:1b,DeathLootTable:"mobtamer:item/cheat_trader"}
 data modify storage mobtamer:database data.item.cheat_trader.EntityTag.Offers.Recipes set value []
 
 data modify storage mobtamer:temp data.item set value {}
 data modify storage mobtamer:temp data.item merge value {buy:{id:"copper_ingot",Count:1b},buyB:{id:"air",Count:0b}}
 data modify storage mobtamer:temp data.item merge value {xp:0,priceMultiplier:0f,rewardExp:1b,maxUses:10000}
-data modify storage mobtamer:temp data.item merge value {sell:{id:"golden_apple",Count:64b,tag:{mt_immediate_tame:1b,display:{Name:'[{"text":"確定テイム用アイテム","color":"aqua"}]'}}}}
+data modify storage mobtamer:temp data.item merge value {sell:{id:"golden_apple",Count:64b,tag:{mt_immediate_tame:1b}}}
+data modify storage mobtamer:temp data.item.display.Name set from storage mobtamer:text data.item.immediate_tame.Name
 execute if data storage mobtamer:settings data.release_progress.gacha{bronze:1b} run data modify storage mobtamer:database data.item.cheat_trader.EntityTag.Offers.Recipes append from storage mobtamer:temp data.item
 
 data modify storage mobtamer:temp data.item set value {}

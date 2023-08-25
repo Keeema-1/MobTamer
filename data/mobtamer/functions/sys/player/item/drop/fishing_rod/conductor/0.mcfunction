@@ -12,14 +12,20 @@ execute store result storage mobtamer:temp data.source.mode1 int 1 run scoreboar
 execute unless data storage mobtamer:temp data.player.SelectedItem.id on origin run item modify entity @s weapon.mainhand mobtamer:conductor/state
 execute if data storage mobtamer:temp data.player.SelectedItem.id on origin unless data storage mobtamer:temp data.player.Inventory[{Slot:-106b}] run item modify entity @s weapon.offhand mobtamer:conductor/state
 
-execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.info mt.score run data modify storage mobtamer:temp data.source set value ['{"text":" 【モード：情報】","italic":"false","color":"green"}','{"text":" 短スニークで対象選択","italic":"false"}','{"text":" アクションで実行","italic":"false"}','{"text":" メインハンドからドロップでモード変更","italic":"false"}']
-execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.stop mt.score run data modify storage mobtamer:temp data.source set value ['{"text":" 【モード：停止】","italic":"false","color":"blue"}','{"text":" 短スニークで対象選択","italic":"false"}','{"text":" アクションで実行","italic":"false"}','{"text":" メインハンドからドロップでモード変更","italic":"false"}']
-execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.gather mt.score run data modify storage mobtamer:temp data.source set value ['{"text":" 【モード：集合】","italic":"false","color":"yellow"}','{"text":" 短スニークで対象選択","italic":"false"}','{"text":" アクションで実行","italic":"false"}','{"text":" メインハンドからドロップでモード変更","italic":"false"}']
-execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.attack mt.score run data modify storage mobtamer:temp data.source set value ['{"text":" 【モード：攻撃】","italic":"false","color":"red"}','{"text":" 短スニークで対象選択","italic":"false"}','{"text":" アクションで実行","italic":"false"}','{"text":" メインハンドからドロップでモード変更","italic":"false"}']
-execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.store mt.score run data modify storage mobtamer:temp data.source set value ['{"text":" 【モード：格納】","italic":"false","color":"gold"}','{"text":" 短スニークで対象選択","italic":"false"}','{"text":" アクションで実行","italic":"false"}','{"text":" メインハンドからドロップでモード変更","italic":"false"}']
-execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.ride mt.score run data modify storage mobtamer:temp data.source set value ['{"text":" 【モード：騎乗】","italic":"false","color":"dark_red"}','{"text":" 短スニークで対象選択","italic":"false"}','{"text":" アクションで実行","italic":"false"}','{"text":" メインハンドからドロップでモード変更","italic":"false"}']
-execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.power_up mt.score run data modify storage mobtamer:temp data.source set value ['{"text":" 【モード：強化】","italic":"false","color":"aqua"}','{"text":" 短スニークで対象選択","italic":"false"}','{"text":" アクションで実行","italic":"false"}','{"text":" メインハンドからドロップでモード変更","italic":"false"}']
-execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.strategy mt.score run data modify storage mobtamer:temp data.source set value ['{"text":" 【モード：作戦】","italic":"false","color":"light_purple"}','{"text":" 短スニークで対象選択","italic":"false"}','{"text":" アクションで実行","italic":"false"}','{"text":" スニーク中にアクションで作戦選択","italic":"false"}','{"text":" メインハンドからドロップでモード変更","italic":"false"}']
+data modify storage mobtamer:temp data.source set value []
+execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.info mt.score run data modify storage mobtamer:temp data.source append from storage mobtamer:text data.item.conductor.Lore.info
+execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.stop mt.score run data modify storage mobtamer:temp data.source append from storage mobtamer:text data.item.conductor.Lore.stop
+execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.gather mt.score run data modify storage mobtamer:temp data.source append from storage mobtamer:text data.item.conductor.Lore.gather
+execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.attack mt.score run data modify storage mobtamer:temp data.source append from storage mobtamer:text data.item.conductor.Lore.attack
+execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.store mt.score run data modify storage mobtamer:temp data.source append from storage mobtamer:text data.item.conductor.Lore.store
+execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.ride mt.score run data modify storage mobtamer:temp data.source append from storage mobtamer:text data.item.conductor.Lore.ride
+execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.power_up mt.score run data modify storage mobtamer:temp data.source append from storage mobtamer:text data.item.conductor.Lore.power_up
+execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.strategy mt.score run data modify storage mobtamer:temp data.source append from storage mobtamer:text data.item.conductor.Lore.strategy
+
+data modify storage mobtamer:temp data.source append from storage mobtamer:text data.item.conductor.Lore.common[0]
+data modify storage mobtamer:temp data.source append from storage mobtamer:text data.item.conductor.Lore.common[1]
+execute if score $mt.conductor.mode1 mt.score = $mt.conductor.mode1.strategy mt.score run data modify storage mobtamer:temp data.source append from storage mobtamer:text data.item.conductor.Lore.common[3]
+data modify storage mobtamer:temp data.source append from storage mobtamer:text data.item.conductor.Lore.common[2]
 
 execute unless data storage mobtamer:temp data.player.SelectedItem.id on origin run item modify entity @s weapon.mainhand mobtamer:conductor/lore
 execute if data storage mobtamer:temp data.player.SelectedItem.id on origin unless data storage mobtamer:temp data.player.Inventory[{Slot:-106b}] run item modify entity @s weapon.offhand mobtamer:conductor/lore

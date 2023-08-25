@@ -5,12 +5,17 @@
     "lore": [
       [
         {
-          "text": "  ",
-          "color": "white",
+          "text": "  【",
+          "color": "blue",
           "italic": false
         },
         {
-          "text": "【メインハンド】 ",
+          "text": "メインハンド",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": "】 ",
           "color": "blue",
           "italic": false
         },
@@ -42,12 +47,17 @@
     "lore": [
       [
         {
-          "text": "  ",
-          "color": "white",
+          "text": "  【",
+          "color": "blue",
           "italic": false
         },
         {
-          "text": "【メインハンド】 ",
+          "text": "メインハンド",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": "】 ",
           "color": "blue",
           "italic": false
         },
@@ -79,12 +89,17 @@
     "lore": [
       [
         {
-          "text": "  ",
-          "color": "white",
+          "text": "  【",
+          "color": "blue",
           "italic": false
         },
         {
-          "text": "【メインハンド】 ",
+          "text": "メインハンド",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": "】 ",
           "color": "blue",
           "italic": false
         },
@@ -116,12 +131,17 @@
     "lore": [
       [
         {
-          "text": "  ",
-          "color": "white",
+          "text": "  【",
+          "color": "blue",
           "italic": false
         },
         {
-          "text": "【メインハンド】 ",
+          "text": "メインハンド",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": "】 ",
           "color": "blue",
           "italic": false
         },
@@ -153,12 +173,17 @@
     "lore": [
       [
         {
-          "text": "  ",
-          "color": "white",
+          "text": "  【",
+          "color": "blue",
           "italic": false
         },
         {
-          "text": "【メインハンド】 ",
+          "text": "メインハンド",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": "】 ",
           "color": "blue",
           "italic": false
         },

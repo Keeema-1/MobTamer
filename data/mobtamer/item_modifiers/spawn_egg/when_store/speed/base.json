@@ -5,14 +5,15 @@
     "lore": [
       [
         {
-          "text": "  ",
+          "text": "  "
+        },
+        {
+          "translate":"attribute.name.generic.movement_speed",
           "color": "dark_green",
           "italic": false
         },
         {
-          "text": "移動速度 ",
-          "color": "dark_green",
-          "italic": false
+          "text": " "
         },
         {
           "score": {

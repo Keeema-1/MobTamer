@@ -68,7 +68,7 @@ data modify storage mobtamer:text data.mode.attack set value '{"text":"ATTACK"}'
 data modify storage mobtamer:text data.mode.store set value '{"text":"STORE"}'
 data modify storage mobtamer:text data.mode.ride set value '{"text":"RIDE"}'
 data modify storage mobtamer:text data.mode.power_up set value '{"text":"TRAIN"}'
-data modify storage mobtamer:text data.mode.strategy set value '{"text":"STRATEGY"}'
+data modify storage mobtamer:text data.mode.strategy set value '{"text":"TACTICS"}'
 
 data modify storage mobtamer:text data.strategy.attack set value '{"text":"ATTACK"}'
 data modify storage mobtamer:text data.strategy.balance set value '{"text":"BALANCE"}'
@@ -105,10 +105,50 @@ data modify storage mobtamer:text data.tutorial.trader append value '{"text":"An
 data modify storage mobtamer:text data.tutorial.trader append value '{"text":"Conductors, data pack settings, and instruction manuals can be obtained by trading with tamer merchants.","color": "green","italic": true}'
 data modify storage mobtamer:text data.tutorial.trader append value '{"text":"Transactions will increase with rewards for achieving progress, and pet gachas and equipment for pets will be added.","color": "green","italic": true}'
 
+data modify storage mobtamer:text data.item.conductor.Name set value '{"text":"Conductor","italic":false}'
+data modify storage mobtamer:text data.item.conductor.Lore.info set value '{"text":" 【Mode：INFO】","italic":"false","color":"green"}'
+data modify storage mobtamer:text data.item.conductor.Lore.stop set value '{"text":" 【Mode：STOP】","italic":"false","color":"blue"}'
+data modify storage mobtamer:text data.item.conductor.Lore.gather set value '{"text":" 【Mode：GATHER】","italic":"false","color":"yellow"}'
+data modify storage mobtamer:text data.item.conductor.Lore.attack set value '{"text":" 【Mode：ATTACK】","italic":"false","color":"red"}'
+data modify storage mobtamer:text data.item.conductor.Lore.store set value '{"text":" 【Mode：STORE】","italic":"false","color":"gold"}'
+data modify storage mobtamer:text data.item.conductor.Lore.ride set value '{"text":" 【Mode：RIDE】","italic":"false","color":"dark_red"}'
+data modify storage mobtamer:text data.item.conductor.Lore.power_up set value '{"text":" 【Mode：TRAIN】","italic":"false","color":"aqua"}'
+data modify storage mobtamer:text data.item.conductor.Lore.strategy set value '{"text":" 【Mode：TACTICS】","italic":"false","color":"light_purple"}'
+
+data modify storage mobtamer:text data.item.conductor.Lore.common append value '{"text":" Select the target with a short sneak","italic":"false"}'
+data modify storage mobtamer:text data.item.conductor.Lore.common append value '{"text":" Execute in action","italic":"false"}'
+data modify storage mobtamer:text data.item.conductor.Lore.common append value '{"text":" Change mode by drop from main hand","italic":"false"}'
+data modify storage mobtamer:text data.item.conductor.Lore.common append value '{"text":" Choose tactics in action during the sneak","italic":"false"}'
+
+data modify storage mobtamer:text data.item.custom_attack.Name set value '{"text":"Arrow of Attack","italic": false}'
+data modify storage mobtamer:text data.item.custom_attack.Lore set value ['[{"text":"Dropping toward a pet stopped by a conductor will cause the pet to attack the enemy, even if it does not normally attack.","italic":false}]','[{"text":"（Experimental feature）","italic":false,"color":"red"}]']
+
+data modify storage mobtamer:text data.item.pet_release.Name set value '{"text":"Pet Releaser","italic": false}'
+data modify storage mobtamer:text data.item.pet_release.Lore set value ['[{"text":"The pet is released by dropping it toward the pet stopped by the conductor. Released pets belong to a common team and act freely.","italic":false}]']
+
+data modify storage mobtamer:text data.item.trader.Name set value '{"text":"Summon Tamer Trader","italic": false}'
+data modify storage mobtamer:text data.item.pet_equipment_trader.Name set value '{"text":"Summon Pet Equipment Trader","italic": false}'
+data modify storage mobtamer:text data.item.cheat_trader.Name set value '{"text":"Summon Cheat Trader","italic": false}'
+
+data modify storage mobtamer:text data.item.immediate_tame.Name set value '{"text":"Golden Apple (Definite Tame)","color":"aqua","italic": false}'
+
+data modify storage mobtamer:text data.item.bronze_gacha.Name set value '{"text":"Bronze Gacha","italic": false,"color":"#FF9C33"}'
+data modify storage mobtamer:text data.item.bronze_gacha.Lore set value ['[{"text":"When this item is dropped, a randomly drawn pet is obtained.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Pets that appear：","italic":false,"color":"blue"}]','[{"text":"　Excluding some boss-level mobs.","italic":false,"color":"blue"}]','[{"text":"　Tamed mobs only","italic":false,"color":"blue"}]']
+data modify storage mobtamer:text data.item.silver_gacha.Name set value '{"text":"Silver Gacha","italic": false,"color":"#D1D1D1"}'
+data modify storage mobtamer:text data.item.silver_gacha.Lore set value ['[{"text":"When this item is dropped, a randomly drawn pet is obtained.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Pets that appear：","italic":false,"color":"blue"}]','[{"text":"　Excluding some animals and boss-level mobs.","italic":false,"color":"blue"}]','[{"text":"　Tamed mobs only","italic":false,"color":"blue"}]']
+data modify storage mobtamer:text data.item.gold_gacha.Name set value '{"text":"Gold Gacha","italic": false,"color":"yellow"}'
+data modify storage mobtamer:text data.item.gold_gacha.Lore set value ['[{"text":"When this item is dropped, a randomly drawn pet is obtained.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Pets that appear：","italic":false,"color":"blue"}]','[{"text":"　Excluding some animal mobs and ender dragon.","italic":false,"color":"blue"}]','[{"text":"　Tamed mobs only","italic":false,"color":"blue"}]']
+data modify storage mobtamer:text data.item.diamond_gacha.Name set value '{"text":"Diamond Gacha","italic": false,"color":"aqua"}'
+data modify storage mobtamer:text data.item.diamond_gacha.Lore set value ['[{"text":"When this item is dropped, a randomly drawn pet is obtained.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Pets that appear：","italic":false,"color":"blue"}]','[{"text":"　Excluding some animal mobs and ender dragon.","italic":false,"color":"blue"}]','[{"text":"　Includes untamed mobs","italic":false,"color":"blue"}]','[{"text":"　Includes command-only mobs","italic":false,"color":"blue"}]']
+
+data modify storage mobtamer:text data.entity_name.trader set value '{"text":"Tamer Trader"}'
+data modify storage mobtamer:text data.entity_name.pet_equipment_trader set value '{"text":"Pet Equipment Trader"}'
+data modify storage mobtamer:text data.entity_name.cheat_trader set value '{"text":"Cheat Trader"}'
+
 data modify storage mobtamer:text data.common.nothing set value '{"text":"  Notiong"}'
 data modify storage mobtamer:text data.common.for_pet set value '{"text":"(For pets)"}'
-data modify storage mobtamer:text data.common.summon_trader set value '{"text":"Summon Tamer Trader."}'
-data modify storage mobtamer:text data.common.summon_equipment_trader set value '{"text":"Summon Pet Equipment Trader."}'
+data modify storage mobtamer:text data.common.summon_trader set value '{"text":"Summon Tamer Trader"}'
+data modify storage mobtamer:text data.common.summon_equipment_trader set value '{"text":"Summon Pet Equipment Trader"}'
 data modify storage mobtamer:text data.common.total_cost set value '{"text": "Total cost of party"}'
 data modify storage mobtamer:text data.common.caution set value '{"text":"Caution"}'
 data modify storage mobtamer:text data.common.selecting set value '{"text":"Selecting"}'
