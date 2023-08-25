@@ -1,0 +1,411 @@
+[
+    {
+        "class":"general",
+        "title":"General Settings",
+        "each_player":false,
+        "only_run_command":false,
+        "contents":[
+            {
+                "name":"party_cost_max",
+                "trigger":20,
+                "display":{
+                    "title":"Party cost limit",
+                    "detail":"Whether the party\\'s cost limit is valid or not"
+                },
+                "states":[
+                    ["1b","Valid","aqua",[]],
+                    ["0b","Invalid","gray",[]]
+                ]
+            },
+            {
+                "name":"status_variant",
+                "trigger":30,
+                "display":{
+                    "title":"differences in mobs",
+                    "detail":"Whether individual differences in the status of tamed mobs are valid or not"
+                },
+                "states":[
+                    ["1b","Valid","aqua",[]],
+                    ["0b","Invalid","gray",[]]
+                ]
+            },
+            {
+                "name":"exp_display",
+                "trigger":40,
+                "display":{
+                    "title":"Display of Exp",
+                    "detail":"Whether or not to display experience gained by pets defeating mobs"
+                },
+                "states":[
+                    ["1b","Valid","aqua",[]],
+                    ["0b","Invalid","gray",[]]
+                ]
+            },
+            {
+                "name":"store_when_sleep",
+                "trigger":50,
+                "display":{
+                    "title":"Pets when you sleep",
+                    "detail":"Whether or not the pet is itemized when it stands in front of the bed at a sleepable time"
+                },
+                "states":[
+                    ["\"only_monster\"","Only monster pets become items.","yellow",[]],
+                    ["\"always\"","All pets become items.","aqua",[]],
+                    ["\"never\"","Pets do not become items.","gray",[]]
+                ]
+            },
+            {
+                "name":"party_slots",
+                "trigger":220,
+                "display":{
+                    "title":"Maximum pets",
+                    "detail":"Maximum number of pets that can be summoned at one time"
+                },
+                "states":[
+                    ["6","6","aqua",["scoreboard players set $mt.sys mt.slot 6"]],
+                    ["10","10","aqua",["scoreboard players set $mt.sys mt.slot 10"]],
+                    ["100","100","aqua",["scoreboard players set $mt.sys mt.slot 100"]],
+                    ["1","1","aqua",["scoreboard players set $mt.sys mt.slot 1"]],
+                    ["2","2","aqua",["scoreboard players set $mt.sys mt.slot 2"]],
+                    ["3","3","aqua",["scoreboard players set $mt.sys mt.slot 3"]]
+                ]
+            },
+            {
+                "name":"advancement_player",
+                "trigger":230,
+                "display":{
+                    "title":"Advancement Achievement Player Conditions",
+                    "detail":"Changed requirements for players to achieve tame progress."
+                },
+                "states":[
+                    ["\"one\"","Only the player who threw the golden apple","aqua",[]],
+                    ["\"all\"","All logged in players","aqua",[]]
+                ]
+            },
+            {
+                "name":"tame_spawn_egg_pos",
+                "trigger":240,
+                "display":{
+                    "title":"Egg position at successful taming",
+                    "detail":"Changed the position where the pet is itemized upon successful taming"
+                },
+                "states":[
+                    ["\"here\"","Fall in its place.","aqua",[]],
+                    ["\"player\"","The player who throws the golden apple gets it immediately.","aqua",[]]
+                ]
+            }
+        ]
+    },
+    {
+        "class":"down",
+        "title":"Down settings",
+        "each_player":false,
+        "only_run_command":false,
+        "contents":[
+            {
+                "name":"can_store_down_pets",
+                "trigger":180,
+                "display":{
+                    "title":"Storing pets during downtime",
+                    "detail":"Whether or not a downed pet can be itemized."
+                },
+                "states":[
+                    ["1b","Possible","aqua",[]],
+                    ["0b","Impossible","gray",[]]
+                ]
+            },
+            {
+                "name":"auto_store_down_pet",
+                "trigger":190,
+                "display":{
+                    "title":"Automatic storage when down",
+                    "detail":"Whether to automatically itemize downed pets"
+                },
+                "states":[
+                    ["0b","Invalid","gray",[]],
+                    ["1b","Valid","aqua",[]]
+                ]
+            },
+            {
+                "name":"auto_store_down_pet_when_far",
+                "trigger":200,
+                "display":{
+                    "title":"When away from down pets",
+                    "detail":"Specifications when more than 32 blocks away from a downed pet"
+                },
+                "states":[
+                    ["0b","Nothing happens.","gray",[]],
+                    ["1b","Automatically itemize","aqua",[]]
+                ]
+            },
+            {
+                "name":"kill_down_pet",
+                "trigger":210,
+                "display":{
+                    "title":"Death of a downed pet",
+                    "detail":"Whether or not a downed pet disappears"
+                },
+                "states":[
+                    ["\"never\"","No deaths","aqua",[]],
+                    ["\"5min\"","Dies after 5 minutes","red",[]],
+                    ["\"20min\"","Dies after 20 minutes","red",[]],
+                    ["\"immediate\"","Immediate death","red",[]]
+                ]
+            }
+        ]
+    },
+    {
+        "class":"each_player",
+        "title":"Settings per player",
+        "each_player":true,
+        "only_run_command":false,
+        "contents":[
+            {
+                "name":"baby_grow",
+                "trigger":60,
+                "display":{
+                    "title":"Growth of child pets",
+                    "detail":"Whether or not the growth of a child\\'s pet is valid."
+                },
+                "states":[
+                    ["0b","Invalid","gray",[]],
+                    ["1b","Valid","aqua",[]]
+                ]
+            },
+            {
+                "name":"default_strategy",
+                "trigger":170,
+                "display":{
+                    "title":"default tactics",
+                    "detail":"Select tactics to be applied when summoning pets"
+                },
+                "states":[
+                    ["\"attack\"","ATTACK","red",[]],
+                    ["\"balance\"","BALANCE","aqua",[]],
+                    ["\"recover\"","RECOVER","green",[]],
+                    ["\"follow\"","FOLLOW","yellow",[]]
+                ]
+            }
+        ]
+    },
+    {
+        "class":"common_team",
+        "title":"Common Team Settings",
+        "each_player":false,
+        "only_run_command":false,
+        "contents":[
+            {
+                "name":"team_collition",
+                "trigger":70,
+                "display":{
+                    "title":"Team conflict setting",
+                    "detail":"Whether or not conflicts between allies, including pets, are valid."
+                },
+                "states":[
+                    ["1b","Valid","aqua",["team modify mt.common collisionRule always"]],
+                    ["0b","Invalid","gray",["team modify mt.common collisionRule pushOwnTeam"]]
+                ]
+            },
+            {
+                "name":"team_color",
+                "trigger":80,
+                "display":{
+                    "title":"Team color",
+                    "detail":"Change team colors"
+                },
+                "states":[
+                    ["white","white","white",["team modify mt.common color white"]],
+                    ["aqua","aqua","aqua",["team modify mt.common color aqua"]],
+                    ["blue","blue","blue",["team modify mt.common color blue"]],
+                    ["green","green","green",["team modify mt.common color green"]],
+                    ["yellow","yellow","yellow",["team modify mt.common color yellow"]],
+                    ["gold","orange","gold",["team modify mt.common color gold"]],
+                    ["light_purple","purple","light_purple",["team modify mt.common color light_purple"]],
+                    ["red","red","red",["team modify mt.common color red"]]
+                ]
+            }
+        ]
+    },
+    {
+        "class":"teams",
+        "title":"Team Participation",
+        "each_player":false,
+        "only_run_command":true,
+        "contents":[
+            {
+                "name":"member_list",
+                "trigger":90,
+                "display":{
+                    "title":"List of participants for each team",
+                    "detail":"View a list of participants for each team"
+                },
+                "commands":[
+                    "function mobtamer:command/team/list/all"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            },
+            {
+                "name":"join_common_team",
+                "trigger":100,
+                "display":{
+                    "title":"Join the Common Team",
+                    "detail":"This team will not antagonize the villagers."
+                },
+                "commands":[
+                    "function mobtamer:command/team/change/common"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            },
+            {
+                "name":"join_red_team",
+                "trigger":110,
+                "display":{
+                    "title":"Join the Red Team",
+                    "detail":"This team will be pitted against the villagers."
+                },
+                "commands":[
+                    "function mobtamer:command/team/change/red"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            },
+            {
+                "name":"join_blue_team",
+                "trigger":120,
+                "display":{
+                    "title":"Join the Blue Team",
+                    "detail":"This team will be pitted against the villagers."
+                },
+                "commands":[
+                    "function mobtamer:command/team/change/blue"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            },
+            {
+                "name":"join_green_team",
+                "trigger":130,
+                "display":{
+                    "title":"Join the Green Team",
+                    "detail":"This team will be pitted against the villagers."
+                },
+                "commands":[
+                    "function mobtamer:command/team/change/green"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            },
+            {
+                "name":"join_gold_team",
+                "trigger":140,
+                "display":{
+                    "title":"Join the Orange Team",
+                    "detail":"This team will be pitted against the villagers."
+                },
+                "commands":[
+                    "function mobtamer:command/team/change/gold"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            }
+        ]
+    },
+    {
+        "class":"tied_up",
+        "title":"Tied up play settings",
+        "each_player":false,
+        "only_run_command":false,
+        "contents":[
+            {
+                "name":"weakness",
+                "trigger":150,
+                "display":{
+                    "title":"Player\\'s attack power reduced",
+                    "detail":"Player\\'s attack power and arrow damage are reduced to 1/10, and they can no longer throw tridents."
+                },
+                "states":[
+                    ["\"never\"","Invalid","gray",["execute as @a run function mobtamer:sys/player/status_update"]],
+                    ["\"only_tame_challenge\"","Valid only during Tame Challenge","yellow",["execute as @a run function mobtamer:sys/player/status_update"]],
+                    ["\"always\"","Always valid","aqua",["execute as @a run function mobtamer:sys/player/status_update"]]
+                ]
+            }
+        ]
+    },
+    {
+        "class":"data_transfer",
+        "title":"Data transfer",
+        "each_player":false,
+        "only_run_command":true,
+        "contents":[
+            {
+                "name":"data_transfer",
+                "trigger":160,
+                "display":{
+                    "title":"Data transfer",
+                    "detail":"Bringing pets to other worlds"
+                },
+                "commands":[
+                    "function mobtamer:command/data_transfer"
+                ],
+                "states":[
+                    ["","","",[]]
+                ]
+            }
+        ]
+    },
+    {
+        "class":"reset",
+        "title":"Data reset",
+        "each_player":false,
+        "only_run_command":false,
+        "contents":[
+            {
+                "name":"player_data",
+                "trigger":300,
+                "display":{
+                    "title":"All player information",
+                    "detail":"Delete all records of your own achieved datapack progress and tamed types."
+                },
+                "commands":[
+                ],
+                "states":[
+                    ["0b","Reset","red",["function mobtamer:command/reset/player_all"]]
+                ]
+            },
+            {
+                "name":"tame_data",
+                "trigger":310,
+                "display":{
+                    "title":"Tame records",
+                    "detail":"Delete records of your own tames"
+                },
+                "commands":[
+                ],
+                "states":[
+                    ["0b","Reset","red",["function mobtamer:command/reset/player_tame"]]
+                ]
+            },
+            {
+                "name":"all",
+                "trigger":320,
+                "display":{
+                    "title":"Reset all",
+                    "detail":"Resets all progress, tame records, and released transactions for all logged-in players (pets that are being summoned will disappear)."
+                },
+                "commands":[
+                ],
+                "states":[
+                    ["0b","Reset","red",["function mobtamer:command/reset/all"]]
+                ]
+            }
+        ]
+    }
+]

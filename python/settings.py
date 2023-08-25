@@ -4,8 +4,8 @@ import json
 import os
 import math
 
-lang = 'ja'
 lang = 'en'
+lang = 'ja'
 
 database_path = 'settings_' + lang + '.json'
 
@@ -20,7 +20,8 @@ def makedir(path):
 
 if(1):
     output = []
-    output.append('data modify storage mobtamer:database data.item.settings set value {mt_settings:1b,title:"【モブテイマー】データパック設定",author:"",filtered_title:"title",pages:[],HideFlags:32}\n')
+    title = '【モブテイマー】データパック設定' if lang == 'ja' else '【MobTamer】 Datapack Settings'
+    output.append('data modify storage mobtamer:database data.item.settings set value {mt_settings:1b,title:"' + title + '",author:"",filtered_title:"title",pages:[],HideFlags:32}\n')
     count = 0
     for group in database:
         l = 'data modify storage mobtamer:database data.item.settings.pages append value \'["",{"text":"                        "},{"text":"[⟳]","color":"light_purple","clickEvent":{"action": "run_command","value": "/trigger mt.trigger set -1"},"hoverEvent": {"action": "show_text","value": [{"text":"本を更新\\\\n(データパックをアップデートした際に更新してください)","color":"gray"}]}},{"text":"\\\\n' + group["title"] + '\\\\n\\\\n","bold":"true","underlined":true}'
@@ -29,7 +30,7 @@ if(1):
             trigger = count*10
             if "trigger" in item:
                 trigger = item["trigger"]
-            default = ',{"text":"\\\\n\\\\nデフォルト：' + item["states"][0][1] + '","color":"gray"}'
+            default = default = (',{"text":"\\\\n\\\\nデフォルト：' + item["states"][0][1] + '","color":"gray"}') if lang == 'ja' else (',{"text":"\\\\n\\\\nDefault：' + item["states"][0][1] + '","color":"gray"}')
             if len(item["states"]) == 1:
                 default = ''
             l += ',{"text":"\\\\n"},{"text":"[' + item["display"]["title"] + ']","color": "light_purple","clickEvent":{"action": "run_command","value": "/trigger mt.trigger set ' + str(trigger+1) + '"},"hoverEvent": {"action": "show_text","value": [{"text":"' + item["display"]["detail"] + '"}' + default + ']}}'
@@ -142,10 +143,10 @@ if(1):
                 if group["each_player"]:
                     output.append('function mobtamer:sys/common/player/settings/score2storage\n')
                 for state in item["states"]:
-                    temp = '変更'
-                    default = ',{"text":"\\n\\nデフォルト：' + item["states"][0][1] + '","color":"gray"}'
+                    temp = '変更' if lang == 'ja' else 'Change'
+                    default = (',{"text":"\\n\\nデフォルト：' + item["states"][0][1] + '","color":"gray"}') if lang == 'ja' else (',{"text":"\\n\\nDefault：' + item["states"][0][1] + '","color":"gray"}')
                     if len(item["states"]) == 1:
-                        temp = '実行'
+                        temp = '実行' if lang == 'ja' else 'Execute'
                         default = ''
                     if group["each_player"]:
                         output.append('execute if data storage mobtamer:temp data.player_settings{' + item["name"] + ':' + str(state[0]) + '} run tellraw @s ["",{"text": "  "},{"text": "' + item["display"]["title"] + '","color": "green","hoverEvent": {"action": "show_text","value": [{"text":"' + item["display"]["detail"] + '"}' + default + ']}},{"text": "","color": "yellow"},{"text": " ＜' + state[1] + '＞ ","color": "' + state[2] + '"},{"text": "[' + temp + ']","color": "light_purple","clickEvent": {"action":"run_command","value": "/trigger mt.trigger set ' + str(trigger+2) + '"}}]\n')
@@ -185,10 +186,10 @@ if(1):
                         output.append('execute if score $mt.check mt.score matches ' + str(j) + ' run data modify storage mobtamer:temp data.player_settings.' + item["name"] + ' set value ' + str(item["states"][next_idx][0]) + '\n')
                     else:
                         output.append('execute if score $mt.check mt.score matches ' + str(j) + ' run data modify storage mobtamer:settings data.' + item["name"] + ' set value ' + str(item["states"][next_idx][0]) + '\n')
-                    temp = '変更'
-                    default = ',{"text":"\\n\\nデフォルト：' + item["states"][0][1] + '","color":"gray"}'
+                    temp = '変更' if lang == 'ja' else 'Change'
+                    default = (',{"text":"\\n\\nデフォルト：' + item["states"][0][1] + '","color":"gray"}') if lang == 'ja' else (',{"text":"\\n\\nDefault：' + item["states"][0][1] + '","color":"gray"}')
                     if len(item["states"]) == 1:
-                        temp = '実行'
+                        temp = '実行' if lang == 'ja' else 'Execute'
                         default = ''
                     if not len(item["states"]) == 1:
                         output.append('execute if score $mt.check mt.score matches ' + str(j) + ' run tellraw @s ["",{"text": "  "},{"text": "' + item["display"]["title"] + '","color": "green","hoverEvent": {"action": "show_text","value": [{"text":"' + item["display"]["detail"] + '"}' + default + ']}},{"text": "","color": "yellow"},{"text": " ＜' + item["states"][next_idx][1] + '＞ ","color": "' + item["states"][next_idx][2] + '"},{"text": "[' + temp + ']","color": "light_purple","clickEvent": {"action":"run_command","value": "/trigger mt.trigger set ' + str(trigger+2) + '"}}]\n')
