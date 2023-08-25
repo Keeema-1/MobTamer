@@ -1,2 +1,2 @@
-tellraw @s {"text":"【注意】","color": "red"}
-tellraw @s {"text": "　ペットのクリーパーは爆破すると消滅してしまいます。","color":"yellow"}
+tellraw @s [{"text":"【","color": "red"},{"storage": "mobtamer:text","nbt":"data.common.caution","interpret": true,"color": "red"},{"text":"】","color": "red"}]
+tellraw @s [{"storage": "mobtamer:text","nbt":"data.caution.creeper","interpret": true,"color": "yellow"}]

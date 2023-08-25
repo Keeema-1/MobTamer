@@ -1,2 +1,2 @@
-tellraw @s {"text":"【注意】","color": "red"}
-tellraw @s {"text": "　邪悪な村人のペットは邪悪な村人を攻撃しません。","color": "yellow"}
+tellraw @s [{"text":"【","color": "red"},{"storage": "mobtamer:text","nbt":"data.common.caution","interpret": true,"color": "red"},{"text":"】","color": "red"}]
+tellraw @s [{"storage": "mobtamer:text","nbt":"data.caution.raider","interpret": true,"color": "yellow"}]

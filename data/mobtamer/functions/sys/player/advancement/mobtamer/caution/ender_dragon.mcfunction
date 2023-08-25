@@ -1,3 +1,3 @@
-tellraw @s {"text":"【注意】","color": "red"}
-tellraw @s {"text": "　エンダードラゴンは地形を破壊します。","color": "yellow"}
-tellraw @s {"text": "　エンダードラゴンはペット状態でも周囲のモブ（プレイヤー含む）にダメージを与えます。","color": "yellow"}
+tellraw @s [{"text":"【","color": "red"},{"storage": "mobtamer:text","nbt":"data.common.caution","interpret": true,"color": "red"},{"text":"】","color": "red"}]
+tellraw @s [{"storage": "mobtamer:text","nbt":"data.caution.ender_dragon1","interpret": true,"color": "yellow"}]
+tellraw @s [{"storage": "mobtamer:text","nbt":"data.caution.ender_dragon2","interpret": true,"color": "yellow"}]

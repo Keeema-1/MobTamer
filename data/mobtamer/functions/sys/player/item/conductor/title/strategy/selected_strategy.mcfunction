@@ -1,8 +1,6 @@
 
 data modify storage mobtamer:temp data.selected_strategy set value '{"text":""}'
-execute if score @a[tag=mt.player_check,limit=1] mt.strategy = $mt.strategy.attack mt.score run data modify storage mobtamer:temp data.selected_strategy set value '[{"text":" → "},{"text":"[攻撃優先]","color":"red"}]'
-execute if score @a[tag=mt.player_check,limit=1] mt.strategy = $mt.strategy.balance mt.score run data modify storage mobtamer:temp data.selected_strategy set value '[{"text":" → "},{"text":"[バランス]","color":"aqua"}]'
-execute if score @a[tag=mt.player_check,limit=1] mt.strategy = $mt.strategy.recover mt.score run data modify storage mobtamer:temp data.selected_strategy set value '[{"text":" → "},{"text":"[回復優先]","color":"green"}]'
-execute if score @a[tag=mt.player_check,limit=1] mt.strategy = $mt.strategy.follow mt.score run data modify storage mobtamer:temp data.selected_strategy set value '[{"text":" → "},{"text":"[追従優先]","color":"yellow"}]'
-
-# execute if score $mt.strategy mt.score = @a[tag=mt.player_check,limit=1] mt.strategy
+execute if score @a[tag=mt.player_check,limit=1] mt.strategy = $mt.strategy.attack mt.score run data modify storage mobtamer:temp data.selected_strategy set value '[{"text":" → "},{"text":"[","color": "red"},{"storage": "mobtamer:text","nbt":"data.strategy.attack","interpret": true,"color": "red"},{"text":"]","color":"red"}]'
+execute if score @a[tag=mt.player_check,limit=1] mt.strategy = $mt.strategy.balance mt.score run data modify storage mobtamer:temp data.selected_strategy set value '[{"text":" → "},{"text":"[","color": "aqua"},{"storage": "mobtamer:text","nbt":"data.strategy.balance","interpret": true,"color": "aqua"},{"text":"]","color":"aqua"}]'
+execute if score @a[tag=mt.player_check,limit=1] mt.strategy = $mt.strategy.recover mt.score run data modify storage mobtamer:temp data.selected_strategy set value '[{"text":" → "},{"text":"[","color": "green"},{"storage": "mobtamer:text","nbt":"data.strategy.recover","interpret": true,"color": "green"},{"text":"]","color":"green"}]'
+execute if score @a[tag=mt.player_check,limit=1] mt.strategy = $mt.strategy.follow mt.score run data modify storage mobtamer:temp data.selected_strategy set value '[{"text":" → "},{"text":"[","color": "yellow"},{"storage": "mobtamer:text","nbt":"data.strategy.follow","interpret": true,"color": "yellow"},{"text":"]","color":"yellow"}]'

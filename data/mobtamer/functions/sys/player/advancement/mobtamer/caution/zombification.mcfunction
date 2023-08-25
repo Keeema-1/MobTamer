@@ -1,2 +1,2 @@
 tellraw @s {"text":"【Tips】","color": "green"}
-tellraw @s {"text": "　ピグリン、ホグリンはペットにすると現世でもゾンビ化しなくなります。","color": "yellow"}
+tellraw @s [{"storage": "mobtamer:text","nbt":"data.caution.zombification","interpret": true,"color": "yellow"}]
