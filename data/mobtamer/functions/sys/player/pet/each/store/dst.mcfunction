@@ -1,7 +1,7 @@
 
 data modify entity @s Item set from storage mobtamer:temp data.Item
 
-data merge entity @s {PickupDelay:0}
+data merge entity @s {PickupDelay:0,Glowing:1b}
 
 execute if score $mt.store.when_power_up mt.score matches 1.. run function mobtamer:sys/player/pet/each/store/when_power_up/0
 

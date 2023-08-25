@@ -3,4 +3,4 @@ effect clear @s fire_resistance
 effect clear @s water_breathing
 effect clear @s glowing
 tag @s remove mt.success
-execute positioned ~ ~ ~ run function mobtamer:sys/tame/success/common/0
+execute positioned ~ ~-0.5 ~ run function mobtamer:sys/tame/success/common/0
