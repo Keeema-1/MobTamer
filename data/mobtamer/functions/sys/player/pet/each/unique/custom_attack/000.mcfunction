@@ -3,6 +3,8 @@ forceload add 0 0
 
 execute positioned 0. 0. 0. summon marker run function mobtamer:sys/player/pet/each/unique/custom_attack/rot2vec
 execute if data storage mobtamer:temp data.pet{OnGround:1b} run tp ^ ^ ^
+execute if entity @s[type=#mobtamer:can_swim] if block ~ ~ ~ water run tp ^ ^ ^
+execute if entity @s[type=#mobtamer:can_fly] run tp ^ ^ ^
 
 execute store result score $mt.speed mt.score run attribute @s generic.movement_speed get 100
 execute store result score $mt.dx mt.score run data get storage mobtamer:temp data.rot2vec.Pos[0] 100
@@ -29,6 +31,7 @@ execute if entity @s[type=!#mobtamer:breathe_underwater,type=!#mobtamer:can_fly]
 execute if entity @s[type=!#mobtamer:breathe_underwater,type=!#mobtamer:can_fly] if data storage mobtamer:temp data.pet{OnGround:1b} rotated ~ 0 positioned ^ ^ ^0.5 if block ^ ^ ^ #mobtamer:space positioned ^ ^ ^0.5 unless block ^ ^ ^ #mobtamer:space align xyz positioned ~-0.5 ~ ~-0.5 if entity @s[dx=1,dy=0,dz=1] run data modify entity @s Motion[1] set value 0.4d
 
 execute if entity @s[type=#mobtamer:can_fly] run data modify entity @s Motion[1] set from storage mobtamer:temp data.rot2vec.Pos[1]
+execute if entity @s[type=#mobtamer:can_swim] if block ~ ~ ~ water run data modify entity @s Motion[1] set from storage mobtamer:temp data.rot2vec.Pos[1]
 
 execute if entity @s[type=#mobtamer:breathe_underwater] if data storage mobtamer:temp data.pet{OnGround:1b} rotated ~ 0 positioned ^ ^ ^0.5 unless block ^ ^ ^ #mobtamer:space align xyz positioned ~-0.5 ~ ~-0.5 if entity @s[dx=1,dy=0,dz=1] run data modify entity @s Motion[1] set value 0.2d
 execute if entity @s[type=#mobtamer:breathe_underwater] if data storage mobtamer:temp data.pet{OnGround:1b} rotated ~ 0 positioned ^ ^ ^0.5 if block ^ ^ ^ #mobtamer:space positioned ^ ^ ^0.5 unless block ^ ^ ^ #mobtamer:space align xyz positioned ~-0.5 ~ ~-0.5 if entity @s[dx=1,dy=0,dz=1] run data modify entity @s Motion[1] set value 0.2d
