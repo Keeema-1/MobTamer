@@ -4,7 +4,10 @@ import json
 import os
 import math
 
-database_path = 'settings.json'
+lang = 'ja'
+lang = 'en'
+
+database_path = 'settings_' + lang + '.json'
 
 with open(database_path , encoding='utf-8') as f:
     database = json.load(f)
