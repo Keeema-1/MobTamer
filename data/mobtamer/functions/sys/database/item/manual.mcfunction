@@ -20,7 +20,7 @@ data modify storage mobtamer:database data.item.manual.pages append value '["",{
 
 data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"テイマー商人\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　行商人の取引に、テイマー商人を呼ぶためのアイテムが追加されます。\\n"},{"text":"テイマー商人との取引ではコンダクターやデータパック設定、指南書などを入手することができます。\\n"},{"text":"進捗達成の報酬で取引は増え、ペットガチャやペット用装備が追加されるようになります。"}]'
 
-data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"ペットの装備\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　スポーン時の装備は着たままの状態でテイムすることができます。\\n"},{"text":"　ペットの装備は耐久値が減少しません。\\n"},{"text":"　停止させているモブに防具立てを投げると、装備をすべて外すことができます。ただし、購入したペット用装備でければ再び装備させることができません。"}]'
+data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"ペットの装備\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　スポーン時の装備は着たままの状態でテイムすることができます。\\n"},{"text":"　ペットの装備は耐久値が減少しません。\\n"},{"text":"　停止させているモブに防具立てを投げると、装備をすべて外すことができます。ただし、購入したペット用装備でなければ再び装備させることができません。"}]'
 
 data modify storage mobtamer:database data.item.manual.pages append value '["",{"text":"ペットの強化\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"　ペットはモブを倒した際にExp（経験値）を得ることがあります。そのExpを消費してペットを強化することができます。\\n"},{"text":"コンダクターの強化モードからペットを強化することができます。"}]'
 
