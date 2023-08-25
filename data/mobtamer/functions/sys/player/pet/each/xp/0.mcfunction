@@ -1,4 +1,6 @@
 execute on target run tag @s add mt.dead_check
+execute unless predicate mobtamer:targeting on passengers if entity @s[tag=mt.target_record_entity] on origin run tag @s add mt.dead_check
+
 execute on target on attacker if entity @s[tag=mt.pet] run tag @s add mt.killer_check
 execute unless predicate mobtamer:targeting on passengers if entity @s[tag=mt.target_record_entity] on origin on attacker run tag @s add mt.killer_check
 
@@ -34,5 +36,3 @@ scoreboard players reset $mt.xp.remain
 execute on target on attacker if entity @s[tag=mt.pet] run advancement grant @a[tag=mt.player_check,limit=1] only mobtamer:mobtamer/first_kill
 
 execute on target on attacker if entity @s[tag=mt.pet] run tag @s remove mt.killer_check
-
-tellraw @a "kill"

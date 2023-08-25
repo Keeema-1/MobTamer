@@ -11,6 +11,8 @@ execute if score @s mt.strategy = $mt.strategy.recover mt.score unless score @s 
 execute if entity @s[type=!#mobtamer:hitbox/wide] at @s on passengers if entity @s[tag=mt.target_record_entity] on origin if entity @s[distance=..20] facing entity @s feet positioned ^ ^ ^0.25 run function mobtamer:sys/player/pet/each/unique/custom_attack/00
 execute if entity @s[type=#mobtamer:hitbox/wide] at @s on passengers if entity @s[tag=mt.target_record_entity] on origin if entity @s[distance=..20] facing entity @s feet positioned ^ ^ ^0.75 run function mobtamer:sys/player/pet/each/unique/custom_attack/00
 
+execute on passengers if entity @s[tag=mt.target_record_entity] on origin if predicate mobtamer:die unless entity @s[tag=mt.dead_check] on attacker if entity @s[tag=mt.player_check] as @e[team=!,tag=mt.pet_check,tag=mt.pet] run function mobtamer:sys/player/pet/each/xp/0
+
 execute unless score $mt.exist_target_record_entity mt.score matches 1 on passengers if entity @s[tag=mt.target_record_entity] run kill @s
 
 execute unless score $mt.exist_target_record_entity mt.score matches 1 unless score $mt.return mt.score matches 1 unless predicate mobtamer:targeting run function mobtamer:sys/player/pet/each/unique/custom_attack/target_start/0

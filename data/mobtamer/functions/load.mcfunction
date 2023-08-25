@@ -96,3 +96,5 @@ scoreboard players set $mt.strategy.recover mt.score 2
 scoreboard players set $mt.strategy.follow mt.score 3
 
 execute as @e[type=chest_minecart,tag=mt.data_transfer] run data modify entity @s Items set from storage mobtamer_transfer:data data.Items
+
+execute as @e[type=text_display,tag=mt.logout_display] unless predicate mobtamer:vehicle/any run kill @s
