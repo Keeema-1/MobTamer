@@ -1,26 +1,22 @@
 {
-    "display": {
-      "title": [
-        {
-          "text": "動物"
-        }
-      ],
-      "description": [
-        {
-          "text": ""
-        }
-      ],
-      "icon": {
-        "item": "minecraft:wheat"
-      },
-      "hidden": true,
-      "announce_to_chat": false,
-      "show_toast": false
-    },
-    "parent": "mobtamer:mobtamer/tame/type/overworld",
-    "criteria": {
-      "enter": {
-        "trigger": "minecraft:impossible"
+  "display": {
+    "title": "\u52d5\u7269",
+    "description": [
+      {
+        "text": ""
       }
+    ],
+    "icon": {
+      "item": "minecraft:wheat"
+    },
+    "hidden": true,
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "parent": "mobtamer:mobtamer/tame/type/overworld",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
     }
   }
+}

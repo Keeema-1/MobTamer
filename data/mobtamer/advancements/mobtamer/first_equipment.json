@@ -1,8 +1,10 @@
 {
   "display": {
-    "title": "チャキーン！",
+    "title": "\u30c1\u30e3\u30ad\u30fc\u30f3\uff01",
     "description": [
-      {"text":"ペットにペット用装備を着せる（ペット用装備は進捗で解放されます）"}
+      {
+        "text": "\u30da\u30c3\u30c8\u306b\u30da\u30c3\u30c8\u7528\u88c5\u5099\u3092\u7740\u305b\u308b\uff08\u30da\u30c3\u30c8\u7528\u88c5\u5099\u306f\u9032\u6357\u3067\u89e3\u653e\u3055\u308c\u307e\u3059\uff09"
+      }
     ],
     "icon": {
       "item": "minecraft:leather_chestplate"

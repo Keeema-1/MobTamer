@@ -1,8 +1,10 @@
 {
   "display": {
-    "title": "頼れる仲間",
+    "title": "\u983c\u308c\u308b\u4ef2\u9593",
     "description": [
-      {"text":"ペットにモブを倒させる"}
+      {
+        "text": "\u30da\u30c3\u30c8\u306b\u30e2\u30d6\u3092\u5012\u3055\u305b\u308b"
+      }
     ],
     "icon": {
       "item": "minecraft:iron_sword"

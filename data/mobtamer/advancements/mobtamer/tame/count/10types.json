@@ -1,14 +1,63 @@
 {
   "display": {
-    "title": "10種類のモブのテイム",
+    "title": "10\u7a2e\u985e\u306e\u30e2\u30d6\u306e\u30c6\u30a4\u30e0",
     "description": [
-      {"text":"【報酬】ペット用装備の取引追加","color":"light_purple"},{"text":"（","color": "green"},{"translate":"item.minecraft.wooden_hoe","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.golden_hoe","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.leather_helmet","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.leather_chestplate","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.leather_leggings","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.leather_boots","color": "green"},
-      {"text":"）","color": "green"}
+      {
+        "text": "\u3010\u5831\u916c\u3011\u30da\u30c3\u30c8\u7528\u88c5\u5099\u306e\u53d6\u5f15\u8ffd\u52a0",
+        "color": "light_purple"
+      },
+      {
+        "text": "\uff08",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.wooden_hoe",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.golden_hoe",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.leather_helmet",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.leather_chestplate",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.leather_leggings",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.leather_boots",
+        "color": "green"
+      },
+      {
+        "text": "\uff09",
+        "color": "green"
+      }
     ],
     "icon": {
       "item": "minecraft:golden_apple"

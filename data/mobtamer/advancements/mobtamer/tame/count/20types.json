@@ -1,8 +1,11 @@
 {
   "display": {
-    "title": "20種類のモブのテイム",
+    "title": "20\u7a2e\u985e\u306e\u30e2\u30d6\u306e\u30c6\u30a4\u30e0",
     "description": [
-      {"text":"【報酬】ブロンズガチャの取引追加","color":"light_purple"}
+      {
+        "text": "\u3010\u5831\u916c\u3011\u30d6\u30ed\u30f3\u30ba\u30ac\u30c1\u30e3\u306e\u53d6\u5f15\u8ffd\u52a0",
+        "color": "light_purple"
+      }
     ],
     "icon": {
       "item": "minecraft:golden_apple"

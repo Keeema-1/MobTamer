@@ -1,26 +1,22 @@
 {
-    "display": {
-      "title": [
-        {
-          "text": "水中の動物"
-        }
-      ],
-      "description": [
-        {
-          "text": ""
-        }
-      ],
-      "icon": {
-        "item": "minecraft:prismarine"
-      },
-      "hidden": true,
-      "announce_to_chat": false,
-      "show_toast": false
-    },
-    "parent": "mobtamer:mobtamer/tame/type/overworld/animal/aquatic_path",
-    "criteria": {
-      "enter": {
-        "trigger": "minecraft:impossible"
+  "display": {
+    "title": "\u6c34\u4e2d\u306e\u52d5\u7269",
+    "description": [
+      {
+        "text": ""
       }
+    ],
+    "icon": {
+      "item": "minecraft:prismarine"
+    },
+    "hidden": true,
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "parent": "mobtamer:mobtamer/tame/type/overworld/animal/aquatic_path",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
     }
   }
+}

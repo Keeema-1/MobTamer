@@ -1,0 +1,293 @@
+[
+    {
+        "path":"mobtamer/challenge/weakness/any",
+        "title":"縛りでテイム Lv.1",
+        "description":[{"text":"縛りモードでいずれかのモブをテイムする"}]
+    },
+    {
+        "path":"mobtamer/challenge/weakness/zombie",
+        "title":"縛りでテイム Lv.2",
+        "description":[{"text":"縛りモードでゾンビをテイムする"}]
+    },
+    {
+        "path":"mobtamer/challenge/weakness/wither_skeleton",
+        "title":"縛りでテイム Lv.3",
+        "description":[{"text":"縛りモードでウィザースケルトンをテイムする"}]
+    },
+    {
+        "path":"mobtamer/challenge/weakness/iron_golem",
+        "title":"縛りでテイム Lv.4",
+        "description":[{"text":"縛りモードでアイアンゴーレムをテイムする"}]
+    },
+    {
+        "path":"mobtamer/challenge/weakness/warden",
+        "title":"縛りでテイム Lv.5",
+        "description":[{"text":"縛りモードでウォーデンをテイムする"}]
+    },
+    {
+        "path":"mobtamer/challenge/weakness/only_pufferfish",
+        "title":"まきびし作戦",
+        "description":[{"text":"フグのみの攻撃でゾンビをテイムする"}]
+    },
+    {
+        "path":"mobtamer/challenge",
+        "title":"チャレンジ"
+    },
+    {
+        "path":"mobtamer/first_equipment",
+        "title":"チャキーン！",
+        "description":[{"text":"ペットにペット用装備を着せる（ペット用装備は進捗で解放されます）"}]
+    },
+    {
+        "path":"mobtamer/first_kill",
+        "title":"頼れる仲間",
+        "description":[{"text":"ペットにモブを倒させる"}]
+    },
+    {
+        "path":"mobtamer/first_power_up",
+        "title":"おれはまだまだ強くなれる",
+        "description":[{"text":"ペットを強化する"}]
+    },
+    {
+        "path":"mobtamer/first_ride",
+        "title":"ライド・オン！",
+        "description":[{"text":"ペットに騎乗する"}]
+    },
+    {
+        "path":"mobtamer/first_tame",
+        "title":"はじめてのテイム",
+        "description":[{"text":"モブをテイムする\n（モブに金のリンゴを投げ、倒す）"}]
+    },
+    {
+        "path":"mobtamer/road_to_mobtamer",
+        "title":"モブテイマーへの道"
+    },
+    {
+        "path":"mobtamer/tame/count/10types",
+        "title":"10種類のモブのテイム",
+        "description":[
+            {"text":"【報酬】ペット用装備の取引追加","color":"light_purple"},
+            {"text":"（","color": "green"},{"translate":"item.minecraft.wooden_hoe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.golden_hoe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.leather_helmet","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.leather_chestplate","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.leather_leggings","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.leather_boots","color": "green"},
+            {"text":"）","color": "green"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/20types",
+        "title":"20種類のモブのテイム",
+        "description":[
+            {"text":"【報酬】ブロンズガチャの取引追加","color":"light_purple"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/30types",
+        "title":"30種類のモブのテイム",
+        "description":[
+            {"text":"【報酬】ペット用装備の取引追加","color":"light_purple"},
+            {"text":"（","color": "green"},{"translate":"item.minecraft.wooden_pickaxe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.wooden_shovel","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.golden_pickaxe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.golden_shovel","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.golden_helmet","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.golden_chestplate","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.golden_leggings","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.golden_boots","color": "green"},
+            {"text":"）","color": "green"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/40types",
+        "title":"40種類のモブのテイム",
+        "description":[
+            {"text":"【報酬】シルバーガチャの取引追加","color":"light_purple"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/50types",
+        "title":"50種類のモブのテイム",
+        "description":[
+            {"text":"【報酬】ペット用装備の取引追加","color":"light_purple"},
+            {"text":"（","color": "green"},{"translate":"item.minecraft.stone_hoe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.stone_pickaxe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.stone_pickaxe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.chainmail_helmet","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.chainmail_chestplate","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.chainmail_leggings","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.chainmail_boots","color": "green"},
+            {"text":"）","color": "green"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/60types",
+        "title":"60種類のモブのテイム",
+        "description":[
+            {"text":"【報酬】ペット用装備の取引追加","color":"light_purple"},
+            {"text":"（","color": "green"},{"translate":"item.minecraft.wooden_sword","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.golden_sword","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.stone_sword","color": "green"},
+            {"text":"）","color": "green"},{"text":"、ゴールドガチャの取引追加","color":"light_purple"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/70types",
+        "title":"70種類のモブのテイム",
+        "description":[
+            {"text":"【報酬】ペット用装備の取引追加","color":"light_purple"},
+            {"text":"（","color": "green"},{"translate":"item.minecraft.iron_hoe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.iron_pickaxe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.iron_shovel","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.iron_sword","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.iron_helmet","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.iron_chestplate","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.iron_leggings","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.iron_boots","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.bow","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.crossbow","color": "green"},
+            {"text":"）","color": "green"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/75types",
+        "title":"75種類のモブのテイム",
+        "description":[
+            {"text":"【報酬】ペット用装備の取引追加","color":"light_purple"},
+            {"text":"（","color": "green"},{"translate":"item.minecraft.wooden_axe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.golden_axe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.iron_axe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.stone_axe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_axe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_sword","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_hoe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_shovel","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_pickaxe","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_helmet","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_chestplate","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_leggings","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_boots","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.elytra","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.trident","color": "green"},
+            {"text":"、","color": "green"},{"translate":"item.minecraft.turtle_helmet","color": "green"},
+            {"text":"）","color": "green"},
+            {"text":"、ダイヤガチャの取引追加","color":"light_purple"},
+            {"text":"、ペット装備商人の追加","color":"light_purple"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/end",
+        "title":"ジ・エンドで出会うモブ",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/nether",
+        "title":"ネザーで出会うモブ",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/other",
+        "title":"その他のモブ",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld",
+        "title":"オーバーワールドで出会うモブ",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/animal",
+        "title":"動物",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/animal/terrestrial",
+        "title":"陸上の動物",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/animal/aquatic",
+        "title":"水中の動物",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/human",
+        "title":"村人たち",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/monster",
+        "title":"モンスター",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/monster/terrestrial",
+        "title":"陸上のモンスター",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/monster/aquatic",
+        "title":"水中のモンスター",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/monster/terrestrial/raider",
+        "title":"邪悪な村人",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/unique/blue_axolotl",
+        "title":"青色のウーパールーパー",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/unique/brown_mooshroom",
+        "title":"茶色のムーシュルーム",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/unique/full_diamond",
+        "title":"奇跡の遭遇",
+        "description":[
+            {
+                "text": "ダイヤモンドの防具を一式揃えたモブをテイムする"
+            }
+        ]
+    },
+    {
+        "path":"mobtamer/tame/unique/full_golden",
+        "title":"全身金ピカ！",
+        "description":[
+            {"text": "金の防具を一式揃えたモブをテイムする"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/unique/powered_creeper",
+        "title":"クリーパー危機一髪！",
+        "description":[
+            {"text": "帯電したクリーパーをテイムする"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/tame_type",
+        "title":"テイム記録",
+        "description":[
+            {"text": "テイムしたモブの種類が記録されます"}
+        ]
+    }
+]

@@ -1,26 +1,22 @@
 {
-    "display": {
-      "title": [
-        {
-          "text": "村人たち"
-        }
-      ],
-      "description": [
-        {
-          "text": ""
-        }
-      ],
-      "icon": {
-        "item": "minecraft:emerald"
-      },
-      "hidden": true,
-      "announce_to_chat": false,
-      "show_toast": false
-    },
-    "parent": "mobtamer:mobtamer/tame/type/overworld",
-    "criteria": {
-      "enter": {
-        "trigger": "minecraft:impossible"
+  "display": {
+    "title": "\u6751\u4eba\u305f\u3061",
+    "description": [
+      {
+        "text": ""
       }
+    ],
+    "icon": {
+      "item": "minecraft:emerald"
+    },
+    "hidden": true,
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "parent": "mobtamer:mobtamer/tame/type/overworld",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
     }
   }
+}

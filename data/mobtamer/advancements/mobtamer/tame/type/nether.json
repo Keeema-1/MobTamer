@@ -1,26 +1,22 @@
 {
-    "display": {
-      "title": [
-        {
-          "text": "ネザーで出会うモブ"
-        }
-      ],
-      "description": [
-        {
-          "text": ""
-        }
-      ],
-      "icon": {
-        "item": "minecraft:netherrack"
-      },
-      "hidden": true,
-      "announce_to_chat": false,
-      "show_toast": false
-    },
-    "parent": "mobtamer:mobtamer/tame/type/path4",
-    "criteria": {
-      "enter": {
-        "trigger": "minecraft:impossible"
+  "display": {
+    "title": "\u30cd\u30b6\u30fc\u3067\u51fa\u4f1a\u3046\u30e2\u30d6",
+    "description": [
+      {
+        "text": ""
       }
+    ],
+    "icon": {
+      "item": "minecraft:netherrack"
+    },
+    "hidden": true,
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "parent": "mobtamer:mobtamer/tame/type/path4",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
     }
   }
+}

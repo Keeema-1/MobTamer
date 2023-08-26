@@ -1,8 +1,10 @@
 {
   "display": {
-    "title": "まきびし作戦",
+    "title": "\u307e\u304d\u3073\u3057\u4f5c\u6226",
     "description": [
-      {"text":"フグのみの攻撃でゾンビをテイムする"}
+      {
+        "text": "\u30d5\u30b0\u306e\u307f\u306e\u653b\u6483\u3067\u30be\u30f3\u30d3\u3092\u30c6\u30a4\u30e0\u3059\u308b"
+      }
     ],
     "icon": {
       "item": "minecraft:pufferfish"

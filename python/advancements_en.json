@@ -1,0 +1,293 @@
+[
+    {
+        "path":"mobtamer/challenge/weakness/any",
+        "title":"Tied up Challenge Lv.1",
+        "description":[{"text":"Tame the mob in tied-up mode"}]
+    },
+    {
+        "path":"mobtamer/challenge/weakness/zombie",
+        "title":"Tied up Challenge Lv.2",
+        "description":[{"text":"Tame zombie in tied-up mode"}]
+    },
+    {
+        "path":"mobtamer/challenge/weakness/wither_skeleton",
+        "title":"Tied up Challenge Lv.3",
+        "description":[{"text":"Tame wither skeleton in tied-up mode"}]
+    },
+    {
+        "path":"mobtamer/challenge/weakness/iron_golem",
+        "title":"Tied up Challenge Lv.4",
+        "description":[{"text":"Tame iron golem in tied-up mode"}]
+    },
+    {
+        "path":"mobtamer/challenge/weakness/warden",
+        "title":"Tied up Challenge Lv.5",
+        "description":[{"text":"Tame warden in tied-up mode"}]
+    },
+    {
+        "path":"mobtamer/challenge/weakness/only_pufferfish",
+        "title":"Operation Caltrop",
+        "description":[{"text":"Tame zombie with pufferfish-only attacks"}]
+    },
+    {
+        "path":"mobtamer/challenge",
+        "title":"Challenge"
+    },
+    {
+        "path":"mobtamer/first_equipment",
+        "title":"On the defensive",
+        "description":[{"text":"Putting pet equipment on pets (pet equipment is released in progress)"}]
+    },
+    {
+        "path":"mobtamer/first_kill",
+        "title":"Your dependable companions",
+        "description":[{"text":"Let your pet beat the mob"}]
+    },
+    {
+        "path":"mobtamer/first_power_up",
+        "title":"I can still be strong",
+        "description":[{"text":"Enhance your pet"}]
+    },
+    {
+        "path":"mobtamer/first_ride",
+        "title":"Ride On!",
+        "description":[{"text":"Ride your pet"}]
+    },
+    {
+        "path":"mobtamer/first_tame",
+        "title":"My First Tame",
+        "description":[{"text":"Tame the mob\n(Throws golden apple at mob, defeats it)"}]
+    },
+    {
+        "path":"mobtamer/road_to_mobtamer",
+        "title":"The Road to MobTamer"
+    },
+    {
+        "path":"mobtamer/tame/count/10types",
+        "title":"10 different mob tames",
+        "description":[
+            {"text":"【Reward】Additional trading of equipment for pets","color":"light_purple"},
+            {"text":" (","color": "green"},{"translate":"item.minecraft.wooden_hoe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.golden_hoe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.leather_helmet","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.leather_chestplate","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.leather_leggings","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.leather_boots","color": "green"},
+            {"text":") ","color": "green"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/20types",
+        "title":"20 different mob tames",
+        "description":[
+            {"text":"【Reward】Additional trading of Bronze Gacha","color":"light_purple"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/30types",
+        "title":"30 different mob tames",
+        "description":[
+            {"text":"【Reward】Additional trading of equipment for pets","color":"light_purple"},
+            {"text":" (","color": "green"},{"translate":"item.minecraft.wooden_pickaxe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.wooden_shovel","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.golden_pickaxe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.golden_shovel","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.golden_helmet","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.golden_chestplate","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.golden_leggings","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.golden_boots","color": "green"},
+            {"text":") ","color": "green"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/40types",
+        "title":"40 different mob tames",
+        "description":[
+            {"text":"【Reward】Additional trading of Silver Gacha","color":"light_purple"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/50types",
+        "title":"50 different mob tames",
+        "description":[
+            {"text":"【Reward】Additional trading of equipment for pets","color":"light_purple"},
+            {"text":" (","color": "green"},{"translate":"item.minecraft.stone_hoe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.stone_pickaxe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.stone_pickaxe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.chainmail_helmet","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.chainmail_chestplate","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.chainmail_leggings","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.chainmail_boots","color": "green"},
+            {"text":") ","color": "green"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/60types",
+        "title":"60 different mob tames",
+        "description":[
+            {"text":"【Reward】Additional trading of equipment for pets","color":"light_purple"},
+            {"text":" (","color": "green"},{"translate":"item.minecraft.wooden_sword","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.golden_sword","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.stone_sword","color": "green"},
+            {"text":") ","color": "green"},{"text":", Additional trading of Gold Gacha","color":"light_purple"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/70types",
+        "title":"70 different mob tames",
+        "description":[
+            {"text":"【Reward】Additional trading of equipment for pets","color":"light_purple"},
+            {"text":" (","color": "green"},{"translate":"item.minecraft.iron_hoe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.iron_pickaxe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.iron_shovel","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.iron_sword","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.iron_helmet","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.iron_chestplate","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.iron_leggings","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.iron_boots","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.bow","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.crossbow","color": "green"},
+            {"text":") ","color": "green"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/count/75types",
+        "title":"75 different mob tames",
+        "description":[
+            {"text":"【Reward】Additional trading of equipment for pets","color":"light_purple"},
+            {"text":" (","color": "green"},{"translate":"item.minecraft.wooden_axe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.golden_axe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.iron_axe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.stone_axe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.diamond_axe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.diamond_sword","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.diamond_hoe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.diamond_shovel","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.diamond_pickaxe","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.diamond_helmet","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.diamond_chestplate","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.diamond_leggings","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.diamond_boots","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.elytra","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.trident","color": "green"},
+            {"text":", ","color": "green"},{"translate":"item.minecraft.turtle_helmet","color": "green"},
+            {"text":") ","color": "green"},
+            {"text":", Additional trading of Diamond Gacha","color":"light_purple"},
+            {"text":", Additional trading of Pet Equipment Trader","color":"light_purple"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/end",
+        "title":"The mob you meet in the end",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/nether",
+        "title":"The mob you meet in the nether",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/other",
+        "title":"Other mobs",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld",
+        "title":"Mobs you meet in the overworld",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/animal",
+        "title":"Animals",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/animal/terrestrial",
+        "title":"Land Animals",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/animal/aquatic",
+        "title":"Underwater Animals",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/human",
+        "title":"Fellow Villagers",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/monster",
+        "title":"Monster",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/monster/terrestrial",
+        "title":"Land Monsters",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/monster/aquatic",
+        "title":"Underwater Monsters",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/type/overworld/monster/terrestrial/raider",
+        "title":"Raiders",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/unique/blue_axolotl",
+        "title":"Blue Axolotl",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/unique/brown_mooshroom",
+        "title":"Brown Mooshroom",
+        "description":[
+        ]
+    },
+    {
+        "path":"mobtamer/tame/unique/full_diamond",
+        "title":"Miracle Encounter",
+        "description":[
+            {
+                "text": "Tame mobs with a full set of diamond armor"
+            }
+        ]
+    },
+    {
+        "path":"mobtamer/tame/unique/full_golden",
+        "title":"Gilded all over!",
+        "description":[
+            {"text": "Tame mobs with a full set of gold armor"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/unique/powered_creeper",
+        "title":"Careful procedure",
+        "description":[
+            {"text": "Tame a powered creeper"}
+        ]
+    },
+    {
+        "path":"mobtamer/tame/tame_type",
+        "title":"Tame Record",
+        "description":[
+            {"text": "The type of mob you tamed will be recorded"}
+        ]
+    }
+]

@@ -3,8 +3,8 @@ import numpy as np
 import json
 import os
 
-lang = 'ja'
 lang = 'en'
+lang = 'ja'
 
 database_path = 'cheat_' + lang + '.json'
 

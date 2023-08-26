@@ -1,8 +1,10 @@
 {
   "display": {
-    "title": "ライド・オン！",
+    "title": "\u30e9\u30a4\u30c9\u30fb\u30aa\u30f3\uff01",
     "description": [
-      {"text":"ペットに騎乗する"}
+      {
+        "text": "\u30da\u30c3\u30c8\u306b\u9a0e\u4e57\u3059\u308b"
+      }
     ],
     "icon": {
       "item": "minecraft:saddle"

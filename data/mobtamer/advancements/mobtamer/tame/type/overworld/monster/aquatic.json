@@ -1,26 +1,22 @@
 {
-    "display": {
-      "title": [
-        {
-          "text": "水中のモンスター"
-        }
-      ],
-      "description": [
-        {
-          "text": ""
-        }
-      ],
-      "icon": {
-        "item": "minecraft:prismarine"
-      },
-      "hidden": true,
-      "announce_to_chat": false,
-      "show_toast": false
-    },
-    "parent": "mobtamer:mobtamer/tame/type/overworld/monster/aquatic_path",
-    "criteria": {
-      "enter": {
-        "trigger": "minecraft:impossible"
+  "display": {
+    "title": "\u6c34\u4e2d\u306e\u30e2\u30f3\u30b9\u30bf\u30fc",
+    "description": [
+      {
+        "text": ""
       }
+    ],
+    "icon": {
+      "item": "minecraft:prismarine"
+    },
+    "hidden": true,
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "parent": "mobtamer:mobtamer/tame/type/overworld/monster/aquatic_path",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
     }
   }
+}

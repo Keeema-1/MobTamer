@@ -1,13 +1,9 @@
 {
   "display": {
-    "title": [
-      {
-        "text": "奇跡の遭遇"
-      }
-    ],
+    "title": "\u5947\u8de1\u306e\u906d\u9047",
     "description": [
       {
-        "text": "ダイヤモンドの防具を一式揃えたモブをテイムする"
+        "text": "\u30c0\u30a4\u30e4\u30e2\u30f3\u30c9\u306e\u9632\u5177\u3092\u4e00\u5f0f\u63c3\u3048\u305f\u30e2\u30d6\u3092\u30c6\u30a4\u30e0\u3059\u308b"
       }
     ],
     "icon": {

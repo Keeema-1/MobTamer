@@ -1,27 +1,151 @@
 {
   "display": {
-    "title": "75種類のモブのテイム",
+    "title": "75\u7a2e\u985e\u306e\u30e2\u30d6\u306e\u30c6\u30a4\u30e0",
     "description": [
-      {"text":"【報酬】ペット用装備の取引追加","color":"light_purple"},
-      {"text":"（","color": "green"},{"translate":"item.minecraft.wooden_axe","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.golden_axe","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.iron_axe","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.stone_axe","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_axe","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_sword","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_hoe","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_shovel","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_pickaxe","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_helmet","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_chestplate","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_leggings","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.diamond_boots","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.elytra","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.trident","color": "green"},
-      {"text":"、","color": "green"},{"translate":"item.minecraft.turtle_helmet","color": "green"},
-      {"text":"）","color": "green"},
-      {"text":"、ダイヤガチャの取引追加","color":"light_purple"},
-      {"text":"、ペット装備商人の追加","color":"light_purple"}
+      {
+        "text": "\u3010\u5831\u916c\u3011\u30da\u30c3\u30c8\u7528\u88c5\u5099\u306e\u53d6\u5f15\u8ffd\u52a0",
+        "color": "light_purple"
+      },
+      {
+        "text": "\uff08",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.wooden_axe",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.golden_axe",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.iron_axe",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.stone_axe",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.diamond_axe",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.diamond_sword",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.diamond_hoe",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.diamond_shovel",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.diamond_pickaxe",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.diamond_helmet",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.diamond_chestplate",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.diamond_leggings",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.diamond_boots",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.elytra",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.trident",
+        "color": "green"
+      },
+      {
+        "text": "\u3001",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.turtle_helmet",
+        "color": "green"
+      },
+      {
+        "text": "\uff09",
+        "color": "green"
+      },
+      {
+        "text": "\u3001\u30c0\u30a4\u30e4\u30ac\u30c1\u30e3\u306e\u53d6\u5f15\u8ffd\u52a0",
+        "color": "light_purple"
+      },
+      {
+        "text": "\u3001\u30da\u30c3\u30c8\u88c5\u5099\u5546\u4eba\u306e\u8ffd\u52a0",
+        "color": "light_purple"
+      }
     ],
     "icon": {
       "item": "minecraft:enchanted_golden_apple"

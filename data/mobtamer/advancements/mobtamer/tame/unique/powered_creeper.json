@@ -1,14 +1,10 @@
 {
   "display": {
-    "title": [
-      {
-        "text": "クリーパー危機一髪"
-      }
-    ],
+    "title": "\u30af\u30ea\u30fc\u30d1\u30fc\u5371\u6a5f\u4e00\u9aea\uff01",
     "description": [
-      [
-        {"text": "帯電したクリーパーをテイムする"}
-      ]
+      {
+        "text": "\u5e2f\u96fb\u3057\u305f\u30af\u30ea\u30fc\u30d1\u30fc\u3092\u30c6\u30a4\u30e0\u3059\u308b"
+      }
     ],
     "icon": {
       "item": "minecraft:lightning_rod"

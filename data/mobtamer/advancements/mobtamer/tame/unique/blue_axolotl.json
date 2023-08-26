@@ -1,17 +1,13 @@
 {
   "display": {
-    "title": [
-      {
-        "text": "青色のウーパールーパーのテイム"
-      }
-    ],
+    "title": "\u9752\u8272\u306e\u30a6\u30fc\u30d1\u30fc\u30eb\u30fc\u30d1\u30fc",
     "description": [
       {
         "text": ""
       }
     ],
     "icon": {
-      "item": "minecraft:brown_mushroom"
+      "item": "minecraft:axolotl_bucket"
     },
     "hidden": true,
     "frame": "challenge"

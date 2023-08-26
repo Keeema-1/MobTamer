@@ -1,8 +1,10 @@
 {
   "display": {
-    "title": "おれはまだまだ強くなれる",
+    "title": "\u304a\u308c\u306f\u307e\u3060\u307e\u3060\u5f37\u304f\u306a\u308c\u308b",
     "description": [
-      {"text":"ペットを強化する"}
+      {
+        "text": "\u30da\u30c3\u30c8\u3092\u5f37\u5316\u3059\u308b"
+      }
     ],
     "icon": {
       "item": "minecraft:enchanted_book"

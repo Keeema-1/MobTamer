@@ -1,14 +1,10 @@
 {
   "display": {
-    "title": [
-      {
-        "text": "全身金ピカ！"
-      }
-    ],
+    "title": "\u5168\u8eab\u91d1\u30d4\u30ab\uff01",
     "description": [
-      [
-        {"text": "金の防具を一式揃えたモブをテイムする"}
-      ]
+      {
+        "text": "\u91d1\u306e\u9632\u5177\u3092\u4e00\u5f0f\u63c3\u3048\u305f\u30e2\u30d6\u3092\u30c6\u30a4\u30e0\u3059\u308b"
+      }
     ],
     "icon": {
       "item": "minecraft:golden_chestplate"
