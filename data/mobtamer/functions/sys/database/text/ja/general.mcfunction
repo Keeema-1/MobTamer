@@ -161,6 +161,8 @@ data modify storage mobtamer:text data.item.manual.pages append value '["",{"tex
 data modify storage mobtamer:text data.item.manual.pages append value '["",{"text":"注意点-2\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"・アイアンゴーレムが味方のモンスターを攻撃してしまうときがあります。\\n\\n"},{"text":"・ペットのスライムやマグマキューブ、エンダードラゴンに触れるとダメージを受けてしまいます。\\n\\n"},{"text":"・ペットのファントムは日中には召喚できません。\\n\\n"}]'
 data modify storage mobtamer:text data.item.manual.pages append value '["",{"text":"注意点-3\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"・ペットのウィザースケルトン、ピグリン同士が敵対してしまうことがあります。\\n\\n"},{"text":"\\n"},{"text":"・モンスタースポナーに対してペットのスポーンエッグを使用できてしまいます。\\n\\n"}]'
 
+data modify storage mobtamer:text data.item.pet_equipment.Lore set value ['[{"text":"コンダクターで停止させた","italic":false}]','[{"text":"ペットに向かってドロップ","italic":false}]','[{"text":"することで装備させること","italic":false}]','[{"text":"ができます。","italic":false}]']
+
 data modify storage mobtamer:text data.entity_name.trader set value '{"text":"テイマー商人"}'
 data modify storage mobtamer:text data.entity_name.pet_equipment_trader set value '{"text":"ペット用装備商人"}'
 data modify storage mobtamer:text data.entity_name.cheat_trader set value '{"text":"チート商人"}'

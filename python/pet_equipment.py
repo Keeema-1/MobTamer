@@ -5,6 +5,9 @@ import os
 
 common_path = '../data/mobtamer/functions/'
 
+lang = 'en'
+lang = 'ja'
+
 database = [
     {"id":"wooden_hoe", "release": 1, "weight": 12, "price": 3, "part": "mainhand"},
     {"id":"golden_hoe", "release": 1, "weight": 12, "price": 3, "part": "mainhand"},
@@ -96,7 +99,11 @@ for i in range(1, 7):
         output.append('data modify storage mobtamer:temp data.item set value {}\n')
         output.append('data modify storage mobtamer:temp data.item merge value {buy:{id:"' + item["id"] + '",Count:1b},buyB:{id:"emerald",Count:' + str(item["price"]) + 'b}}\n')
         output.append('data modify storage mobtamer:temp data.item merge value {xp:0,priceMultiplier:0f,rewardExp:0b,maxUses:1}\n')
-        output.append('data modify storage mobtamer:temp data.item merge value {sell:{id:"' + item["id"] + '",Count:1b,tag:{mt_pet_equipment:1b,mt_equipment_part:"' + item["part"] + '",display:{Name:\'[{"translate":"item.minecraft.' + item["id"] + '","italic":false},{"text": "（ペット用）","italic":false}]\',Lore:[\'[{"text":"コンダクターで停止させた","italic":false}]\',\'[{"text":"ペットに向かってドロップ","italic":false}]\',\'[{"text":"することで装備させること","italic":false}]\',\'[{"text":"ができます。","italic":false}]\']}}}}\n')
+        if lang == 'ja':
+            output.append('data modify storage mobtamer:temp data.item merge value {sell:{id:"' + item["id"] + '",Count:1b,tag:{mt_pet_equipment:1b,mt_equipment_part:"' + item["part"] + '",display:{Name:\'[{"translate":"item.minecraft.' + item["id"] + '","italic":false},{"text": "（ペット用）","italic":false}]\'}}}}\n')
+        else:
+            output.append('data modify storage mobtamer:temp data.item merge value {sell:{id:"' + item["id"] + '",Count:1b,tag:{mt_pet_equipment:1b,mt_equipment_part:"' + item["part"] + '",display:{Name:\'[{"translate":"item.minecraft.' + item["id"] + '","italic":false},{"text": " (For Pets)","italic":false}]\'}}}}\n')
+        output.append('data modify storage mobtamer:temp data.item.sell.tag.display.Lore set from storage mobtamer:text data.item.pet_equipment.Lore\n')
         output.append('data modify storage mobtamer:database data.daily.pet_equipment append from storage mobtamer:temp data.item\n')
         output.append('data remove storage mobtamer:temp data.item\n')
         path = common_path + 'sys/trader/daily_change/pet_equipment/append/' + item["id"] + '.mcfunction'

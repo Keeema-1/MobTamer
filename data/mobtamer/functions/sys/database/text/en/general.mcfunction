@@ -161,6 +161,8 @@ data modify storage mobtamer:text data.item.manual.pages append value '["",{"tex
 data modify storage mobtamer:text data.item.manual.pages append value '["",{"text":"Caution-2\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"・Sometimes the Iron Golem attacks a friendly monster.\\n\\n"},{"text":"・If you touch a pet slime, magma cube, or ender dragon, you will take damage.\\n\\n"},{"text":"・Pet phantoms cannot be summoned during the day.\\n\\n"}]'
 data modify storage mobtamer:text data.item.manual.pages append value '["",{"text":"Caution-3\\n","bold": true,"underlined": true},{"text":"\\n"},{"text":"・Pet wither skeletons and piglins can become hostile to each other.\\n\\n"},{"text":"\\n"},{"text":"・Pet spawn eggs can be used against monster spawners.\\n\\n"}]'
 
+data modify storage mobtamer:text data.item.pet_equipment.Lore set value ['[{"text":"It can be equipped by dropping it toward a pet stopped by a conductor.","italic":false}]']
+
 data modify storage mobtamer:text data.entity_name.trader set value '{"text":"Tamer Trader"}'
 data modify storage mobtamer:text data.entity_name.pet_equipment_trader set value '{"text":"Pet Equipment Trader"}'
 data modify storage mobtamer:text data.entity_name.cheat_trader set value '{"text":"Cheat Trader"}'
