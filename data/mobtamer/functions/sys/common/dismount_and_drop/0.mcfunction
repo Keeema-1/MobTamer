@@ -9,6 +9,7 @@ execute if data entity @s {Type:"jungle"} run summon item ~ ~0.1 ~ {Item:{id:"ju
 execute if data entity @s {Type:"mangrove"} run summon item ~ ~0.1 ~ {Item:{id:"mangrove_boat",Count:1b}}
 execute if data entity @s {Type:"oak"} run summon item ~ ~0.1 ~ {Item:{id:"oak_boat",Count:1b}}
 execute if data entity @s {Type:"spruce"} run summon item ~ ~0.1 ~ {Item:{id:"spruce_boat",Count:1b}}
+execute if data entity @s {Type:"bamboo"} run summon item ~ ~0.1 ~ {Item:{id:"bamboo_raft",Count:1b}}
 
 execute if entity @s[type=minecart] run summon item ~ ~0.1 ~ {Item:{id:"minecart",Count:1b}}
 
