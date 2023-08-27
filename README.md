@@ -1,8 +1,8 @@
-# MobTamer For1-20 v1.0.0
+# MobTamer For1.19.4 v1.0.0
 
 Twitter: @keeema_1
 
-For Minecraft Java Edition version 1.20.1
+For Minecraft Java Edition version 1.19.4
 
 
 配布ページの注意点を読んでからプレイすることを推奨します。
