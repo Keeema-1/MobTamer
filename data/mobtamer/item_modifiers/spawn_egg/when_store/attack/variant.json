@@ -36,8 +36,8 @@
           "italic": false
         },
         {
-          "text": "+\uD83E\uDDCD",
-          "color": "dark_green",
+          "text": "+",
+          "color": "dark_purple",
           "italic": false
         },
         {
@@ -45,7 +45,7 @@
             "name": "$mt.pet.attack.add.variant",
             "objective": "mt.score"
           },
-          "color": "dark_green",
+          "color": "dark_purple",
           "italic": false
         },
         {
