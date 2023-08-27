@@ -1,5 +1,5 @@
 
-execute on passengers run return 1
+execute on passengers if entity @s[type=player] run return 1
 
 execute if entity @s[type=minecart] run summon item ~ ~0.5 ~ {Item:{id:"minecart",Count:1b}}
 execute if entity @s[type=chest_minecart] run summon item ~ ~0.5 ~ {Item:{id:"chest_minecart",Count:1b}}

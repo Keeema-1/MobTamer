@@ -1,5 +1,5 @@
 
-execute on passengers run return 1
+execute on passengers if entity @s[type=player] run return 1
 
 execute if entity @s[type=boat] if data entity @s {Type:"acacia"} run summon item ~ ~0.5 ~ {Item:{id:"acacia_boat",Count:1b}}
 execute if entity @s[type=boat] if data entity @s {Type:"birch"} run summon item ~ ~0.5 ~ {Item:{id:"birch_boat",Count:1b}}
