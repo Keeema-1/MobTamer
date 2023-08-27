@@ -1,4 +1,4 @@
-# MobTamer For1-20 v1.0.0
+# MobTamer v1.0.0 For 1.20.1
 
 Twitter: @keeema_1
 
