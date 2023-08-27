@@ -151,8 +151,8 @@
         ]
     },
     {
-        "path":"mobtamer/tame/count/75types",
-        "title":"75種類のモブのテイム",
+        "path":"mobtamer/tame/count/73types",
+        "title":"73種類のモブのテイム",
         "description":[
             {"text":"【報酬】ペット用装備の取引追加","color":"light_purple"},
             {"text":"（","color": "green"},{"translate":"item.minecraft.wooden_axe","color": "green"},

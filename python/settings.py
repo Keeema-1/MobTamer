@@ -71,7 +71,7 @@ if(1):
                     if not len(item["states"])==1:
                         for command in item["states"][0][3]:
                             output.append('execute unless data storage mobtamer:settings data.' + item["name"] + ' run ' + command + '\n')
-                    output.append('execute unless data storage mobtamer:settings data.' + item["name"] + ' run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\\n  ","color":"green"},{"text":"' + group["title"] + '／' + item["display"]["title"] + '","color":"yellow"}]\n')
+                    output.append('execute unless data storage mobtamer:settings data.' + item["name"] + ' run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\\n　","color":"green"},{"text":"' + group["title"] + '／' + item["display"]["title"] + '","color":"yellow"}]\n')
                     output.append('execute unless data storage mobtamer:settings data.' + item["name"] + ' run data modify storage mobtamer:settings data merge value {' + item["name"] + ':' + str(item["states"][0][0]) + '}\n')
     path = common_path + 'update_settings.mcfunction'
     with open(path, 'w', encoding='utf-8') as f:

@@ -7,14 +7,12 @@ execute if entity @s[type=llama] run advancement grant @a[tag=mt.advancement_gra
 execute if entity @s[type=trader_llama] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/trader_llama
 execute if entity @s[type=fox] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/fox
 execute if entity @s[type=goat] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/goat
-execute if entity @s[type=camel] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/camel
 execute if entity @s[type=donkey] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/donkey
 execute if entity @s[type=horse] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/horse
 execute if entity @s[type=mule] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/mule
 execute if entity @s[type=cat] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/cat
 execute if entity @s[type=frog] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/frog
 execute if entity @s[type=ocelot] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/ocelot
-execute if entity @s[type=sniffer] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/sniffer
 execute if entity @s[type=cow] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/cow
 execute if entity @s[type=mooshroom] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/mooshroom
 execute if entity @s[type=pig] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/pig

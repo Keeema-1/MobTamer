@@ -151,8 +151,8 @@
         ]
     },
     {
-        "path":"mobtamer/tame/count/75types",
-        "title":"75 different mob tames",
+        "path":"mobtamer/tame/count/73types",
+        "title":"73 different mob tames",
         "description":[
             {"text":"【Reward】Additional trading of equipment for pets","color":"light_purple"},
             {"text":" (","color": "green"},{"translate":"item.minecraft.wooden_axe","color": "green"},
