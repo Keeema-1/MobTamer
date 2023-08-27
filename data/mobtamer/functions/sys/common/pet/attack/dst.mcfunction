@@ -72,5 +72,7 @@ scoreboard players reset $mt.dst.armor mt.score
 scoreboard players reset $mt.dst.armor_toughness mt.score
 scoreboard players reset $mt.src.attack_damage mt.score
 
-execute on attacker if entity @s[tag=mt.pet_check,tag=mt.pet] on target run return 1
-execute if data entity @s {Health:0.0f} as @e[team=!,tag=mt.pet_check,tag=mt.pet,limit=1] run function mobtamer:sys/player/pet/each/xp/0
+execute on attacker if entity @s[tag=mt.pet_check,tag=mt.pet] on target run scoreboard players set $mt.custom_attack.return mt.score 1
+execute unless score $mt.custom_attack.return mt.score matches 1 if data entity @s {Health:0.0f} as @e[team=!,tag=mt.pet_check,tag=mt.pet,limit=1] run function mobtamer:sys/player/pet/each/xp/0
+
+scoreboard players reset $mt.custom_attack.return mt.score
