@@ -1,7 +1,6 @@
 {
     "replace": false,
     "values": [
-        "camel",
         "donkey",
         "elder_guardian",
         "ender_dragon",
@@ -17,7 +16,6 @@
         "ravager",
         "skeleton_horse",
         "slime",
-        "sniffer",
         "spider",
         "turtle",
         "zoglin",
