@@ -15,7 +15,7 @@ execute store result score @s mt.max_health run attribute @s generic.max_health 
 execute store result score $mt.health_modifier mt.score run attribute @s generic.max_health modifier value get 0-0-0-0-aea 100
 scoreboard players operation @s mt.max_health += $mt.health_modifier mt.score
 scoreboard players reset $mt.health_modifier mt.score
-scoreboard players remove @s mt.max_health 10000
+execute if score @s mt.max_health matches 10000.. run scoreboard players remove @s mt.max_health 10000
 execute store result score @s mt.health run data get entity @s Health 100
 # execute store result entity @s Health float 1 run attribute @s generic.max_health get 100
 data modify entity @s Health set value 100.0f

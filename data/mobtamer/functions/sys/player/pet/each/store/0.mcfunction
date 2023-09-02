@@ -9,6 +9,7 @@ execute on passengers run ride @s dismount
 tp ~ -128 ~
 execute if entity @s[type=#mobtamer:slimes] run data modify entity @s Size set value 0
 tag @e[type=item,tag=mt.new] remove mt.new
+data modify entity @s Owner set from entity @e[type=item,limit=1] UUID
 kill @s
 data remove storage mobtamer:temp data.Item
 data remove storage mobtamer:temp data.pet_status

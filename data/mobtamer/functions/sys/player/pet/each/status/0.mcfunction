@@ -1,4 +1,5 @@
-function mobtamer:sys/player/pet/each/status/health/0
+execute if entity @s[type=!wolf] run function mobtamer:sys/player/pet/each/status/health/0
+execute if entity @s[type=wolf] run function mobtamer:sys/player/pet/each/status/health/wolf
 function mobtamer:sys/player/pet/each/status/display/0
 
 tag @s remove mt.targeting
