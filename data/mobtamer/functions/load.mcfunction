@@ -52,7 +52,7 @@ function mobtamer:update_settings
 
 execute store result score $mt.ver.old.main mt.score run data get storage mobtamer:settings data.version.main
 execute store result score $mt.ver.old.beta mt.score run data get storage mobtamer:settings data.version.beta
-data modify storage mobtamer:settings data.version merge value {main:10001, beta:0}
+data modify storage mobtamer:settings data.version merge value {main:10002, beta:0}
 execute store result score $mt.ver.now.main mt.score run data get storage mobtamer:settings data.version.main
 execute store result score $mt.ver.now.beta mt.score run data get storage mobtamer:settings data.version.beta
 
