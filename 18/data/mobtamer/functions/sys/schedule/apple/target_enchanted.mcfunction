@@ -1,6 +1,6 @@
 function mobtamer:sys/schedule/apple/target
 
-attribute @s generic.max_absorption base set 1000
+attribute @s generic.max_absorption base set 2048
 
 execute store result score $mt.target mt.max_health run attribute @s generic.max_health base get 0.5
 execute store result entity @s Health float 1 run attribute @s generic.max_health base get
