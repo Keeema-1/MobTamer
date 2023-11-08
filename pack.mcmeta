@@ -1,6 +1,14 @@
 {
   "pack": {
     "pack_format": 15,
+    "supported_formats": [15, 18],
     "description": "全てのモブをテイムして、仲間にできるデータパック"
+  },
+  "overlays":{
+    "entries":[
+      {
+        "directory":"18", "formats":18
+      }
+    ]
   }
 }
