@@ -1,0 +1,16 @@
+{
+    "replace": false,
+    "values": [
+        "allay",
+        "bat",
+        "bee",
+        "blaze",
+        "breeze",
+        "ender_dragon",
+        "ghast",
+        "parrot",
+        "phantom",
+        "vex",
+        "wither"
+    ]
+}
