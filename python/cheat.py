@@ -25,7 +25,7 @@ if(1):
     output.append('data modify storage mobtamer:database data.item.cheat set value {title:"' + title + '",author:"",filtered_title:"title",pages:[],HideFlags:32}\n')
     count = 0
     for group in database:
-        l = 'data modify storage mobtamer:database data.item.cheat.pages append value \'["",{"text":"' + group["title"] + '\\\\n\\\\n","bold":"true","underlined":true}'
+        l = 'data modify storage mobtamer:database data.item.cheat.pages append value \'["",{"text":"' + group["title"] + '\\\\n\\\\n","bold":true,"underlined":true}'
         for item in group["contents"]:
             count += 1
             l += ',{"text":"\\\\n"},{"text":"[' + item["display"]["title"] + ']","color": "light_purple","clickEvent":{"action": "run_command","value": "/trigger mt.trigger set ' + str(TRIGGER_OFFSET+count*10+1) + '"},"hoverEvent": {"action": "show_text","value": [{"text":"' + item["display"]["detail"] + '"},{"text":"\\\\n\\\\nデフォルト：' + item["states"][0][1] + '","color":"gray"}]}}'

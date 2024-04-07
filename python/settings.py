@@ -24,7 +24,7 @@ if(1):
     output.append('data modify storage mobtamer:database data.item.settings set value {mt_settings:1b,title:"' + title + '",author:"",filtered_title:"title",pages:[],HideFlags:32}\n')
     count = 0
     for group in database:
-        l = 'data modify storage mobtamer:database data.item.settings.pages append value \'["",{"text":"                        "},{"text":"[⟳]","color":"light_purple","clickEvent":{"action": "run_command","value": "/trigger mt.trigger set -1"},"hoverEvent": {"action": "show_text","value": [{"text":"本を更新\\\\n(データパックをアップデートした際に更新してください)","color":"gray"}]}},{"text":"\\\\n' + group["title"] + '\\\\n\\\\n","bold":"true","underlined":true}'
+        l = 'data modify storage mobtamer:database data.item.settings.pages append value \'["",{"text":"                        "},{"text":"[⟳]","color":"light_purple","clickEvent":{"action": "run_command","value": "/trigger mt.trigger set -1"},"hoverEvent": {"action": "show_text","value": [{"text":"本を更新\\\\n(データパックをアップデートした際に更新してください)","color":"gray"}]}},{"text":"\\\\n' + group["title"] + '\\\\n\\\\n","bold":true,"underlined":true}'
         for item in group["contents"]:
             count += 1
             trigger = count*10
