@@ -1,15 +1,17 @@
 {
   "pack": {
     "pack_format": 15,
-    "supported_formats": {"min_inclusive": 15, "max_inclusive": 24},
+    "supported_formats": {"min_inclusive": 15},
     "description": "全てのモブをテイムして、仲間にできるデータパック"
   },
   "overlays":{
     "entries":[
       {
-        "directory":"18", "formats":{"min_inclusive": 18, "max_inclusive": 24}
+        "directory":"18", "formats":{"min_inclusive": 18}
       },{
-        "directory":"24", "formats":24
+        "directory":"26", "formats":{"min_inclusive": 26}
+      },{
+        "directory":"unsupported", "formats":{"min_inclusive": 27}
       }
     ]
   }
