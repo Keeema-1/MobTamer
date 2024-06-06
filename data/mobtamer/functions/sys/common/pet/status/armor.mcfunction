@@ -1,6 +1,6 @@
 
 execute store result score $mt.pet.armor mt.score run attribute @s generic.armor get 1
-data modify storage mobtamer:temp data.ActiveEffects set from entity @s ActiveEffects
+data modify storage mobtamer:temp data.active_effects set from entity @s active_effects
 effect clear @s
 execute store result score $mt.pet.armor.no_effect mt.score run attribute @s generic.armor get 1
 execute store result score $mt.pet.armor.base mt.score run attribute @s generic.armor base get 1
@@ -13,8 +13,8 @@ scoreboard players operation $mt.pet.armor.add.weapon mt.score -= $mt.pet.armor.
 scoreboard players operation $mt.pet.armor.add.effect mt.score = $mt.pet.armor mt.score
 scoreboard players operation $mt.pet.armor.add.effect mt.score -= $mt.pet.armor.no_effect mt.score
 
-data modify entity @s ActiveEffects set from storage mobtamer:temp data.ActiveEffects
-data remove storage mobtamer:temp data.ActiveEffects
+data modify entity @s active_effects set from storage mobtamer:temp data.active_effects
+data remove storage mobtamer:temp data.active_effects
 
 execute store result storage mobtamer:temp data.pet_status.armor.base int 1 run scoreboard players get $mt.pet.armor.base mt.score
 execute store result storage mobtamer:temp data.pet_status.armor.no_effect int 1 run scoreboard players get $mt.pet.armor.no_effect mt.score

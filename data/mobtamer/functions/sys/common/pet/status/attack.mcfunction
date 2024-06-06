@@ -10,7 +10,7 @@ execute if data entity @s HandItems[0].tag.Enchantments[{id:"minecraft:sharpness
 execute if data entity @s HandItems[0].tag.Enchantments[{id:"minecraft:sharpness",lvl:6s}] run scoreboard players set $mt.pet.attack.enchant mt.score 3
 scoreboard players operation $mt.pet.attack mt.score += $mt.pet.attack.enchant mt.score
 
-data modify storage mobtamer:temp data.ActiveEffects set from entity @s ActiveEffects
+data modify storage mobtamer:temp data.active_effects set from entity @s active_effects
 effect clear @s
 execute store result score $mt.pet.attack.no_effect mt.score run attribute @s generic.attack_damage get 1
 scoreboard players operation $mt.pet.attack.no_effect mt.score += $mt.pet.attack.enchant mt.score
@@ -27,8 +27,8 @@ execute if entity @s[type=#mobtamer:custom_attack/can_be] run scoreboard players
 execute if entity @s[type=#mobtamer:custom_attack/can_be] run scoreboard players operation $mt.pet.attack mt.score = @s mt.attack_damage
 execute if entity @s[type=#mobtamer:custom_attack/can_be] run scoreboard players operation $mt.pet.attack.no_effect mt.score = @s mt.attack_damage
 
-data modify entity @s ActiveEffects set from storage mobtamer:temp data.ActiveEffects
-data remove storage mobtamer:temp data.ActiveEffects
+data modify entity @s active_effects set from storage mobtamer:temp data.active_effects
+data remove storage mobtamer:temp data.active_effects
 
 execute if entity @s[type=rabbit] if data entity @s {RabbitType:99} run scoreboard players set $mt.pet.attack.base mt.score 8
 execute if entity @s[type=rabbit] if data entity @s {RabbitType:99} run scoreboard players set $mt.pet.attack.no_effect mt.score 8

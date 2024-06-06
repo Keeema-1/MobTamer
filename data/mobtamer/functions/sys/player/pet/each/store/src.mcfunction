@@ -24,7 +24,7 @@ data modify storage mobtamer:temp data.Item.tag.EntityTag.Attributes set from en
 data remove storage mobtamer:temp data.Item.tag.EntityTag.Attributes[{Name:"minecraft:generic.follow_range"}]
 data remove storage mobtamer:temp data.Item.tag.EntityTag.Attributes[].Modifiers[{"Name":"Leader zombie bonus"}]
 data remove storage mobtamer:temp data.Item.tag.EntityTag.Attributes[].Modifiers[{"Name":"Random spawn bonus"}]
-data modify storage mobtamer:temp data.Item.tag.EntityTag.ActiveEffects set from entity @s ActiveEffects
+data modify storage mobtamer:temp data.Item.tag.EntityTag.active_effects set from entity @s active_effects
 data modify storage mobtamer:temp data.Item.tag.EntityTag.SaddleItem set from entity @s SaddleItem
 data modify storage mobtamer:temp data.Item.tag.EntityTag.Variant set from entity @s Variant
 data modify storage mobtamer:temp data.Item.tag.EntityTag.variant set from entity @s variant

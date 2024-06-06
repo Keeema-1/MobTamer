@@ -52,7 +52,7 @@ function mobtamer:update_settings
 
 execute store result score $mt.ver.old.main mt.score run data get storage mobtamer:settings data.version.main
 execute store result score $mt.ver.old.beta mt.score run data get storage mobtamer:settings data.version.beta
-data modify storage mobtamer:settings data.version merge value {main:10004, beta:0}
+data modify storage mobtamer:settings data.version merge value {main:10100, beta:1}
 execute store result score $mt.ver.now.main mt.score run data get storage mobtamer:settings data.version.main
 execute store result score $mt.ver.now.beta mt.score run data get storage mobtamer:settings data.version.beta
 
@@ -68,8 +68,8 @@ scoreboard players operation $mt.ver.now.main.3 mt.score %= $mt.const mt.score
 execute unless score $mt.ver.old.main mt.score = $mt.ver.now.main mt.score run function mobtamer:version_changed
 execute if score $mt.ver.old.main mt.score = $mt.ver.now.main mt.score unless score $mt.ver.old.beta mt.score = $mt.ver.now.beta mt.score run function mobtamer:version_changed
 
-execute if score $mt.ver.now.beta mt.score matches 1.. run tellraw @a [{"text": "Loaded: ","color": "green"},{"text": "MobTamer For 1.20.x","color": "green","underlined":true},{"text": "  Ver ","color": "yellow"},{"score":{"name": "$mt.ver.now.main.1","objective": "mt.score"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "$mt.ver.now.main.2","objective": "mt.score"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "$mt.ver.now.main.3","objective": "mt.score"},"color": "yellow"},{"text": " Beta","color": "yellow"},{"score":{"name": "$mt.ver.now.beta","objective": "mt.score"},"color": "yellow"}]
-execute unless score $mt.ver.now.beta mt.score matches 1.. run tellraw @a [{"text": "Loaded: MobTamer For 1.20.x","color": "green"},{"text": "  Ver ","color": "yellow"},{"score":{"name": "$mt.ver.now.main.1","objective": "mt.score"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "$mt.ver.now.main.2","objective": "mt.score"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "$mt.ver.now.main.3","objective": "mt.score"},"color": "yellow"}]
+execute if score $mt.ver.now.beta mt.score matches 1.. run tellraw @a [{"text": "Loaded: ","color": "green"},{"text": "MobTamer For 1.21.x","color": "green","underlined":true},{"text": "  Ver ","color": "yellow"},{"score":{"name": "$mt.ver.now.main.1","objective": "mt.score"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "$mt.ver.now.main.2","objective": "mt.score"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "$mt.ver.now.main.3","objective": "mt.score"},"color": "yellow"},{"text": " Beta","color": "yellow"},{"score":{"name": "$mt.ver.now.beta","objective": "mt.score"},"color": "yellow"}]
+execute unless score $mt.ver.now.beta mt.score matches 1.. run tellraw @a [{"text": "Loaded: MobTamer For 1.21.x","color": "green"},{"text": "  Ver ","color": "yellow"},{"score":{"name": "$mt.ver.now.main.1","objective": "mt.score"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "$mt.ver.now.main.2","objective": "mt.score"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "$mt.ver.now.main.3","objective": "mt.score"},"color": "yellow"}]
 
 execute as @a unless score @s mt.version.main = $mt.ver.now.main mt.score run function mobtamer:sys/player/version_up/0
 execute as @a if score @s mt.version.main = $mt.ver.now.main mt.score unless score @s mt.version.beta = $mt.ver.now.beta mt.score run function mobtamer:sys/player/version_up/0

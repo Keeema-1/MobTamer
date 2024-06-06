@@ -1,6 +1,6 @@
 
 execute store result score $mt.pet.speed mt.score run attribute @s generic.movement_speed get 100
-data modify storage mobtamer:temp data.ActiveEffects set from entity @s ActiveEffects
+data modify storage mobtamer:temp data.active_effects set from entity @s active_effects
 effect clear @s
 execute store result score $mt.pet.speed.no_effect mt.score run attribute @s generic.movement_speed get 100
 execute store result score $mt.pet.speed.base mt.score run attribute @s generic.movement_speed base get 100
@@ -10,8 +10,8 @@ scoreboard players operation $mt.pet.speed.add mt.score -= $mt.pet.speed.base mt
 scoreboard players operation $mt.pet.speed.add.effect mt.score = $mt.pet.speed mt.score
 scoreboard players operation $mt.pet.speed.add.effect mt.score -= $mt.pet.speed.no_effect mt.score
 
-data modify entity @s ActiveEffects set from storage mobtamer:temp data.ActiveEffects
-data remove storage mobtamer:temp data.ActiveEffects
+data modify entity @s active_effects set from storage mobtamer:temp data.active_effects
+data remove storage mobtamer:temp data.active_effects
 
 execute store result storage mobtamer:temp data.pet_status.speed.base int 1 run scoreboard players get $mt.pet.speed.base mt.score
 execute store result storage mobtamer:temp data.pet_status.speed.no_effect int 1 run scoreboard players get $mt.pet.speed.no_effect mt.score
