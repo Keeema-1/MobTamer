@@ -1,11 +1,14 @@
 {
     "replace": false,
     "values": [
+        "armadillo",
         "allay",
         "axolotl",
         "bat",
         "bee",
         "blaze",
+        "bogged",
+        "breeze",
         "camel",
         "cat",
         "cave_spider",
