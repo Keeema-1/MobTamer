@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:netherrack"
+      "id": "minecraft:netherrack"
     },
     "hidden": true,
     "announce_to_chat": false,

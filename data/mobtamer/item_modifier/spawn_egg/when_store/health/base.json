@@ -50,7 +50,7 @@
         }
       ]
     ],
-    "replace": true
+    "mode": "replace_all"
   },
   {
     "function": "minecraft:set_lore",
@@ -103,7 +103,7 @@
         }
       ]
     ],
-    "replace": true,
+    "mode": "replace_all",
     "conditions": [
       {
         "condition": "minecraft:value_check",

@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:wither_skeleton_spawn_egg"
+      "id": "minecraft:wither_skeleton_spawn_egg"
     },
     "frame": "challenge"
   },

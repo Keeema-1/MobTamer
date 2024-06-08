@@ -76,7 +76,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:golden_apple"
+      "id": "minecraft:golden_apple"
     }
   },
   "parent": "mobtamer:mobtamer/tame/count/20types",

@@ -4,6 +4,7 @@ execute if entity @s[type=#mobtamer:slimes] run data modify storage mobtamer:tem
 data modify storage mobtamer:temp data.MainHand set from entity @s HandItems[0]
 execute if entity @s[type=skeleton] if data storage mobtamer:temp data.MainHand{id:"minecraft:bow"} run data modify storage mobtamer:temp data.pet_status.cost.attack.force set value 5
 execute if entity @s[type=stray] if data storage mobtamer:temp data.MainHand{id:"minecraft:bow"} run data modify storage mobtamer:temp data.pet_status.cost.attack.force set value 6
+execute if entity @s[type=bogged] if data storage mobtamer:temp data.MainHand{id:"minecraft:bow"} run data modify storage mobtamer:temp data.pet_status.cost.attack.force set value 8
 execute if entity @s[type=wither_skeleton] if data storage mobtamer:temp data.MainHand{id:"minecraft:bow"} run data modify storage mobtamer:temp data.pet_status.cost.attack.force set value 8
 execute if entity @s[type=illusioner] if data storage mobtamer:temp data.MainHand{id:"minecraft:bow"} run data modify storage mobtamer:temp data.pet_status.cost.attack.force set value 8
 execute if data storage mobtamer:temp data.MainHand{id:"minecraft:crossbow"} run data modify storage mobtamer:temp data.pet_status.cost.attack.force set value 5
@@ -11,6 +12,7 @@ execute if entity @s[type=drowned] if data storage mobtamer:temp data.MainHand{i
 
 data modify storage mobtamer:temp data.pet_status.cost.attack.add set value 0
 execute if entity @s[type=cave_spider] run data modify storage mobtamer:temp data.pet_status.cost.attack.add set value 1
+execute if entity @s[type=breeze] run data modify storage mobtamer:temp data.pet_status.cost.attack.add set value 5
 execute if entity @s[type=rabbit] if data entity @s {RabbitType:99} run data modify storage mobtamer:temp data.pet_status.cost.attack.add set value 8
 execute if entity @s[type=wither_skeleton] run data modify storage mobtamer:temp data.pet_status.cost.attack.add set value 2
 execute if entity @s[type=witch] run data modify storage mobtamer:temp data.pet_status.cost.attack.add set value 2

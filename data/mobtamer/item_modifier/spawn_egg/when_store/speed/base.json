@@ -43,6 +43,6 @@
         }
       ]
     ],
-    "replace": false
+    "mode": "append"
   }
 ]

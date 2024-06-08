@@ -7,7 +7,7 @@ execute store result score $mt.pet.armor.base mt.score run data get storage mobt
 execute store result storage mobtamer:temp data.pet_status.armor.base int 1 run scoreboard players add $mt.pet.armor.base mt.score 2
 execute store result score $mt.pet.xp mt.score run data get storage mobtamer:temp data.pet_status.xp
 
-execute store result entity @s Item.tag.EntityTag.Attributes[{Name:"minecraft:generic.armor"}].Base double 1 run scoreboard players get $mt.pet.armor.base mt.score
+execute store result entity @s Item.tag.EntityTag.attributes[{id:"minecraft:generic.armor"}].base double 1 run scoreboard players get $mt.pet.armor.base mt.score
 execute store result entity @s Item.tag.EntityTag.TicksFrozen int 1 run scoreboard players get $mt.temp mt.score
 
 # 消費Exp

@@ -8,7 +8,7 @@ execute if data storage mobtamer:settings data{status_variant:1b} run function m
 execute store result score @s mt.max_health run attribute @s generic.max_health base get 100
 scoreboard players set $mt.health mt.score 10000
 scoreboard players operation $mt.health mt.score += @s mt.max_health
-execute store result entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base double 0.01 run scoreboard players get $mt.health mt.score
+execute store result entity @s attributes[{id:"minecraft:generic.max_health"}].base double 0.01 run scoreboard players get $mt.health mt.score
 execute store result score $mt.max_health.add mt.score run attribute @s generic.max_health modifier value get 0-0-0-0-aea 100
 execute store result entity @s Health double 0.01 run scoreboard players get $mt.health mt.score
 scoreboard players operation @s mt.max_health += $mt.max_health.add mt.score

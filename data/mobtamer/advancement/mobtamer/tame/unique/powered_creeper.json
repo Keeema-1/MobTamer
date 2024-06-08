@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:lightning_rod"
+      "id": "minecraft:lightning_rod"
     },
     "frame": "challenge"
   },

@@ -11,7 +11,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:wither_spawn_egg"
+      "id": "minecraft:wither_spawn_egg"
     },
     "announce_to_chat": false
   },

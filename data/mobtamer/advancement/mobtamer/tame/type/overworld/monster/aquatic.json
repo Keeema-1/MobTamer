@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:prismarine"
+      "id": "minecraft:prismarine"
     },
     "hidden": true,
     "announce_to_chat": false,

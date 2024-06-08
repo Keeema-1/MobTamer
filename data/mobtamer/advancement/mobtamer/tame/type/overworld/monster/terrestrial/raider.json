@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:crossbow"
+      "id": "minecraft:crossbow"
     },
     "hidden": true,
     "announce_to_chat": false,

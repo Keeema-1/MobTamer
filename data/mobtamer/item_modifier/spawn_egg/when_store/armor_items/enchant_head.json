@@ -1,547 +1,578 @@
 [
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.bane_of_arthropods"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.bane_of_arthropods"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:bane_of_arthropods"
+                    "enchantments": "minecraft:bane_of_arthropods"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.blast_protection"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.blast_protection"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:blast_protection"
+                    "enchantments": "minecraft:blast_protection"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.feather_falling"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.feather_falling"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:feather_falling"
+                    "enchantments": "minecraft:feather_falling"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.fire_aspect"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.fire_aspect"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:fire_aspect"
+                    "enchantments": "minecraft:fire_aspect"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.fire_protection"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.fire_protection"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:fire_protection"
+                    "enchantments": "minecraft:fire_protection"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.flame"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.flame"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:flame"
+                    "enchantments": "minecraft:flame"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.impaling"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.impaling"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:impaling"
+                    "enchantments": "minecraft:impaling"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.knockback"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.knockback"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:knockback"
+                    "enchantments": "minecraft:knockback"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.multishot"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.multishot"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:multishot"
+                    "enchantments": "minecraft:multishot"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.piercing"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.piercing"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:piercing"
+                    "enchantments": "minecraft:piercing"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.projectile_protection"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.projectile_protection"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:projectile_protection"
+                    "enchantments": "minecraft:projectile_protection"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.protection"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.protection"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:protection"
+                    "enchantments": "minecraft:protection"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.power"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.power"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:power"
+                    "enchantments": "minecraft:power"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.sharpness"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.sharpness"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:sharpness"
+                    "enchantments": "minecraft:sharpness"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.smite"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.smite"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:smite"
+                    "enchantments": "minecraft:smite"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "　　　　　　 \u2726",
-            "color": "purple",
-            "italic": false
-          },
-          {
-            "translate": "enchantment.minecraft.thorns"
-          }
-        ]
-      ],
-      "replace": false,
-      "conditions": [
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
+          "text": "　　　　　　 ✦",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "translate": "enchantment.minecraft.thorns"
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:thorns"
+                    "enchantments": "minecraft:thorns"
                   }
                 ]
               }
             }
           }
         }
-      ]
-    }
-  ]
-  
+      }
+    ]
+  }
+]

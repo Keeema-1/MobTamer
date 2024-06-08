@@ -42,6 +42,6 @@
         }
       ]
     ],
-    "replace": false
+    "mode": "append"
   }
 ]

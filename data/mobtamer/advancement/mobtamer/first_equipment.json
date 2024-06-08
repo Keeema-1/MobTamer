@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:leather_chestplate"
+      "id": "minecraft:leather_chestplate"
     }
   },
   "parent": "mobtamer:mobtamer/first_tame",

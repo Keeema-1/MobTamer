@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:grass_block"
+      "id": "minecraft:grass_block"
     },
     "hidden": true,
     "announce_to_chat": false,

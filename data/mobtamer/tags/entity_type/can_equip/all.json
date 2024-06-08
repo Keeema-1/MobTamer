@@ -10,6 +10,7 @@
         "piglin_brute",
         "zombified_piglin",
         "wither_skeleton",
-        "piglin"
+        "piglin",
+        "bogged"
     ]
 }

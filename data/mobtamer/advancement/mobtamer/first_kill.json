@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:iron_sword"
+      "id": "minecraft:iron_sword"
     }
   },
   "parent": "mobtamer:mobtamer/first_tame",

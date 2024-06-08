@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:pufferfish"
+      "id": "minecraft:pufferfish"
     },
     "frame": "challenge"
   },

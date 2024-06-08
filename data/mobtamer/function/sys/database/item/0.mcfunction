@@ -1,3 +1,5 @@
+data remove storage mobtamer:database data.item
+
 function mobtamer:sys/database/item/conductor
 function mobtamer:sys/database/item/settings
 function mobtamer:sys/database/item/manual

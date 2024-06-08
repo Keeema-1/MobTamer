@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:end_stone"
+      "id": "minecraft:end_stone"
     },
     "hidden": true,
     "announce_to_chat": false,

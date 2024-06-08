@@ -24,6 +24,6 @@
         }
       ]
     ],
-    "replace": false
+    "mode": "append"
   }
 ]

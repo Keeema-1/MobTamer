@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:cobblestone"
+      "id": "minecraft:cobblestone"
     },
     "hidden": true,
     "announce_to_chat": false,

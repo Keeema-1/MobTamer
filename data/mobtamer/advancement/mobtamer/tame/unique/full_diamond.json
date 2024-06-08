@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:diamond_chestplate"
+      "id": "minecraft:diamond_chestplate"
     },
     "hidden": true,
     "frame": "challenge"

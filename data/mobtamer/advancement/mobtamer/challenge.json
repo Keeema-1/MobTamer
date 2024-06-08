@@ -3,7 +3,7 @@
     "title": "\u30c1\u30e3\u30ec\u30f3\u30b8",
     "description": "",
     "icon": {
-      "item": "minecraft:nether_star"
+      "id": "minecraft:nether_star"
     },
     "background": "minecraft:textures/block/quartz_block_top.png",
     "announce_to_chat": false,

@@ -1,38 +1,37 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:fishing_rod",
-            "functions": [
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{mt_conductor:1b}"
-              },
-              {
-                "function": "minecraft:copy_nbt",
-                "source": {
-                  "type": "minecraft:storage",
-                  "source": "mobtamer:database"
-                },
-                "ops": [
-                  {
-                    "source": "data.item.conductor.display",
-                    "target": "display",
-                    "op": "replace"
-                  },{
-                    "source": "data.item.conductor.HideFlags",
-                    "target": "HideFlags",
-                    "op": "replace"
-                  }
-                ]
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "コンダクター",
+                "italic": false
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " 【モード：情報】",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mt_conductor:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -24,7 +24,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -66,7 +66,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -108,7 +108,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -150,7 +150,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -192,7 +192,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -234,7 +234,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -276,7 +276,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -318,7 +318,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -360,7 +360,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -402,7 +402,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -444,7 +444,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -486,7 +486,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -528,7 +528,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -570,7 +570,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -612,7 +612,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -654,7 +654,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -696,7 +696,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -738,7 +738,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -780,7 +780,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -822,7 +822,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -864,7 +864,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -906,7 +906,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -948,7 +948,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -990,7 +990,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -1032,7 +1032,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -1074,7 +1074,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -1116,7 +1116,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -1158,7 +1158,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -1200,7 +1200,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -1242,7 +1242,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -1284,7 +1284,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -1326,7 +1326,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -1368,7 +1368,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -1410,7 +1410,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -1452,7 +1452,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",
@@ -1494,7 +1494,7 @@
         }
       ]
     ],
-    "replace": false,
+    "mode": "append",
     "conditions": [
       {
         "condition": "minecraft:entity_properties",

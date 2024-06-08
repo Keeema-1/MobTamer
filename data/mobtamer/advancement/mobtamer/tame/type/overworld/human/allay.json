@@ -11,7 +11,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:allay_spawn_egg"
+      "id": "minecraft:allay_spawn_egg"
     },
     "announce_to_chat": false
   },

@@ -11,7 +11,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:skeleton_horse_spawn_egg"
+      "id": "minecraft:skeleton_horse_spawn_egg"
     },
     "announce_to_chat": false
   },

@@ -6,11 +6,11 @@
       [
         {
           "text": "                   （エンチャント済み）",
-          "color": "purple",
+          "color": "dark_purple",
           "italic": false
         }
       ]
     ],
-    "replace": false
+    "mode": "append"
   }
 ]

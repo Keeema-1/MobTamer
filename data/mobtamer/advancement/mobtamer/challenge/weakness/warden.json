@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:warden_spawn_egg"
+      "id": "minecraft:warden_spawn_egg"
     },
     "frame": "challenge"
   },

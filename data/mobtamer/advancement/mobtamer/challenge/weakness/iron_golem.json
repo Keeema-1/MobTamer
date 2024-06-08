@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:iron_golem_spawn_egg"
+      "id": "minecraft:iron_golem_spawn_egg"
     },
     "frame": "challenge"
   },

@@ -1,0 +1,17 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        { "text": " 【モード：強化】", "color": "aqua", "italic": false },
+        { "text": " 短スニークで対象選択", "italic": false },
+        { "text": " アクションで実行", "italic": false },
+        { "text": " メインハンドからドロップでモード変更", "italic": false }
+      ],
+      "mode": "replace_all"
+    },
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": "{mt_state:{mode1:6}}"
+    }
+  ]
+  

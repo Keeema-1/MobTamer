@@ -148,7 +148,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:enchanted_golden_apple"
+      "id": "minecraft:enchanted_golden_apple"
     }
   },
   "parent": "mobtamer:mobtamer/tame/count/70types",

@@ -68,6 +68,6 @@
         }
       ]
     ],
-    "replace": false
+    "mode": "append"
   }
 ]

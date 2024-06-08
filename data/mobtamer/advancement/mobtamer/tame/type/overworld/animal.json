@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:wheat"
+      "id": "minecraft:wheat"
     },
     "hidden": true,
     "announce_to_chat": false,

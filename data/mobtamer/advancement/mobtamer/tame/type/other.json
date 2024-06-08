@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:bedrock"
+      "id": "minecraft:bedrock"
     },
     "hidden": true,
     "announce_to_chat": false,

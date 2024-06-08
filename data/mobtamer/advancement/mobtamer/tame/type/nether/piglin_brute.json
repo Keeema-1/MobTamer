@@ -11,7 +11,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:piglin_brute_spawn_egg"
+      "id": "minecraft:piglin_brute_spawn_egg"
     },
     "announce_to_chat": false
   },

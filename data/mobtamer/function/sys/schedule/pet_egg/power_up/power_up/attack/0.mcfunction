@@ -9,7 +9,7 @@ execute store result score $mt.pet.xp mt.score run data get storage mobtamer:tem
 
 # execute store result score $mt.temp mt.score run data get entity @s Item.tag.EntityTag.Attributes[{Name:"minecraft:generic.attack_damage"}].Base
 # scoreboard players add $mt.temp mt.score 1
-execute store result entity @s Item.tag.EntityTag.Attributes[{Name:"minecraft:generic.attack_damage"}].Base double 1 run scoreboard players get $mt.pet.attack.base mt.score
+execute store result entity @s Item.tag.EntityTag.attributes[{id:"minecraft:generic.attack_damage"}].base double 1 run scoreboard players get $mt.pet.attack.base mt.score
 execute store result entity @s Item.tag.EntityTag.TicksFrozen int 1 run scoreboard players get $mt.pet.attack.base mt.score
 
 # 消費Exp

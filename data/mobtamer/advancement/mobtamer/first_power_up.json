@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:enchanted_book"
+      "id": "minecraft:enchanted_book"
     }
   },
   "parent": "mobtamer:mobtamer/first_kill",

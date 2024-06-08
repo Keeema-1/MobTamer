@@ -11,7 +11,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:evoker_spawn_egg"
+      "id": "minecraft:evoker_spawn_egg"
     },
     "announce_to_chat": false
   },

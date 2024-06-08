@@ -1,3 +1,7 @@
+execute if entity @s[type=breeze] if data entity @s Brain.memories.minecraft:breeze_jump_inhaling run return 1
+execute if entity @s[type=breeze] if data entity @s Brain.memories.minecraft:breeze_shoot run return 1
+execute if entity @s[type=breeze] if data entity @s Brain.memories.minecraft:breeze_shoot_cooldown run return 1
+
 execute if entity @s[tag=!mt.following] run function mobtamer:sys/player/pet/each/follow/00
 execute if entity @s[tag=mt.following] run function mobtamer:sys/player/pet/each/follow/01
 

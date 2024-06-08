@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:golden_chestplate"
+      "id": "minecraft:golden_chestplate"
     },
     "frame": "challenge"
   },

@@ -11,7 +11,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:squid_spawn_egg"
+      "id": "minecraft:squid_spawn_egg"
     },
     "announce_to_chat": false
   },

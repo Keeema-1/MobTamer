@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:axolotl_bucket"
+      "id": "minecraft:axolotl_bucket"
     },
     "hidden": true,
     "frame": "challenge"

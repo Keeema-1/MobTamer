@@ -1,17 +1,16 @@
 [
-    {
-      "function": "minecraft:copy_nbt",
-      "source": {
-        "type": "minecraft:storage",
-        "source": "mobtamer:temp"
-      },
-      "ops": [
-        {
-          "source": "data.source",
-          "target": "mt_state",
-          "op": "replace"
-        }
-      ]
-    }
-  ]
-  
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "mobtamer:temp"
+    },
+    "ops": [
+      {
+        "source": "data.source",
+        "target": "mt_state",
+        "op": "replace"
+      }
+    ]
+  }
+]

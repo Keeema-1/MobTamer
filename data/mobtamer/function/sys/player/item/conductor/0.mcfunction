@@ -1,5 +1,5 @@
-execute if data storage mobtamer:temp data.player.Inventory[{Slot:-106b,tag:{mt_conductor:1b}}] run data modify storage mobtamer:temp data.item_tag set from storage mobtamer:temp data.player.Inventory[{Slot:-106b,tag:{mt_conductor:1b}}].tag
-execute if data storage mobtamer:temp data.player.SelectedItem{tag:{mt_conductor:1b}} run data modify storage mobtamer:temp data.item_tag set from storage mobtamer:temp data.player.SelectedItem{tag:{mt_conductor:1b}}.tag
+execute if data storage mobtamer:temp data.player.Inventory[{Slot:-106b,components:{"minecraft:custom_data":{mt_conductor:1b}}}] run data modify storage mobtamer:temp data.item_tag set from storage mobtamer:temp data.player.Inventory[{Slot:-106b,components:{"minecraft:custom_data":{mt_conductor:1b}}}].components."minecraft:custom_data"
+execute if data storage mobtamer:temp data.player.SelectedItem{components:{"minecraft:custom_data":{mt_conductor:1b}}} run data modify storage mobtamer:temp data.item_tag set from storage mobtamer:temp data.player.SelectedItem{components:{"minecraft:custom_data":{mt_conductor:1b}}}.components."minecraft:custom_data"
 
 execute store result score $mt.conductor.mode1 mt.score run data get storage mobtamer:temp data.item_tag.mt_state.mode1
 execute store result score $mt.conductor.mode2 mt.score run data get storage mobtamer:temp data.item_tag.mt_state.mode2

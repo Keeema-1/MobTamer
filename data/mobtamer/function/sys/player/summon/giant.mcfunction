@@ -6,7 +6,7 @@ data modify storage mobtamer:temp data.temp.HandItems set from entity @s HandIte
 data modify storage mobtamer:temp data.temp.LeftHanded set from entity @s LeftHanded
 data modify storage mobtamer:temp data.temp.ArmorDropChances set from entity @s ArmorDropChances
 data modify storage mobtamer:temp data.temp.HandDropChances set from entity @s HandDropChances
-data modify storage mobtamer:temp data.temp.Attributes set from entity @s Attributes
+data modify storage mobtamer:temp data.temp.attributes set from entity @s attributes
 data modify storage mobtamer:temp data.temp.active_effects set from entity @s active_effects
 data modify storage mobtamer:temp data.temp.PortalCooldown set from entity @s PortalCooldown
 data modify storage mobtamer:temp data.temp.Health set from entity @s Health

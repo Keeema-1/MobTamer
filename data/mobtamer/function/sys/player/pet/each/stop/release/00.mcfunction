@@ -27,7 +27,7 @@ data remove entity @s HandItems[].tag.Unbreakable
 
 data remove storage mobtamer:temp data.drop_item
 
-execute store result entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base double 0.01 run scoreboard players get @s mt.max_health
+execute store result entity @s attributes[{id:"minecraft:generic.max_health"}].base double 0.01 run scoreboard players get @s mt.max_health
 
 scoreboard players reset @s
 

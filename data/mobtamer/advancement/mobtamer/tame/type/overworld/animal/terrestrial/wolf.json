@@ -11,7 +11,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:wolf_spawn_egg"
+      "id": "minecraft:wolf_spawn_egg"
     },
     "announce_to_chat": false
   },

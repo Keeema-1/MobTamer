@@ -6,7 +6,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -14,7 +14,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -22,11 +22,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:bane_of_arthropods"
+                    "enchantments": "minecraft:bane_of_arthropods"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -40,7 +41,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -48,7 +49,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -56,11 +57,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:blast_protection"
+                    "enchantments": "minecraft:blast_protection"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -74,7 +76,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -82,7 +84,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -90,11 +92,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:feather_falling"
+                    "enchantments": "minecraft:feather_falling"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -108,7 +111,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -116,7 +119,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -124,11 +127,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:fire_aspect"
+                    "enchantments": "minecraft:fire_aspect"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -142,7 +146,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -150,7 +154,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -158,11 +162,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:fire_protection"
+                    "enchantments": "minecraft:fire_protection"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -176,7 +181,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -184,7 +189,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -192,11 +197,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:flame"
+                    "enchantments": "minecraft:flame"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -210,7 +216,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -218,7 +224,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -226,11 +232,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:impaling"
+                    "enchantments": "minecraft:impaling"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -244,7 +251,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -252,7 +259,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -260,11 +267,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:knockback"
+                    "enchantments": "minecraft:knockback"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -278,7 +286,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -286,7 +294,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -294,11 +302,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:multishot"
+                    "enchantments": "minecraft:multishot"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -312,7 +321,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -320,7 +329,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -328,11 +337,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:piercing"
+                    "enchantments": "minecraft:piercing"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -346,7 +356,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -354,7 +364,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -362,11 +372,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:projectile_protection"
+                    "enchantments": "minecraft:projectile_protection"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -380,7 +391,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -388,7 +399,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -396,11 +407,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:protection"
+                    "enchantments": "minecraft:protection"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -414,7 +426,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -422,7 +434,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -430,11 +442,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:power"
+                    "enchantments": "minecraft:power"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -448,7 +461,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -456,7 +469,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -464,11 +477,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:sharpness"
+                    "enchantments": "minecraft:sharpness"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -482,7 +496,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -490,7 +504,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -498,11 +512,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:smite"
+                    "enchantments": "minecraft:smite"
                   }
-                ]
+                ]}
               }
             }
           }
@@ -516,7 +531,7 @@
         [
           {
             "text": "　　　　　　 \u2726",
-            "color": "purple",
+            "color": "dark_purple",
             "italic": false
           },
           {
@@ -524,7 +539,7 @@
           }
         ]
       ],
-      "replace": false,
+      "mode": "append",
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -532,11 +547,12 @@
           "predicate": {
             "equipment": {
               "feet": {
+                "predicates": {
                 "enchantments": [
                   {
-             "enchantment": "minecraft:thorns"
+                    "enchantments": "minecraft:thorns"
                   }
-                ]
+                ]}
               }
             }
           }

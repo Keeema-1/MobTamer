@@ -9,7 +9,8 @@ execute if score @s mt.score matches 1.. unless score $mt.target mt.health match
 
 scoreboard players reset $mt.target mt.health
 
-particle minecraft:entity_effect ~ ~0.5 ~ 0.2 0.2 0.2 1 1
+# particle minecraft:entity_effect ~ ~0.5 ~ 0.2 0.2 0.2 1 1
+particle minecraft:entity_effect{color:[1.0,1.0,1.0,1.0]} ~ ~0.5 ~ 0.2 0.2 0.2 1 1
 #execute if score $mt.target mt.score matches 1.. run schedule function mobtamer:sys/schedule/chance/0 1t replace
 
 execute unless data storage mobtamer:settings data.weakness run data remove storage mobtamer:temp hold.weakness_challenge

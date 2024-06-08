@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:zombie_spawn_egg"
+      "id": "minecraft:zombie_spawn_egg"
     },
     "title": "\u30c6\u30a4\u30e0\u8a18\u9332",
     "description": [

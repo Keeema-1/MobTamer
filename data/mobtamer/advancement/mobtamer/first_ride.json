@@ -7,7 +7,7 @@
       }
     ],
     "icon": {
-      "item": "minecraft:saddle"
+      "id": "minecraft:saddle"
     }
   },
   "parent": "mobtamer:mobtamer/first_tame",
