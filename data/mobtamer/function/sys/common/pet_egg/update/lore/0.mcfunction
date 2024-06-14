@@ -35,7 +35,7 @@ data modify storage mobtamer:temp data.Item set from entity @s Item
 
 execute positioned ~ -70 ~ summon zombie run function mobtamer:sys/common/pet_egg/update/lore/00
 
-data modify entity @s Item.tag.display.Lore set from storage mobtamer:temp data.Item.tag.display.Lore
+data modify entity @s Item.components."minecraft:lore" set from storage mobtamer:temp data.Item.components."minecraft:lore"
 
 scoreboard players reset $mt.pet.attack mt.score
 scoreboard players reset $mt.pet.attack.base mt.score

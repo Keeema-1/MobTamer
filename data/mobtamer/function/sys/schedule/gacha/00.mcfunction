@@ -1,8 +1,8 @@
 
-execute if data entity @s Item.tag{mt_gacha_type:"bronze"} run function mobtamer:sys/common/gacha/only_already_tamed/bronze
-execute if data entity @s Item.tag{mt_gacha_type:"silver"} run function mobtamer:sys/common/gacha/only_already_tamed/silver
-execute if data entity @s Item.tag{mt_gacha_type:"gold"} run function mobtamer:sys/common/gacha/only_already_tamed/gold
-execute if data entity @s Item.tag{mt_gacha_type:"diamond"} run function mobtamer:sys/common/gacha/any/diamond
+execute if data entity @s Item.components."minecraft:custom_data"{mt_gacha_type:"bronze"} run function mobtamer:sys/common/gacha/only_already_tamed/bronze
+execute if data entity @s Item.components."minecraft:custom_data"{mt_gacha_type:"silver"} run function mobtamer:sys/common/gacha/only_already_tamed/silver
+execute if data entity @s Item.components."minecraft:custom_data"{mt_gacha_type:"gold"} run function mobtamer:sys/common/gacha/only_already_tamed/gold
+execute if data entity @s Item.components."minecraft:custom_data"{mt_gacha_type:"diamond"} run function mobtamer:sys/common/gacha/any/diamond
 
 execute on origin run scoreboard players operation $mt.pet.id mt.score = @s mt.id
 

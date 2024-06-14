@@ -22,8 +22,8 @@ data modify storage mobtamer:temp data.pet_status set from storage mobtamer:temp
 
 function mobtamer:sys/common/pet_egg/update/lore/0
 
-data modify entity @s Item.tag.mt_pet_status set from storage mobtamer:temp data.pet_status_before
-data modify entity @s Item.tag.EntityTag.PortalCooldown set from storage mobtamer:temp data.pet_status_before.xp
+data modify entity @s Item.components."minecraft:custom_data".mt_pet_status set from storage mobtamer:temp data.pet_status_before
+data modify entity @s Item.components."minecraft:entity_data".PortalCooldown set from storage mobtamer:temp data.pet_status_before.xp
 
 data remove storage mobtamer:temp data.pet_status_before
 data remove storage mobtamer:temp data.pet_status

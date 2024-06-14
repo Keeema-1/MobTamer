@@ -17,5 +17,5 @@ execute store result storage mobtamer:temp data.pet_status.attack.armor int 1 ru
 execute store result storage mobtamer:temp data.pet_status.xp int 1 run scoreboard players get @s mt.xp
 execute store result storage mobtamer:temp data.pet_status.cost.value int 1 run scoreboard players get $mt.cost mt.score
 execute store result storage mobtamer:temp data.pet_status.cost.attack.add int 1 run scoreboard players get $mt.cost.attack.add mt.score
-execute if score $mt.cost.attack.force mt.score matches 1.. store result storage mobtamer:temp data.Item.tag.mt_pet_status.cost.attack_force int 1 run scoreboard players get $mt.cost.attack.force mt.score
-execute if score $mt.cost.force mt.score matches 1.. store result storage mobtamer:temp data.Item.tag.mt_pet_status.cost.force int 1 run scoreboard players get $mt.cost.force mt.score
+execute if score $mt.cost.attack.force mt.score matches 1.. store result storage mobtamer:temp data.Item.components."minecraft:custom_data".mt_pet_status.cost.attack_force int 1 run scoreboard players get $mt.cost.attack.force mt.score
+execute if score $mt.cost.force mt.score matches 1.. store result storage mobtamer:temp data.Item.components."minecraft:custom_data".mt_pet_status.cost.force int 1 run scoreboard players get $mt.cost.force mt.score

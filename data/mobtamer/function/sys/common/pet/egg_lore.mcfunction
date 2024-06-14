@@ -61,18 +61,18 @@ execute unless score $mt.pet.speed.add.effect mt.score matches 0 if score $mt.pe
 execute if score $mt.pet.knockback mt.score matches 1.. run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/knockback
 
 execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".ArmorItems[3].count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/head
-execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".ArmorItems[3].tag.enchantments run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/enchant_head
+execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".ArmorItems[3].comopnents.enchantments run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/enchant_head
 execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".ArmorItems[2].count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/chest
-execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".ArmorItems[2].tag.enchantments run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/enchant_chest
+execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".ArmorItems[2].comopnents.enchantments run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/enchant_chest
 execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".ArmorItems[1].count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/legs
-execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".ArmorItems[1].tag.enchantments run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/enchant_legs
+execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".ArmorItems[1].comopnents.enchantments run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/enchant_legs
 execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".ArmorItems[0].count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/feet
-execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".ArmorItems[0].tag.enchantments run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/enchant_feet
+execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".ArmorItems[0].comopnents.enchantments run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/enchant_feet
 
 # # 上でmainhandを塗り替えてしまったのでなんとかする
 data modify entity @s ArmorItems[3] set from storage mobtamer:temp data.Item.components."minecraft:entity_data".HandItems[0]
 execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".HandItems[0].count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/mainhand
-execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".HandItems[0].tag.enchantments run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/enchant_mainhand
+execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".HandItems[0].comopnents.enchantments run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/enchant_mainhand
 data modify entity @s ArmorItems[3] set from storage mobtamer:temp data.Item.components."minecraft:entity_data".HandItems[1]
 execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".HandItems[1].count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/offhand
 

@@ -4,7 +4,7 @@ scoreboard players operation $mt.pet.max_health mt.score = @s mt.max_health
 scoreboard players operation $mt.pet.health mt.score /= $mt.const mt.score
 scoreboard players operation $mt.pet.max_health mt.score /= $mt.const mt.score
 execute if score $mt.pet.health mt.score matches ..-1 run scoreboard players set $mt.pet.health mt.score 0
-execute store result score $mt.pet.max_health.add.variant mt.score run attribute @s generic.max_health modifier value get 0-0-0-0-aea
+execute store result score $mt.pet.max_health.add.variant mt.score run attribute @s generic.max_health modifier value get mt.max_health.add
 scoreboard players operation $mt.pet.max_health.base mt.score = $mt.pet.max_health mt.score
 scoreboard players operation $mt.pet.max_health.base mt.score -= $mt.pet.max_health.add.variant mt.score
 

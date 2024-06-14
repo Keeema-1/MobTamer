@@ -2,12 +2,12 @@
 execute store result score $mt.pet.attack mt.score run attribute @s generic.attack_damage get 1
 
 scoreboard players set $mt.pet.attack.enchant mt.score 0
-execute if data entity @s HandItems[0].tag.Enchantments[{id:"minecraft:sharpness",lvl:1s}] run scoreboard players set $mt.pet.attack.enchant mt.score 1
-execute if data entity @s HandItems[0].tag.Enchantments[{id:"minecraft:sharpness",lvl:2s}] run scoreboard players set $mt.pet.attack.enchant mt.score 1
-execute if data entity @s HandItems[0].tag.Enchantments[{id:"minecraft:sharpness",lvl:3s}] run scoreboard players set $mt.pet.attack.enchant mt.score 2
-execute if data entity @s HandItems[0].tag.Enchantments[{id:"minecraft:sharpness",lvl:4s}] run scoreboard players set $mt.pet.attack.enchant mt.score 2
-execute if data entity @s HandItems[0].tag.Enchantments[{id:"minecraft:sharpness",lvl:5s}] run scoreboard players set $mt.pet.attack.enchant mt.score 3
-execute if data entity @s HandItems[0].tag.Enchantments[{id:"minecraft:sharpness",lvl:6s}] run scoreboard players set $mt.pet.attack.enchant mt.score 3
+execute if data entity @s HandItems[0].components.enchantments[{id:"minecraft:sharpness",lvl:1s}] run scoreboard players set $mt.pet.attack.enchant mt.score 1
+execute if data entity @s HandItems[0].components.enchantments[{id:"minecraft:sharpness",lvl:2s}] run scoreboard players set $mt.pet.attack.enchant mt.score 1
+execute if data entity @s HandItems[0].components.enchantments[{id:"minecraft:sharpness",lvl:3s}] run scoreboard players set $mt.pet.attack.enchant mt.score 2
+execute if data entity @s HandItems[0].components.enchantments[{id:"minecraft:sharpness",lvl:4s}] run scoreboard players set $mt.pet.attack.enchant mt.score 2
+execute if data entity @s HandItems[0].components.enchantments[{id:"minecraft:sharpness",lvl:5s}] run scoreboard players set $mt.pet.attack.enchant mt.score 3
+execute if data entity @s HandItems[0].components.enchantments[{id:"minecraft:sharpness",lvl:6s}] run scoreboard players set $mt.pet.attack.enchant mt.score 3
 scoreboard players operation $mt.pet.attack mt.score += $mt.pet.attack.enchant mt.score
 
 data modify storage mobtamer:temp data.active_effects set from entity @s active_effects
@@ -15,7 +15,7 @@ effect clear @s
 execute store result score $mt.pet.attack.no_effect mt.score run attribute @s generic.attack_damage get 1
 scoreboard players operation $mt.pet.attack.no_effect mt.score += $mt.pet.attack.enchant mt.score
 execute store result score $mt.pet.attack.base mt.score run attribute @s generic.attack_damage base get 1
-execute store result score $mt.pet.attack.add.variant mt.score run attribute @s generic.attack_damage modifier value get 0-0-0-0-aacaae
+execute store result score $mt.pet.attack.add.variant mt.score run attribute @s generic.attack_damage modifier value get mt.attack_damage.add
 scoreboard players operation $mt.pet.attack.add mt.score = $mt.pet.attack mt.score
 scoreboard players operation $mt.pet.attack.add mt.score -= $mt.pet.attack.base mt.score
 scoreboard players operation $mt.pet.attack.add.weapon mt.score = $mt.pet.attack.no_effect mt.score

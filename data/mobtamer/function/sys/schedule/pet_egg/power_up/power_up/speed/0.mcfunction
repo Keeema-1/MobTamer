@@ -7,8 +7,8 @@ execute store result score $mt.pet.speed.base mt.score run data get storage mobt
 execute store result storage mobtamer:temp data.pet_status.speed.base int 1 run scoreboard players add $mt.pet.speed.base mt.score 1
 execute store result score $mt.pet.xp mt.score run data get storage mobtamer:temp data.pet_status.xp
 
-execute store result entity @s Item.tag.EntityTag.attributes[{id:"minecraft:generic.movement_speed"}].base double 0.01 run scoreboard players get $mt.pet.speed.base mt.score
-execute store result entity @s Item.tag.EntityTag.TicksFrozen int 1 run scoreboard players get $mt.temp mt.score
+execute store result entity @s Item.components."minecraft:entity_data".attributes[{id:"minecraft:generic.movement_speed"}].base double 0.01 run scoreboard players get $mt.pet.speed.base mt.score
+execute store result entity @s Item.components."minecraft:entity_data".TicksFrozen int 1 run scoreboard players get $mt.temp mt.score
 
 # 消費Exp
 

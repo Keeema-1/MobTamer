@@ -9,7 +9,7 @@ execute store result score @s mt.max_health run attribute @s generic.max_health 
 scoreboard players set $mt.health mt.score 10000
 scoreboard players operation $mt.health mt.score += @s mt.max_health
 execute store result entity @s attributes[{id:"minecraft:generic.max_health"}].base double 0.01 run scoreboard players get $mt.health mt.score
-execute store result score $mt.max_health.add mt.score run attribute @s generic.max_health modifier value get 0-0-0-0-aea 100
+execute store result score $mt.max_health.add mt.score run attribute @s generic.max_health modifier value get mt.max_health.add 100
 execute store result entity @s Health double 0.01 run scoreboard players get $mt.health mt.score
 scoreboard players operation @s mt.max_health += $mt.max_health.add mt.score
 scoreboard players operation @s mt.health = @s mt.max_health
@@ -20,12 +20,12 @@ execute if entity @e[type=frog] run attribute @s generic.attack_damage base set 
 
 execute if entity @s[type=#mobtamer:burn_in_the_sun] if entity @s[type=#mobtamer:can_equip/all] run function mobtamer:sys/tame/success/common/helmet
 
-data modify entity @s ArmorItems[0].tag.Unbreakable set value 1b
-data modify entity @s ArmorItems[1].tag.Unbreakable set value 1b
-data modify entity @s ArmorItems[2].tag.Unbreakable set value 1b
-data modify entity @s ArmorItems[3].tag.Unbreakable set value 1b
-data modify entity @s HandItems[0].tag.Unbreakable set value 1b
-data modify entity @s HandItems[1].tag.Unbreakable set value 1b
+data modify entity @s ArmorItems[0].components.Unbreakable set value 1b
+data modify entity @s ArmorItems[1].components.Unbreakable set value 1b
+data modify entity @s ArmorItems[2].components.Unbreakable set value 1b
+data modify entity @s ArmorItems[3].components.Unbreakable set value 1b
+data modify entity @s HandItems[0].components.Unbreakable set value 1b
+data modify entity @s HandItems[1].components.Unbreakable set value 1b
 
 scoreboard players operation $mt.pet.id mt.score = @s mt.id
 execute if data storage mobtamer:settings data{tame_spawn_egg_pos:"player"} as @a if score @s mt.id = $mt.pet.id mt.score run tag @s add mt.tame_success_player

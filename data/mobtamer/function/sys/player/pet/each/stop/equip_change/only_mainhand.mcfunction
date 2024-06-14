@@ -1,4 +1,4 @@
-data modify storage mobtamer:temp data.Item.tag.Unbreakable set value 1b
+data modify storage mobtamer:temp data.Item.components.Unbreakable set value 1b
 
 function mobtamer:sys/player/pet/each/stop/equip_change/mainhand
 

@@ -12,7 +12,7 @@ execute on passengers run data merge entity @s {DeathLootTable:"empty",Health:0.
 execute as @e[team=!,type=#mobtamer:can_tame,tag=mt.pet] if score @s mt.id = $mt.player mt.id at @s run tag @s add mt.player_check
 
 execute store result score @s mt.max_health run attribute @s generic.max_health base get 100
-execute store result score $mt.health_modifier mt.score run attribute @s generic.max_health modifier value get 0-0-0-0-aea 100
+execute store result score $mt.health_modifier mt.score run attribute @s generic.max_health modifier value get mt.max_health.add 100
 scoreboard players operation @s mt.max_health += $mt.health_modifier mt.score
 scoreboard players reset $mt.health_modifier mt.score
 execute if score @s mt.max_health matches 10000.. run scoreboard players remove @s mt.max_health 10000

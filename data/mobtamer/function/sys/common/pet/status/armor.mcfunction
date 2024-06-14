@@ -4,7 +4,7 @@ data modify storage mobtamer:temp data.active_effects set from entity @s active_
 effect clear @s
 execute store result score $mt.pet.armor.no_effect mt.score run attribute @s generic.armor get 1
 execute store result score $mt.pet.armor.base mt.score run attribute @s generic.armor base get 1
-execute store result score $mt.pet.armor.add.variant mt.score run attribute @s generic.armor modifier value get 0-0-0-0-a0
+execute store result score $mt.pet.armor.add.variant mt.score run attribute @s generic.armor modifier value get mt.armor.add
 scoreboard players operation $mt.pet.armor.add mt.score = $mt.pet.armor mt.score
 scoreboard players operation $mt.pet.armor.add mt.score -= $mt.pet.armor.base mt.score
 scoreboard players operation $mt.pet.armor.add.weapon mt.score = $mt.pet.armor.no_effect mt.score

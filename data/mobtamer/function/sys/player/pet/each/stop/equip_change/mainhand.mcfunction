@@ -1,7 +1,7 @@
 
 data modify entity @s Item set from entity @e[team=!,tag=mt.pet_check,tag=mt.pet,limit=1] HandItems[0]
 
-data modify entity @s Item.tag.Unbreakable set value 0b
+data modify entity @s Item.components.Unbreakable set value 0b
 
 execute unless data entity @e[team=!,tag=mt.pet_check,tag=mt.pet,limit=1] HandItems[0].id run kill @s
 

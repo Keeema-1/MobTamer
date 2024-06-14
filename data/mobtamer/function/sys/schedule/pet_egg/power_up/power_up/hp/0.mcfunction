@@ -5,9 +5,9 @@ execute store result storage mobtamer:temp data.pet_status.max_health.final int 
 execute store result storage mobtamer:temp data.pet_status.max_health.base int 1 run scoreboard players add $mt.pet.max_health.base mt.score 2
 execute store result score $mt.pet.xp mt.score run data get storage mobtamer:temp data.pet_status.xp
 
-execute store result score $mt.temp mt.score run data get entity @s Item.tag.EntityTag.attributes[{id:"minecraft:generic.max_health"}].base
+execute store result score $mt.temp mt.score run data get entity @s Item.components."minecraft:entity_data".attributes[{id:"minecraft:generic.max_health"}].base
 scoreboard players add $mt.temp mt.score 2
-execute store result entity @s Item.tag.EntityTag.attributes[{id:"minecraft:generic.max_health"}].base double 1 run scoreboard players get $mt.temp mt.score
+execute store result entity @s Item.components."minecraft:entity_data".attributes[{id:"minecraft:generic.max_health"}].base double 1 run scoreboard players get $mt.temp mt.score
 
 # 消費Exp
 
