@@ -3,6 +3,9 @@
 # forceload_pet_chunk:0b -> ペットのいるチャンクをforceloadしない。離れ過ぎた場合はアイテム化。
 data modify storage mobtamer:settings data merge value {forceload_pet_chunk:1b}
 
+# テイム時の装備:スポーン時の装備のみ
+data modify storage mobtamer:settings data merge value {equipment_when_tame:"only_initial_equipment"}
+
 advancement revoke @a from mobtamer:mobtamer/road_to_mobtamer
 advancement revoke @a from mobtamer:mobtamer/tame/tame_type
 
@@ -26,3 +29,6 @@ forceload remove all
 tellraw @a [{"storage": "mobtamer:text","nbt":"data.settings_initialized","interpret": true}]
 
 gamerule sendCommandFeedback false
+
+scoreboard players reset * mt.cost
+scoreboard players reset * mt.tame_type_count

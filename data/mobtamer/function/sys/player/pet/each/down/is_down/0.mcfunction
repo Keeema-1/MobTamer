@@ -13,4 +13,4 @@ execute if score @s mt.health matches 1.. run function mobtamer:sys/player/pet/e
 execute if score @s mt.timer1 matches 1.. run scoreboard players remove @s mt.timer1 1
 execute if score @s mt.timer1 matches 1 run function mobtamer:sys/player/pet/each/down/is_down/kill
 
-execute unless score @s mt.timer1 matches 1 unless score @s mt.health matches 1.. unless entity @a[tag=mt.player_check,distance=..32,limit=1] run function mobtamer:sys/player/pet/each/store/0
+execute unless score @s mt.timer1 matches 1 unless score @s mt.health matches 1.. if data storage mobtamer:settings data{auto_store_down_pet_when_far:1b} unless entity @a[tag=mt.player_check,distance=..32,limit=1] run function mobtamer:sys/player/pet/each/down/is_down/store
