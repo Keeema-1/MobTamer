@@ -1,5 +1,5 @@
 
-execute if predicate mobtamer:random/50m if score @s mt.max_health matches ..1999 if data entity @s Owner run scoreboard players add @s mt.max_health 1200
+execute if predicate mobtamer:random/50m if score @s mt.max_health matches ..3999 if data entity @s Owner run scoreboard players add @s mt.max_health 3200
 
 execute if data entity @s {AbsorptionAmount:0.0f} run scoreboard players reset @s mt.health_nbt
 execute if data entity @s {AbsorptionAmount:0.0f} run data modify entity @s AbsorptionAmount set value 100
