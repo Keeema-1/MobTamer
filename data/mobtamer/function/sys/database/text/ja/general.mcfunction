@@ -21,7 +21,8 @@ data modify storage mobtamer:text data.cost.up set value '{"text":"パーティ�
 
 data modify storage mobtamer:text data.tame.tame_type_count set value '{"text":"テイムしたモブの種類"}'
 
-data modify storage mobtamer:text data.get.conductor set value '{"text":"進捗達成の報酬としてコンダクターを入手しました。","color": "yellow"}'
+data modify storage mobtamer:text data.get.conductor set value '{"text":"進捗達成の報酬として コンダクター を入手しました。","color": "yellow"}'
+data modify storage mobtamer:text data.get.trader set value '{"text":"進捗達成の報酬として テイマー商人を呼ぶ を入手しました。","color": "yellow"}'
 
 data modify storage mobtamer:text data.trader.trade_unlock set value '{"text":"テイマー商人の取引の抽選に以下が追加されました。","color": "green"}'
 
