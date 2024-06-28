@@ -104,6 +104,7 @@ data modify storage mobtamer:text data.tutorial.trader append value '{"text":"�
 data modify storage mobtamer:text data.tutorial.trader append value '{"text":"通常の行商人の取引にテイマー商人を呼ぶためのアイテムが追加されます。","color": "green","italic": true}'
 data modify storage mobtamer:text data.tutorial.trader append value '{"text":"テイマー商人との取引ではコンダクターやデータパック設定、指南書などを入手することができます。","color": "green","italic": true}'
 data modify storage mobtamer:text data.tutorial.trader append value '{"text":"進捗達成の報酬で取引は増え、ペットガチャやペット用装備が追加されるようになります。","color": "green","italic": true}'
+data modify storage mobtamer:text data.tutorial.trader append value '{"text":"一部の取引内容は毎朝ランダムに決定されます。","color": "green","italic": true}'
 
 data modify storage mobtamer:text data.item.conductor.Name set value '{"text":"コンダクター","italic":false}'
 data modify storage mobtamer:text data.item.conductor.Lore.info set value '{"text":" 【モード：情報】","italic":false,"color":"green"}'

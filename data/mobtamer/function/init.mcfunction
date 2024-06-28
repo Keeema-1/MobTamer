@@ -30,5 +30,7 @@ tellraw @a [{"storage": "mobtamer:text","nbt":"data.settings_initialized","inter
 
 gamerule sendCommandFeedback false
 
+execute if predicate mobtamer:trade_update_time run function mobtamer:sys/trader/daily_change/0
+
 scoreboard players reset * mt.cost
 scoreboard players reset * mt.tame_type_count

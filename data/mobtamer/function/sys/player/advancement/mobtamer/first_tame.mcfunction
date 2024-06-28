@@ -1,4 +1,5 @@
 function mobtamer:command/give/conductor
+function mobtamer:command/give/trader
 
 scoreboard players operation $mt.cost.before mt.score = @s mt.cost
 scoreboard players add @s mt.cost 30
