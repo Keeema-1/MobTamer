@@ -23,3 +23,4 @@ execute if entity @s[type=bat] run advancement grant @a[tag=mt.advancement_grant
 execute if entity @s[type=parrot] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/parrot
 execute if entity @s[type=chicken] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/chicken
 execute if entity @s[type=rabbit] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/rabbit
+execute if entity @s[type=armadillo] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/animal/terrestrial/armadillo

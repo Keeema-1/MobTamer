@@ -1,0 +1,27 @@
+{
+  "display": {
+    "title": [
+      {
+        "translate": "entity.minecraft.bogged"
+      }
+    ],
+    "description": [
+      {
+        "text": ""
+      }
+    ],
+    "icon": {
+      "id": "minecraft:bogged_spawn_egg"
+    },
+    "announce_to_chat": false
+  },
+  "parent": "mobtamer:mobtamer/tame/type/overworld/monster/terrestrial",
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mobtamer:sys/player/advancement/mobtamer/tame/type/bogged"
+  }
+}

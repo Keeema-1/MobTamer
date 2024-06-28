@@ -19,3 +19,5 @@ execute if entity @s[type=slime] run advancement grant @a[tag=mt.advancement_gra
 execute if entity @s[type=creeper] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/monster/terrestrial/creeper
 execute if entity @s[type=phantom] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/monster/terrestrial/phantom
 execute if entity @s[type=silverfish] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/monster/terrestrial/silverfish
+execute if entity @s[type=bogged] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/monster/terrestrial/bogged
+execute if entity @s[type=breeze] run advancement grant @a[tag=mt.advancement_grant] only mobtamer:mobtamer/tame/type/overworld/monster/terrestrial/breeze
