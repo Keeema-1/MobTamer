@@ -70,6 +70,11 @@ data modify storage mobtamer:temp data.Item.components."minecraft:entity_data".T
 execute if entity @s[type=illusioner] run data modify storage mobtamer:temp data.Item.components."minecraft:entity_data".Tags append value "mt.is_illusioner"
 execute if entity @s[type=giant] run data modify storage mobtamer:temp data.Item.components."minecraft:entity_data".Tags append value "mt.is_giant"
 
+execute if score @s mt.strategy = $mt.strategy.attack mt.score run data modify storage mobtamer:temp data.Item.components."minecraft:entity_data".Tags append value "mt.strategy.attack"
+execute if score @s mt.strategy = $mt.strategy.balance mt.score run data modify storage mobtamer:temp data.Item.components."minecraft:entity_data".Tags append value "mt.strategy.balance"
+execute if score @s mt.strategy = $mt.strategy.recover mt.score run data modify storage mobtamer:temp data.Item.components."minecraft:entity_data".Tags append value "mt.strategy.recover"
+execute if score @s mt.strategy = $mt.strategy.follow mt.score run data modify storage mobtamer:temp data.Item.components."minecraft:entity_data".Tags append value "mt.strategy.follow"
+
 function mobtamer:sys/common/pet/status/all
 
 # Lore

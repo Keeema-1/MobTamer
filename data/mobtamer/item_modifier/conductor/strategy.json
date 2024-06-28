@@ -4,7 +4,8 @@
       "lore": [
         { "text": " 【モード：作戦】", "color": "light_purple", "italic": false },
         { "text": " 短スニークで対象選択", "italic": false },
-        { "text": " アクションで実行", "italic": false },
+        { "text": " スニーク中にアクションで作戦を選択","italic":false },
+        { "text": " スニーク解除中にアクションで選択した作戦を適用", "italic": false },
         { "text": " メインハンドからドロップでモード変更", "italic": false }
       ],
       "mode": "replace_all"

@@ -1,0 +1,95 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "  ＜作戦＞ 攻撃優先",
+            "color": "light_purple",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "mt.strategy": 0
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "  ＜作戦＞ バランス",
+            "color": "light_purple",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "mt.strategy": 1
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "  ＜作戦＞ 回復優先",
+            "color": "light_purple",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "mt.strategy": 2
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "  ＜作戦＞ 追従優先",
+            "color": "light_purple",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "mt.strategy": 3
+          }
+        }
+      ]
+    }
+  ]
+  

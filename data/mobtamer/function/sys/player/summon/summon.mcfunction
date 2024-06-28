@@ -12,11 +12,20 @@ attribute @s zombie.spawn_reinforcements base set 0
 
 execute if entity @s[type=#mobtamer:custom_attack/always] run tag @s add mt.custom_attack
 
-scoreboard players operation @s mt.strategy = $mt.strategy.attack mt.score
+scoreboard players operation @s mt.strategy = $mt.strategy.balance mt.score
 execute if data storage mobtamer:temp data.player_settings{default_strategy:"attack"} run scoreboard players operation @s mt.strategy = $mt.strategy.attack mt.score
 execute if data storage mobtamer:temp data.player_settings{default_strategy:"balance"} run scoreboard players operation @s mt.strategy = $mt.strategy.balance mt.score
 execute if data storage mobtamer:temp data.player_settings{default_strategy:"recover"} run scoreboard players operation @s mt.strategy = $mt.strategy.recover mt.score
 execute if data storage mobtamer:temp data.player_settings{default_strategy:"follow"} run scoreboard players operation @s mt.strategy = $mt.strategy.follow mt.score
+
+execute if entity @s[tag=mt.strategy.attack] run scoreboard players operation @s mt.strategy = $mt.strategy.attack mt.score
+execute if entity @s[tag=mt.strategy.balance] run scoreboard players operation @s mt.strategy = $mt.strategy.balance mt.score
+execute if entity @s[tag=mt.strategy.recover] run scoreboard players operation @s mt.strategy = $mt.strategy.recover mt.score
+execute if entity @s[tag=mt.strategy.follow] run scoreboard players operation @s mt.strategy = $mt.strategy.follow mt.score
+tag @s remove mt.strategy.attack
+tag @s remove mt.strategy.balance
+tag @s remove mt.strategy.recover
+tag @s remove mt.strategy.follow
 
 tag @s add mt.pet_check
 execute if entity @s[tag=mt.down] run function mobtamer:sys/player/pet/each/down/down/0

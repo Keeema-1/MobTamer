@@ -76,6 +76,8 @@ execute if data storage mobtamer:temp data.Item.components."minecraft:entity_dat
 data modify entity @s ArmorItems[3] set from storage mobtamer:temp data.Item.components."minecraft:entity_data".HandItems[1]
 execute if data storage mobtamer:temp data.Item.components."minecraft:entity_data".HandItems[1].count run item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/armor_items/offhand
 
+item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/strategy
+
 item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/cost
 
 item modify entity @s weapon.mainhand mobtamer:spawn_egg/when_store/xp
@@ -100,6 +102,7 @@ scoreboard players reset $mt.pet.max_health mt.score
 scoreboard players reset $mt.pet.max_health.base mt.score
 scoreboard players reset $mt.pet.max_health.add.variant mt.score
 scoreboard players reset $mt.pet.health mt.score
+scoreboard players reset $mt.pet.strategy mt.score
 
 scoreboard players reset $mt.cost mt.score
 scoreboard players reset $mt.xp mt.score
