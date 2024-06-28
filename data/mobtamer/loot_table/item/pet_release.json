@@ -1,42 +1,50 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:feather",
-            "functions": [
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{mt_pet_release:1b}"
-              },
-              {
-                "function": "minecraft:copy_nbt",
-                "source": {
-                  "type": "minecraft:storage",
-                  "source": "mobtamer:database"
-                },
-                "ops": [
-                  {
-                    "source": "data.item.pet_release.display",
-                    "target": "display",
-                    "op": "replace"
-                  },{
-                    "source": "data.item.pet_release.HideFlags",
-                    "target": "HideFlags",
-                    "op": "replace"
-                  },{
-                    "source": "data.item.pet_release.Enchantments",
-                    "target": "Enchantments",
-                    "op": "replace"
-                  }
-                ]
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "ペットリリース用アイテム",
+                "italic": false
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [{"text":"コンダクターで停止させたペットに","italic":false}],
+                [{"text":"向かってドロップすることでペット","italic":false}],
+                [{"text":"をリリースします。","italic":false}],
+                [{"text":"リリースされたペットは共通チーム","italic":false}],
+                [{"text":"に所属し、自由に行動します。","italic":false}],
+                [{"text":"（実験的機能）","italic":false,"color":"red"}]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mt_pet_release:1b}"
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:infinity": 1
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:enchantments": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

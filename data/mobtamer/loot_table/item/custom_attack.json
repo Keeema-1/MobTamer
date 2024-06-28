@@ -1,42 +1,49 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:arrow",
-            "functions": [
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{mt_custom_attack:1b}"
-              },
-              {
-                "function": "minecraft:copy_nbt",
-                "source": {
-                  "type": "minecraft:storage",
-                  "source": "mobtamer:database"
-                },
-                "ops": [
-                  {
-                    "source": "data.item.custom_attack.display",
-                    "target": "display",
-                    "op": "replace"
-                  },{
-                    "source": "data.item.custom_attack.HideFlags",
-                    "target": "HideFlags",
-                    "op": "replace"
-                  },{
-                    "source": "data.item.custom_attack.Enchantments",
-                    "target": "Enchantments",
-                    "op": "replace"
-                  }
-                ]
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "攻めの矢",
+                "italic": false
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [{"text":"コンダクターで停止させたペットに","italic":false}],
+                [{"text":"向かってドロップすることで、通常","italic":false}],
+                [{"text":"は攻撃をしないペットでも敵を攻撃","italic":false}],
+                [{"text":"するようになります。","italic":false}],
+                [{"text":"（実験的機能）","italic":false,"color":"red"}]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mt_custom_attack:1b}"
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:infinity": 1
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:enchantments": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

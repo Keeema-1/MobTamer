@@ -1,34 +1,41 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:wandering_trader_spawn_egg",
-            "functions": [
-              {
-                "function": "minecraft:copy_nbt",
-                "source": {
-                  "type": "minecraft:storage",
-                  "source": "mobtamer:database"
-                },
-                "ops": [
-                  {
-                    "source": "data.item.pet_equipment_trader.EntityTag",
-                    "target": "EntityTag",
-                    "op": "replace"
-                  },{
-                    "source": "data.item.pet_equipment_trader.display",
-                    "target": "display",
-                    "op": "replace"
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wandering_trader_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "entity_data":{
+                  "id":"minecraft:wandering_trader",
+                  "CustomNameVisible":true,
+                  "NoAI":true,
+                  "Tags":["mt.trader","mt.trader.pet_equipment"],
+                  "PersistenceRequired":true,
+                  "Silent":true,
+                  "DeathLootTable":"mobtamer:item/pet_equipment_trader",
+                  "Offers":{
+                    "Recipes":[]
                   }
-                ]
+                }
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "nbt": "data.item.pet_equipment_trader.Name",
+                "storage": "mobtamer:text",
+                "interpret": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
