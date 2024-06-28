@@ -22,7 +22,7 @@ data modify storage mobtamer:text data.cost.up set value '{"text":"パーティ�
 data modify storage mobtamer:text data.tame.tame_type_count set value '{"text":"テイムしたモブの種類"}'
 
 data modify storage mobtamer:text data.get.conductor set value '{"text":"進捗達成の報酬として コンダクター を入手しました。","color": "yellow"}'
-data modify storage mobtamer:text data.get.trader set value '{"text":"進捗達成の報酬として テイマー商人を呼ぶ を入手しました。","color": "yellow"}'
+data modify storage mobtamer:text data.get.trader set value '{"text":"進捗達成の報酬として テイマー商人 を入手しました。","color": "yellow"}'
 
 data modify storage mobtamer:text data.trader.trade_unlock set value '{"text":"テイマー商人の取引の抽選に以下が追加されました。","color": "green"}'
 
@@ -128,9 +128,9 @@ data modify storage mobtamer:text data.item.custom_attack.Lore set value ['[{"te
 data modify storage mobtamer:text data.item.pet_release.Name set value '{"text":"ペットリリース用アイテム","italic": false}'
 data modify storage mobtamer:text data.item.pet_release.Lore set value ['[{"text":"コンダクターで停止させたペットに","italic":false}]','[{"text":"向かってドロップすることでペット","italic":false}]','[{"text":"をリリースします。","italic":false}]','[{"text":"リリースされたペットは共通チーム","italic":false}]','[{"text":"に所属し、自由に行動します。","italic":false}]']
 
-data modify storage mobtamer:text data.item.trader.Name set value '{"text":"テイマー商人を呼ぶ","italic": false}'
-data modify storage mobtamer:text data.item.pet_equipment_trader.Name set value '{"text":"ペット用装備商人を呼ぶ","italic": false}'
-data modify storage mobtamer:text data.item.cheat_trader.Name set value '{"text":"チート商人を呼ぶ","italic": false}'
+data modify storage mobtamer:text data.item.trader.Name set value '{"text":"テイマー商人","italic": false}'
+data modify storage mobtamer:text data.item.pet_equipment_trader.Name set value '{"text":"ペット用装備商人","italic": false}'
+data modify storage mobtamer:text data.item.cheat_trader.Name set value '{"text":"チート商人","italic": false}'
 
 data modify storage mobtamer:text data.item.immediate_tame.Name set value '{"text":"確定テイム用アイテム","color":"aqua","italic": false}'
 
@@ -171,8 +171,8 @@ data modify storage mobtamer:text data.entity_name.cheat_trader set value '{"tex
 
 data modify storage mobtamer:text data.common.nothing set value '{"text":"  なし"}'
 data modify storage mobtamer:text data.common.for_pet set value '{"text":"（ペット用）"}'
-data modify storage mobtamer:text data.common.summon_trader set value '{"text":"テイマー商人を呼ぶ"}'
-data modify storage mobtamer:text data.common.summon_equipment_trader set value '{"text":"ペット用装備商人を呼ぶ"}'
+data modify storage mobtamer:text data.common.summon_trader set value '{"text":"テイマー商人"}'
+data modify storage mobtamer:text data.common.summon_equipment_trader set value '{"text":"ペット用装備商人"}'
 data modify storage mobtamer:text data.common.total_cost set value '{"text": "パーティーの合計コスト"}'
 data modify storage mobtamer:text data.common.caution set value '{"text":"注意"}'
 data modify storage mobtamer:text data.common.selecting set value '{"text":"選択中"}'
