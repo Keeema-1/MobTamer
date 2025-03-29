@@ -10,7 +10,7 @@ execute unless score @s mt.hostile_interval matches 1.. on passengers if entity 
 execute if score @s mt.hostile_interval matches ..60 at @s on passengers if entity @s[tag=mt.target_record_entity] run function mobtamer:sys/player/pet/each/unique/ghast/fireball/face
 execute if score @s mt.hostile_interval matches 180.. at @s on passengers if entity @s[tag=mt.target_record_entity] run function mobtamer:sys/player/pet/each/unique/ghast/fireball/face
 
-execute unless score @s mt.hostile_interval matches 1.. unless score $mt.exist_target_record_entity mt.score matches 1.. run function mobtamer:sys/player/pet/each/unique/ghast/target_start/0
+execute unless score @s mt.hostile_interval matches 1.. unless score #mt.exist_target_record_entity mt.score matches 1.. run function mobtamer:sys/player/pet/each/unique/ghast/target_start/0
 
-scoreboard players reset $mt.shoot_flag mt.score
-scoreboard players reset $mt.exist_target_record_entity mt.score
+scoreboard players reset #mt.shoot_flag mt.score
+scoreboard players reset #mt.exist_target_record_entity mt.score

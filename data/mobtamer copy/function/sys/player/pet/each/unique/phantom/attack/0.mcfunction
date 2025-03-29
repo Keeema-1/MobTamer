@@ -1,5 +1,5 @@
 
-scoreboard players set $mt.attack_flag mt.score 1
+scoreboard players set #mt.attack_flag mt.score 1
 
 execute if predicate mobtamer:random/500m if data entity @s {HurtTime:19s} run scoreboard players set @s mt.hostile_interval 80
 

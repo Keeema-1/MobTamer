@@ -1,5 +1,5 @@
 
-scoreboard players set $mt.exist_target_record_entity mt.score 1
+scoreboard players set #mt.exist_target_record_entity mt.score 1
 
 execute unless data entity @s {HurtTime:0s} run return 1
 

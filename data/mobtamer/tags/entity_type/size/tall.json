@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        "iron_golem",
+        "ender_dragon",
+        "ghast",
+        "magma_cube",
+        "warden",
+        "wither",
+        "wither_skeleton",
+        "camel",
+        "enderman",
+        "giant",
+        "ravager",
+        "slime"
+    ]
+}

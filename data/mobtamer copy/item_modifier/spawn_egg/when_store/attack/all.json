@@ -16,7 +16,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.attack",
+            "name": "#mt.pet.attack",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -29,7 +29,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.attack.base",
+            "name": "#mt.pet.attack.base",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -42,7 +42,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.attack.add.variant",
+            "name": "#mt.pet.attack.add.variant",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -55,7 +55,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.attack.add.weapon",
+            "name": "#mt.pet.attack.add.weapon",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -68,7 +68,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.attack.add.effect",
+            "name": "#mt.pet.attack.add.effect",
             "objective": "mt.score"
           },
           "color": "dark_green",

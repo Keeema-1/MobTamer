@@ -17,7 +17,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.armor",
+            "name": "#mt.pet.armor",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -30,7 +30,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.armor.base",
+            "name": "#mt.pet.armor.base",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -43,7 +43,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.armor.add.weapon",
+            "name": "#mt.pet.armor.add.weapon",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -56,7 +56,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.armor.add.effect",
+            "name": "#mt.pet.armor.add.effect",
             "objective": "mt.score"
           },
           "color": "dark_green",

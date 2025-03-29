@@ -2,12 +2,12 @@
 execute positioned as @s run tp @s ~ ~ ~ ~ 0
 
 data modify storage mobtamer:temp data.Motion set from entity @s Motion
-execute store result score $mt.motion.x mt.score run data get storage mobtamer:temp data.player.Motion[0] 10000
-execute store result score $mt.motion.z mt.score run data get storage mobtamer:temp data.player.Motion[2] 10000
-execute store result score $mt.speed mt.score run attribute @s generic.movement_speed get 1000
+execute store result score #mt.motion.x mt.score run data get storage mobtamer:temp data.player.Motion[0] 10000
+execute store result score #mt.motion.z mt.score run data get storage mobtamer:temp data.player.Motion[2] 10000
+execute store result score #mt.speed mt.score run attribute @s generic.movement_speed get 1000
 
-scoreboard players operation $mt.motion.x mt.score *= $mt.speed mt.score
-scoreboard players operation $mt.motion.z mt.score *= $mt.speed mt.score
+scoreboard players operation #mt.motion.x mt.score *= #mt.speed mt.score
+scoreboard players operation #mt.motion.z mt.score *= #mt.speed mt.score
 
 execute if entity @s[type=squid] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/swim/speed/0
 execute if entity @s[type=glow_squid] run function mobtamer:sys/player/item/conductor/always/ride/riding/move/swim/speed/0
@@ -21,6 +21,6 @@ execute if entity @s[type=!squid,type=!glow_squid,type=!elder_guardian,type=!gua
 data modify entity @s Motion set from storage mobtamer:temp data.Motion
 data remove storage mobtamer:temp data.Motion
 
-scoreboard players reset $mt.motion.x mt.score
-scoreboard players reset $mt.motion.z mt.score
-scoreboard players reset $mt.speed mt.score
+scoreboard players reset #mt.motion.x mt.score
+scoreboard players reset #mt.motion.z mt.score
+scoreboard players reset #mt.speed mt.score

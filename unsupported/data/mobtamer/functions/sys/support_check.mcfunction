@@ -1,0 +1,2 @@
+tellraw @s [{"text":"\n*Minecraftのバージョンがこのデータパックの対応範囲に含まれないため、正常にプレイできない可能性があります。","color": "red"}]
+tellraw @s [{"text":"\n*The version of Minecraft is beyond the supported version range of the data pack.\nThere may be issues playing it on versions beyond this compatibility.\n","color": "red"}]

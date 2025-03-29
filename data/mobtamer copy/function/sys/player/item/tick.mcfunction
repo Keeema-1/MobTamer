@@ -15,6 +15,6 @@ execute if score @s mt.dropped.book matches 1.. run function mobtamer:sys/player
 tag @s remove mt.handitem_was_conductor
 
 execute if data storage mobtamer:temp data.player.SelectedItem{components:{"minecraft:custom_data":{mt_conductor:1b}}} run function mobtamer:sys/player/item/conductor/0
-execute unless score $mt.use_check mt.score matches 1.. if data storage mobtamer:temp data.player.Inventory[{Slot:-106b,components:{"minecraft:custom_data":{mt_conductor:1b}}}] run function mobtamer:sys/player/item/conductor/0
+execute unless score #mt.use_check mt.score matches 1.. if data storage mobtamer:temp data.player.Inventory[{Slot:-106b,components:{"minecraft:custom_data":{mt_conductor:1b}}}] run function mobtamer:sys/player/item/conductor/0
 
-scoreboard players reset $mt.use_check mt.score
+scoreboard players reset #mt.use_check mt.score

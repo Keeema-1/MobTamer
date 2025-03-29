@@ -3,9 +3,9 @@ tag @s add mt.success
 team join mt.common @s
 data merge entity @s {Invulnerable:1b,NoAI:1b,NoGravity:1b,Glowing:1b}
 
-scoreboard players operation $mt.pet.id mt.score = @s mt.id
-execute as @a if score @s mt.id = $mt.pet.id mt.score run tag @s add mt.tame_success_player
-scoreboard players reset $mt.pet.id mt.score
+scoreboard players operation #mt.pet.id mt.score = @s mt.id
+execute as @a if score @s mt.id = #mt.pet.id mt.score run tag @s add mt.tame_success_player
+scoreboard players reset #mt.pet.id mt.score
 
 tellraw @a[tag=mt.tame_success_player] [{"selector":"@s"},{"storage": "mobtamer:text","nbt":"data.pet.tame","interpret": true}]
 execute if data storage mobtamer:settings data{advancement_player:"all"} if entity @a[tag=mt.tame_success_player,limit=1] run tellraw @a[tag=!mt.tame_success_player] [{"selector":"@a[tag=mt.tame_success_player,limit=1]"},{"text":" が ","color": "yellow"},{"selector":"@s"},{"storage": "mobtamer:text","nbt":"data.pet.tame","interpret": true}]

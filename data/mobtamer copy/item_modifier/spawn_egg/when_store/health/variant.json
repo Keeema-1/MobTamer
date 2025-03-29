@@ -11,7 +11,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.health",
+            "name": "#mt.pet.health",
             "objective": "mt.score"
           },
           "color": "green",
@@ -24,7 +24,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.max_health",
+            "name": "#mt.pet.max_health",
             "objective": "mt.score"
           },
           "color": "aqua",
@@ -37,7 +37,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.max_health.base",
+            "name": "#mt.pet.max_health.base",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -50,7 +50,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.max_health.add.variant",
+            "name": "#mt.pet.max_health.add.variant",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -77,7 +77,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.health",
+            "name": "#mt.pet.health",
             "objective": "mt.score"
           },
           "color": "red",
@@ -90,7 +90,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.max_health",
+            "name": "#mt.pet.max_health",
             "objective": "mt.score"
           },
           "color": "aqua",
@@ -103,7 +103,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.max_health.base",
+            "name": "#mt.pet.max_health.base",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -116,7 +116,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.max_health.add.variant",
+            "name": "#mt.pet.max_health.add.variant",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -137,7 +137,7 @@
           "type": "minecraft:score",
           "target": {
             "type": "minecraft:fixed",
-            "name": "$mt.pet.health"
+            "name": "#mt.pet.health"
           },
           "score": "mt.score"
         },

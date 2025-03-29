@@ -7,4 +7,4 @@ execute on origin anchored eyes at @s run tp @e[type=area_effect_cloud,tag=mt.ch
 data modify entity @s Air set from entity @s Age
 tag @s remove mt.check
 
-# title @a actionbar [{"selector":"@s"},{"text": " "},{"score":{"name": "$mt.pet","objective": "mt.health"}}]
+# title @a actionbar [{"selector":"@s"},{"text": " "},{"score":{"name": "#mt.pet","objective": "mt.health"}}]

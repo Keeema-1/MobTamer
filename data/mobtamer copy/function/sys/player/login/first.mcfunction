@@ -1,5 +1,5 @@
-scoreboard players operation @s mt.id = $mt.sys mt.id
-scoreboard players add $mt.sys mt.id 1
+scoreboard players operation @s mt.id = #mt.sys mt.id
+scoreboard players add #mt.sys mt.id 1
 # tellraw @s "first login"
 give @s golden_apple
 

@@ -16,7 +16,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.speed",
+            "name": "#mt.pet.speed",
             "objective": "mt.score"
           },
           "color": "dark_green",

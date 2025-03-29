@@ -11,7 +11,7 @@
         },
         {
           "score": {
-            "name": "$mt.xp",
+            "name": "#mt.xp",
             "objective": "mt.score"
           },
           "color": "green",

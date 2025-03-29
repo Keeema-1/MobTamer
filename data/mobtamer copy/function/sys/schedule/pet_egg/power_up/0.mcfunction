@@ -6,8 +6,8 @@ execute positioned ~-0.5 ~-0.5 ~-0.5 unless entity @a[tag=mt.player_check,dx=0,d
 
 execute at @s as @e[type=interaction,tag=mt.interaction.power_up,distance=..4] run function mobtamer:sys/schedule/pet_egg/power_up/interaction/0
 
-execute if score $mt.interaction.action mt.score matches 1.. run function mobtamer:sys/schedule/pet_egg/power_up/power_up/0
+execute if score #mt.interaction.action mt.score matches 1.. run function mobtamer:sys/schedule/pet_egg/power_up/power_up/0
 
 tag @a[tag=mt.player_check] remove mt.player_check
 
-scoreboard players reset $mt.interaction.action mt.score
+scoreboard players reset #mt.interaction.action mt.score

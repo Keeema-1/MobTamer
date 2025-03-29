@@ -6,7 +6,7 @@ execute unless data storage mobtamer:settings data.exp_display run tellraw @a [{
 execute unless data storage mobtamer:settings data.exp_display run data modify storage mobtamer:settings data merge value {exp_display:1b}
 execute unless data storage mobtamer:settings data.store_when_sleep run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／睡眠時のペット","color":"yellow"}]
 execute unless data storage mobtamer:settings data.store_when_sleep run data modify storage mobtamer:settings data merge value {store_when_sleep:"only_monster"}
-execute unless data storage mobtamer:settings data.party_slots run scoreboard players set $mt.sys mt.slot 6
+execute unless data storage mobtamer:settings data.party_slots run scoreboard players set #mt.sys mt.slot 6
 execute unless data storage mobtamer:settings data.party_slots run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／召喚ペット数の上限","color":"yellow"}]
 execute unless data storage mobtamer:settings data.party_slots run data modify storage mobtamer:settings data merge value {party_slots:6}
 execute unless data storage mobtamer:settings data.advancement_player run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"一般設定／進捗達成プレイヤー条件","color":"yellow"}]
@@ -21,8 +21,8 @@ execute unless data storage mobtamer:settings data.auto_store_down_pet_when_far 
 execute unless data storage mobtamer:settings data.auto_store_down_pet_when_far run data modify storage mobtamer:settings data merge value {auto_store_down_pet_when_far:0b}
 execute unless data storage mobtamer:settings data.kill_down_pet run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"ダウン設定／ダウンしたペットの死亡","color":"yellow"}]
 execute unless data storage mobtamer:settings data.kill_down_pet run data modify storage mobtamer:settings data merge value {kill_down_pet:"never"}
-scoreboard players set $mt.player.settings.baby_grow mt.score 1
-scoreboard players set $mt.player.settings.default_strategy mt.score 2
+scoreboard players set #mt.player.settings.baby_grow mt.score 1
+scoreboard players set #mt.player.settings.default_strategy mt.score 2
 execute unless data storage mobtamer:settings data.team_collition run team modify mt.common collisionRule always
 execute unless data storage mobtamer:settings data.team_collition run tellraw @a [{"text":"データパック設定に新たな項目が追加されました：\n　","color":"green"},{"text":"共通チーム設定／チームの衝突設定","color":"yellow"}]
 execute unless data storage mobtamer:settings data.team_collition run data modify storage mobtamer:settings data merge value {team_collition:1b}

@@ -17,7 +17,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.armor",
+            "name": "#mt.pet.armor",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -30,7 +30,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.armor.base",
+            "name": "#mt.pet.armor.base",
             "objective": "mt.score"
           },
           "color": "dark_green",

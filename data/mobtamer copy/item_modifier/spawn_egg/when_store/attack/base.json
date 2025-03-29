@@ -16,7 +16,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.attack",
+            "name": "#mt.pet.attack",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -29,7 +29,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.attack.base",
+            "name": "#mt.pet.attack.base",
             "objective": "mt.score"
           },
           "color": "dark_green",

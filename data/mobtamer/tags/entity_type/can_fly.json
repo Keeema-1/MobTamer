@@ -1,0 +1,15 @@
+{
+    "replace": false,
+    "values": [
+        "blaze",
+        "ender_dragon",
+        "ghast",
+        "wither",
+        "allay",
+        "bat",
+        "bee",
+        "parrot",
+        "phantom",
+        "vex"
+    ]
+}

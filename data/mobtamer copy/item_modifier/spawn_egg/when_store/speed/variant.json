@@ -17,7 +17,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.speed",
+            "name": "#mt.pet.speed",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -30,7 +30,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.speed.base",
+            "name": "#mt.pet.speed.base",
             "objective": "mt.score"
           },
           "color": "dark_green",
@@ -43,7 +43,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.speed.add.variant",
+            "name": "#mt.pet.speed.add.variant",
             "objective": "mt.score"
           },
           "color": "dark_green",

@@ -16,7 +16,7 @@
         },
         {
           "score": {
-            "name": "$mt.pet.knockback",
+            "name": "#mt.pet.knockback",
             "objective": "mt.score"
           },
           "color": "dark_green",

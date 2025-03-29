@@ -1,0 +1,6 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "killer",
+    "predicate": {}
+  }
+  

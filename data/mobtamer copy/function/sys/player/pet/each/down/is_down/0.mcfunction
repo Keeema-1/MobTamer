@@ -4,9 +4,9 @@ execute if entity @s[type=ghast] as @a[tag=mt.player_check,predicate=mobtamer:is
 
 execute if score @s mt.health matches -119.. run scoreboard players remove @s mt.health 1
 
-scoreboard players operation $mt.display mt.health = @s mt.health
+scoreboard players operation #mt.display mt.health = @s mt.health
 execute on passengers if entity @s[type=text_display] run function mobtamer:sys/player/pet/each/down/is_down/display
-scoreboard players reset $mt.display mt.health
+scoreboard players reset #mt.display mt.health
 
 execute if score @s mt.health matches 1.. run function mobtamer:sys/player/pet/each/down/is_down/revive
 

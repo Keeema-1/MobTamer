@@ -1,0 +1,2 @@
+
+execute positioned ^ ^ ^ if block ~ ~ ~ water if block ~-1 ~ ~ water if block ~1 ~ ~ water if block ~ ~ ~-1 water if block ~-1 ~ ~-1 water if block ~1 ~ ~-1 water if block ~ ~ ~1 water if block ~-1 ~ ~1 water if block ~1 ~ ~1 water if block ~ ~1 ~ water if block ~-1 ~1 ~ water if block ~1 ~1 ~ water if block ~ ~1 ~-1 water if block ~-1 ~1 ~-1 water if block ~1 ~1 ~-1 water if block ~ ~1 ~1 water if block ~-1 ~1 ~1 water if block ~1 ~1 ~1 water run tp ~ ~ ~

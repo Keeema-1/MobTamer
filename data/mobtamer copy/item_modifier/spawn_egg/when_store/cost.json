@@ -11,7 +11,7 @@
         },
         {
           "score": {
-            "name": "$mt.cost",
+            "name": "#mt.cost",
             "objective": "mt.score"
           },
           "color": "yellow",

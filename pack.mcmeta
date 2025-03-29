@@ -8,6 +8,9 @@
     "entries":[
       {
         "directory":"unsupported", "formats":{"min_inclusive": 72, "max_inclusive": 65535}
+      },
+      {
+        "directory":"unsupported", "formats":{"min_inclusive": 1, "max_inclusive": 70}
       }
     ]
   }
