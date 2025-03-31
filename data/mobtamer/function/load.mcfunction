@@ -18,7 +18,7 @@ scoreboard objectives add mt.login dummy
 # scoreboard objectives add mt.attack_damage dummy
 # scoreboard objectives add mt.settings dummy
 # scoreboard objectives add mt.tame_type_count dummy
-# scoreboard objectives add mt.hostile_interval dummy
+scoreboard objectives add mt.hostile_interval dummy
 scoreboard objectives add mt.version.main dummy
 scoreboard objectives add mt.version.beta dummy
 scoreboard objectives add mt.strategy dummy

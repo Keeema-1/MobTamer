@@ -1,0 +1,14 @@
+
+data modify storage mobtamer:temp data.pet.Pos set from entity @s Pos
+
+execute at @a[tag=mt.player_check,limit=1] run function mobtamer:sys/func/pet/tp/main/branch/0
+
+execute if entity @s[type=ender_dragon] at @s run tp ~ ~7 ~
+execute if entity @s[type=phantom] at @s run tp ~ ~4 ~
+execute if entity @s[type=ghast] at @s run tp ~ ~6 ~
+execute if entity @s[type=#mobtamer:size/wide] if entity @s[type=!#mobtamer:size/tall] at @s run function mobtamer:sys/func/pet/tp/main/wide
+execute if entity @s[type=!#mobtamer:size/wide] if entity @s[type=#mobtamer:size/tall] at @s run function mobtamer:sys/func/pet/tp/main/tall
+execute if entity @s[type=#mobtamer:size/wide] if entity @s[type=#mobtamer:size/tall] at @s run function mobtamer:sys/func/pet/tp/main/wide_tall
+
+execute if entity @a[tag=mt.player_check,tag=mt.flying,limit=1] run function mobtamer:sys/func/pet/tp/main/flying
+execute if entity @s[type=#mobtamer:can_swim] at @a[tag=mt.player_check,limit=1] if block ~ ~ ~ water if block ~ ~1 ~ water run function mobtamer:sys/func/pet/tp/main/swiming
