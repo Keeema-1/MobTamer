@@ -19,7 +19,7 @@ function mobtamer:sys/player/player_check_add
     data modify storage mobtamer:temp data.player.Inventory set from entity @s Inventory
     data modify storage mobtamer:temp data.player.SelectedItem set from entity @s SelectedItem
 
-function mobtamer:sys/func/player/summon/main/0
+function mobtamer:sys/func/pet/summon/main/0
 function mobtamer:sys/player/pet/tick
 # function mobtamer:sys/player/item/tick
 # function mobtamer:sys/player/weakness/tick

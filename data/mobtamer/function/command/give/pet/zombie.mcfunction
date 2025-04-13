@@ -1,1 +1,1 @@
-give @s zombie_spawn_egg[custom_data={mobtamer:{}},entity_data={id:"zombie",Tags:["mt.summoned_pet","mt.pet"],CustomNameVisible:true,PersistenceRequired:true}]
+give @s zombie_spawn_egg[custom_data={mobtamer:{entity_id:"zombie",status:{max_health:20.0f}}},entity_data={id:"marker",Tags:["mt.summoned_pet"]}]

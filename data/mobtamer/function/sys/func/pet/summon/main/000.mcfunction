@@ -17,13 +17,16 @@ team join mt.common @s
     execute as @e[team=!,type=#mobtamer:can_tame,tag=mt.pet] if score @s mt.id = #mt.player_id mt.temp at @s run tag @s add mt.player_check
 
 # execute store result score @s mt.max_health run attribute @s max_health base get 100
-# execute store result score #mt.health_modifier mt.score run attribute @s max_health modifier value get mt.max_health.add 100
-# scoreboard players operation @s mt.max_health += #mt.health_modifier mt.score
-# scoreboard players reset #mt.health_modifier mt.score
+execute store result score @s mt.max_health run data get storage mobtamer:temp data.summoned_pet.status.max_health 100
+tellraw @a {"entity": "@s","nbt": "data"}
+# execute store result score #mt.health_modifier mt.temp run attribute @s max_health modifier value get mt.max_health.add 100
+# scoreboard players operation @s mt.max_health += #mt.health_modifier mt.temp
+# scoreboard players reset #mt.health_modifier mt.temp
 # execute if score @s mt.max_health matches 10000.. run scoreboard players remove @s mt.max_health 10000
-# execute store result score @s mt.health run data get entity @s Health 100
-# # execute store result entity @s Health float 1 run attribute @s max_health get 100
-# data modify entity @s Health set value 100.0f
+execute store result score @s mt.health run data get entity @s Health 100
+# execute store result entity @s Health float 1 run attribute @s max_health get 100
+attribute @s max_health base set 10000
+data modify entity @s Health set value 100.0f
 
 # xp
 # execute store result score @s mt.xp run data get entity @s PortalCooldown
@@ -43,7 +46,7 @@ team join mt.common @s
     # execute unless score @s mt.slot <= #mt.sys mt.slot run function mobtamer:sys/player/pet/each/store/0
     # execute unless score @s mt.slot <= #mt.sys mt.slot run return 1
 
-    function mobtamer:sys/func/player/summon/main/0000
+    function mobtamer:sys/func/pet/summon/main/0000
 
 scoreboard players reset #mt.new mt.slot
 

@@ -10,9 +10,9 @@
 scoreboard objectives add mt.id dummy
 scoreboard objectives add mt.login dummy
 # scoreboard objectives add mt.slot dummy
-# scoreboard objectives add mt.health dummy
-# scoreboard objectives add mt.health_nbt dummy
-# scoreboard objectives add mt.max_health dummy
+scoreboard objectives add mt.health dummy
+scoreboard objectives add mt.health_nbt dummy
+scoreboard objectives add mt.max_health dummy
 # scoreboard objectives add mt.xp dummy
 # # for custom attack
 # scoreboard objectives add mt.attack_damage dummy
