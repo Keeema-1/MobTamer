@@ -18,6 +18,7 @@ execute if score @s mt.health_nbt matches ..9000 run scoreboard players set @s m
 
 execute unless entity @s[type=wither] unless entity @s[tag=mt.targeting] if score @s mt.health < @s mt.max_health run scoreboard players add @s mt.health 2
 execute if score @s mt.health > @s mt.max_health run scoreboard players operation @s mt.health = @s mt.max_health
+execute if score @s mt.health matches ..-1 run scoreboard players set @s mt.health 0
 
 execute unless score @s mt.health matches 1.. run function mobtamer:sys/func/pet/health_check/main/down
 

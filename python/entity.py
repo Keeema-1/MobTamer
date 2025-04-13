@@ -53,6 +53,15 @@ can_tame_list = filter_name_list(get_column_as_np('Can Tame') == 1)
 # tags/entity_type/can_tame
 write_entity_types_json(can_tame_list, 'can_tame')
 
+# get type str
+output = []
+for entity_name in can_tame_list:
+    output.append('execute if entity @s[type='+entity_name+'] run data modify storage mobtamer:temp data.type_str set value "'+entity_name+'"\n')
+output.append('\n')
+path = '../data/mobtamer/function/sys/common/get_type_str.mcfunction'
+with open(path, 'w', encoding='utf-8') as f:
+    f.writelines(output)
+
 #     # store spawn egg
 #     output = []
 #     for entity_name in can_tame_list:
