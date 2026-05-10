@@ -1,3 +1,6 @@
+
+function mobtamer:sys/func/pet/status/update/main
+
 tag @s remove mt.following
 tag @s remove mt.stop
 tag @s remove mt.player_check
@@ -68,8 +71,10 @@ $data modify storage mobtamer:temp data.Item.id set value "$(entity_id)_spawn_eg
 # health
 # execute store result storage mobtamer:temp data.Item.components."minecraft:entity_data".Health float 0.01 run scoreboard players get @s mt.health
 # execute if entity @s[tag=mt.down] run data modify storage mobtamer:temp data.Item.components."minecraft:entity_data".Health set value 1.0f
-execute store result storage mobtamer:temp data.Item.components."minecraft:custom_data".mobtamer.status.max_health float 0.01 run scoreboard players get @s mt.max_health
-execute store result storage mobtamer:temp data.Item.components."minecraft:custom_data".mobtamer.status.health float 0.01 run scoreboard players get @s mt.health
+# execute store result storage mobtamer:temp data.Item.components."minecraft:custom_data".mobtamer.status.max_health float 0.01 run scoreboard players get @s mt.max_health
+# execute store result storage mobtamer:temp data.Item.components."minecraft:custom_data".mobtamer.status.health float 0.01 run scoreboard players get @s mt.health
+
+data modify storage mobtamer:temp data.Item.components."minecraft:custom_data".mobtamer.entity_data.equipment set from entity @s equipment
 
 # data modify storage mobtamer:temp data.Item.components."minecraft:entity_data".Tags set from entity @s Tags
 # data modify storage mobtamer:temp data.Item.components."minecraft:entity_data".Tags append value "mt.was_stored"
@@ -81,9 +86,4 @@ execute store result storage mobtamer:temp data.Item.components."minecraft:custo
 # execute if score @s mt.strategy = #mt.strategy.recover mt.score run data modify storage mobtamer:temp data.Item.components."minecraft:entity_data".Tags append value "mt.strategy.recover"
 # execute if score @s mt.strategy = #mt.strategy.follow mt.score run data modify storage mobtamer:temp data.Item.components."minecraft:entity_data".Tags append value "mt.strategy.follow"
 
-# function mobtamer:sys/common/pet/status/all
-
-# Lore
-# function mobtamer:sys/common/pet/egg_lore
-
-# data modify storage mobtamer:temp data.Item.components."minecraft:custom_data".mt_pet_status set from storage mobtamer:temp data.pet_status
+data modify storage mobtamer:temp data.Item.components."minecraft:custom_data".mobtamer.status set from entity @s data.mobtamer.status

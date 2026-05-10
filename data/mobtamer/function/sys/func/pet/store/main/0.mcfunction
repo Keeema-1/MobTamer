@@ -12,7 +12,7 @@ tag @e[type=item,tag=mt.new] remove mt.new
 data modify entity @s Owner set from entity @e[type=item,limit=1] UUID
 kill @s
 data remove storage mobtamer:temp data.Item
-data remove storage mobtamer:temp data.pet_status
+# data remove storage mobtamer:temp data.pet_status
 
 particle poof ~ ~ ~ 0.3 0.6 0.3 0.1 20
 

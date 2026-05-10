@@ -1,4 +1,5 @@
 ﻿Entity Name,Group 1,Group 2,Mob,Height,Width,Height Baby,Width Baby,Can Attack,Can Tame,Undead,Burn in the Sun,Breathe Underwater,Can Swim,Fire Resistance,Can Revenge,Can Fly
+creaking,overworld,overworld monster,1,2.7,0.9,,,1,1,,,,,,,
 axolotl,overworld,sea animal,1,0.42,0.75,,,,1,,,1,1,,,
 cod,overworld,sea animal,1,0.3,0.5,,,0,1,,,1,1,,,
 dolphin,overworld,sea animal,1,0.6,0.9,,,1,1,,,1,1,,1,

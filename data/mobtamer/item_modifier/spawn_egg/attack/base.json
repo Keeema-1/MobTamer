@@ -1,0 +1,47 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  "
+        },
+        {
+          "translate":"attribute.name.attack_damage",
+          "color": "dark_green",
+          "italic": false
+        },{
+          "text": " "
+        },
+        {
+          "score": {
+            "name": "#mt.pet.attack",
+            "objective": "mt.temp"
+          },
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": " (",
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "#mt.pet.attack.base",
+            "objective": "mt.temp"
+          },
+          "color": "dark_green",
+          "italic": false
+        },
+        {
+          "text": ")",
+          "color": "dark_green",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "append"
+  }
+]

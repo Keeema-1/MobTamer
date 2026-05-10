@@ -1,16 +1,16 @@
 {
   "pack": {
-    "pack_format": 71,
-    "supported_formats": {"min_inclusive": 71, "max_inclusive": 71},
-    "description": "全てのモブをテイムして、仲間にできるデータパック"
+    "description": "全てのモブをテイムして、仲間にできるデータパック",
+    "min_format": [101,1],
+    "max_format": [101,1]
   },
   "overlays":{
     "entries":[
       {
-        "directory":"unsupported", "formats":{"min_inclusive": 72, "max_inclusive": 65535}
+        "directory":"unsupported", "min_format":[101,2], "max_format": [999,0]
       },
       {
-        "directory":"unsupported", "formats":{"min_inclusive": 1, "max_inclusive": 70}
+        "directory":"unsupported", "min_format":[82,0], "max_format": [101,0]
       }
     ]
   }

@@ -1,0 +1,7 @@
+
+execute unless entity @e[team=!,tag=mt.selected,tag=mt.player_check,tag=mt.pet] unless predicate mobtamer:looking_at/player_check if entity @s[tag=!mt.selected] run scoreboard players set #mt.player_select_check mt.temp 1
+
+execute if score #mt.player_select_check mt.temp matches 1.. run tag @s add mt.selected
+execute unless score #mt.player_select_check mt.temp matches 1.. run function mobtamer:sys/func/item/conductor/short_sneak/00
+
+scoreboard players reset #mt.player_select_check mt.temp

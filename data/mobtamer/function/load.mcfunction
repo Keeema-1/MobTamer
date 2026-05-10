@@ -35,11 +35,11 @@ scoreboard objectives add mt.score dummy
 # scoreboard objectives add mt.trigger trigger
 # scoreboard players enable @a mt.trigger
 
-# scoreboard objectives add mt.dropped.fishing_rod dropped:fishing_rod
+scoreboard objectives add mt.dropped.fishing_rod dropped:fishing_rod
 scoreboard objectives add mt.dropped.golden_apple dropped:golden_apple
 # scoreboard objectives add mt.dropped.enchanted_golden_apple dropped:enchanted_golden_apple
 # scoreboard objectives add mt.dropped.book dropped:book
-# scoreboard objectives add mt.sneak_time custom:sneak_time
+scoreboard objectives add mt.sneak_time custom:sneak_time
 # scoreboard objectives add mt.death deathCount
 # # scoreboard objectives add mt.jump custom:jump
 
@@ -54,7 +54,7 @@ team add mt.common "共通チーム"
 # team add mt.gold "橙チーム"
 # team modify mt.gold color gold
 
-# function mobtamer:sys/database/0
+function mobtamer:sys/database/update
 
 # execute unless data storage mobtamer:settings data run function mobtamer:init
 # function mobtamer:update_settings
@@ -63,40 +63,40 @@ team add mt.common "共通チーム"
     execute store result score #mt.ver.old.main mt.temp run data get storage mobtamer:settings data.version.main
     execute store result score #mt.ver.old.beta mt.temp run data get storage mobtamer:settings data.version.beta
     data modify storage mobtamer:settings data.version merge value {main:20000, beta:1}
-    execute store result score #mt.ver.now.main mt.score run data get storage mobtamer:settings data.version.main
-    execute store result score #mt.ver.now.beta mt.score run data get storage mobtamer:settings data.version.beta
+    execute store result score #mt.ver.now.main mt.temp run data get storage mobtamer:settings data.version.main
+    execute store result score #mt.ver.now.beta mt.temp run data get storage mobtamer:settings data.version.beta
 
     scoreboard players set #mt.temp mt.temp 100
-    scoreboard players operation #mt.ver.now.main.1 mt.temp = #mt.ver.now.main mt.score
+    scoreboard players operation #mt.ver.now.main.1 mt.temp = #mt.ver.now.main mt.temp
     scoreboard players operation #mt.ver.now.main.1 mt.temp /= #mt.temp mt.temp
     scoreboard players operation #mt.ver.now.main.2 mt.temp = #mt.ver.now.main.1 mt.temp
     scoreboard players operation #mt.ver.now.main.2 mt.temp %= #mt.temp mt.temp
     scoreboard players operation #mt.ver.now.main.1 mt.temp /= #mt.temp mt.temp
-    scoreboard players operation #mt.ver.now.main.3 mt.temp = #mt.ver.now.main mt.score
+    scoreboard players operation #mt.ver.now.main.3 mt.temp = #mt.ver.now.main mt.temp
     scoreboard players operation #mt.ver.now.main.3 mt.temp %= #mt.temp mt.temp
 
-    execute unless score #mt.ver.old.main mt.temp = #mt.ver.now.main mt.score run function mobtamer:version_changed
-    execute if score #mt.ver.old.main mt.temp = #mt.ver.now.main mt.score unless score #mt.ver.old.beta mt.temp = #mt.ver.now.beta mt.temp run function mobtamer:version_changed
+    execute unless score #mt.ver.old.main mt.temp = #mt.ver.now.main mt.temp run function mobtamer:version_changed
+    execute if score #mt.ver.old.main mt.temp = #mt.ver.now.main mt.temp unless score #mt.ver.old.beta mt.temp = #mt.ver.now.beta mt.temp run function mobtamer:version_changed
 
-    execute if score #mt.ver.now.beta mt.score matches 1.. run tellraw @a [{"text": "Loaded: ","color": "green"},{"text": "MobTamer For 1.21.5","color": "green","underlined":true},{"text": "  Ver ","color": "yellow"},{"score":{"name": "#mt.ver.now.main.1","objective": "mt.temp"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "#mt.ver.now.main.2","objective": "mt.temp"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "#mt.ver.now.main.3","objective": "mt.temp"},"color": "yellow"},{"text": " Beta","color": "yellow"},{"score":{"name": "#mt.ver.now.beta","objective": "mt.score"},"color": "yellow"}]
-    execute unless score #mt.ver.now.beta mt.score matches 1.. run tellraw @a [{"text": "Loaded: MobTamer For 1.21.5","color": "green"},{"text": "  Ver ","color": "yellow"},{"score":{"name": "#mt.ver.now.main.1","objective": "mt.temp"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "#mt.ver.now.main.2","objective": "mt.temp"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "#mt.ver.now.main.3","objective": "mt.temp"},"color": "yellow"}]
+    execute if score #mt.ver.now.beta mt.temp matches 1.. run tellraw @a [{"text": "Loaded: ","color": "green"},{"text": "MobTamer For 26.2","color": "green","underlined":true},{"text": "  Ver ","color": "yellow"},{"score":{"name": "#mt.ver.now.main.1","objective": "mt.temp"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "#mt.ver.now.main.2","objective": "mt.temp"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "#mt.ver.now.main.3","objective": "mt.temp"},"color": "yellow"},{"text": " Beta","color": "yellow"},{"score":{"name": "#mt.ver.now.beta","objective": "mt.temp"},"color": "yellow"}]
+    execute unless score #mt.ver.now.beta mt.temp matches 1.. run tellraw @a [{"text": "Loaded: MobTamer for 26.2","color": "green"},{"text": "  Ver ","color": "yellow"},{"score":{"name": "#mt.ver.now.main.1","objective": "mt.temp"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "#mt.ver.now.main.2","objective": "mt.temp"},"color": "yellow"},{"text": ".","color": "yellow"},{"score":{"name": "#mt.ver.now.main.3","objective": "mt.temp"},"color": "yellow"}]
 
-# execute as @a unless score @s mt.version.main = #mt.ver.now.main mt.score run function mobtamer:sys/player/version_up/0
-# execute as @a if score @s mt.version.main = #mt.ver.now.main mt.score unless score @s mt.version.beta = #mt.ver.now.beta mt.score run function mobtamer:sys/player/version_up/0
+# execute as @a unless score @s mt.version.main = #mt.ver.now.main mt.temp run function mobtamer:sys/player/version_up/0
+# execute as @a if score @s mt.version.main = #mt.ver.now.main mt.temp unless score @s mt.version.beta = #mt.ver.now.beta mt.temp run function mobtamer:sys/player/version_up/0
 
-# scoreboard players set #mt.conductor.mode1.info mt.score 0
-# scoreboard players set #mt.conductor.mode1.stop mt.score 1
-# scoreboard players set #mt.conductor.mode1.gather mt.score 2
-# scoreboard players set #mt.conductor.mode1.attack mt.score 3
-# scoreboard players set #mt.conductor.mode1.store mt.score 4
-# scoreboard players set #mt.conductor.mode1.ride mt.score 5
-# scoreboard players set #mt.conductor.mode1.power_up mt.score 6
-# scoreboard players set #mt.conductor.mode1.strategy mt.score 7
+scoreboard players set #mt.conductor.mode1.info mt.score 0
+scoreboard players set #mt.conductor.mode1.stop mt.score 1
+scoreboard players set #mt.conductor.mode1.gather mt.score 2
+scoreboard players set #mt.conductor.mode1.attack mt.score 3
+scoreboard players set #mt.conductor.mode1.store mt.score 4
+scoreboard players set #mt.conductor.mode1.ride mt.score 5
+scoreboard players set #mt.conductor.mode1.power_up mt.score 6
+scoreboard players set #mt.conductor.mode1.strategy mt.score 7
 
-# scoreboard players set #mt.strategy.attack mt.score 0
-# scoreboard players set #mt.strategy.balance mt.score 1
-# scoreboard players set #mt.strategy.recover mt.score 2
-# scoreboard players set #mt.strategy.follow mt.score 3
+scoreboard players set #mt.strategy.attack mt.score 0
+scoreboard players set #mt.strategy.balance mt.score 1
+scoreboard players set #mt.strategy.recover mt.score 2
+scoreboard players set #mt.strategy.follow mt.score 3
 
 scoreboard players reset * mt.temp
 

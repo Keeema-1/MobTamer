@@ -1,0 +1,30 @@
+{
+  "title": {
+    "text": "MobTamer 設定"
+  },
+  "external_title": {
+    "text": "MobTamer 設定"
+  },
+  "type": "dialog_list",
+  "pause": true,
+  "can_close_with_escape": true,
+  "after_action": "close",
+  "body": [
+    {
+      "type": "plain_message",
+      "contents": {
+        "text": "これは MobTamer の設定ダイアログ一覧です。\n各ボタンから詳細設定画面を開きます。"
+      },
+      "width": 220
+    }
+  ],
+  "inputs": [],
+  "dialogs": [
+    "mobtamer:sample_dialog"
+  ],
+  "columns": 1,
+  "button_width": 200,
+  "exit_action": {
+    "label": {"text": "完了"}
+  }
+}

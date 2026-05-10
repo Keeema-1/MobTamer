@@ -1,0 +1,2 @@
+give @s zombie_spawn_egg[custom_data={mobtamer:{entity_id:"zombie",status:{max_health:20.0f,health:20.0f},entity_data:{equipment:{head:{id:"leather_helmet",count:1,components:{unbreakable:{},attribute_modifiers:[{type:"armor",amount:0.0d,id:"mobtamer:armor_zero",operation:"add_value"}]}}}}}},entity_data={id:"marker",Tags:["mt.summoned_pet"]}]
+# give @s leather_helmet[attribute_modifiers=[{type:"armor",amount:-1,operation:"add_value",id:"mobtamer:remove_1"}]]

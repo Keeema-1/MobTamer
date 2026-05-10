@@ -9,6 +9,8 @@ attribute @s spawn_reinforcements base set 0
 
 data merge entity @s {CustomNameVisible:1b,PersistenceRequired:1b}
 
+data modify entity @s equipment set from storage mobtamer:temp data.summoned_pet.entity_data.equipment
+
 # execute if entity @s[type=#mobtamer:custom_attack/always] run tag @s add mt.custom_attack
 
 # scoreboard players operation @s mt.strategy = #mt.strategy.balance mt.score
@@ -33,4 +35,4 @@ data merge entity @s {CustomNameVisible:1b,PersistenceRequired:1b}
 
 # scoreboard players set @s mt.summon_check_time 10
 
-advancement grant @a[tag=mt.player_check] only mobtamer:mobtamer/caution/summon
+# advancement grant @a[tag=mt.player_check] only mobtamer:mobtamer/caution/summon

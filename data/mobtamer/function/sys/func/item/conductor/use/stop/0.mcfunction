@@ -1,0 +1,2 @@
+execute unless entity @e[team=!,tag=mt.selected,tag=mt.player_check,tag=mt.pet] run function mobtamer:sys/func/item/conductor/use/stop/all
+execute as @e[team=!,tag=mt.selected,tag=mt.player_check,tag=mt.pet,limit=1] run function mobtamer:sys/func/item/conductor/use/stop/selected

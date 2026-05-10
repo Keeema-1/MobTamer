@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
+        "creaking",
         "iron_golem",
         "ender_dragon",
         "ghast",

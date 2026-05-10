@@ -4,5 +4,5 @@
 #
 # @within advancement mobtamer:advancement/player_hurt_entity/any
 
-function mobtamer:sys/func/pet/target/when_player_attacks/0
+function mobtamer:sys/func/pet/target/player_attack/0
 advancement revoke @s only mobtamer:player_hurt_entity/any

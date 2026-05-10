@@ -1,6 +1,12 @@
 {
     "replace": false,
     "values": [
+        "creaking",
+        "happy_ghast",
+        "copper_golem",
+        "nautilus",
+        "zombie_nautilus",
+        "camel_husk",
         "axolotl",
         "cod",
         "dolphin",

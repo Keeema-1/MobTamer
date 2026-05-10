@@ -21,7 +21,7 @@ team join mt.common @s
     execute as @e[team=!,type=#mobtamer:can_tame,tag=mt.pet] if score @s mt.id = #mt.player_id mt.temp at @s run tag @s add mt.player_check
 
 # execute store result score @s mt.max_health run attribute @s max_health base get 100
-execute store result score @s mt.max_health run data get storage mobtamer:temp data.summoned_pet.status.max_health 100
+execute store result score @s mt.max_health run data get storage mobtamer:temp data.summoned_pet.status.max_health.final 100
 # execute store result score #mt.health_modifier mt.temp run attribute @s max_health modifier value get mt.max_health.add 100
 # scoreboard players operation @s mt.max_health += #mt.health_modifier mt.temp
 # scoreboard players reset #mt.health_modifier mt.temp

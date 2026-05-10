@@ -1,0 +1,31 @@
+{
+  "title": {
+    "text": "MobTamer サンプルダイアログ"
+  },
+  "external_title": {
+    "text": "MobTamer 設定"
+  },
+  "type": "notice",
+  "pause": true,
+  "can_close_with_escape": true,
+  "after_action": "close",
+  "body": [
+    {
+      "type": "plain_message",
+      "contents": {
+        "text": "これは MobTamer 用のサンプルダイアログです。\nここに説明文などを記述します。"
+      },
+      "width": 220
+    }
+  ],
+  "inputs": [],
+  "action": {
+    "label": {
+      "text": "OK"
+    },
+    "tooltip": {
+      "text": "ダイアログを閉じます。"
+    },
+    "width": 120
+  }
+}

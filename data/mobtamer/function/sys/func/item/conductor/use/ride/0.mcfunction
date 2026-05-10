@@ -1,0 +1,2 @@
+execute unless score #mt.conductor.mode2 mt.temp matches 1 run function mobtamer:sys/func/item/conductor/use/ride/0/0
+execute if score #mt.conductor.mode2 mt.temp matches 1 run function mobtamer:sys/func/item/conductor/use/ride/1/0

@@ -1,8 +1,9 @@
 execute if entity @s[predicate=!mobtamer:vehicle/any] run function mobtamer:sys/func/pet/tp/main/0
 execute at @s[tag=!mt.stop,predicate=!mobtamer:vehicle/any] run function mobtamer:sys/func/pet/follow/main/0
 execute at @s[type=#mobtamer:can_revenge,tag=!mt.stop] run function mobtamer:sys/func/pet/target/main/0
-# execute at @s[type=rabbit,tag=!mt.stop] if data entity @s {RabbitType:99} run function mobtamer:sys/player/pet/each/be_hostile/0
+# execute at @s[type=rabbit,tag=!mt.stop] if data entity @s {RabbitType:99} run function mobtamer:sys/func/pet/get_hostile/main/0
 # execute at @s run function mobtamer:sys/player/pet/each/name/0
+function mobtamer:sys/func/pet/condition_check/main/0
 function mobtamer:sys/func/pet/health_check/main/0
 function mobtamer:sys/func/pet/status_display/summon/0
 # execute at @s[tag=mt.stop] run function mobtamer:sys/player/pet/each/stop/0

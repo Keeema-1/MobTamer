@@ -1,3 +1,4 @@
+execute if entity @s[type=creaking] run data modify storage mobtamer:temp data.type_str set value "creaking"
 execute if entity @s[type=axolotl] run data modify storage mobtamer:temp data.type_str set value "axolotl"
 execute if entity @s[type=cod] run data modify storage mobtamer:temp data.type_str set value "cod"
 execute if entity @s[type=dolphin] run data modify storage mobtamer:temp data.type_str set value "dolphin"

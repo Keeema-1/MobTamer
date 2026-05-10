@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "bonemeal",
+  "ingredients": [
+    "minecraft:stick",
+    "minecraft:lead"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:fishing_rod",
+    "components": {
+        "custom_name": {
+            "text": "コンダクター",
+            "italic": false
+        },
+        "lore": [
+            {
+                "text": "【モード：情報】",
+                "color": "green",
+                "italic": false
+            }
+        ],
+        "custom_data": {
+            "mt_conductor":1
+      }
+    }
+  }
+}

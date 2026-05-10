@@ -1,0 +1,10 @@
+
+scoreboard players set #mt.looking_check mt.temp 1
+
+tag @e[team=!,tag=mt.player_check] remove mt.selected
+
+tag @s add mt.selected
+
+data modify entity @s Glowing set value 1b
+
+#effect give @s glowing 1 1 true
